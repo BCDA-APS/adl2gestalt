@@ -266,7 +266,7 @@ def create_gestalt_workflow(medm_file: Path, output_dir: Path,
         Dictionary with workflow results
     """
     from .converter import MedmToGestaltConverter
-    from .parser import parse_medm_file
+    from .parser import MedmMainWidget
     
     results = {
         "medm_file": str(medm_file),
@@ -278,9 +278,10 @@ def create_gestalt_workflow(medm_file: Path, output_dir: Path,
     
     try:
         # Step 1: Convert MEDM to Gestalt
-        medm_data = parse_medm_file(medm_file)
+        medm_widget = MedmMainWidget(str(medm_file))
+        medm_widget.parseAdlBuffer(medm_widget.getAdlLines())
         converter = MedmToGestaltConverter()
-        gestalt_yaml = converter.convert_display(medm_data)
+        gestalt_yaml = converter.convert_display(medm_widget)
         
         # Save Gestalt file
         gestalt_file = output_dir / f"{medm_file.stem}.yml"

@@ -440,47 +440,81 @@ def workflow_command(medm_folder: Path, output_folder: Path, test: bool, force: 
         
         # Process each file
         if quiet:
-            files = medm_files
-        else:
-            files = click.progressbar(medm_files, label='Processing workflow', 
-                                    show_pos=True, show_percent=True)
-        
-        for medm_file in files:
-            try:
-                # Calculate output path
-                rel_path = medm_file.relative_to(medm_folder)
-                output_file_dir = output_folder / rel_path.parent
-                
-                # Check if output exists and force flag
-                gestalt_file = output_file_dir / f"{medm_file.stem}.yml"
-                if gestalt_file.exists() and not force:
-                    if verbose:
-                        click.echo(f"⏭️  Skipping existing: {gestalt_file}")
-                    continue
-                
-                # Run complete workflow
-                workflow_result = create_gestalt_workflow(medm_file, output_file_dir, test)
-                
-                if workflow_result["overall_success"]:
-                    success_count += 1
-                    if verbose:
-                        click.echo(f"✅ {medm_file} -> {workflow_result['conversion']['gestalt_file']}")
-                else:
+            for medm_file in medm_files:
+                try:
+                    # Calculate output path
+                    rel_path = medm_file.relative_to(medm_folder)
+                    output_file_dir = output_folder / rel_path.parent
+                    
+                    # Check if output exists and force flag
+                    gestalt_file = output_file_dir / f"{medm_file.stem}.yml"
+                    if gestalt_file.exists() and not force:
+                        if verbose:
+                            click.echo(f"⏭️  Skipping existing: {gestalt_file}")
+                        continue
+                    
+                    # Run complete workflow
+                    workflow_result = create_gestalt_workflow(medm_file, output_file_dir, test)
+                    
+                    if workflow_result["overall_success"]:
+                        success_count += 1
+                        if verbose:
+                            click.echo(f"✅ {medm_file} -> {workflow_result['conversion']['gestalt_file']}")
+                    else:
+                        error_count += 1
+                        if not quiet:
+                            if workflow_result["conversion"]["success"]:
+                                # Conversion succeeded but testing failed
+                                error_msg = "Testing failed"
+                                if workflow_result["validation"].get("error"):
+                                    error_msg = workflow_result["validation"]["error"]
+                            else:
+                                error_msg = workflow_result["conversion"]["message"]
+                            click.echo(f"❌ {medm_file}: {error_msg}", err=True)
+                            
+                except Exception as e:
                     error_count += 1
                     if not quiet:
-                        if workflow_result["conversion"]["success"]:
-                            # Conversion succeeded but testing failed
-                            error_msg = "Testing failed"
-                            if workflow_result["validation"].get("error"):
-                                error_msg = workflow_result["validation"]["error"]
-                        else:
-                            error_msg = workflow_result["conversion"]["message"]
-                        click.echo(f"❌ {medm_file}: {error_msg}", err=True)
+                        click.echo(f"❌ {medm_file}: {e}", err=True)
+        else:
+            with click.progressbar(medm_files, label='Processing workflow', 
+                                 show_pos=True, show_percent=True) as files:
+                for medm_file in files:
+                    try:
+                        # Calculate output path
+                        rel_path = medm_file.relative_to(medm_folder)
+                        output_file_dir = output_folder / rel_path.parent
                         
-            except Exception as e:
-                error_count += 1
-                if not quiet:
-                    click.echo(f"❌ {medm_file}: {e}", err=True)
+                        # Check if output exists and force flag
+                        gestalt_file = output_file_dir / f"{medm_file.stem}.yml"
+                        if gestalt_file.exists() and not force:
+                            if verbose:
+                                click.echo(f"⏭️  Skipping existing: {gestalt_file}")
+                            continue
+                        
+                        # Run complete workflow
+                        workflow_result = create_gestalt_workflow(medm_file, output_file_dir, test)
+                        
+                        if workflow_result["overall_success"]:
+                            success_count += 1
+                            if verbose:
+                                click.echo(f"✅ {medm_file} -> {workflow_result['conversion']['gestalt_file']}")
+                        else:
+                            error_count += 1
+                            if not quiet:
+                                if workflow_result["conversion"]["success"]:
+                                    # Conversion succeeded but testing failed
+                                    error_msg = "Testing failed"
+                                    if workflow_result["validation"].get("error"):
+                                        error_msg = workflow_result["validation"]["error"]
+                                else:
+                                    error_msg = workflow_result["conversion"]["message"]
+                                click.echo(f"❌ {medm_file}: {error_msg}", err=True)
+                                
+                    except Exception as e:
+                        error_count += 1
+                        if not quiet:
+                            click.echo(f"❌ {medm_file}: {e}", err=True)
         
         # Summary
         if not quiet:

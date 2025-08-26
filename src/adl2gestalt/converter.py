@@ -143,7 +143,7 @@ class MedmToGestaltConverter:
         display_name = Path(medm.given_filename).stem.replace('-', '_').replace(' ', '_')
         
         # Build display node
-        lines.append(f"{display_name}: !Display")
+        lines.append(f"{display_name}: !Form")
         
         # Add geometry
         if hasattr(medm, 'geometry') and medm.geometry:

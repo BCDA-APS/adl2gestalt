@@ -120,9 +120,6 @@ adl2gestalt list-medm examples/medm/
 adl2gestalt list-medm examples/medm/ --count
 # Output: Found 5 MEDM files
 
-# Non-recursive search
-adl2gestalt list-medm examples/medm/ --no-recursive
-```
 
 #### List Gestalt Files
 
