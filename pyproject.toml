@@ -63,6 +63,7 @@ adl2gestalt-validate = "adl2gestalt.cli:validate_command"
 adl2gestalt-generate = "adl2gestalt.cli:generate_command"
 adl2gestalt-test-gestalt = "adl2gestalt.cli:test_gestalt_command"
 adl2gestalt-workflow = "adl2gestalt.cli:workflow_command"
+gestalt = "adl2gestalt.gestalt_main:main"
 
 [project.urls]
 Homepage = "https://github.com/adl2gestalt/adl2gestalt"
