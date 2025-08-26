@@ -38,8 +38,8 @@ adl2gestalt convert medm_files/ --batch -o gestalt_files/
 adl2gestalt workflow medm_files/ gestalt_files/
 
 # Generate UI files
-adl2gestalt generate file.yml --format qt -o file.ui
-gestalt file.yml -t qt -o file.ui
+adl2gestalt generate $(pwd)/file.yml --format qt -o $(pwd)/file.ui
+gestalt $(pwd)/file.yml -t qt -o file.ui
 
 # Check status
 adl2gestalt status medm_files/ gestalt_files/

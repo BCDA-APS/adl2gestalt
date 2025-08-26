@@ -419,9 +419,10 @@ class MedmToGestaltConverter:
             if widget.commands:
                 lines.append("    commands:")
                 for cmd in widget.commands:
-                    if "command" in cmd:
+                    # Shell commands use 'name' for the command, not 'command'
+                    if "name" in cmd:
                         label = cmd.get("label", "Command")
-                        lines.append(f'        - {{ label: "{label}", command: "{cmd["command"]}" }}')
+                        lines.append(f'        - {{ label: "{label}", command: "{cmd["name"]}" }}')
         
         # Polyline/Polygon points
         if widget_type in ["Polyline", "Polygon"] and hasattr(widget, 'points'):
