@@ -233,10 +233,8 @@ def convert_command(
                 click.echo(f"Found {len(medm_files)} MEDM files to convert")
             
             # Convert each file
-            with click.progressbar(medm_files, label='Converting files', 
-                                 show_pos=True, show_percent=True,
-                                 disabled=quiet) as files:
-                for medm_file in files:
+            if quiet:
+                for medm_file in medm_files:
                     try:
                         # Calculate output path maintaining directory structure
                         rel_path = medm_file.relative_to(input)
@@ -244,21 +242,40 @@ def convert_command(
                         
                         # Check if output exists and force flag
                         if output_path.exists() and not force:
-                            if verbose:
-                                click.echo(f"⏭️  Skipping existing: {output_path}")
                             continue
                         
                         # Convert file
                         converter.convert_file(medm_file, output_path)
                         converted_count += 1
-                        
-                        if verbose:
-                            click.echo(f"✅ Converted: {medm_file} -> {output_path}")
                     
                     except Exception as e:
                         error_count += 1
-                        if not quiet:
-                            click.echo(f"❌ Failed: {medm_file}: {e}", err=True)
+            else:
+                with click.progressbar(medm_files, label='Converting files', 
+                                     show_pos=True, show_percent=True) as files:
+                    for medm_file in files:
+                        try:
+                            # Calculate output path maintaining directory structure
+                            rel_path = medm_file.relative_to(input)
+                            output_path = output_dir / rel_path.with_suffix('.yml')
+                            
+                            # Check if output exists and force flag
+                            if output_path.exists() and not force:
+                                if verbose:
+                                    click.echo(f"⏭️  Skipping existing: {output_path}")
+                                continue
+                            
+                            # Convert file
+                            converter.convert_file(medm_file, output_path)
+                            converted_count += 1
+                            
+                            if verbose:
+                                click.echo(f"✅ Converted: {medm_file} -> {output_path}")
+                        
+                        except Exception as e:
+                            error_count += 1
+                            if not quiet:
+                                click.echo(f"❌ Failed: {medm_file}: {e}", err=True)
             
             # Summary
             if not quiet:
