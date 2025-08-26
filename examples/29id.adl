@@ -1,0 +1,2356 @@
+
+file {
+	name="/net/s29dserv/xorApps/adl/29id/29id.adl"
+	version=030111
+}
+display {
+	object {
+		x=2917
+		y=77
+		width=437
+		height=274
+	}
+	clr=19
+	bclr=3
+	cmap=""
+	gridSpacing=5
+	gridOn=0
+	snapToGrid=1
+}
+"color map" {
+	ncolors=65
+	colors {
+		ffffff,
+		ececec,
+		dadada,
+		c8c8c8,
+		bbbbbb,
+		aeaeae,
+		9e9e9e,
+		919191,
+		858585,
+		787878,
+		696969,
+		5a5a5a,
+		464646,
+		2d2d2d,
+		000000,
+		00d800,
+		1ebb00,
+		339900,
+		2d7f00,
+		216c00,
+		fd0000,
+		de1309,
+		be190b,
+		a01207,
+		820400,
+		5893ff,
+		597ee1,
+		4b6ec7,
+		3a5eab,
+		27548d,
+		fbf34a,
+		f9da3c,
+		eeb62b,
+		e19015,
+		cd6100,
+		ffb0ff,
+		d67fe2,
+		ae4ebc,
+		8b1a96,
+		610a75,
+		a4aaff,
+		8793e2,
+		6a73c1,
+		4d52a4,
+		343386,
+		c7bb6d,
+		b79d5c,
+		a47e3c,
+		7d5627,
+		58340f,
+		99ffff,
+		73dfff,
+		4ea5f9,
+		2a63e4,
+		0a00b8,
+		ebf1b5,
+		d4db9d,
+		bbc187,
+		a6a462,
+		8b8239,
+		73ff6b,
+		52da3b,
+		3cb420,
+		289315,
+		1a7309,
+	}
+}
+text {
+	object {
+		x=30
+		y=8
+		width=50
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Motors"
+}
+polyline {
+	object {
+		x=146
+		y=0
+		width=2
+		height=188
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(147,1)
+		(147,187)
+	}
+}
+"related display" {
+	object {
+		x=-114
+		y=538
+		width=136
+		height=23
+	}
+	display[0] {
+		label="TR_SLIT (S)"
+		name="trs.adl"
+		args="P=29idtest:, M1=m7, M2=m8"
+	}
+	display[1] {
+		label="9-16"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m9,M2=m10,M3=m11,M4=m12,M5=m13,M6=m14,M7=m15,M8=m16"
+	}
+	display[2] {
+		label="17-24"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m17,M2=m18,M3=m19,M4=m20,M5=m21,M6=m22,M7=m23,M8=m24"
+	}
+	display[3] {
+		label="25-32"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m25,M2=m26,M3=m27,M4=m28,M5=m29,M6=m30,M7=m31,M8=m32"
+	}
+	display[4] {
+		label="33-40"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m33,M2=m34,M3=m35,M4=m36,M5=m37,M6=m38,M7=m39,M8=m40"
+	}
+	display[5] {
+		label="41-48"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m41,M2=m42,M3=m43,M4=m44,M5=m45,M6=m46,M7=m47,M8=m48"
+	}
+	display[6] {
+		label="49-56"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m49,M2=m50,M3=m51,M4=m52,M5=m53,M6=m54,M7=m55,M8=m56"
+	}
+	display[7] {
+		label="57-64"
+		name="topMotors8.adl"
+		args="P=29idtest:,M1=m57,M2=m58,M3=m59,M4=m60,M5=m61,M6=m62,M7=m63,M8=m64"
+	}
+	clr=54
+	bclr=52
+}
+polyline {
+	object {
+		x=284
+		y=0
+		width=2
+		height=188
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	points {
+		(285,1)
+		(285,187)
+	}
+}
+polyline {
+	object {
+		x=0
+		y=194
+		width=434
+		height=4
+	}
+	"basic attribute" {
+		clr=64
+		width=4
+	}
+	points {
+		(2,196)
+		(432,196)
+	}
+}
+"related display" {
+	object {
+		x=5
+		y=5
+		width=20
+		height=20
+	}
+	display[0] {
+		label="29IDB m1-8 :"
+		name="topMotors8.adl"
+		args="P=29idb:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8"
+	}
+	display[1] {
+		label="29IDB m9-16 : "
+		name="topMotors8.adl"
+		args="P=29idb:,M1=m9,M2=m10,M3=m11,M4=m12,M5=m13,M6=m14,M7=m15,M8=m16"
+	}
+	display[2] {
+		label="29IDB m17-24 : "
+		name="topMotors8.adl"
+		args="P=29idb:,M1=m17,M2=m18,M3=m19,M4=m20,M5=m21,M6=m22,M7=m23,M8=m24"
+	}
+	display[3] {
+		label="29IDB m25-32 :"
+		name="topMotors8.adl"
+		args="P=29idb:,M1=m25,M2=m26,M3=m27,M4=m28,M5=m29,M6=m30,M7=m31,M8=m32"
+	}
+	display[4] {
+		label="29IDB MotorStatus"
+		name="motorStatus32.adl"
+		args="P=29idb:"
+	}
+	display[5] {
+		label="29IDC m1-8 :"
+		name="topMotors8.adl"
+		args="P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8"
+	}
+	display[6] {
+		label="29IDC Encoders 1-8"
+		name="encoder4x.adl"
+		args="P=29idMiniC1:,E1=e1,E2=e2,E3=e3,E4=e4"
+	}
+	display[7] {
+		label="29IDC Encoders"
+		name="asynOctet.adl"
+		args="P=29idMiniC1:,R=asyn_enc1"
+	}
+	display[8] {
+		label="29IDC MotorStatus"
+		name="motorStatus32.adl"
+		args="P=29idc:"
+	}
+	display[9] {
+		label="29IDC controller"
+		name="LogitechF710.adl"
+		args="P=29idSurlySoft:,R=ctl1:,PORT=LOGITECH"
+	}
+	display[11] {
+		label="29IDD controller"
+		name="LogitechF710.adl"
+		args="P=29idSneezySoft:,R=ctl1:, PORT=LOGITECH"
+	}
+	display[12] {
+		label="29IDD m1-8 :"
+		name="topMotors8.adl"
+		args="P=29idd:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8"
+	}
+	display[13] {
+		label="29IDD m9-16 :"
+		name="topMotors8.adl"
+		args="P=29idd:,M1=m9,M2=m10,M3=m11,M4=m12,M5=m13,M6=m14,M7=m15,M8=m16"
+	}
+	display[14] {
+		label="29IDD 2C"
+		name="29idd_2C_graphic.adl"
+		args="P=29idd:,M1=m2,M2=m1,M3=m3,M4=m7,M5=m6"
+	}
+	display[15] {
+		label="29IDD MotorStatus "
+		name="motorStatus32.adl"
+		args="P=29idd:"
+	}
+	clr=14
+	bclr=51
+}
+"related display" {
+	object {
+		x=294
+		y=27
+		width=20
+		height=20
+	}
+	display[0] {
+		label="29ID-B asyn 1"
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_1"
+	}
+	display[1] {
+		label="29ID-B asyn 2 "
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_2"
+	}
+	display[2] {
+		label="29ID-B asyn 3 "
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_3"
+	}
+	display[3] {
+		label="29ID-B asyn 4 "
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_4"
+	}
+	display[4] {
+		label="29ID-B asyn 5"
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_5"
+	}
+	display[5] {
+		label="29ID-B asyn 6"
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_6"
+	}
+	display[6] {
+		label="29ID-B asyn 7 "
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_7"
+	}
+	display[7] {
+		label="29ID-B asyn 8 "
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_8"
+	}
+	display[8] {
+		label="29ID-B deviceCmdReply 1"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=1"
+	}
+	display[9] {
+		label="29ID-B deviceCmdReply 2"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=2"
+	}
+	display[10] {
+		label="29ID-B deviceCmdReply 3"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=3"
+	}
+	display[11] {
+		label="29ID-B deviceCmdReply 4 "
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=4"
+	}
+	display[12] {
+		label="29ID-B deviceCmdReply 5"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=5"
+	}
+	display[13] {
+		label="29ID-B deviceCmdReply 6"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=6"
+	}
+	display[14] {
+		label="29ID-B deviceCmdReply 7"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=7"
+	}
+	display[15] {
+		label="29ID-B deviceCmdReply 8"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=8"
+	}
+	clr=14
+	bclr=51
+	label="-B"
+}
+text {
+	object {
+		x=360
+		y=30
+		width=35
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Serial"
+}
+text {
+	object {
+		x=320
+		y=8
+		width=75
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Digital I/O"
+}
+polyline {
+	object {
+		x=0
+		y=84
+		width=149
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	"dynamic attribute" {
+		chan="ID29ds:Energy.EGU"
+	}
+	points {
+		(148,85)
+		(1,85)
+	}
+}
+polyline {
+	object {
+		x=146
+		y=97
+		width=141
+		height=2
+	}
+	"basic attribute" {
+		clr=14
+		width=2
+	}
+	"dynamic attribute" {
+		chan="ID29ds:Energy.EGU"
+	}
+	points {
+		(286,98)
+		(147,98)
+	}
+}
+"related display" {
+	object {
+		x=294
+		y=5
+		width=20
+		height=20
+	}
+	display[2] {
+		label="B IpUnidig I/O"
+		name="IpUnidig_top.adl"
+		args="P=29idb:,R=Unidig1"
+	}
+	display[7] {
+		label="D IpUnidig I/O"
+		name="IpUnidig_top.adl"
+		args="P=29idd:,R=Unidig1"
+	}
+	clr=14
+	bclr=51
+}
+"related display" {
+	object {
+		x=5
+		y=99
+		width=20
+		height=20
+	}
+	display[0] {
+		label="IP1A"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP1A"
+	}
+	display[1] {
+		label="IP2A"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP2A"
+	}
+	display[2] {
+		label="IP3A"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP3A"
+	}
+	display[3] {
+		label="IP3B"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP3B"
+	}
+	display[4] {
+		label="IP4B"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP4B"
+	}
+	display[5] {
+		label="IP5B"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP5B"
+	}
+	display[6] {
+		label="IP6B"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP6B"
+	}
+	display[7] {
+		label="IP7B"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP7B"
+	}
+	clr=14
+	bclr=51
+	label="-B"
+}
+text {
+	object {
+		x=71
+		y=102
+		width=20
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="IP"
+}
+"related display" {
+	object {
+		x=5
+		y=121
+		width=20
+		height=20
+	}
+	display[0] {
+		label="VS1A"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS1A"
+	}
+	display[1] {
+		label="VS2A"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS2A"
+	}
+	display[2] {
+		label="VS3AB"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS3AB"
+	}
+	display[3] {
+		label="VS4B"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS4B"
+	}
+	display[4] {
+		label="VS5B"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS5B"
+	}
+	display[5] {
+		label="VS6B"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS6B"
+	}
+	display[6] {
+		label="VS7B"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS7B"
+	}
+	clr=14
+	bclr=51
+	label="-B"
+}
+text {
+	object {
+		x=71
+		y=125
+		width=20
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="IG"
+}
+"related display" {
+	object {
+		x=25
+		y=99
+		width=20
+		height=20
+	}
+	display[0] {
+		label="IP7C"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP7C"
+	}
+	display[1] {
+		label="IP8C1"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP8C1"
+	}
+	display[2] {
+		label="IP8C2"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP8C2"
+	}
+	display[3] {
+		label="IP9C"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP9C"
+	}
+	display[4] {
+		label="IP10C1"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP10C1"
+	}
+	display[5] {
+		label="IP10C2"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP10C2"
+	}
+	display[6] {
+		label="IP11C1"
+		name="Pump.adl"
+		args="P=29idc:,PUMP=IP11C1"
+	}
+	display[7] {
+		label="IP11C2"
+		name="Pump.adl"
+		args="P=29idc:,PUMP=IP11C2"
+	}
+	display[8] {
+		label="IPCUBE"
+		name="Pump.adl"
+		args="P=29idc:,PUMP=IPCUBE"
+	}
+	clr=14
+	bclr=51
+	label="-C"
+}
+"related display" {
+	object {
+		x=294
+		y=56
+		width=20
+		height=20
+	}
+	display[0] {
+		label="Main screen"
+		name="mw100_main.adl"
+		args="P=29iddau1:,DAU=dau1"
+	}
+	clr=0
+	bclr=64
+}
+text {
+	object {
+		x=319
+		y=59
+		width=50
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="MW100"
+}
+"related display" {
+	object {
+		x=334
+		y=27
+		width=20
+		height=20
+	}
+	display[0] {
+		label="29ID-D asyn 1"
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_1"
+	}
+	display[1] {
+		label="29ID-D asyn 2 "
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_2"
+	}
+	display[2] {
+		label="29ID-D asyn 3 "
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_3"
+	}
+	display[3] {
+		label="29ID-D asyn 4 "
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_4"
+	}
+	display[4] {
+		label="29ID-D asyn 5"
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_5"
+	}
+	display[5] {
+		label="29ID-D asyn 6"
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_6"
+	}
+	display[6] {
+		label="29ID-D asyn 7 "
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_7"
+	}
+	display[7] {
+		label="29ID-D asyn 8 "
+		name="asynOctet.adl"
+		args="P=29idd:,R=asyn_8"
+	}
+	display[8] {
+		label="29ID-D deviceCmdReply 1"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=1"
+	}
+	display[9] {
+		label="29ID-D deviceCmdReply 2"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=2"
+	}
+	display[10] {
+		label="29ID-D deviceCmdReply 3"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=3"
+	}
+	display[11] {
+		label="29ID-D deviceCmdReply 4 "
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=4"
+	}
+	display[12] {
+		label="29ID-D deviceCmdReply 5"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=5"
+	}
+	display[13] {
+		label="29ID-D deviceCmdReply 6"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=6"
+	}
+	display[14] {
+		label="29ID-D deviceCmdReply 7"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=7"
+	}
+	display[15] {
+		label="29ID-D deviceCmdReply 8"
+		name="deviceCmdReply.adl"
+		args="P=29idd:,N=8"
+	}
+	clr=14
+	bclr=51
+	label="-D"
+}
+"related display" {
+	object {
+		x=5
+		y=165
+		width=20
+		height=20
+	}
+	display[0] {
+		label="Camera 1"
+		name="prosilica.adl"
+		args="P=29id_ps1:, R=cam1:"
+	}
+	display[1] {
+		label="Camera 2"
+		name="prosilica.adl"
+		args="P=29id_ps2:, R=cam1:"
+	}
+	display[2] {
+		label="Camera 3"
+		name="prosilica.adl"
+		args="P=29id_ps3:, R=cam1:"
+	}
+	display[3] {
+		label="Camera 4"
+		name="prosilica.adl"
+		args="P=29id_ps4:, R=cam1:"
+	}
+	display[5] {
+		label="Camera 6"
+		name="prosilica.adl"
+		args="P=29id_ps6:, R=cam1:"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=30
+		y=168
+		width=50
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Cameras"
+}
+"related display" {
+	object {
+		x=294
+		y=78
+		width=20
+		height=20
+	}
+	display[0] {
+		label="SoftGlue Menu"
+		name="softGlueMenu.adl"
+		args="P=29idd:,H=softGlue:"
+	}
+	display[1] {
+		label="SoftGlue2 Menu"
+		name="softGlueMenu.adl"
+		args="P=29idd:,H=softGlue2:"
+	}
+	display[3] {
+		label="Shift 1"
+		name="softGlue_Shift32_bare.adl"
+		args="P=29idd:,H=softGlue:,N=1"
+	}
+	display[4] {
+		label="Shift 2"
+		name="softGlue_Shift32_bare.adl"
+		args="P=29idd:,H=softGlue:,N=2"
+	}
+	display[5] {
+		label="SoftGlue Circuits"
+		name="configMenu.adl"
+		args="P=29idd:,CONFIG=SG"
+	}
+	clr=0
+	bclr=64
+}
+text {
+	object {
+		x=319
+		y=81
+		width=60
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="SoftGlue"
+}
+"related display" {
+	object {
+		x=314
+		y=27
+		width=20
+		height=20
+	}
+	display[0] {
+		label="29ID-C asyn 1"
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_1"
+	}
+	display[1] {
+		label="29ID-C asyn 2 "
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_2"
+	}
+	display[2] {
+		label="29ID-C asyn 3 "
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_3"
+	}
+	display[3] {
+		label="29ID-C asyn 4 "
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_4"
+	}
+	display[4] {
+		label="29ID-C asyn 5"
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_5"
+	}
+	display[5] {
+		label="29ID-C asyn 6"
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_6"
+	}
+	display[6] {
+		label="29ID-C asyn 7 "
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_7"
+	}
+	display[7] {
+		label="29ID-C asyn 8 "
+		name="asynOctet.adl"
+		args="P=29idc:,R=asyn_8"
+	}
+	display[8] {
+		label="29ID-C deviceCmdReply 1"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=1"
+	}
+	display[9] {
+		label="29ID-C deviceCmdReply 2"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=2"
+	}
+	display[10] {
+		label="29ID-C deviceCmdReply 3"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=3"
+	}
+	display[11] {
+		label="29ID-C deviceCmdReply 4 "
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=4"
+	}
+	display[12] {
+		label="29ID-C deviceCmdReply 5"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=5"
+	}
+	display[13] {
+		label="29ID-C deviceCmdReply 6"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=6"
+	}
+	display[14] {
+		label="29ID-C deviceCmdReply 7"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=7"
+	}
+	display[15] {
+		label="29ID-C deviceCmdReply 8"
+		name="deviceCmdReply.adl"
+		args="P=29idc:,N=8"
+	}
+	clr=14
+	bclr=51
+	label="-C"
+}
+"related display" {
+	object {
+		x=395
+		y=56
+		width=35
+		height=20
+	}
+	display[14] {
+		label="29ID Keithleys"
+		name="29ID_ca_all.adl"
+	}
+	clr=14
+	bclr=25
+	label="- CA "
+}
+"related display" {
+	object {
+		x=395
+		y=78
+		width=35
+		height=20
+	}
+	display[15] {
+		label="29ID Diagnostics"
+		name="29id_Diagnostics.adl"
+	}
+	clr=14
+	bclr=25
+	label="-Diag"
+}
+"text update" {
+	object {
+		x=169
+		y=217
+		width=125
+		height=14
+	}
+	monitor {
+		chan="S:IOC:timeOfDayForm2SI"
+		clr=14
+		bclr=2
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=310
+		y=217
+		width=50
+		height=14
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Ring I"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=370
+		y=217
+		width=40
+		height=14
+	}
+	monitor {
+		chan="S:SRcurrentAI.VAL"
+		clr=14
+		bclr=2
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+text {
+	object {
+		x=415
+		y=217
+		width=20
+		height=14
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="mA"
+}
+text {
+	object {
+		x=263
+		y=255
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=14
+	}
+	textix="Undulator"
+	align="horiz. right"
+}
+"text update" {
+	object {
+		x=348
+		y=255
+		width=50
+		height=14
+	}
+	monitor {
+		chan="ID29:Energy.VAL"
+		clr=14
+		bclr=2
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"text update" {
+	object {
+		x=403
+		y=255
+		width=25
+		height=14
+	}
+	monitor {
+		chan="ID29:Energy.EGU"
+		clr=14
+		bclr=2
+	}
+	align="horiz. centered"
+	limits {
+	}
+}
+"related display" {
+	object {
+		x=294
+		y=115
+		width=70
+		height=20
+	}
+	display[0] {
+		label="User Calcs 1-10"
+		name="userCalcs10.adl"
+		args="P=29idb:"
+	}
+	display[1] {
+		label="User CalcOuts 1-10"
+		name="userCalcOuts10.adl"
+		args="P=29idb:"
+	}
+	display[2] {
+		label="User Transforms 1-10"
+		name="userTransforms10.adl"
+		args="P=29idb:"
+	}
+	display[3] {
+		label="User StringSeqs 1-10"
+		name="userStringSeqs10.adl"
+		args="P=29idb:"
+	}
+	display[4] {
+		label="User StringCalcs 1-10"
+		name="userStringCalcs10.adl"
+		args="P=29idb:"
+	}
+	display[6] {
+		label="User Average 1-10"
+		name="userAve10.adl"
+		args="P=29idb:"
+	}
+	display[7] {
+		label="User ArrayCalcs 1-10"
+		name="userArrayCalcs10.adl"
+		args="P=29idb:"
+	}
+	display[9] {
+		label="CaputRecorder"
+		name="caputRecorder.adl"
+		args="P=29idb:,L=29idb:"
+	}
+	display[12] {
+		label="User StringSeqs 1-10"
+		name="userStringSeqs10.adl"
+		args="P=29idd:"
+	}
+	display[14] {
+		label="Beamline Energy Transform"
+		name="userTransform_full.adl"
+		args="P=29id:,T=BeamlineEnergyTransform"
+	}
+	display[15] {
+		label="Beamline Energy SSeq"
+		name="userStringSeq_full.adl"
+		args="P=29id:,S=BeamlineEnergySSeq"
+	}
+	clr=0
+	bclr=34
+	label="-User Calc"
+}
+"shell command" {
+	object {
+		x=360
+		y=165
+		width=46
+		height=20
+	}
+	command[6] {
+		label="M0 Mirror"
+		name="/net/s29dserv/xorApps/adl/start_opi_M0.sh"
+	}
+	command[7] {
+		label="M1 mirror"
+		name="/net/s29dserv/xorApps/adl/start_opi_M1.sh"
+	}
+	command[8] {
+		label="M3R mirror"
+		name="/net/s29dserv/xorApps/adl/start_opi_M3.sh"
+	}
+	command[9] {
+		label="Mono"
+		name="/net/s29dserv/xorApps/adl/start_mono"
+	}
+	clr=14
+	bclr=55
+	label="EDM"
+}
+"shell command" {
+	object {
+		x=294
+		y=165
+		width=62
+		height=20
+	}
+	command[0] {
+		label="dview"
+		name="/APSshare/bin/dview /net/s29data/export/data_29id/2016_3/mda& "
+	}
+	command[2] {
+		label="sview"
+		name="/APSshare/bin/sview -m 800000 29idb:scan1&"
+	}
+	command[3] {
+		label="StripTool"
+		name="StripTool&"
+	}
+	command[4] {
+		label="Probe"
+		name="probe&"
+	}
+	command[5] {
+		label="Beeper"
+		name="/home/beams/29ID/bin/Beep_gui.py&"
+	}
+	command[6] {
+		label="ipython local"
+		name="gnome-terminal -e ipython&"
+	}
+	command[7] {
+		label="ipython"
+		name="gnome-terminal -e /home/beams/29ID/bin/start_ipython.sh&"
+	}
+	command[8] {
+		label="ImageJ"
+		name="ImageJ&"
+	}
+	clr=14
+	bclr=55
+	label="Tools"
+}
+"related display" {
+	object {
+		x=368
+		y=115
+		width=62
+		height=20
+	}
+	display[0] {
+		label="29idb IOC stats"
+		name="ioc_stats_vxworks.adl"
+		args="ioc=29idb"
+	}
+	display[1] {
+		label="29idb save_restore Status"
+		name="save_restoreStatus.adl"
+		args="P=29idb:"
+	}
+	display[2] {
+		label="29idb alive"
+		name="aliveRecord.adl"
+		args="P=29idb:"
+	}
+	display[4] {
+		label="29idc IOC stats"
+		name="ioc_stats_vxworks.adl"
+		args="ioc=29idc"
+	}
+	display[5] {
+		label="29idc save_restore Status"
+		name="save_restoreStatus.adl"
+		args="P=29idc:"
+	}
+	display[6] {
+		label="29idc alive"
+		name="aliveRecord.adl"
+		args="P=29idc:"
+	}
+	display[8] {
+		label="29idd IOC stats"
+		name="ioc_stats_vxworks.adl"
+		args="ioc=29idd"
+	}
+	display[9] {
+		label="29idd save_restore Status"
+		name="save_restoreStatus.adl"
+		args="P=29idd:"
+	}
+	display[10] {
+		label="29idd alive"
+		name="aliveRecord.adl"
+		args="P=29idd:"
+	}
+	clr=0
+	bclr=54
+	label="- Status"
+}
+"related display" {
+	object {
+		x=294
+		y=140
+		width=70
+		height=20
+	}
+	display[0] {
+		label="Scan1 (for all scans)"
+		name="scan.adl"
+		args="P=29idb:,N=1,S=scan1,DW=Dwait1,PW=Pwait1"
+	}
+	display[1] {
+		label="Scan2 (for 2D & higher scans)"
+		name="scan.adl"
+		args="P=29idb:,N=2,S=scan2,DW=Dwait2,PW=Pwait2"
+	}
+	display[2] {
+		label="Scan3 (for 3D & higher scans)"
+		name="scan.adl"
+		args="P=29idb:,N=3,S=scan3,DW=Dwait3,PW=Pwait3"
+	}
+	display[3] {
+		label="Scan4 (for 4D scans)"
+		name="scan.adl"
+		args="P=29idb:,N=4,S=scan4,DW=Dwait4,PW=Pwait4"
+	}
+	display[4] {
+		label="ScanH (for MCA's)"
+		name="scan.adl"
+		args="P=29idbt:,N=H,S=scanH"
+	}
+	display[7] {
+		label="SaveData Controls"
+		name="scan_saveData.adl"
+		args="P=29idb:"
+	}
+	display[9] {
+		label="ScanProgress"
+		name="ProgressBar.adl"
+		args="P=29idb:,B=29idb:scanProgress:"
+	}
+	display[11] {
+		label="Scan1Menu"
+		name="configMenu.adl"
+		args="P=29idb:,CONFIG=scan1"
+	}
+	clr=0
+	bclr=34
+	label="-Scan Ctrl"
+}
+"related display" {
+	object {
+		x=410
+		y=165
+		width=20
+		height=20
+	}
+	display[0] {
+		label="M0 Scan1"
+		name="scan.adl"
+		args="P=29id_m0:,N=1,S=SCAN,DW=Dwait1,PW=Pwait1"
+	}
+	display[1] {
+		label="M0 Scan2"
+		name="scan.adl"
+		args="P=29id_m0:,N=2,S=SCAN_LOOP,DW=Dwait2,PW=Pwait2"
+	}
+	display[2] {
+		label="M0 SaveData Controls"
+		name="scan_saveData.adl"
+		args="P=29id_m0:SCAN"
+	}
+	display[3] {
+		label="M1 Scan1"
+		name="scan.adl"
+		args="P=29id_m1:,N=1,S=SCAN,DW=Dwait1,PW=Pwait1"
+	}
+	display[4] {
+		label="M1 Scan2"
+		name="scan.adl"
+		args="P=29id_m1:,N=2,S=SCAN_LOOP,DW=Dwait2,PW=Pwait2"
+	}
+	display[5] {
+		label="M1 SaveData Controls"
+		name="scan_saveData.adl"
+		args="P=29id_m1:SCAN"
+	}
+	clr=0
+	bclr=20
+	label="-!!"
+}
+"related display" {
+	object {
+		x=368
+		y=140
+		width=30
+		height=20
+	}
+	display[0] {
+		label="Scan1 (for all scans)"
+		name="scan.adl"
+		args="P=29idc:,N=1,S=scan1,DW=Dwait1,PW=Pwait1"
+	}
+	display[1] {
+		label="Scan2 (for 2D & higher scans)"
+		name="scan.adl"
+		args="P=29idc:,N=2,S=scan2,DW=Dwait2,PW=Pwait2"
+	}
+	display[2] {
+		label="Scan3 (for 3D & higher scans)"
+		name="scan.adl"
+		args="P=29idc:,N=3,S=scan3,DW=Dwait3,PW=Pwait3"
+	}
+	display[3] {
+		label="Scan4 (for 4D scans)"
+		name="scan.adl"
+		args="P=29idc:,N=4,S=scan4,DW=Dwait4,PW=Pwait4"
+	}
+	display[4] {
+		label="ScanH (for MCA's)"
+		name="scan.adl"
+		args="P=29idct:,N=H,S=scanH"
+	}
+	display[7] {
+		label="SaveData Controls"
+		name="scan_saveData.adl"
+		args="P=29idc:"
+	}
+	display[8] {
+		label="ScanProgress"
+		name="ProgressBar.adl"
+		args="P=29idc:,B=29idc:scanProgress:"
+	}
+	clr=0
+	bclr=34
+	label="- C"
+}
+"related display" {
+	object {
+		x=400
+		y=140
+		width=30
+		height=20
+	}
+	display[0] {
+		label="Scan1 (for all scans)"
+		name="scan.adl"
+		args="P=29idd:,N=1,S=scan1,DW=Dwait1,PW=Pwait1"
+	}
+	display[1] {
+		label="Scan2 (for 2D & higher scans)"
+		name="scan.adl"
+		args="P=29idd:,N=2,S=scan2,DW=Dwait2,PW=Pwait2"
+	}
+	display[2] {
+		label="Scan3 (for 3D & higher scans)"
+		name="scan.adl"
+		args="P=29idd:,N=3,S=scan3,DW=Dwait3,PW=Pwait3"
+	}
+	display[3] {
+		label="Scan4 (for 4D scans)"
+		name="scan.adl"
+		args="P=29idd:,N=4,S=scan4,DW=Dwait4,PW=Pwait4"
+	}
+	display[4] {
+		label="ScanH (for MCA's)"
+		name="scan.adl"
+		args="P=29iddt:,N=H,S=scanH"
+	}
+	display[7] {
+		label="SaveData Controls"
+		name="scan_saveData.adl"
+		args="P=29idd:"
+	}
+	display[8] {
+		label="ScanProgress"
+		name="ProgressBar.adl"
+		args="P=29idd:,B=29idd:scanProgress:"
+	}
+	clr=0
+	bclr=34
+	label="- D"
+}
+composite {
+	object {
+		x=5
+		y=255
+		width=146
+		height=14
+	}
+	"composite name"=""
+	children {
+		oval {
+			object {
+				x=89
+				y=257
+				width=10
+				height=10
+			}
+			"basic attribute" {
+				clr=15
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="(A=2)&&(B=2)"
+				chan="EPS:29:ID:SS1:POSITION"
+				chanB="EPS:29:ID:PS2:POSITION"
+			}
+		}
+		oval {
+			object {
+				x=115
+				y=257
+				width=10
+				height=10
+			}
+			"basic attribute" {
+				clr=15
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="(A=0)&&(B=0)"
+				chan="PA:29ID:SCS_BLOCKING_BEAM.VAL"
+				chanB="PB:29ID:SCS_BLOCKING_BEAM.VAL"
+			}
+		}
+		oval {
+			object {
+				x=141
+				y=257
+				width=10
+				height=10
+			}
+			"basic attribute" {
+				clr=15
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="(A=0)&&(B=0)"
+				chan="PA:29ID:SDS_BLOCKING_BEAM.VAL"
+				chanB="PB:29ID:SDS_BLOCKING_BEAM.VAL"
+			}
+		}
+		text {
+			object {
+				x=80
+				y=255
+				width=10
+				height=14
+			}
+			"basic attribute" {
+				clr=19
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="(A=2)&&(B=2)"
+				chan="EPS:29:ID:SS1:POSITION"
+				chanB="EPS:29:ID:PS2:POSITION"
+			}
+			textix="A"
+		}
+		text {
+			object {
+				x=112
+				y=260
+				width=5
+				height=5
+			}
+			"basic attribute" {
+				clr=19
+			}
+		}
+		text {
+			object {
+				x=106
+				y=255
+				width=10
+				height=14
+			}
+			"basic attribute" {
+				clr=19
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="(A=0)&&(B=0)"
+				chan="PA:29ID:SCS_BLOCKING_BEAM.VAL"
+				chanB="PB:29ID:SCS_BLOCKING_BEAM.VAL"
+			}
+			textix="C"
+		}
+		text {
+			object {
+				x=132
+				y=255
+				width=10
+				height=14
+			}
+			"basic attribute" {
+				clr=19
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="(A=0)&&(B=0)"
+				chan="PA:29ID:SDS_BLOCKING_BEAM.VAL"
+				chanB="PB:29ID:SDS_BLOCKING_BEAM.VAL"
+			}
+			textix="D"
+		}
+		text {
+			object {
+				x=5
+				y=255
+				width=65
+				height=14
+			}
+			"basic attribute" {
+				clr=64
+			}
+			textix="Shutters:"
+		}
+	}
+}
+"related display" {
+	object {
+		x=5
+		y=143
+		width=20
+		height=20
+	}
+	display[0] {
+		label="Televac asyn"
+		name="asynOctet.adl"
+		args="P=29idb:,R=asyn_TELE1"
+	}
+	display[1] {
+		label="Command Reply"
+		name="deviceCmdReply.adl"
+		args="P=29idb:,N=8"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=30
+		y=146
+		width=50
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Televac"
+}
+"related display" {
+	object {
+		x=45
+		y=99
+		width=20
+		height=20
+	}
+	display[8] {
+		label="IP7D"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP7D"
+	}
+	display[9] {
+		label="IP8D1"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP8D1"
+	}
+	display[10] {
+		label="IP8D2"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP8D2"
+	}
+	display[11] {
+		label="IP9D"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP9D"
+	}
+	display[12] {
+		label="IP10D1"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP10D1"
+	}
+	display[13] {
+		label="IP10D2"
+		name="Pump.adl"
+		args="P=29idb:,PUMP=IP10D2"
+	}
+	clr=14
+	bclr=51
+	label="-D"
+}
+text {
+	object {
+		x=25
+		y=35
+		width=95
+		height=30
+	}
+	"basic attribute" {
+		clr=50
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="29idb:alldone.VAL"
+	}
+	textix="Moving"
+	align="horiz. centered"
+}
+text {
+	object {
+		x=27
+		y=37
+		width=95
+		height=30
+	}
+	"basic attribute" {
+		clr=54
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="29idb:alldoneBlink.VAL"
+	}
+	textix="Moving"
+	align="horiz. centered"
+}
+"related display" {
+	object {
+		x=155
+		y=110
+		width=20
+		height=20
+	}
+	display[0] {
+		label="Amp 1"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca1"
+	}
+	display[1] {
+		label="Amp 2"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca2"
+	}
+	display[2] {
+		label="Amp 3"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca3"
+	}
+	display[3] {
+		label="Amp 4"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca4"
+	}
+	display[4] {
+		label="Amp 5"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca5"
+	}
+	display[6] {
+		label="Amp 9"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca9"
+	}
+	display[7] {
+		label="Amp 10"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca10"
+	}
+	display[8] {
+		label="Amp 12"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca12"
+	}
+	display[9] {
+		label="Amp 13"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca13"
+	}
+	display[10] {
+		label="Amp 14"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca14"
+	}
+	display[11] {
+		label="Amp 15"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca15"
+	}
+	display[12] {
+		label="Amp 16"
+		name="Keithley6485small.adl"
+		args="P=29idb:,CA=ca16"
+	}
+	clr=14
+	bclr=51
+	label="-B"
+}
+text {
+	object {
+		x=219
+		y=113
+		width=50
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="CA"
+}
+"related display" {
+	object {
+		x=155
+		y=130
+		width=20
+		height=20
+	}
+	display[0] {
+		label="1A Slit Motors"
+		name="motor4x.adl"
+		args="P=29idb:,M1=m9,M2=m10,M3=m11,M4=m12"
+	}
+	display[1] {
+		label="1A Slit Motors (set/unset)"
+		name="motor4x_set.adl"
+		args="P=29idb:,M1=m9,M2=m10,M3=m11,M4=m12"
+	}
+	display[2] {
+		label="1A Slit Graphic"
+		name="4slitGraphic.adl"
+		args="P=29idb:,SLIT=Slit_1,H=Slit1H,mXp=m11,mXn=m10,V=Slit1V,mYp=m9,mYn=m12"
+	}
+	display[4] {
+		label="2B Slit Motors"
+		name="motor4x.adl"
+		args="P=29idb:,M1=m15,M2=m13,M3=m14,M4=m16"
+	}
+	display[5] {
+		label="2B Slit Motors (set/unset)"
+		name="motor4x_set.adl"
+		args="P=29idb:,M1=m15,M2=m13,M3=m14,M4=m16"
+	}
+	display[6] {
+		label="2B Slit Graphic"
+		name="4slitGraphic.adl"
+		args="P=29idb:,SLIT=Slit_2,H=Slit2H,mXp=m14,mXn=m13,V=Slit2V,mYp=m15,mYn=m16"
+	}
+	display[7] {
+		label="2B Slit Encoders"
+		name="encoder4x.adl"
+		args="P=29idMini1:,E1=e13,E2=e14,E3=e15,E4=e16"
+	}
+	display[9] {
+		label="3C Slit Motors"
+		name="motorx.adl"
+		args="P=29idb:,M=m24"
+	}
+	display[10] {
+		label="3D Slit Motors"
+		name="motor2x.adl"
+		args="P=29idb:,M1=m26,M2=m27"
+	}
+	display[11] {
+		label="3D Slit Graphic"
+		name="2slit.adl"
+		args="P=29idb:,SLIT=Slit4V,mXp=m27,mXn=m26"
+	}
+	display[12] {
+		label="3D Slit Encoders"
+		name="encoder2x.adl"
+		args="P=29idMini2:,E1=e26,E2=e27"
+	}
+	display[14] {
+		label="Slit3C"
+		name="Slit3C.adl"
+		args="P=29idb:,Q=Slit3C"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=180
+		y=133
+		width=90
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Slits"
+}
+"related display" {
+	object {
+		x=155
+		y=150
+		width=20
+		height=20
+	}
+	display[0] {
+		label="Hxp1 - M3A"
+		name="HXP.adl"
+		args="P=29idHXP:,NAME=M3A,R=hxp1:,M1=hxp1:m1,M2=hxp1:m2,M3=hxp1:m3,M4=hxp1:m4,M5=hxp1:m5,M6=hxp1:m6"
+	}
+	display[1] {
+		label="Hxp2 - M4R"
+		name="HXP.adl"
+		args="P=29idHXP:,NAME=M4R,R=hxp2:,M1=hxp2:m1,M2=hxp2:m2,M3=hxp2:m3,M4=hxp2:m4,M5=hxp2:m5,M6=hxp2:m6"
+	}
+	display[2] {
+		label="Hxp3 - M4A"
+		name="HXP.adl"
+		args="P=29idHXP:,NAME=M4A,R=hxp3:,M1=hxp3:m1,M2=hxp3:m2,M3=hxp3:m3,M4=hxp3:m4,M5=hxp3:m5,M6=hxp3:m6"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=180
+		y=153
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Newport Hxp"
+}
+"related display" {
+	object {
+		x=175
+		y=110
+		width=20
+		height=20
+	}
+	display[0] {
+		label="29idc CA1/PS"
+		name="Keithley6487small.adl"
+		args="P=29idc:,CA=ca1"
+	}
+	display[1] {
+		label="29idc CA2"
+		name="Keithley6485small.adl"
+		args="P=29idc:,CA=ca2"
+	}
+	display[3] {
+		label=" "
+	}
+	display[4] {
+		label=" "
+	}
+	clr=14
+	bclr=51
+	label="-C"
+}
+"related display" {
+	object {
+		x=195
+		y=110
+		width=20
+		height=20
+	}
+	display[0] {
+		label=" "
+	}
+	display[3] {
+		label="29idd CA1/PS"
+		name="Keithley6487small.adl"
+		args="P=29idd:,CA=ca1"
+	}
+	display[4] {
+		label="29idd CA2"
+		name="Keithley6485small.adl"
+		args="P=29idd:,CA=ca2"
+	}
+	display[5] {
+		label="29idd CA3"
+		name="Keithley6485small.adl"
+		args="P=29idd:,CA=ca3"
+	}
+	clr=14
+	bclr=51
+	label="-D"
+}
+"related display" {
+	object {
+		x=97
+		y=99
+		width=42
+		height=20
+	}
+	display[1] {
+		label="29ID-C ARPES graphic"
+		name="29idc_graphic.adl"
+		args="P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8"
+	}
+	clr=14
+	bclr=55
+	label="-ARPES"
+}
+"related display" {
+	object {
+		x=97
+		y=121
+		width=42
+		height=20
+	}
+	display[8] {
+		label="29ID-D 2C graphic"
+		name="29idd_graphic.adl"
+		args="P=29idd:,M1=m1,M2=m2,M3=m3,M4=m7,M5=m6"
+	}
+	clr=14
+	bclr=55
+	label="-RSXS"
+}
+"related display" {
+	object {
+		x=97
+		y=165
+		width=42
+		height=20
+	}
+	display[0] {
+		label="SES Area Det"
+		name="ADBase.adl"
+		args="P=29idcEA:, R=det1:"
+	}
+	display[2] {
+		label="EAV Area Det"
+		name="ADBase.adl"
+		args="P=29idcEAV:, R=cam1:"
+	}
+	display[3] {
+		label="SES Control"
+		name="electronAnalyser.adl"
+		args="P=29idcEA:, R=det1:"
+	}
+	display[15] {
+		label="SES Scans"
+		name="29idc_SESall.adl"
+		args="P=29idcEA:, R=det1:"
+	}
+	clr=14
+	bclr=55
+	label="- SES"
+}
+"message button" {
+	object {
+		x=97
+		y=6
+		width=42
+		height=20
+	}
+	control {
+		chan="29idb:allstop.VAL"
+		clr=30
+		bclr=20
+	}
+	label="STOP"
+	press_msg="1"
+}
+"related display" {
+	object {
+		x=25
+		y=121
+		width=20
+		height=20
+	}
+	display[0] {
+		label="VS8C"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS8C"
+	}
+	display[1] {
+		label="VS8CSP"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS8CSP"
+	}
+	display[2] {
+		label="VS9C"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS9C"
+	}
+	display[3] {
+		label="VS10C"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS10C"
+	}
+	display[11] {
+		label="-------"
+	}
+	display[12] {
+		label="VS11C"
+		name="VacSen.adl"
+		args="P=29idc:,GAUGE=VS11C"
+	}
+	display[13] {
+		label="VSCUBE"
+		name="VacSen.adl"
+		args="P=29idc:,GAUGE=VSCUBE"
+	}
+	clr=14
+	bclr=51
+	label="-C"
+}
+"related display" {
+	object {
+		x=45
+		y=121
+		width=20
+		height=20
+	}
+	display[0] {
+		label="VS8D"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS8D"
+	}
+	display[1] {
+		label="VS9D"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS9D"
+	}
+	display[2] {
+		label="VS10D"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS10D"
+	}
+	display[11] {
+		label="VS11D"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS11D"
+	}
+	display[12] {
+		label="VS12D"
+		name="VacSen.adl"
+		args="P=29idb:,GAUGE=VS12D"
+	}
+	clr=14
+	bclr=51
+	label="-D"
+}
+"related display" {
+	object {
+		x=157
+		y=49
+		width=20
+		height=20
+	}
+	display[0] {
+		label="29ID"
+		name="iexUser.adl"
+		args="P=ID29:"
+	}
+	display[2] {
+		label="29ID sim"
+		name="iexUser_sim.adl"
+		args="P=29id:"
+	}
+	clr=14
+	bclr=51
+}
+"related display" {
+	object {
+		x=157
+		y=71
+		width=20
+		height=20
+	}
+	display[2] {
+		label="BL Expert"
+		name="29id_BL_Expert.adl"
+	}
+	clr=14
+	bclr=40
+}
+text {
+	object {
+		x=182
+		y=8
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Beam Info"
+}
+text {
+	object {
+		x=182
+		y=52
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Undulator"
+}
+"related display" {
+	object {
+		x=157
+		y=5
+		width=20
+		height=20
+	}
+	display[0] {
+		label="24h Beam History"
+		name="beamHistory.adl"
+	}
+	display[1] {
+		label="Storage Ring Status"
+		name="/APSshare/adlsys/sr/fe/SR_Status.adl"
+	}
+	display[2] {
+		label="APS Top Up Info"
+		name="APSshare/adlsys/sr/fe/TopUp.adl"
+	}
+	display[3] {
+		label="29ID X-Ray BPM"
+		name="IDxbpm.adl"
+		args="sector=29,sectorPlusOne=30,sector0=29"
+	}
+	display[4] {
+		label="29ID X-Ray BPM - brief"
+		name="IDxbpmBrief.adl"
+		args="sector=29,sectorPlusOne=30,sector0=29"
+	}
+	display[6] {
+		label="Emittance"
+		name="SRparameters.adl"
+	}
+	display[8] {
+		label="OAG Source Parameters"
+		name="OagSourceParams.adl"
+	}
+	display[10] {
+		label="Beam Quality"
+		name="beamQualityReport.adl"
+		args="name=29ID,pv=ID29"
+	}
+	clr=14
+	bclr=51
+}
+"related display" {
+	object {
+		x=157
+		y=27
+		width=20
+		height=20
+	}
+	display[0] {
+		label="PSS"
+		name="Main_29ID.adl"
+		args="xx=29,yy=ID"
+	}
+	display[1] {
+		label="EPS-FE"
+		name="FEEPS_ID_FE.adl"
+		args="a=29,ID1=29ds,e=29us,TYPE_NAME=BEWIN,VVID=29"
+	}
+	display[2] {
+		label="EPS-A"
+		name="29ID_BLEPS.adl"
+	}
+	display[3] {
+		label="EPS-B"
+		name="29ID_BLEPS_B.adl"
+	}
+	display[4] {
+		label="EPS-C"
+		name="29ID_BLEPS_C.adl"
+	}
+	display[5] {
+		label="EPS-D"
+		name="29ID_BLEPS_D.adl"
+	}
+	clr=14
+	bclr=60
+}
+text {
+	object {
+		x=182
+		y=30
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="PSS/EPS"
+}
+text {
+	object {
+		x=182
+		y=74
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="BL Overview"
+}
+"related display" {
+	object {
+		x=155
+		y=170
+		width=20
+		height=20
+	}
+	display[0] {
+		label="LS340"
+		name="LakeShore340.adl"
+		args="P=29idc:,Q=TC1"
+	}
+	display[1] {
+		label="LS335"
+		name="LakeShore335.adl"
+		args="P=29idMiniC1:,Q=TC1"
+	}
+	clr=14
+	bclr=51
+}
+text {
+	object {
+		x=180
+		y=173
+		width=80
+		height=14
+	}
+	"basic attribute" {
+		clr=64
+	}
+	textix="Lakeshore"
+}
+"related display" {
+	object {
+		x=185
+		y=240
+		width=70
+		height=20
+	}
+	display[1] {
+		label="29ID-B StringSeqs"
+		name="BL_StrSeqs10.adl"
+		args="P=29idb:"
+	}
+	display[2] {
+		label="29ID-C StringSeqs"
+		name="BL_StrSeqs10.adl"
+		args="P=29idc:"
+	}
+	display[3] {
+		label="29ID-D StringSeqs"
+		name="BL_StrSeqs10.adl"
+		args="P=29idd:"
+	}
+	display[6] {
+		label="Current Branch"
+		name="userCalcOut.adl"
+		args="P=29id:,C=CurrentBranch"
+	}
+	clr=0
+	bclr=34
+	label="-BL Calcs"
+}
+"related display" {
+	object {
+		x=10
+		y=215
+		width=20
+		height=20
+	}
+	display[0] {
+		label=" Motors"
+		name="topMotors8.adl"
+		args="P=29ideDet:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7"
+	}
+	display[1] {
+		label="Asyn"
+		name="asynOctet.adl"
+		args="P=29ideDet:,R=asyn_mmc"
+	}
+	display[11] {
+		args=" "
+	}
+	clr=14
+	bclr=51
+}
