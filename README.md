@@ -7,7 +7,7 @@ Convert MEDM ADL files to Gestalt YAML format for modern EPICS displays.
 - Convert single files or entire directories
 - Validate and test converted files
 - Generate Qt, CSS-Phoebus, and PyDM displays
-- Command-line tools and Python API
+- Command-line tools
 
 ## Installation
 
@@ -43,21 +43,6 @@ gestalt file.yml -t qt -o file.ui
 
 # Check status
 adl2gestalt status medm_files/ gestalt_files/
-```
-
-### Python API
-
-```python
-from adl2gestalt import MedmToGestaltConverter
-from pathlib import Path
-
-# Convert single file
-converter = MedmToGestaltConverter()
-result = converter.convert_file("input.adl", "output.yml")
-
-# Batch conversion
-from adl2gestalt.gestalt_runner import create_gestalt_workflow
-result = create_gestalt_workflow(Path("input.adl"), Path("output_dir"))
 ```
 
 ## Output Format
