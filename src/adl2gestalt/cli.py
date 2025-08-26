@@ -14,6 +14,14 @@ from .scanner import (
     get_conversion_summary,
 )
 from .converter import MedmToGestaltConverter
+from .gestalt_runner import (
+    validate_gestalt_file,
+    run_gestalt_file,
+    test_gestalt_conversion,
+    batch_validate_gestalt_files,
+    create_gestalt_workflow,
+    generate_test_data_for_gestalt
+)
 
 
 # Configure logging
@@ -297,11 +305,208 @@ def convert_command(
         sys.exit(1)
 
 
+@click.command()
+@click.argument('gestalt-file', type=click.Path(exists=True, path_type=Path))
+@click.option('--verbose', '-v', is_flag=True, help='Show detailed validation information')
+def validate_command(gestalt_file: Path, verbose: bool):
+    """Validate a Gestalt YAML file."""
+    try:
+        is_valid, error_msg = validate_gestalt_file(gestalt_file)
+        
+        if is_valid:
+            click.echo(f"✅ {gestalt_file} is valid")
+            if verbose and error_msg:
+                click.echo(f"ℹ️  Note: {error_msg}")
+        else:
+            click.echo(f"❌ {gestalt_file} is invalid: {error_msg}", err=True)
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Error validating {gestalt_file}: {e}", err=True)
+        sys.exit(1)
+
+
+@click.command()
+@click.argument('gestalt-file', type=click.Path(exists=True, path_type=Path))
+@click.option('--format', '-f', type=click.Choice(['qt', 'bob', 'dm']), default='qt', 
+              help='Output format (default: qt)')
+@click.option('--output', '-o', type=click.Path(path_type=Path), help='Output file path')
+@click.option('--data', '-d', type=click.Path(exists=True, path_type=Path), 
+              help='Data file for macro substitution')
+@click.option('--verbose', '-v', is_flag=True, help='Verbose output')
+def generate_command(gestalt_file: Path, format: str, output: Optional[Path], 
+                    data: Optional[Path], verbose: bool):
+    """Generate UI file from Gestalt YAML using gestalt engine."""
+    try:
+        success, message = run_gestalt_file(gestalt_file, format, output, data)
+        
+        if success:
+            click.echo(f"✅ {message}")
+        else:
+            click.echo(f"❌ {message}", err=True)
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Error generating from {gestalt_file}: {e}", err=True)
+        sys.exit(1)
+
+
+@click.command()
+@click.argument('gestalt-file', type=click.Path(exists=True, path_type=Path))
+@click.option('--verbose', '-v', is_flag=True, help='Show detailed test results')
+@click.option('--data', '-d', type=click.Path(exists=True, path_type=Path), 
+              help='Custom test data file')
+def test_gestalt_command(gestalt_file: Path, verbose: bool, data: Optional[Path]):
+    """Test Gestalt file conversion to all supported formats."""
+    try:
+        # Load test data if provided
+        test_data = None
+        if data:
+            import yaml
+            with open(data, 'r') as f:
+                test_data = yaml.safe_load(f)
+        else:
+            test_data = generate_test_data_for_gestalt(gestalt_file)
+            
+        # Run tests
+        results = test_gestalt_conversion(gestalt_file, test_data)
+        
+        # Display results
+        click.echo(f"Testing {gestalt_file}")
+        click.echo(f"=" * 50)
+        
+        # Validation results
+        if results["validation"]["valid"]:
+            click.echo("✅ File validation: PASSED")
+        else:
+            click.echo(f"❌ File validation: FAILED - {results['validation']['error']}")
+        
+        # Conversion results
+        click.echo("\nFormat conversion tests:")
+        for fmt, result in results["conversions"].items():
+            status = "✅ PASSED" if result["success"] else "❌ FAILED"
+            click.echo(f"  {fmt:>3}: {status}")
+            
+            if verbose:
+                click.echo(f"      Message: {result['message']}")
+                if result["success"]:
+                    click.echo(f"      Output size: {result['output_size']} bytes")
+        
+        # Overall result
+        if results["overall_success"]:
+            click.echo("\n✅ Overall: PASSED")
+        else:
+            click.echo("\n❌ Overall: FAILED")
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Error testing {gestalt_file}: {e}", err=True)
+        sys.exit(1)
+
+
+@click.command()
+@click.argument('medm-folder', type=click.Path(exists=True, file_okay=False, dir_okay=True, path_type=Path))
+@click.argument('output-folder', type=click.Path(file_okay=False, dir_okay=True, path_type=Path))
+@click.option('--test/--no-test', default=True, help='Test generated Gestalt files (default: True)')
+@click.option('--force', '-f', is_flag=True, help='Overwrite existing files')
+@click.option('--recursive', '-r', is_flag=True, default=True, help='Process recursively (default: True)')
+@click.option('--verbose', '-v', is_flag=True, help='Verbose output')
+@click.option('--quiet', '-q', is_flag=True, help='Suppress non-error output')
+def workflow_command(medm_folder: Path, output_folder: Path, test: bool, force: bool, 
+                    recursive: bool, verbose: bool, quiet: bool):
+    """Complete workflow: convert MEDM files to Gestalt and test them."""
+    try:
+        # Set logging level
+        if quiet:
+            logging.getLogger().setLevel(logging.ERROR)
+        elif verbose:
+            logging.getLogger().setLevel(logging.DEBUG)
+        
+        # Create output folder
+        output_folder.mkdir(parents=True, exist_ok=True)
+        
+        # Find all MEDM files
+        medm_files = list_medm_files(medm_folder, recursive)
+        
+        if not medm_files:
+            click.echo("No MEDM files found")
+            return
+        
+        if not quiet:
+            click.echo(f"Processing {len(medm_files)} MEDM files")
+        
+        success_count = 0
+        error_count = 0
+        
+        # Process each file
+        if quiet:
+            files = medm_files
+        else:
+            files = click.progressbar(medm_files, label='Processing workflow', 
+                                    show_pos=True, show_percent=True)
+        
+        for medm_file in files:
+            try:
+                # Calculate output path
+                rel_path = medm_file.relative_to(medm_folder)
+                output_file_dir = output_folder / rel_path.parent
+                
+                # Check if output exists and force flag
+                gestalt_file = output_file_dir / f"{medm_file.stem}.yml"
+                if gestalt_file.exists() and not force:
+                    if verbose:
+                        click.echo(f"⏭️  Skipping existing: {gestalt_file}")
+                    continue
+                
+                # Run complete workflow
+                workflow_result = create_gestalt_workflow(medm_file, output_file_dir, test)
+                
+                if workflow_result["overall_success"]:
+                    success_count += 1
+                    if verbose:
+                        click.echo(f"✅ {medm_file} -> {workflow_result['conversion']['gestalt_file']}")
+                else:
+                    error_count += 1
+                    if not quiet:
+                        if workflow_result["conversion"]["success"]:
+                            # Conversion succeeded but testing failed
+                            error_msg = "Testing failed"
+                            if workflow_result["validation"].get("error"):
+                                error_msg = workflow_result["validation"]["error"]
+                        else:
+                            error_msg = workflow_result["conversion"]["message"]
+                        click.echo(f"❌ {medm_file}: {error_msg}", err=True)
+                        
+            except Exception as e:
+                error_count += 1
+                if not quiet:
+                    click.echo(f"❌ {medm_file}: {e}", err=True)
+        
+        # Summary
+        if not quiet:
+            click.echo(f"\nWorkflow Summary:")
+            click.echo(f"  ✅ Successfully processed: {success_count}")
+            if error_count > 0:
+                click.echo(f"  ❌ Failed: {error_count}")
+        
+        # Exit with error code if any workflows failed
+        if error_count > 0:
+            sys.exit(1)
+            
+    except Exception as e:
+        click.echo(f"Error in workflow: {e}", err=True)
+        sys.exit(1)
+
+
 # Add commands to main group
 main.add_command(list_medm_command, name='list-medm')
 main.add_command(list_gestalt_command, name='list-gestalt')
 main.add_command(status_command, name='status')
 main.add_command(convert_command, name='convert')
+main.add_command(validate_command, name='validate')
+main.add_command(generate_command, name='generate')
+main.add_command(test_gestalt_command, name='test-gestalt')
+main.add_command(workflow_command, name='workflow')
 
 
 if __name__ == '__main__':

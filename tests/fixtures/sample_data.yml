@@ -1,0 +1,48 @@
+# Sample test data for Gestalt files
+PREFIX: "TEST:"
+DEVICE: "DEVICE01"
+
+# Arrays for testing repeat widgets
+Inputs:
+  - "INPUT1"
+  - "INPUT2" 
+  - "INPUT3"
+
+LEDs:
+  - "LED1"
+  - "LED2"
+  - "LED3"
+  - "LED4"
+
+# Boolean conditions
+Enable_Shapes: true
+Show_Advanced: false
+
+# Colors
+Tank_Color: "#4169E1"
+Alarm_Color: "#FF0000"
+Normal_Color: "#00FF00"
+
+# Numeric values
+Channel_Count: 8
+Max_Value: 100.0
+Min_Value: 0.0
+
+# String substitutions
+System_Name: "Test System"
+Location: "Test Lab"
+
+# Common EPICS PV patterns
+Base_PV: "TEST:DEVICE:"
+Motor_PV: "TEST:MOTOR:"
+AI_PV: "TEST:AI:"
+AO_PV: "TEST:AO:"
+
+# User interface settings
+Window_Title: "Test Display"
+Update_Rate: 1.0
+
+# Macro-like substitutions commonly found in MEDM
+N: "01"
+INDEX: "1"
+NUM: "1"

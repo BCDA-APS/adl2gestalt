@@ -1,0 +1,126 @@
+# Gestalt display file for testing
+#include colors.yml
+#include widgets.yml
+
+Form: !Form
+    margins: 5x0x5x5
+    title: "{Window_Title}"
+
+# Test various widget types
+Test_Text: !Text
+    geometry: 10x10
+    text: "Sample Text Display"
+    font: -Liberation Sans - normal - 12
+    alignment: Left
+
+Monitor_Widget: !TextMonitor
+    geometry: 100x20 x 10x40
+    pv: "{Base_PV}VALUE"
+    alignment: Left
+    font: -Liberation Sans - normal - 12
+    background: "#FFFFFF"
+    foreground: "#000000"
+
+Control_Button: !MessageButton
+    geometry: 80x30 x 120x10
+    text: "Control"
+    pv: "{Base_PV}CMD"
+    value: "1"
+    background: "#E0E0E0"
+    foreground: "#000000"
+
+Entry_Field: !TextEntry
+    geometry: 120x20 x 10x80
+    pv: "{Base_PV}SETPOINT"
+    alignment: Right
+    font: -Liberation Sans - normal - 12
+
+# Test repeat widgets
+Input_List: !vrepeat
+    geometry: 0x60 x 220x10
+    repeat-over: "Inputs"
+    padding: 2
+    
+    children:
+        - !TextMonitor
+            geometry: 100x18
+            alignment: Left
+            font: -Liberation Sans - normal - 10
+            pv: "{Base_PV}{N}"
+
+LED_Display: !Grid
+    geometry: 200x100 x 10x120
+    aspect-ratio: 2.0
+    repeat-over: "LEDs"
+    padding: 5
+
+    children:
+        - !LED
+            geometry: 20x20
+            pv: "{Base_PV}LED_{N}"
+
+# Test conditional display
+Optional_Section: !Conditional
+    geometry: 200x60 x 10x240
+    condition: "Enable_Shapes"
+    
+    children:
+        - !Rectangle
+            geometry: 40x40
+            border-color: "{Alarm_Color}"
+            background: "{Normal_Color}"
+            
+        - !Ellipse
+            geometry: 40x40 x 50x0
+            border-color: "{Tank_Color}"
+            background: "transparent"
+
+# Test shell command
+Test_Command: !ShellCommand
+    text: "Execute"
+    geometry: 80x25 x 10x320
+    
+    commands: 
+        - { label: "Test Command", command: "echo 'Test executed'" }
+        - { label: "Status Check", command: "date" }
+
+# Test related display
+Navigation: !RelatedDisplay
+    background: "#C0C0C0"
+    foreground: "#000000"
+    text: "Related"
+    geometry: 80x25 x 100x320
+    
+    links:
+        - { label: "Main Panel", file: "main.yml", macros: "PREFIX={PREFIX}" }
+        - { label: "Detail View", file: "detail.yml", macros: "DEVICE={DEVICE}" }
+
+# Test slider/scale widget
+Level_Control: !Scale
+    background: "{Tank_Color}"
+    geometry: 20x100 x 250x120
+    horizontal: False
+    pv: "{Base_PV}LEVEL"
+    
+# Test menu widget  
+Mode_Select: !Menu
+    geometry: 100x25 x 10x360
+    pv: "{Base_PV}MODE"
+    background: "#FFFFFF"
+    foreground: "#000000"
+
+# Test tabbed group
+Settings_Tabs: !TabbedGroup
+    geometry: 300x200 x 50x400
+    border-color: "#808080"
+    offset: 2
+
+    children:
+        Basic: !Tab
+            - !Text { geometry: 10x10, text: "Basic Settings" }
+            - !TextEntry { geometry: 100x20 x 10x30, pv: "{Base_PV}BASIC" }
+            
+        Advanced: !Tab
+            - !Text { geometry: 10x10, text: "Advanced Settings" }
+            - !TextEntry { geometry: 100x20 x 10x30, pv: "{Base_PV}ADVANCED" }
+            - !Scale { geometry: 20x80 x 10x60, pv: "{Base_PV}GAIN", horizontal: False }

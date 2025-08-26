@@ -13,6 +13,9 @@ This project provides a Python package to convert legacy MEDM `.adl` files into 
 - **Batch Processing**: Convert single files or entire directories
 - **Status Tracking**: Identify which files need conversion or updating
 - **Modern CLI**: User-friendly command-line interface with progress bars
+- **Gestalt Integration**: Built-in validation and testing using local Gestalt package
+- **Workflow Automation**: Complete conversion and testing workflows
+- **Multiple Output Formats**: Generate Qt, CSS-Phoebus, and PyDM formats through Gestalt
 - **Extensible Architecture**: Easy to add new widget mappings
 
 ## Installation
@@ -20,9 +23,18 @@ This project provides a Python package to convert legacy MEDM `.adl` files into 
 ### From Source
 
 ```bash
-git clone https://github.com/adl2gestalt/adl2gestalt.git
+# Clone the main repository
+git clone https://github.com/BCDA-APS/adl2gestalt.git
 cd adl2gestalt
+
+# Clone the official BCDA-APS gestalt package for local integration
+git clone https://github.com/BCDA-APS/gestalt.git src/gestalt
+
+# Install the package in development mode
 pip install -e .
+
+# Verify installation by checking available commands
+adl2gestalt --help
 ```
 
 ### For Development
@@ -31,11 +43,64 @@ pip install -e .
 pip install -e ".[dev]"
 ```
 
+### For GUI Support
+
+```bash
+# Install with PyQt5 support for Gestalt GUI functionality
+pip install -e ".[gui]"
+```
+
+### Dependencies
+
+The installation includes:
+- **Core dependencies**: PyYAML, Click, lxml for ADL parsing and YAML generation
+- **Gestalt integration**: Local gestalt package (BCDA-APS) for validation and UI generation
+- **Development tools**: pytest, black, ruff, mypy for code quality
+- **GUI support** (optional): PyQt5 for Gestalt GUI functionality
+
+The gestalt package is cloned locally to ensure compatibility and enable testing of generated Gestalt files.
+
+### Installation Troubleshooting
+
+**Issue: `git clone` fails for gestalt package**
+```bash
+# Ensure you're using the correct BCDA-APS repository
+git clone https://github.com/BCDA-APS/gestalt.git src/gestalt
+```
+
+**Issue: PyQt5 installation fails**
+```bash
+# On Ubuntu/Debian
+sudo apt-get install python3-pyqt5-dev python3-pyqt5
+
+# On macOS with Homebrew
+brew install pyqt5
+
+# Or skip GUI support and use headless mode
+pip install -e . # (GUI commands will show warnings but still work)
+```
+
+**Issue: `adl2gestalt: command not found`**
+```bash
+# Ensure you're in the correct directory and using editable install
+cd adl2gestalt
+pip install -e .
+
+# Verify entry points are working
+python -m adl2gestalt --help
+```
+
 ## Usage
 
 ### Command-Line Interface
 
-The package provides several commands accessible through the `adl2gestalt` command:
+The package provides several commands accessible through the `adl2gestalt` command or individual entry points:
+
+**Two ways to run commands:**
+1. **Grouped**: `adl2gestalt <command> [args]` (e.g., `adl2gestalt convert file.adl`)
+2. **Individual**: `adl2gestalt-<command> [args]` (e.g., `adl2gestalt-convert file.adl`)
+
+All examples below show the grouped format, but individual entry points work identically.
 
 #### List MEDM Files
 
@@ -110,10 +175,82 @@ adl2gestalt convert examples/medm/ --batch -o examples/gestalt/
 adl2gestalt convert examples/medm/ --batch --force
 ```
 
+#### Validate Gestalt Files
+
+```bash
+# Validate a single Gestalt file
+adl2gestalt validate examples/gestalt/29id.yml
+# Output: ✅ examples/gestalt/29id.yml is valid
+
+# Validate with verbose output
+adl2gestalt validate examples/gestalt/29id.yml --verbose
+```
+
+#### Generate UI Files from Gestalt
+
+```bash
+# Generate Qt UI file
+adl2gestalt generate examples/gestalt/29id.yml --format qt -o 29id.ui
+
+# Generate CSS-Phoebus BOB file
+adl2gestalt generate examples/gestalt/29id.yml --format bob -o 29id.bob
+
+# Generate PyDM file
+adl2gestalt generate examples/gestalt/29id.yml --format dm -o 29id.dm
+
+# Use test data for macro substitution
+adl2gestalt generate examples/gestalt/29id.yml --data test_data.yml
+```
+
+#### Test Gestalt Files
+
+```bash
+# Test a Gestalt file with all output formats
+adl2gestalt test-gestalt examples/gestalt/29id.yml
+# Output:
+# Testing examples/gestalt/29id.yml
+# ==================================================
+# ✅ File validation: PASSED
+# 
+# Format conversion tests:
+#   qt: ✅ PASSED
+#  bob: ✅ PASSED  
+#   dm: ✅ PASSED
+#
+# ✅ Overall: PASSED
+
+# Test with verbose output and custom test data
+adl2gestalt test-gestalt examples/gestalt/29id.yml --verbose --data custom_test.yml
+```
+
+#### Complete Workflow
+
+```bash
+# Complete workflow: convert MEDM to Gestalt and test
+adl2gestalt workflow examples/medm/ examples/gestalt/
+# Output:
+# Processing 5 MEDM files
+# Processing workflow
+# Workflow Summary:
+#   ✅ Successfully processed: 5
+
+# Workflow without testing
+adl2gestalt workflow examples/medm/ examples/gestalt/ --no-test
+
+# Workflow with verbose output
+adl2gestalt workflow examples/medm/ examples/gestalt/ --verbose
+```
+
 ### Python API
 
 ```python
 from adl2gestalt import MedmToGestaltConverter, list_medm_files, get_conversion_summary
+from adl2gestalt.gestalt_runner import (
+    validate_gestalt_file,
+    run_gestalt_file,
+    test_gestalt_conversion,
+    create_gestalt_workflow
+)
 from pathlib import Path
 
 # Create converter
@@ -124,6 +261,34 @@ input_file = Path("examples/medm/29id.adl")
 output_file = Path("examples/gestalt/29id.yml")
 result_path = converter.convert_file(input_file, output_file)
 print(f"Converted: {result_path}")
+
+# Validate the converted Gestalt file
+is_valid, error_msg = validate_gestalt_file(output_file)
+if is_valid:
+    print("✅ Gestalt file is valid")
+else:
+    print(f"❌ Validation failed: {error_msg}")
+
+# Test Gestalt file conversion to different formats
+test_results = test_gestalt_conversion(output_file)
+if test_results["overall_success"]:
+    print("✅ All format conversions passed")
+    for fmt, result in test_results["conversions"].items():
+        print(f"  {fmt}: {'✅' if result['success'] else '❌'}")
+
+# Generate UI file from Gestalt
+success, message = run_gestalt_file(output_file, "qt", Path("29id.ui"))
+if success:
+    print(f"✅ Generated Qt file: {message}")
+
+# Complete workflow: convert and test
+workflow_result = create_gestalt_workflow(
+    input_file, 
+    Path("examples/gestalt"), 
+    test_conversion=True
+)
+if workflow_result["overall_success"]:
+    print("✅ Complete workflow succeeded")
 
 # List all MEDM files
 medm_files = list_medm_files(Path("examples/medm"))
@@ -138,11 +303,12 @@ print(f"Total: {summary['total_medm']}")
 print(f"Up to date: {len(summary['up_to_date'])}")
 print(f"Pending: {summary['total_pending']}")
 
-# Batch convert multiple files
+# Batch convert and test multiple files
 for medm_file in medm_files:
     gestalt_file = Path("examples/gestalt") / medm_file.with_suffix('.yml').name
-    converter.convert_file(medm_file, gestalt_file)
-    print(f"Converted: {medm_file.name}")
+    workflow_result = create_gestalt_workflow(medm_file, Path("examples/gestalt"))
+    if workflow_result["overall_success"]:
+        print(f"✅ {medm_file.name} -> {workflow_result['conversion']['gestalt_file']}")
 ```
 
 ## Widget Mapping
@@ -217,14 +383,20 @@ adl2gestalt/
 ├── pyproject.toml       # Modern Python packaging config
 ├── README.md           # Project documentation
 ├── LICENSE             # MIT license
-├── src/adl2gestalt/    # Source code
-│   ├── __init__.py     # Package initialization
-│   ├── parser.py       # ADL file parser (from MEDM)
-│   ├── converter.py    # ADL to Gestalt converter
-│   ├── scanner.py      # File discovery utilities
-│   ├── widget_mapper.py # Widget mapping definitions
-│   ├── symbols.py      # MEDM widget constants
-│   └── cli.py         # Command-line interface
+├── src/
+│   ├── adl2gestalt/    # Main package source code
+│   │   ├── __init__.py     # Package initialization
+│   │   ├── parser.py       # ADL file parser (from MEDM)
+│   │   ├── converter.py    # ADL to Gestalt converter
+│   │   ├── scanner.py      # File discovery utilities
+│   │   ├── widget_mapper.py # Widget mapping definitions
+│   │   ├── symbols.py      # MEDM widget constants
+│   │   ├── gestalt_runner.py # Gestalt integration module
+│   │   └── cli.py         # Command-line interface
+│   └── gestalt/        # Local Gestalt package (cloned)
+│       ├── gestalt.py      # Main Gestalt script
+│       ├── gestalt/        # Gestalt package modules
+│       └── layouts/        # Sample layouts and widgets
 ├── examples/
 │   ├── medm/          # Example MEDM/ADL files
 │   │   ├── 29id.adl                # Main beamline screen
@@ -238,7 +410,17 @@ adl2gestalt/
 │       ├── 29id_BL_User.yml
 │       ├── 29id_Diagnostics.yml
 │       └── IEXMachinePhysics.yml
-├── tests/             # Unit tests
+├── tests/             # Comprehensive test suite
+│   ├── conftest.py               # Test configuration and fixtures
+│   ├── test_gestalt_integration.py  # Gestalt integration tests
+│   ├── fixtures/                 # Test data and fixtures
+│   │   ├── sample_data.yml       # Sample test data for Gestalt
+│   │   ├── sample_gestalt.yml    # Sample Gestalt file
+│   │   └── sample_medm.adl       # Sample MEDM file
+│   ├── test_converter.py         # Converter unit tests
+│   ├── test_parser.py            # Parser unit tests
+│   ├── test_scanner.py           # Scanner unit tests
+│   └── test_cli.py               # CLI integration tests
 └── docs/              # Documentation
     ├── MEDM_DOC.md    # MEDM widget reference
     ├── PLAN.md        # Development plan
@@ -250,14 +432,33 @@ adl2gestalt/
 ### Running Tests
 
 ```bash
+# Run all tests
 pytest
+
+# Run only unit tests (fast)
+pytest -m "not integration"
+
+# Run integration tests (requires gestalt package)
+pytest -m integration
+
+# Run with coverage
+pytest --cov=adl2gestalt --cov-report=html
+
+# Run specific test file
+pytest tests/test_gestalt_integration.py -v
 ```
 
 ### Code Formatting
 
 ```bash
-black src/
-ruff check src/
+# Format code
+black src/ tests/
+
+# Check code style
+ruff check src/ tests/
+
+# Fix code style issues
+ruff check src/ tests/ --fix
 ```
 
 ### Type Checking
@@ -265,6 +466,33 @@ ruff check src/
 ```bash
 mypy src/
 ```
+
+### Development Workflow
+
+1. **Setup Development Environment**:
+   ```bash
+   # Clone both repositories correctly
+   git clone https://github.com/BCDA-APS/adl2gestalt.git
+   cd adl2gestalt
+   git clone https://github.com/BCDA-APS/gestalt.git src/gestalt
+   pip install -e ".[dev]"
+   ```
+
+2. **Run Tests**: `pytest`
+
+3. **Test CLI Commands**:
+   ```bash
+   # Test conversion workflow
+   adl2gestalt workflow examples/medm/ /tmp/test_output/ --verbose
+   
+   # Test individual commands
+   adl2gestalt validate examples/gestalt/29id.yml
+   adl2gestalt test-gestalt examples/gestalt/29id.yml --verbose
+   ```
+
+4. **Format and Check Code**: `black src/ && ruff check src/`
+
+5. **Type Check**: `mypy src/`
 
 ## Contributing
 

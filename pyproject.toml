@@ -30,7 +30,7 @@ classifiers = [
 dependencies = [
     "PyYAML>=6.0",
     "click>=8.0",
-    "gestalt @ git+https://github.com/BCDA-APS/gestalt.git",
+    "lxml>=4.6.0",
 ]
 
 [project.optional-dependencies]
@@ -42,10 +42,15 @@ dev = [
     "mypy>=1.0",
     "pre-commit>=3.0",
     "types-PyYAML>=6.0",
+    "pytest-mock>=3.0",
 ]
 docs = [
     "sphinx>=5.0",
     "sphinx-rtd-theme>=1.0",
+]
+gui = [
+    "PyQt5>=5.15.0",
+    "tkinter",
 ]
 
 [project.scripts]
@@ -54,6 +59,10 @@ adl2gestalt-list-medm = "adl2gestalt.cli:list_medm_command"
 adl2gestalt-list-gestalt = "adl2gestalt.cli:list_gestalt_command"
 adl2gestalt-status = "adl2gestalt.cli:status_command"
 adl2gestalt-convert = "adl2gestalt.cli:convert_command"
+adl2gestalt-validate = "adl2gestalt.cli:validate_command"
+adl2gestalt-generate = "adl2gestalt.cli:generate_command"
+adl2gestalt-test-gestalt = "adl2gestalt.cli:test_gestalt_command"
+adl2gestalt-workflow = "adl2gestalt.cli:workflow_command"
 
 [project.urls]
 Homepage = "https://github.com/adl2gestalt/adl2gestalt"
@@ -63,6 +72,10 @@ Repository = "https://github.com/adl2gestalt/adl2gestalt.git"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+"gestalt" = "src/gestalt"
 
 [tool.setuptools.package-data]
 adl2gestalt = ["py.typed"]
