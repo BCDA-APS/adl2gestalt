@@ -117,6 +117,15 @@ class MedmToGestaltConverter:
         # Build color map and aliases
         self.build_color_map(medm.color_table)
 
+        # Set display dimensions for widget filtering
+        if hasattr(medm, "geometry") and medm.geometry:
+            self.display_width = medm.geometry.width
+            self.display_height = medm.geometry.height
+        else:
+            # Default dimensions if not available
+            self.display_width = 437
+            self.display_height = 274
+
         # Start building the YAML content
         lines = []
 
@@ -273,6 +282,24 @@ class MedmToGestaltConverter:
         List[str]
             Lines of YAML for this widget
         """
+        # Skip widgets that are completely outside the display area
+        if hasattr(widget, "geometry") and widget.geometry:
+            # Get display dimensions from the converter instance
+            display_width = getattr(self, "display_width", 437)  # Default fallback
+            display_height = getattr(self, "display_height", 274)  # Default fallback
+
+            # Check if widget is completely outside the display area
+            if (
+                widget.geometry.x + widget.geometry.width < 0
+                or widget.geometry.x > display_width
+                or widget.geometry.y + widget.geometry.height < 0
+                or widget.geometry.y > display_height
+            ):
+                logger.info(
+                    f"Skipping widget outside display area: {widget.symbol} at {widget.geometry.x},{widget.geometry.y}"
+                )
+                return []
+
         widget_type = self.widget_map.get(widget.symbol)
         if widget_type is None:
             logger.warning(

@@ -87,11 +87,6 @@ polyline_1: !Polyline
     foreground: $000000
     points: [ 147x1, 147x187 ]
 
-related_display_2: !RelatedDisplay
-    geometry: -114x538x136x23
-    foreground: *medm_color_54
-    background: *medm_color_52
-
 polyline_3: !Polyline
     geometry: 284x0x2x188
     foreground: $000000

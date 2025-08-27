@@ -6,7 +6,7 @@
         <x>0</x>
         <y>0</y>
         <width>455</width>
-        <height>571</height>
+        <height>279</height>
       </rect>
     </property>
     <property name="foreground">
@@ -38,7 +38,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <x>10</x>
             <y>0</y>
             <width>435</width>
-            <height>561</height>
+            <height>269</height>
           </rect>
         </property>
         <widget class="caLabel" name="Motors_0">
@@ -132,71 +132,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>147,1;147,187</string>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame1">
-          <property name="geometry">
-            <rect>
-              <x>-114</x>
-              <y>538</y>
-              <width>136</width>
-              <height>23</height>
-            </rect>
-          </property>
-          <property name="styleSheet">
-            <string>QPushButton
-{
-    font-family: Liberation Sans;
-    font: ;
-	
-    text-align: center;
-}
-</string>
-          </property>
-          <widget class="caRelatedDisplay" name="related_display_2">
-            <property name="foreground">
-              <color alpha="255">
-                <red>10</red>
-                <green>0</green>
-                <blue>184</blue>
-              </color>
-            </property>
-            <property name="background">
-              <color alpha="255">
-                <red>78</red>
-                <green>165</green>
-                <blue>249</blue>
-              </color>
-            </property>
-            <property name="labels">
-              <string></string>
-            </property>
-            <property name="files">
-              <string></string>
-            </property>
-            <property name="args">
-              <string></string>
-            </property>
-            <property name="removeParent">
-              <string></string>
-            </property>
-            <property name="stackingMode">
-              <enum>Menu</enum>
-            </property>
-            <property name="fontScaleMode">
-              <enum>EPushButton::WidthAndHeight</enum>
-            </property>
-            <property name="label">
-              <string>-</string>
-            </property>
-            <property name="geometry">
-              <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>136</width>
-                <height>23</height>
-              </rect>
-            </property>
-          </widget>
-        </widget>
         <widget class="caPolyLine" name="polyline_3">
           <property name="foreground">
             <color alpha="255">
@@ -275,7 +210,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>2,196;432,196</string>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame2">
+        <widget class="QFrame" name="QFrame1">
           <property name="geometry">
             <rect>
               <x>5</x>
@@ -340,7 +275,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame3">
+        <widget class="QFrame" name="QFrame2">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -587,7 +522,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>286,98;147,98</string>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame4">
+        <widget class="QFrame" name="QFrame3">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -652,7 +587,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame5">
+        <widget class="QFrame" name="QFrame4">
           <property name="geometry">
             <rect>
               <x>5</x>
@@ -769,7 +704,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame6">
+        <widget class="QFrame" name="QFrame5">
           <property name="geometry">
             <rect>
               <x>5</x>
@@ -886,7 +821,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame7">
+        <widget class="QFrame" name="QFrame6">
           <property name="geometry">
             <rect>
               <x>25</x>
@@ -951,7 +886,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame8">
+        <widget class="QFrame" name="QFrame7">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -1068,7 +1003,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame9">
+        <widget class="QFrame" name="QFrame8">
           <property name="geometry">
             <rect>
               <x>334</x>
@@ -1133,7 +1068,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame10">
+        <widget class="QFrame" name="QFrame9">
           <property name="geometry">
             <rect>
               <x>5</x>
@@ -1250,7 +1185,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame11">
+        <widget class="QFrame" name="QFrame10">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -1367,7 +1302,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame12">
+        <widget class="QFrame" name="QFrame11">
           <property name="geometry">
             <rect>
               <x>314</x>
@@ -1432,7 +1367,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame13">
+        <widget class="QFrame" name="QFrame12">
           <property name="geometry">
             <rect>
               <x>395</x>
@@ -1497,7 +1432,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame14">
+        <widget class="QFrame" name="QFrame13">
           <property name="geometry">
             <rect>
               <x>395</x>
@@ -1950,7 +1885,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caLineEdit::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame15">
+        <widget class="QFrame" name="QFrame14">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -2015,7 +1950,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame16">
+        <widget class="QFrame" name="QFrame15">
           <property name="geometry">
             <rect>
               <x>360</x>
@@ -2074,7 +2009,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame17">
+        <widget class="QFrame" name="QFrame16">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -2133,7 +2068,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame18">
+        <widget class="QFrame" name="QFrame17">
           <property name="geometry">
             <rect>
               <x>368</x>
@@ -2198,7 +2133,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame19">
+        <widget class="QFrame" name="QFrame18">
           <property name="geometry">
             <rect>
               <x>294</x>
@@ -2263,7 +2198,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame20">
+        <widget class="QFrame" name="QFrame19">
           <property name="geometry">
             <rect>
               <x>410</x>
@@ -2328,7 +2263,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame21">
+        <widget class="QFrame" name="QFrame20">
           <property name="geometry">
             <rect>
               <x>368</x>
@@ -2393,7 +2328,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame22">
+        <widget class="QFrame" name="QFrame21">
           <property name="geometry">
             <rect>
               <x>400</x>
@@ -2826,7 +2761,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame23">
+        <widget class="QFrame" name="QFrame22">
           <property name="geometry">
             <rect>
               <x>5</x>
@@ -2943,7 +2878,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame24">
+        <widget class="QFrame" name="QFrame23">
           <property name="geometry">
             <rect>
               <x>45</x>
@@ -3112,7 +3047,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame25">
+        <widget class="QFrame" name="QFrame24">
           <property name="geometry">
             <rect>
               <x>155</x>
@@ -3229,7 +3164,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame26">
+        <widget class="QFrame" name="QFrame25">
           <property name="geometry">
             <rect>
               <x>155</x>
@@ -3346,7 +3281,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame27">
+        <widget class="QFrame" name="QFrame26">
           <property name="geometry">
             <rect>
               <x>155</x>
@@ -3463,7 +3398,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame28">
+        <widget class="QFrame" name="QFrame27">
           <property name="geometry">
             <rect>
               <x>175</x>
@@ -3528,7 +3463,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame29">
+        <widget class="QFrame" name="QFrame28">
           <property name="geometry">
             <rect>
               <x>195</x>
@@ -3593,7 +3528,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame30">
+        <widget class="QFrame" name="QFrame29">
           <property name="geometry">
             <rect>
               <x>97</x>
@@ -3658,7 +3593,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame31">
+        <widget class="QFrame" name="QFrame30">
           <property name="geometry">
             <rect>
               <x>97</x>
@@ -3723,7 +3658,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame32">
+        <widget class="QFrame" name="QFrame31">
           <property name="geometry">
             <rect>
               <x>97</x>
@@ -3788,7 +3723,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame33">
+        <widget class="QFrame" name="QFrame32">
           <property name="geometry">
             <rect>
               <x>97</x>
@@ -3850,7 +3785,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame34">
+        <widget class="QFrame" name="QFrame33">
           <property name="geometry">
             <rect>
               <x>25</x>
@@ -3915,7 +3850,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame35">
+        <widget class="QFrame" name="QFrame34">
           <property name="geometry">
             <rect>
               <x>45</x>
@@ -3980,7 +3915,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame36">
+        <widget class="QFrame" name="QFrame35">
           <property name="geometry">
             <rect>
               <x>157</x>
@@ -4045,7 +3980,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame37">
+        <widget class="QFrame" name="QFrame36">
           <property name="geometry">
             <rect>
               <x>157</x>
@@ -4214,7 +4149,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame38">
+        <widget class="QFrame" name="QFrame37">
           <property name="geometry">
             <rect>
               <x>157</x>
@@ -4279,7 +4214,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame39">
+        <widget class="QFrame" name="QFrame38">
           <property name="geometry">
             <rect>
               <x>157</x>
@@ -4448,7 +4383,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame40">
+        <widget class="QFrame" name="QFrame39">
           <property name="geometry">
             <rect>
               <x>155</x>
@@ -4565,7 +4500,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="QFrame" name="QFrame41">
+        <widget class="QFrame" name="QFrame40">
           <property name="geometry">
             <rect>
               <x>185</x>
@@ -4630,7 +4565,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="QFrame" name="QFrame42">
+        <widget class="QFrame" name="QFrame41">
           <property name="geometry">
             <rect>
               <x>10</x>
