@@ -1,0 +1,700 @@
+# Gestalt display file generated from MEDM ADL
+# Source: 29id_Diagnostics.adl
+# Generator: adl2gestalt
+
+#include colors.yml
+#include widgets.yml
+
+# Custom colors from MEDM color table
+_medm_color_1: &medm_color_1 $ececec
+_medm_color_2: &medm_color_2 $dadada
+_medm_color_3: &medm_color_3 $c8c8c8
+_medm_color_4: &medm_color_4 $bbbbbb
+_medm_color_5: &medm_color_5 $aeaeae
+_medm_color_6: &medm_color_6 $9e9e9e
+_medm_color_7: &medm_color_7 $919191
+_medm_color_8: &medm_color_8 $858585
+_medm_color_9: &medm_color_9 $787878
+_medm_color_10: &medm_color_10 $696969
+_medm_color_11: &medm_color_11 $5a5a5a
+_medm_color_12: &medm_color_12 $464646
+_medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_15: &medm_color_15 $00d800
+_medm_color_16: &medm_color_16 $1ebb00
+_medm_color_17: &medm_color_17 $339900
+_medm_color_18: &medm_color_18 $2d7f00
+_medm_color_19: &medm_color_19 $216c00
+_medm_color_20: &medm_color_20 $fd0000
+_medm_color_21: &medm_color_21 $de1309
+_medm_color_22: &medm_color_22 $be190b
+_medm_color_23: &medm_color_23 $a01207
+_medm_color_24: &medm_color_24 $820400
+_medm_color_25: &medm_color_25 $5893ff
+_medm_color_26: &medm_color_26 $597ee1
+_medm_color_27: &medm_color_27 $4b6ec7
+_medm_color_28: &medm_color_28 $3a5eab
+_medm_color_29: &medm_color_29 $27548d
+_medm_color_30: &medm_color_30 $fbf34a
+_medm_color_31: &medm_color_31 $f9da3c
+_medm_color_32: &medm_color_32 $eeb62b
+_medm_color_33: &medm_color_33 $e19015
+_medm_color_34: &medm_color_34 $cd6100
+_medm_color_35: &medm_color_35 $ffb0ff
+_medm_color_36: &medm_color_36 $d67fe2
+_medm_color_37: &medm_color_37 $ae4ebc
+_medm_color_38: &medm_color_38 $8b1a96
+_medm_color_39: &medm_color_39 $610a75
+_medm_color_40: &medm_color_40 $a4aaff
+_medm_color_41: &medm_color_41 $8793e2
+_medm_color_42: &medm_color_42 $6a73c1
+_medm_color_43: &medm_color_43 $4d52a4
+_medm_color_44: &medm_color_44 $343386
+_medm_color_45: &medm_color_45 $c7bb6d
+_medm_color_46: &medm_color_46 $b79d5c
+_medm_color_47: &medm_color_47 $a47e3c
+_medm_color_48: &medm_color_48 $7d5627
+_medm_color_49: &medm_color_49 $58340f
+_medm_color_50: &medm_color_50 $99ffff
+_medm_color_51: &medm_color_51 $73dfff
+_medm_color_52: &medm_color_52 $4ea5f9
+_medm_color_53: &medm_color_53 $2a63e4
+_medm_color_54: &medm_color_54 $0a00b8
+_medm_color_55: &medm_color_55 $ebf1b5
+_medm_color_56: &medm_color_56 $d4db9d
+_medm_color_57: &medm_color_57 $bbc187
+_medm_color_58: &medm_color_58 $a6a462
+_medm_color_59: &medm_color_59 $8b8239
+_medm_color_60: &medm_color_60 $73ff6b
+_medm_color_61: &medm_color_61 $52da3b
+_medm_color_62: &medm_color_62 $3cb420
+_medm_color_63: &medm_color_63 $289315
+_medm_color_64: &medm_color_64 $1a7309
+
+29id_Diagnostics: !Form
+    geometry: 308x727 x 3121x51
+    foreground: *black
+    background: *medm_color_3
+
+Diagnostics_Position_0: !Text
+    geometry: 295x20 x 5x5
+    foreground: *black
+    text: "Diagnostics Positions"
+
+text_update_1: !TextMonitor
+    geometry: 80x16 x 188x58
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m1.RBV"
+    alignment: Center
+
+OUT_2: !MessageButton
+    geometry: 35x15 x 28x80
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m1.VAL"
+    text: "OUT"
+    press-value: "-4"
+
+START_3: !MessageButton
+    geometry: 35x15 x 68x80
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m1.VAL"
+    text: "START"
+    press-value: "-14"
+
+-H-wire_4: !RelatedDisplay
+    geometry: 130x20 x 8x56
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "-H-wire", file: "motorx.adl", macros: "P=29idb:,M=m1" }
+
+text_update_5: !TextMonitor
+    geometry: 80x16 x 188x106
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m2.RBV"
+    alignment: Center
+
+OUT_6: !MessageButton
+    geometry: 35x15 x 28x128
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m2.VAL"
+    text: "OUT"
+    press-value: "-10"
+
+START_7: !MessageButton
+    geometry: 35x15 x 68x128
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m2.VAL"
+    text: "START"
+    press-value: "-20"
+
+-V-wire_8: !RelatedDisplay
+    geometry: 130x20 x 8x104
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "-V-wire", file: "motorx.adl", macros: "P=29idb:,M=m2" }
+
+Ld_9: !MessageButton
+    geometry: 21x20 x 278x56
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m1:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+Ld_10: !MessageButton
+    geometry: 21x20 x 278x104
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m2:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+text_update_11: !TextMonitor
+    geometry: 80x16 x 188x174
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m3.RBV"
+    alignment: Center
+
+OUT_12: !MessageButton
+    geometry: 35x15 x 28x196
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m3.VAL"
+    text: "OUT"
+    press-value: "-4"
+
+Si-2800_13: !MessageButton
+    geometry: 50x15 x 68x196
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m3.VAL"
+    text: "Si-2800"
+    press-value: "-14"
+
+-H-Diagon_14: !RelatedDisplay
+    geometry: 130x20 x 8x172
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "-DiaGon-H", file: "motorx.adl", macros: "P=29idb:,M=m3" }
+
+text_update_15: !TextMonitor
+    geometry: 80x16 x 188x223
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m4.RBV"
+    alignment: Center
+
+-V-Diagon_16: !RelatedDisplay
+    geometry: 130x20 x 8x221
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "-DiaGon-V", file: "motorx.adl", macros: "P=29idb:,M=m4" }
+
+Ld_17: !MessageButton
+    geometry: 21x20 x 278x172
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m3:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+Ld_18: !MessageButton
+    geometry: 21x20 x 278x221
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m4:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+ML-400_19: !MessageButton
+    geometry: 50x15 x 123x196
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m3.VAL"
+    text: "ML-400"
+    press-value: "-22"
+
+ML-460_20: !MessageButton
+    geometry: 50x15 x 179x196
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m3.VAL"
+    text: "ML-460"
+    press-value: "-30"
+
+OUT_21: !MessageButton
+    geometry: 35x15 x 28x245
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m4.VAL"
+    text: "OUT"
+    press-value: "-4"
+
+Si-2800_22: !MessageButton
+    geometry: 50x15 x 68x245
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m4.VAL"
+    text: "Si-2800"
+    press-value: "-14"
+
+ML-400_23: !MessageButton
+    geometry: 50x15 x 123x245
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m4.VAL"
+    text: "ML-400"
+    press-value: "-22"
+
+ML-460_24: !MessageButton
+    geometry: 50x15 x 179x245
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m4.VAL"
+    text: "ML-460"
+    press-value: "-30"
+
+text_update_25: !TextMonitor
+    geometry: 80x16 x 188x290
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m5.RBV"
+    alignment: Center
+
+-D1A_(W-mesh)_26: !RelatedDisplay
+    geometry: 130x20 x 8x288
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "-D1A", file: "motorx.adl", macros: "P=29idb:,M=m5" }
+
+Ld_27: !MessageButton
+    geometry: 21x20 x 278x288
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m5:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+OUT_28: !MessageButton
+    geometry: 35x15 x 28x312
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m5.VAL"
+    text: "OUT"
+    press-value: "-20"
+
+MESH_29: !MessageButton
+    geometry: 35x15 x 68x312
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m5.VAL"
+    text: "MESH"
+    press-value: "-55"
+
+text_update_30: !TextMonitor
+    geometry: 80x16 x 188x370
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m6.RBV"
+    alignment: Center
+
+-D2B_(post-Mono)_31: !RelatedDisplay
+    geometry: 130x20 x 8x368
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "-D2B", file: "motorx.adl", macros: "P=29idb:,M=m6" }
+
+Ld_32: !MessageButton
+    geometry: 21x20 x 278x368
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m6:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+OUT_33: !MessageButton
+    geometry: 35x15 x 28x392
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m6.VAL"
+    text: "OUT"
+    press-value: "-20"
+
+MESH_34: !MessageButton
+    geometry: 35x15 x 68x392
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m6.VAL"
+    text: "MESH"
+    press-value: "-46"
+
+YAG_35: !MessageButton
+    geometry: 35x15 x 108x392
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m6.VAL"
+    text: "YAG"
+    press-value: "-64"
+
+OUT_36: !MessageButton
+    geometry: 35x15 x 28x445
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m7.VAL"
+    text: "OUT"
+    press-value: "-20"
+
+YAG_37: !MessageButton
+    geometry: 35x15 x 68x445
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m7.VAL"
+    text: "YAG"
+    press-value: "-49"
+
+Ld_38: !MessageButton
+    geometry: 21x20 x 278x420
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m7:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+text_update_39: !TextMonitor
+    geometry: 80x16 x 188x422
+    foreground: *black
+    background: *medm_color_55
+    pv: "29idb:m7.RBV"
+    alignment: Center
+
+-D3B_(post-M3R)_40: !RelatedDisplay
+    geometry: 130x20 x 8x420
+    foreground: *black
+    background: *medm_color_50
+    links:
+        - { label: "D3B ", file: "motorx.adl", macros: "P=29idb:,M=m7" }
+
+--------------------_41: !Text
+    geometry: 301x10 x 10x151
+    foreground: *black
+    text: "-----------------------------------------------"
+
+--------------------_42: !Text
+    geometry: 301x10 x 10x267
+    foreground: *black
+    text: "-----------------------------------------------"
+
+composite_43: !Group
+    geometry: 348x12 x 5x37
+    children:
+        A-Hutch_------------_0: !Text
+            geometry: 300x12 x 5x37
+            foreground: *black
+            text: "A-Hutch ------------------------------------------"
+        --------------------_1: !Text
+            geometry: 300x10 x 53x39
+            foreground: *black
+            text: "------------------------------------------"
+
+composite_44: !Group
+    geometry: 354x12 x 5x347
+    children:
+        B-Branch_-----------_0: !Text
+            geometry: 300x12 x 5x347
+            foreground: *black
+            text: "B-Branch ------------------------------------------"
+        --------------------_1: !Text
+            geometry: 300x10 x 59x349
+            foreground: *black
+            text: "------------------------------------------"
+
+composite_45: !Group
+    geometry: 354x12 x 5x480
+    children:
+        C-Branch_-----------_0: !Text
+            geometry: 300x12 x 5x480
+            foreground: *black
+            text: "C-Branch -----------------------------------------"
+        --------------------_1: !Text
+            geometry: 300x10 x 59x482
+            foreground: *black
+            text: "-----------------------------------------"
+
+composite_46: !Group
+    geometry: 354x12 x 5x609
+    children:
+        D-Branch_-----------_0: !Text
+            geometry: 300x12 x 5x609
+            foreground: *black
+            text: "D-Branch -----------------------------------------"
+        --------------------_1: !Text
+            geometry: 300x10 x 59x611
+            foreground: *black
+            text: "-----------------------------------------"
+
+YAG_47: !MessageButton
+    geometry: 35x15 x 108x524
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m17.VAL"
+    text: "YAG"
+    press-value: "-81.5"
+
+MESH_48: !MessageButton
+    geometry: 35x15 x 68x524
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m17.VAL"
+    text: "MESH"
+    press-value: "-56"
+
+OUT_49: !MessageButton
+    geometry: 35x15 x 28x524
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m17.VAL"
+    text: "OUT"
+    press-value: "-20"
+
+-D4C_(pre-Slit)_50: !RelatedDisplay
+    geometry: 130x20 x 8x500
+    foreground: *medm_color_54
+    background: *medm_color_50
+    links:
+        - { label: "D4C", file: "motorx.adl", macros: "P=29idb:,M=m17" }
+
+text_update_51: !TextMonitor
+    geometry: 80x16 x 186x502
+    foreground: *medm_color_54
+    background: *medm_color_55
+    pv: "29idb:m17.RBV"
+    alignment: Center
+
+Ld_52: !MessageButton
+    geometry: 21x20 x 278x500
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m17:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+text_update_53: !TextMonitor
+    geometry: 80x16 x 188x555
+    foreground: *medm_color_54
+    background: *medm_color_55
+    pv: "29idb:m20.RBV"
+    alignment: Center
+
+Diode2_54: !MessageButton
+    geometry: 50x15 x 123x577
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m20.VAL"
+    text: "Diode2"
+    press-value: "-67.74"
+
+Diode-1_55: !MessageButton
+    geometry: 50x15 x 68x577
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m20.VAL"
+    text: "Diode-1"
+    press-value: "-31"
+
+OUT_56: !MessageButton
+    geometry: 35x15 x 28x577
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m20.VAL"
+    text: "OUT"
+    press-value: "-10"
+
+Ld_57: !MessageButton
+    geometry: 21x20 x 278x553
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m20:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+-gas-cell_58: !RelatedDisplay
+    geometry: 130x20 x 8x553
+    foreground: *medm_color_54
+    background: *medm_color_50
+    links:
+        - { label: "gas-cell", file: "motorx.adl", macros: "P=29idb:,M=m20" }
+
+-D4D_(pre-Slit)_59: !RelatedDisplay
+    geometry: 130x20 x 8x631
+    foreground: *medm_color_19
+    background: *medm_color_50
+    links:
+        - { label: "D4D (pre-Slit)", file: "motorx.adl", macros: "P=29idb:,M=m25" }
+
+OUT_60: !MessageButton
+    geometry: 35x15 x 28x655
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m25.VAL"
+    text: "OUT"
+    press-value: "-20"
+
+MESH_61: !MessageButton
+    geometry: 35x15 x 68x655
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m25.VAL"
+    text: "MESH"
+    press-value: "-53"
+
+YAG_62: !MessageButton
+    geometry: 35x15 x 108x655
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m25.VAL"
+    text: "YAG"
+    press-value: "-72"
+
+text_update_63: !TextMonitor
+    geometry: 80x16 x 188x633
+    foreground: *medm_color_19
+    background: *medm_color_55
+    pv: "29idb:m25.RBV"
+    alignment: Center
+
+Ld_64: !MessageButton
+    geometry: 21x20 x 278x631
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m25:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+Ld_65: !MessageButton
+    geometry: 21x20 x 278x684
+    foreground: *black
+    background: *medm_color_50
+    pv: "29idb:m28:scanParms.LOAD"
+    text: "Ld"
+    press-value: "1"
+
+text_update_66: !TextMonitor
+    geometry: 80x16 x 188x686
+    foreground: *medm_color_19
+    background: *medm_color_55
+    pv: "29idb:m28.RBV"
+    alignment: Center
+
+-D5D_(pre-RSXS)_67: !RelatedDisplay
+    geometry: 130x20 x 8x684
+    foreground: *medm_color_19
+    background: *medm_color_50
+    links:
+        - { label: "-D5D (pre RSXS)", file: "motorx.adl", macros: "P=29idb:,M=m28" }
+
+OUT_68: !MessageButton
+    geometry: 35x15 x 28x708
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:m28.VAL"
+    text: "OUT"
+    press-value: "-20"
+
+MESH_69: !MessageButton
+    geometry: 35x15 x 68x708
+    foreground: *black
+    background: *medm_color_32
+    pv: "29idb:m28.VAL"
+    text: "MESH"
+    press-value: "-53"
+
+YAG_70: !MessageButton
+    geometry: 35x15 x 108x708
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m28.VAL"
+    text: "YAG"
+    press-value: "-72"
+
+Diode_71: !MessageButton
+    geometry: 35x15 x 148x708
+    foreground: *black
+    background: *medm_color_20
+    pv: "29idb:m28.VAL"
+    text: "Diode"
+    press-value: "-86.75"
+
+ALL_OUT_72: !MessageButton
+    geometry: 70x25 x 226x6
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:userStringSeq3.PROC"
+    text: "ALL OUT"
+    press-value: "1"
+
+m1_73: !Text
+    geometry: 30x16 x 150x58
+    foreground: *black
+    text: "m1:"
+
+m2_74: !Text
+    geometry: 30x16 x 150x106
+    foreground: *black
+    text: "m2:"
+
+m3_75: !Text
+    geometry: 30x16 x 150x174
+    foreground: *black
+    text: "m3:"
+
+m4_76: !Text
+    geometry: 30x16 x 150x223
+    foreground: *black
+    text: "m4:"
+
+m5_77: !Text
+    geometry: 30x16 x 150x290
+    foreground: *black
+    text: "m5:"
+
+m6_78: !Text
+    geometry: 30x16 x 150x370
+    foreground: *black
+    text: "m6:"
+
+m7_79: !Text
+    geometry: 30x16 x 150x422
+    foreground: *black
+    text: "m7:"
+
+m17_80: !Text
+    geometry: 30x16 x 150x502
+    foreground: *black
+    text: "m17:"
+
+m20_81: !Text
+    geometry: 30x16 x 150x555
+    foreground: *black
+    text: "m20:"
+
+m25_82: !Text
+    geometry: 30x16 x 150x633
+    foreground: *black
+    text: "m25:"
+
+m28_83: !Text
+    geometry: 30x16 x 150x686
+    foreground: *black
+    text: "m28:"

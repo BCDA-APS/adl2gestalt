@@ -1,0 +1,1258 @@
+# Gestalt display file generated from MEDM ADL
+# Source: 29id_BL_User.adl
+# Generator: adl2gestalt
+
+#include colors.yml
+#include widgets.yml
+
+# Custom colors from MEDM color table
+_medm_color_1: &medm_color_1 $ececec
+_medm_color_2: &medm_color_2 $dadada
+_medm_color_3: &medm_color_3 $c8c8c8
+_medm_color_4: &medm_color_4 $bbbbbb
+_medm_color_5: &medm_color_5 $aeaeae
+_medm_color_6: &medm_color_6 $9e9e9e
+_medm_color_7: &medm_color_7 $919191
+_medm_color_8: &medm_color_8 $858585
+_medm_color_9: &medm_color_9 $787878
+_medm_color_10: &medm_color_10 $696969
+_medm_color_11: &medm_color_11 $5a5a5a
+_medm_color_12: &medm_color_12 $464646
+_medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_15: &medm_color_15 $00d800
+_medm_color_16: &medm_color_16 $1ebb00
+_medm_color_17: &medm_color_17 $339900
+_medm_color_18: &medm_color_18 $2d7f00
+_medm_color_19: &medm_color_19 $216c00
+_medm_color_20: &medm_color_20 $fd0000
+_medm_color_21: &medm_color_21 $de1309
+_medm_color_22: &medm_color_22 $be190b
+_medm_color_23: &medm_color_23 $a01207
+_medm_color_24: &medm_color_24 $820400
+_medm_color_25: &medm_color_25 $5893ff
+_medm_color_26: &medm_color_26 $597ee1
+_medm_color_27: &medm_color_27 $4b6ec7
+_medm_color_28: &medm_color_28 $3a5eab
+_medm_color_29: &medm_color_29 $27548d
+_medm_color_30: &medm_color_30 $fbf34a
+_medm_color_31: &medm_color_31 $f9da3c
+_medm_color_32: &medm_color_32 $eeb62b
+_medm_color_33: &medm_color_33 $e19015
+_medm_color_34: &medm_color_34 $cd6100
+_medm_color_35: &medm_color_35 $ffb0ff
+_medm_color_36: &medm_color_36 $d67fe2
+_medm_color_37: &medm_color_37 $ae4ebc
+_medm_color_38: &medm_color_38 $8b1a96
+_medm_color_39: &medm_color_39 $610a75
+_medm_color_40: &medm_color_40 $a4aaff
+_medm_color_41: &medm_color_41 $8793e2
+_medm_color_42: &medm_color_42 $6a73c1
+_medm_color_43: &medm_color_43 $4d52a4
+_medm_color_44: &medm_color_44 $343386
+_medm_color_45: &medm_color_45 $c7bb6d
+_medm_color_46: &medm_color_46 $b79d5c
+_medm_color_47: &medm_color_47 $a47e3c
+_medm_color_48: &medm_color_48 $7d5627
+_medm_color_49: &medm_color_49 $58340f
+_medm_color_50: &medm_color_50 $99ffff
+_medm_color_51: &medm_color_51 $73dfff
+_medm_color_52: &medm_color_52 $4ea5f9
+_medm_color_53: &medm_color_53 $2a63e4
+_medm_color_54: &medm_color_54 $0a00b8
+_medm_color_55: &medm_color_55 $ebf1b5
+_medm_color_56: &medm_color_56 $d4db9d
+_medm_color_57: &medm_color_57 $bbc187
+_medm_color_58: &medm_color_58 $a6a462
+_medm_color_59: &medm_color_59 $8b8239
+_medm_color_60: &medm_color_60 $73ff6b
+_medm_color_61: &medm_color_61 $52da3b
+_medm_color_62: &medm_color_62 $3cb420
+_medm_color_63: &medm_color_63 $289315
+_medm_color_64: &medm_color_64 $1a7309
+
+29id_BL_User: !Form
+    geometry: 701x563 x 272x335
+    foreground: *medm_color_3
+    background: *medm_color_3
+
+text_update_0: !TextMonitor
+    geometry: 125x14 x 207x18
+    foreground: *black
+    background: *medm_color_2
+    pv: "S:IOC:timeOfDayForm2SI"
+    alignment: Center
+
+polyline_1: !Polyline
+    geometry: 2x201 x 254x57
+    foreground: *medm_color_9
+    points: [ 255x58, 255x257 ]
+
+29ID_status__2: !Text
+    geometry: 230x40 x 5x5
+    foreground: *medm_color_13
+    text: "29ID status: "
+
+eV_3: !Text
+    geometry: 20x20 x 184x223
+    foreground: *black
+    text: "eV"
+
+-_ID__4: !RelatedDisplay
+    geometry: 60x25 x 10x218
+    foreground: *black
+    background: *medm_color_55
+    links:
+        - { label: "29ID", file: "iexUser.adl", macros: "P=ID29:" }
+
+oval_5: !Ellipse
+    geometry: 15x15 x 216x226
+    foreground: *medm_color_60
+
+oval_6: !Ellipse
+    geometry: 15x15 x 216x226
+    foreground: *medm_color_32
+
+oval_7: !Ellipse
+    geometry: 15x15 x 216x226
+    foreground: *black
+
+text_update_8: !TextMonitor
+    geometry: 100x20 x 79x196
+    foreground: *medm_color_54
+    background: *medm_color_2
+    pv: "ID29:EnergyRBV"
+    alignment: Center
+
+oval_9: !Ellipse
+    geometry: 15x15 x 216x129
+    foreground: *medm_color_60
+
+text_update_10: !TextMonitor
+    geometry: 100x20 x 79x100
+    foreground: *medm_color_54
+    background: *medm_color_2
+    pv: "29idmono:ENERGY_MON"
+    alignment: Center
+
+eV_11: !Text
+    geometry: 20x20 x 184x127
+    foreground: *black
+    text: "eV"
+
+text_entry_12: !TextEntry
+    geometry: 100x25 x 79x125
+    foreground: *medm_color_54
+    background: *medm_color_40
+    pv: "29idmono:ENERGY_SP"
+
+-Mono_13: !ShellCommand
+    geometry: 60x25 x 10x125
+    foreground: *black
+    background: *medm_color_55
+    commands:
+
+oval_14: !Ellipse
+    geometry: 15x15 x 216x129
+    foreground: *medm_color_32
+
+composite_15: !Group
+    geometry: 100x20 x 78x155
+    children:
+        -_0: !MessageButton
+            geometry: 20x20 x 78x155
+            foreground: *black
+            background: *medm_color_51
+            pv: "29id:MonoEnergyTweakDec.PROC"
+            text: "-"
+            press-value: "1"
+        text_entry_1: !TextEntry
+            geometry: 60x20 x 98x155
+            foreground: *black
+            background: *medm_color_51
+            pv: "29id:MonoEnergyTweakValue"
+        +_2: !MessageButton
+            geometry: 20x20 x 158x155
+            foreground: *black
+            background: *medm_color_51
+            pv: "29id:MonoEnergyTweakInc.PROC"
+            text: "+"
+            press-value: "1"
+
+STOP_16: !MessageButton
+    geometry: 40x20 x 20x155
+    foreground: *white
+    background: *medm_color_20
+    pv: "29idmono:STOP_CMD.PROC"
+    text: "STOP"
+    press-value: "1"
+
+polyline_17: !Polyline
+    geometry: 2x201 x 538x57
+    foreground: *medm_color_9
+    points: [ 539x58, 539x257 ]
+
+text_update_18: !TextMonitor
+    geometry: 100x20 x 78x223
+    foreground: *medm_color_54
+    background: *medm_color_40
+    pv: "ID29:EnergyScanSeteV"
+    alignment: Center
+
+image_19: !Image
+    geometry: 2x2 x 550x272
+
+rectangle_20: !Rectangle
+    geometry: 439x5 x 40x467
+    foreground: *medm_color_55
+
+rectangle_21: !Rectangle
+    geometry: 44x20 x 229x459
+    foreground: *black
+
+rectangle_22: !Rectangle
+    geometry: 230x5 x 40x321
+    foreground: *medm_color_55
+
+rectangle_23: !Rectangle
+    geometry: 77x5 x 40x321
+    foreground: *medm_color_60
+
+rectangle_24: !Rectangle
+    geometry: 77x5 x 40x467
+    foreground: *medm_color_60
+
+oval_25: !Ellipse
+    geometry: 65x65 x 7x290
+    foreground: *medm_color_54
+
+rectangle_26: !Rectangle
+    geometry: 112x5 x 117x321
+    foreground: *medm_color_60
+
+text_update_27: !TextMonitor
+    geometry: 65x15 x 8x369
+    foreground: *black
+    background: *medm_color_1
+    pv: "29idb:VS11D.VAL"
+    format: exponential
+
+VS11D_28: !Text
+    geometry: 40x10 x 20x390
+    foreground: *black
+    text: "VS11D"
+
+RSXS_29: !Text
+    geometry: 40x13 x 19x305
+    foreground: *black
+    text: "RSXS"
+
+rectangle_30: !Rectangle
+    geometry: 7x15 x 175x306
+    foreground: *black
+
+rectangle_31: !Rectangle
+    geometry: 7x15 x 175x326
+    foreground: *black
+
+3D_32: !Text
+    geometry: 20x15 x 168x289
+    foreground: *black
+    text: "3D"
+
+text_update_33: !TextMonitor
+    geometry: 65x15 x 146x369
+    foreground: *black
+    background: *medm_color_1
+    pv: "29idb:VS10D.VAL"
+    format: exponential
+
+VS10D_34: !Text
+    geometry: 40x10 x 158x390
+    foreground: *black
+    text: "VS10D"
+
+oval_35: !Ellipse
+    geometry: 65x65 x 7x436
+    foreground: *medm_color_54
+
+rectangle_36: !Rectangle
+    geometry: 112x5 x 117x467
+    foreground: *medm_color_60
+
+rectangle_37: !Rectangle
+    geometry: 138x5 x 273x467
+    foreground: *medm_color_60
+
+text_update_38: !TextMonitor
+    geometry: 65x15 x 8x515
+    foreground: *black
+    background: *medm_color_1
+    pv: "29idc:VS11C.VAL"
+    format: exponential
+
+VS11C_39: !Text
+    geometry: 40x10 x 20x536
+    foreground: *black
+    text: "VS11C"
+
+ARPES_40: !Text
+    geometry: 40x13 x 21x450
+    foreground: *black
+    text: "ARPES"
+
+rectangle_41: !Rectangle
+    geometry: 25x40 x 480x449
+    foreground: *black
+
+rectangle_42: !Rectangle
+    geometry: 7x15 x 175x452
+    foreground: *black
+
+rectangle_43: !Rectangle
+    geometry: 7x15 x 175x472
+    foreground: *black
+
+3C_44: !Text
+    geometry: 20x15 x 168x435
+    foreground: *black
+    text: "3C"
+
+rectangle_45: !Rectangle
+    geometry: 25x5 x 455x467
+    foreground: *medm_color_60
+
+text_update_46: !TextMonitor
+    geometry: 65x15 x 146x515
+    foreground: *black
+    background: *medm_color_1
+    pv: "29idb:VS10C.VAL"
+    format: exponential
+
+VS10C_47: !Text
+    geometry: 40x10 x 158x536
+    foreground: *black
+    text: "VS10C"
+
+rectangle_48: !Rectangle
+    geometry: 40x5 x 273x321
+    foreground: *medm_color_55
+
+rectangle_49: !Rectangle
+    geometry: 5x150 x 308x322
+    foreground: *medm_color_55
+
+rectangle_50: !Rectangle
+    geometry: 5x150 x 308x322
+    foreground: *medm_color_60
+
+rectangle_51: !Rectangle
+    geometry: 40x5 x 273x321
+    foreground: *medm_color_60
+
+rectangle_52: !Rectangle
+    geometry: 138x5 x 273x467
+    foreground: *medm_color_32
+
+rectangle_53: !Rectangle
+    geometry: 138x5 x 273x467
+    foreground: *medm_color_32
+
+rectangle_54: !Rectangle
+    geometry: 113x5 x 116x467
+    foreground: *medm_color_32
+
+rectangle_55: !Rectangle
+    geometry: 113x5 x 116x321
+    foreground: *medm_color_32
+
+rectangle_56: !Rectangle
+    geometry: 77x5 x 40x321
+    foreground: *medm_color_32
+
+rectangle_57: !Rectangle
+    geometry: 77x5 x 40x467
+    foreground: *medm_color_32
+
+OPEN_58: !MessageButton
+    geometry: 40x20 x 96x356
+    foreground: *black
+    background: *medm_color_60
+    pv: "29id:BLEPS:GV14:OPEN.VAL"
+    text: "OPEN"
+    press-value: "1"
+
+CLOSE_59: !MessageButton
+    geometry: 40x20 x 96x381
+    foreground: *black
+    background: *medm_color_20
+    pv: "29id:BLEPS:GV14:CLOSE.VAL"
+    text: "CLOSE"
+    press-value: "1"
+
+V10C_60: !Text
+    geometry: 40x10 x 96x435
+    foreground: *black
+    text: "V10C"
+
+OPEN_61: !MessageButton
+    geometry: 40x20 x 96x502
+    foreground: *black
+    background: *medm_color_60
+    pv: "29id:BLEPS:GV10:OPEN.VAL"
+    text: "OPEN"
+    press-value: "1"
+
+CLOSE_62: !MessageButton
+    geometry: 40x20 x 96x527
+    foreground: *black
+    background: *medm_color_20
+    pv: "29id:BLEPS:GV10:CLOSE.VAL"
+    text: "CLOSE"
+    press-value: "1"
+
+rectangle_63: !Rectangle
+    geometry: 40x5 x 273x321
+    foreground: *medm_color_32
+
+rectangle_64: !Rectangle
+    geometry: 40x5 x 273x321
+    foreground: *medm_color_32
+
+rectangle_65: !Rectangle
+    geometry: 5x150 x 308x322
+    foreground: *medm_color_32
+
+rectangle_66: !Rectangle
+    geometry: 5x150 x 308x322
+    foreground: *medm_color_32
+
+DS_OPEN_67: !MessageButton
+    geometry: 60x20 x 221x356
+    foreground: *black
+    background: *medm_color_60
+    pv: "PC:29ID:SDS_OPEN_REQUEST.VAL"
+    text: "DS OPEN"
+    press-value: "1"
+
+DS_CLOSE_68: !MessageButton
+    geometry: 60x20 x 221x381
+    foreground: *black
+    background: *medm_color_20
+    pv: "PC:29ID:SDS_CLOSE_REQUEST.VAL"
+    text: "DS CLOSE"
+    press-value: "1"
+
+CS_OPEN_69: !MessageButton
+    geometry: 60x20 x 221x502
+    foreground: *black
+    background: *medm_color_60
+    pv: "PC:29ID:SCS_OPEN_REQUEST.VAL"
+    text: "CS OPEN"
+    press-value: "1"
+
+CS_CLOSE_70: !MessageButton
+    geometry: 60x20 x 221x527
+    foreground: *black
+    background: *medm_color_20
+    pv: "PC:29ID:SCS_CLOSE_REQUEST.VAL"
+    text: "CS CLOSE"
+    press-value: "1"
+
+C_Shutter_71: !Text
+    geometry: 50x10 x 227x435
+    foreground: *black
+    text: "C Shutter"
+
+composite_72: !Group
+    geometry: 40x16 x 231x461
+    children:
+        rectangle_0: !Rectangle
+            geometry: 40x16 x 231x461
+            foreground: *medm_color_20
+        CLOSED_1: !Text
+            geometry: 37x12 x 233x463
+            foreground: *black
+            text: "CLOSED"
+
+composite_73: !Group
+    geometry: 40x16 x 231x461
+    children:
+        rectangle_0: !Rectangle
+            geometry: 40x16 x 231x461
+            foreground: *medm_color_15
+        OPEN_1: !Text
+            geometry: 37x12 x 233x463
+            foreground: *black
+            text: "OPEN"
+
+D_Shutter_74: !Text
+    geometry: 50x10 x 225x289
+    foreground: *black
+    text: "D Shutter"
+
+rectangle_75: !Rectangle
+    geometry: 44x20 x 229x313
+    foreground: *black
+
+composite_76: !Group
+    geometry: 40x16 x 231x315
+    children:
+        rectangle_0: !Rectangle
+            geometry: 40x16 x 231x315
+            foreground: *medm_color_20
+        CLOSED_1: !Text
+            geometry: 37x12 x 233x317
+            foreground: *black
+            text: "CLOSED"
+
+composite_77: !Group
+    geometry: 40x16 x 231x315
+    children:
+        rectangle_0: !Rectangle
+            geometry: 40x16 x 231x315
+            foreground: *medm_color_15
+        OPEN_1: !Text
+            geometry: 37x12 x 233x317
+            foreground: *black
+            text: "OPEN"
+
+MS_OPEN_78: !MessageButton
+    geometry: 60x20 x 403x502
+    foreground: *black
+    background: *medm_color_60
+    pv: "PC:29ID:FES_OPEN_REQUEST.VAL"
+    text: "MS OPEN"
+    press-value: "1"
+
+MS_CLOSE_79: !MessageButton
+    geometry: 60x20 x 403x527
+    foreground: *black
+    background: *medm_color_20
+    pv: "PC:29ID:FES_CLOSE_REQUEST.VAL"
+    text: "MS CLOSE"
+    press-value: "1"
+
+rectangle_80: !Rectangle
+    geometry: 7x15 x 379x452
+    foreground: *black
+
+rectangle_81: !Rectangle
+    geometry: 7x15 x 379x472
+    foreground: *black
+
+1A_82: !Text
+    geometry: 20x15 x 372x491
+    foreground: *black
+    text: "1A"
+
+rectangle_83: !Rectangle
+    geometry: 44x20 x 411x460
+    foreground: *black
+
+composite_84: !Group
+    geometry: 40x16 x 413x462
+    children:
+        rectangle_0: !Rectangle
+            geometry: 40x16 x 413x462
+            foreground: *medm_color_20
+        CLOSED_1: !Text
+            geometry: 30x11 x 418x465
+            foreground: *black
+            text: "CLOSED"
+
+composite_85: !Group
+    geometry: 40x16 x 413x462
+    children:
+        rectangle_0: !Rectangle
+            geometry: 40x16 x 413x462
+            foreground: *medm_color_61
+        OPEN_1: !Text
+            geometry: 30x11 x 418x465
+            foreground: *black
+            text: "OPEN"
+
+rectangle_86: !Rectangle
+    geometry: 7x15 x 344x452
+    foreground: *black
+
+rectangle_87: !Rectangle
+    geometry: 7x15 x 344x472
+    foreground: *black
+
+2B_88: !Text
+    geometry: 20x15 x 337x491
+    foreground: *black
+    text: "2B"
+
+composite_89: !Group
+    geometry: 75x20 x 396x430
+    children:
+        Shutter_0: !Text
+            geometry: 75x10 x 396x440
+            foreground: *black
+            text: "Shutter"
+        Main_1: !Text
+            geometry: 75x10 x 396x430
+            foreground: *black
+            text: "Main"
+
+V10D_90: !Text
+    geometry: 40x10 x 96x289
+    foreground: *black
+    text: "V10D"
+
+composite_91: !Group
+    geometry: 18x42 x 107x302
+    children:
+        polygon_0: !Polygon
+            geometry: 14x18 x 109x304
+            foreground: *medm_color_20
+            points: [ 109x304, 123x304, 116x322, 109x304 ]
+        polygon_1: !Polygon
+            geometry: 14x18 x 109x304
+            foreground: *medm_color_61
+            points: [ 109x304, 123x304, 116x322, 109x304 ]
+        polygon_2: !Polygon
+            geometry: 14x18 x 109x324
+            foreground: *medm_color_20
+            points: [ 109x342, 123x342, 116x324, 109x342 ]
+        polygon_3: !Polygon
+            geometry: 14x18 x 109x324
+            foreground: *medm_color_61
+            points: [ 109x342, 123x342, 116x324, 109x342 ]
+        rectangle_4: !Rectangle
+            geometry: 18x42 x 107x302
+            foreground: *black
+
+M3R_92: !Text
+    geometry: 25x15 x 296x491
+    foreground: *black
+    text: "M3R"
+
+polyline_93: !Polyline
+    geometry: 51x5 x 285x477
+    foreground: *medm_color_54
+    points: [ 287x479, 333x479 ]
+
+rectangle_94: !Rectangle
+    geometry: 32x5 x 273x467
+    foreground: *medm_color_55
+
+composite_95: !Group
+    geometry: 18x42 x 107x448
+    children:
+        polygon_0: !Polygon
+            geometry: 14x18 x 109x450
+            foreground: *medm_color_20
+            points: [ 109x450, 123x450, 116x468, 109x450 ]
+        polygon_1: !Polygon
+            geometry: 14x18 x 109x450
+            foreground: *medm_color_61
+            points: [ 109x450, 123x450, 116x468, 109x450 ]
+        polygon_2: !Polygon
+            geometry: 14x18 x 109x470
+            foreground: *medm_color_20
+            points: [ 109x488, 123x488, 116x470, 109x488 ]
+        polygon_3: !Polygon
+            geometry: 14x18 x 109x470
+            foreground: *medm_color_61
+            points: [ 109x488, 123x488, 116x470, 109x488 ]
+        rectangle_4: !Rectangle
+            geometry: 18x42 x 107x448
+            foreground: *black
+
+rectangle_96: !Rectangle
+    geometry: 40x5 x 273x321
+    foreground: *medm_color_55
+
+rectangle_97: !Rectangle
+    geometry: 5x145 x 308x322
+    foreground: *medm_color_55
+
+polyline_98: !Polyline
+    geometry: 38x38 x 289x452
+    foreground: *medm_color_54
+    points: [ 291x454, 324x487 ]
+
+composite_99: !Group
+    geometry: 699x6 x 1x267
+    children:
+        polyline_0: !Polyline
+            geometry: 699x2 x 1x271
+            foreground: *medm_color_9
+            points: [ 2x272, 699x272 ]
+        polyline_1: !Polyline
+            geometry: 699x2 x 1x267
+            foreground: *medm_color_9
+            points: [ 2x268, 699x268 ]
+
+Sync_All_100: !MessageButton
+    geometry: 100x20 x 556x285
+    foreground: *black
+    background: *medm_color_40
+    pv: "29idb:userStringSeq5.PROC"
+    text: "Sync All"
+    press-value: "1"
+
+composite_101: !Group
+    geometry: 171x63 x 521x312
+    children:
+        rectangle_0: !Rectangle
+            geometry: 83x20 x 607x353
+            foreground: *medm_color_55
+        At_1: !Text
+            geometry: 20x14 x 609x357
+            foreground: *black
+            text: "At:"
+        rectangle_2: !Rectangle
+            geometry: 83x20 x 522x353
+            foreground: *medm_color_55
+        At_3: !Text
+            geometry: 20x14 x 525x357
+            foreground: *black
+            text: "At:"
+        text_update_4: !TextMonitor
+            geometry: 80x14 x 608x337
+            foreground: *medm_color_54
+            background: *medm_color_3
+            pv: "29idb:Slit1Vt2.C"
+            alignment: Center
+        rectangle_5: !Rectangle
+            geometry: 83x20 x 607x313
+            foreground: *white
+        1A-V_6: !Text
+            geometry: 80x14 x 608x317
+            foreground: *medm_color_24
+            text: "1A-V"
+        text_update_7: !TextMonitor
+            geometry: 80x14 x 523x337
+            foreground: *medm_color_54
+            background: *medm_color_3
+            pv: "29idb:Slit1Ht2.C"
+            alignment: Center
+        rectangle_8: !Rectangle
+            geometry: 83x20 x 522x313
+            foreground: *white
+        1A-H_9: !Text
+            geometry: 80x14 x 523x317
+            foreground: *medm_color_24
+            text: "1A-H"
+        rectangle_10: !Rectangle
+            geometry: 171x62 x 521x312
+            foreground: *black
+        polyline_11: !Polyline
+            geometry: 1x61 x 606x314
+            foreground: *medm_color_11
+            points: [ 606x314, 606x374 ]
+        text_update_12: !TextMonitor
+            geometry: 50x14 x 547x357
+            foreground: *medm_color_54
+            background: *medm_color_55
+            pv: "29idb:Slit1Ht2.D"
+            alignment: Center
+        text_update_13: !TextMonitor
+            geometry: 50x14 x 632x357
+            foreground: *medm_color_54
+            background: *medm_color_55
+            pv: "29idb:Slit1Vt2.D"
+            alignment: Center
+
+composite_102: !Group
+    geometry: 171x62 x 521x380
+    children:
+        rectangle_0: !Rectangle
+            geometry: 83x20 x 608x421
+            foreground: *medm_color_40
+        rectangle_1: !Rectangle
+            geometry: 83x20 x 523x421
+            foreground: *medm_color_40
+        text_update_2: !TextMonitor
+            geometry: 50x14 x 633x425
+            foreground: *medm_color_54
+            background: *medm_color_40
+            pv: "29idb:Slit2Vt2.D"
+            alignment: Center
+        At_3: !Text
+            geometry: 20x14 x 610x425
+            foreground: *black
+            text: "At:"
+        text_update_4: !TextMonitor
+            geometry: 50x14 x 548x425
+            foreground: *medm_color_54
+            background: *medm_color_40
+            pv: "29idb:Slit2Ht2.D"
+            alignment: Center
+        At_5: !Text
+            geometry: 20x14 x 526x425
+            foreground: *black
+            text: "At:"
+        text_update_6: !TextMonitor
+            geometry: 80x14 x 609x405
+            foreground: *medm_color_54
+            background: *medm_color_3
+            pv: "29idb:Slit2Vt2.C"
+            alignment: Center
+        rectangle_7: !Rectangle
+            geometry: 83x20 x 608x381
+            foreground: *white
+        2B-V_8: !Text
+            geometry: 80x14 x 609x385
+            foreground: *medm_color_24
+            text: "2B-V"
+        text_update_9: !TextMonitor
+            geometry: 80x14 x 524x405
+            foreground: *medm_color_54
+            background: *medm_color_3
+            pv: "29idb:Slit2Ht2.C"
+            alignment: Center
+        rectangle_10: !Rectangle
+            geometry: 83x20 x 523x381
+            foreground: *white
+        2B-H_11: !Text
+            geometry: 80x14 x 524x385
+            foreground: *medm_color_24
+            text: "2B-H"
+        rectangle_12: !Rectangle
+            geometry: 171x62 x 521x380
+            foreground: *black
+        polyline_13: !Polyline
+            geometry: 1x61 x 606x381
+            foreground: *medm_color_11
+            points: [ 606x381, 606x441 ]
+
+rectangle_103: !Rectangle
+    geometry: 82x20 x 609x525
+    foreground: *medm_color_55
+
+text_update_104: !TextMonitor
+    geometry: 80x14 x 609x469
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "29idb:Slit4Vt2.C"
+    alignment: Center
+
+text_entry_105: !TextEntry
+    geometry: 80x20 x 610x484
+    foreground: *black
+    background: *medm_color_51
+    pv: "29idb:Slit4Vsize.VAL"
+
+composite_106: !Group
+    geometry: 80x16 x 610x506
+    children:
+        -_0: !MessageButton
+            geometry: 16x16 x 610x506
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit4Vsize_tweak.A"
+            text: "-"
+            press-value: "1"
+        text_entry_1: !TextEntry
+            geometry: 50x16 x 625x506
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit4Vsize_tweakVal.VAL"
+        +_2: !MessageButton
+            geometry: 16x16 x 674x506
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit4Vsize_tweak.B"
+            text: "+"
+            press-value: "1"
+
+rectangle_107: !Rectangle
+    geometry: 83x20 x 608x450
+    foreground: *white
+
+rectangle_108: !Rectangle
+    geometry: 85x99 x 607x448
+    foreground: *black
+
+RSXS_(um)_109: !Text
+    geometry: 80x14 x 611x454
+    foreground: *medm_color_24
+    text: "RSXS (um)"
+
+text_update_110: !TextMonitor
+    geometry: 50x14 x 639x528
+    foreground: *medm_color_54
+    background: *medm_color_55
+    pv: "29idb:Slit4Vt2.D"
+    alignment: Center
+
+At_111: !Text
+    geometry: 20x14 x 615x528
+    foreground: *black
+    text: "At:"
+
+STOP_112: !MessageButton
+    geometry: 70x30 x 623x124
+    foreground: *medm_color_30
+    background: *medm_color_20
+    pv: "29idb:allstop.VAL"
+    text: "STOP"
+    press-value: "1"
+
+-CA_113: !RelatedDisplay
+    geometry: 42x20 x 650x200
+    foreground: *white
+    background: *medm_color_25
+    links:
+        - { label: "29ID Keithleys", file: "29ID_ca_all.adl", macros: "" }
+
+-Diag_114: !RelatedDisplay
+    geometry: 42x20 x 650x176
+    foreground: *white
+    background: *medm_color_25
+    links:
+        - { label: "29ID Diagnostics", file: "29id_Diagnostics.adl", macros: "" }
+
+-ARPES_115: !RelatedDisplay
+    geometry: 55x20 x 556x149
+    foreground: *black
+    background: *medm_color_55
+    links:
+        - { label: "29ID-C ARPES graphic", file: "29idc_graphic.adl", macros: "P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8" }
+
+29idb_116: !Text
+    geometry: 38x13 x 640x155
+    foreground: *black
+    text: "29idb"
+
+-_PPS_EPS_117: !RelatedDisplay
+    geometry: 70x20 x 556x200
+    foreground: *black
+    background: *medm_color_60
+    links:
+        - { label: "PSS", file: "Main_29ID.adl", macros: "xx=29,yy=ID" }
+        - { label: "EPS-FE", file: "FEEPS_ID_FE.adl", macros: "a=29,ID1=29ds,e=29us,TYPE_NAME=BEWIN,VVID=29" }
+        - { label: "EPS-A", file: "29ID_BLEPS.adl", macros: "" }
+        - { label: "EPS-B", file: "29ID_BLEPS_B.adl", macros: "" }
+        - { label: "EPS-C", file: "29ID_BLEPS_C.adl", macros: "" }
+        - { label: "EPS-D", file: "29ID_BLEPS_D.adl", macros: "" }
+
+Tools_118: !ShellCommand
+    geometry: 70x20 x 556x225
+    foreground: *black
+    background: *medm_color_55
+    commands:
+
+-_Camera_119: !RelatedDisplay
+    geometry: 62x20 x 630x225
+    foreground: *black
+    background: *medm_color_55
+    links:
+        - { label: "Camera 1", file: "prosilica.adl", macros: "P=29id_ps1:, R=cam1:" }
+        - { label: "Camera 2", file: "prosilica.adl", macros: "P=29id_ps2:, R=cam1:" }
+        - { label: "Camera 3", file: "prosilica.adl", macros: "P=29id_ps3:, R=cam1:" }
+        - { label: "Camera 4", file: "prosilica.adl", macros: "P=29id_ps4:, R=cam1:" }
+        - { label: "Camera 6", file: "prosilica.adl", macros: "P=29id_ps6:, R=cam1:" }
+
+-RSXS_120: !RelatedDisplay
+    geometry: 55x20 x 556x124
+    foreground: *black
+    background: *medm_color_55
+    links:
+        - { label: "29ID-D 2C graphic", file: "29idd_graphic.adl", macros: "P=29idd:,M1=m1,M2=m2,M3=m3,M4=m7,M5=m6" }
+
+Mirror_121: !Text
+    geometry: 70x20 x 271x105
+    foreground: *black
+    text: "Mirror"
+
+ID_QP_%_122: !Text
+    geometry: 70x20 x 272x225
+    foreground: *black
+    text: "ID QP %"
+
+ID_Mode_123: !Text
+    geometry: 70x20 x 272x190
+    foreground: *black
+    text: "ID Mode"
+
+-Infos_124: !RelatedDisplay
+    geometry: 45x20 x 473x58
+    foreground: *black
+    background: *medm_color_55
+    links:
+        - { label: "Storage Ring Status", file: "/APSshare/adlsys/sr/fe/SR_Status.adl", macros: "" }
+        - { label: "24h Beam History ", file: "beamHistory.adl", macros: "" }
+        - { label: "APS Top-Up Info", file: "/APSshare/adlsys/sr/fe/TopUp.adl", macros: "" }
+
+Ring_I_125: !Text
+    geometry: 66x20 x 273x58
+    foreground: *black
+    text: "Ring I"
+
+text_update_126: !TextMonitor
+    geometry: 80x20 x 348x58
+    foreground: *medm_color_54
+    background: *medm_color_2
+    pv: "S:SRcurrentAI.VAL"
+    alignment: Center
+
+mA_127: !Text
+    geometry: 24x20 x 438x58
+    foreground: *black
+    text: "mA"
+
+ON_128: !MessageButton
+    geometry: 37x20 x 438x225
+    foreground: *black
+    background: *medm_color_51
+    pv: "ID29:SetQuasiOn.VAL"
+    text: "ON"
+    press-value: "1"
+
+OFF_129: !MessageButton
+    geometry: 37x20 x 481x225
+    foreground: *black
+    background: *medm_color_51
+    pv: "ID29:SetQuasiOff.VAL"
+    text: "OFF"
+    press-value: "1"
+
+menu_130: !Menu
+    geometry: 80x20 x 438x190
+    foreground: *medm_color_50
+    background: *medm_color_54
+    pv: "ID29:DesiredMode.VAL"
+
+rectangle_131: !Rectangle
+    geometry: 80x20 x 348x105
+    foreground: *medm_color_10
+
+Silicon_132: !Text
+    geometry: 80x18 x 348x106
+    foreground: *medm_color_15
+    text: "Silicon"
+
+text_update_133: !TextMonitor
+    geometry: 80x20 x 348x190
+    foreground: *medm_color_15
+    background: *medm_color_10
+    pv: "ID29:ActualMode"
+    alignment: Center
+
+Carbon_134: !Text
+    geometry: 80x18 x 348x106
+    foreground: *medm_color_15
+    text: "Carbon"
+
+Au_135: !Text
+    geometry: 80x20 x 348x105
+    foreground: *medm_color_15
+    text: "Au"
+
+rectangle_136: !Rectangle
+    geometry: 80x20 x 348x225
+    foreground: *medm_color_10
+
+OFF_(100%)_137: !Text
+    geometry: 80x18 x 350x227
+    foreground: *medm_color_15
+    text: "OFF (100%)"
+
+ON_(85%)_138: !Text
+    geometry: 80x18 x 350x227
+    foreground: *medm_color_15
+    text: "ON (85%)"
+
+Grating_139: !Text
+    geometry: 70x20 x 272x140
+    foreground: *black
+    text: "Grating"
+
+Move_140: !MessageButton
+    geometry: 80x20 x 438x140
+    foreground: *black
+    background: *medm_color_51
+    pv: "29idb:gr:move"
+    text: "Move"
+    press-value: "1"
+
+menu_141: !Menu
+    geometry: 80x20 x 438x117
+    foreground: *black
+    background: *medm_color_51
+    pv: "29idmonoGRT_TYPE_SP"
+
+rectangle_142: !Rectangle
+    geometry: 80x20 x 348x140
+    foreground: *medm_color_10
+
+HEG_143: !Text
+    geometry: 30x20 x 373x140
+    foreground: *medm_color_15
+    text: "HEG"
+
+MEG_144: !Text
+    geometry: 30x20 x 373x140
+    foreground: *medm_color_15
+    text: "MEG"
+
+-More_145: !RelatedDisplay
+    geometry: 55x20 x 638x5
+    foreground: *white
+    background: *medm_color_17
+    links:
+        - { label: "BL Expert", file: "29id_BL_Expert.adl", macros: "" }
+
+composite_146: !Group
+    geometry: 108x32 x 570x63
+    children:
+        Moving_0: !Text
+            geometry: 105x30 x 570x63
+            foreground: *medm_color_50
+            text: "Moving"
+        Moving_1: !Text
+            geometry: 105x30 x 573x65
+            foreground: *medm_color_54
+            text: "Moving"
+
+rectangle_147: !Rectangle
+    geometry: 185x85 x 328x312
+    foreground: *medm_color_10
+
+oval_148: !Ellipse
+    geometry: 15x15 x 445x321
+    foreground: *medm_color_60
+
+Out_149: !MessageButton
+    geometry: 40x20 x 467x319
+    foreground: *black
+    background: *medm_color_60
+    pv: "29idb:userStringSeq3.PROC"
+    text: "Out"
+    press-value: "1"
+
+Diagnostics_150: !Text
+    geometry: 100x15 x 335x321
+    foreground: *black
+    text: "Diagnostics:"
+
+oval_151: !Ellipse
+    geometry: 15x15 x 445x321
+    foreground: *medm_color_20
+
+oval_152: !Ellipse
+    geometry: 15x15 x 445x321
+    foreground: *medm_color_20
+
+oval_153: !Ellipse
+    geometry: 15x15 x 445x321
+    foreground: *medm_color_20
+
+text_entry_154: !TextEntry
+    geometry: 100x25 x 78x56
+    foreground: *medm_color_54
+    background: *medm_color_40
+    pv: "29id:BeamlineEnergySet"
+
+BL_eV_155: !Text
+    geometry: 60x20 x 9x58
+    foreground: *black
+    text: "BL eV"
+
+text_update_156: !TextMonitor
+    geometry: 50x15 x 185x61
+    foreground: *black
+    background: *medm_color_2
+    pv: "29id:BeamlineEnergyAllow"
+    alignment: Center
+
+composite_157: !Group
+    geometry: 85x99 x 521x448
+    children:
+        text_update_0: !TextMonitor
+            geometry: 80x14 x 523x469
+            foreground: *medm_color_54
+            background: *medm_color_3
+            pv: "29idb:Slit3CRBV"
+            alignment: Center
+        text_entry_1: !TextEntry
+            geometry: 80x20 x 524x484
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit3CFit.A"
+        rectangle_2: !Rectangle
+            geometry: 83x20 x 522x450
+            foreground: *white
+        rectangle_3: !Rectangle
+            geometry: 85x99 x 521x448
+            foreground: *black
+        ARPES_(um)_4: !Text
+            geometry: 80x14 x 525x454
+            foreground: *medm_color_24
+            text: "ARPES (um)"
+        text_entry_5: !TextEntry
+            geometry: 50x16 x 539x506
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit3CTweakVal"
+        -_6: !MessageButton
+            geometry: 16x16 x 524x506
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit3CTweak.A"
+            text: "-"
+            press-value: "1"
+        +_7: !MessageButton
+            geometry: 16x16 x 588x506
+            foreground: *black
+            background: *medm_color_51
+            pv: "29idb:Slit3CTweak.B"
+            text: "+"
+            press-value: "1"
+        -_3C_Motor_8: !RelatedDisplay
+            geometry: 80x20 x 524x525
+            foreground: *black
+            background: *medm_color_40
+            links:
+                - { label: "3C Slit Motors", file: "motorx.adl", macros: "P=29idb:,M=m24" }
+
+oval_158: !Ellipse
+    geometry: 15x15 x 216x226
+    foreground: *medm_color_20
+
+text_update_159: !TextMonitor
+    geometry: 110x16 x 395x373
+    foreground: *medm_color_54
+    background: *medm_color_1
+    pv: "29idb:ca15:read"
+    format: exponential
+    alignment: Center
+
+ARPES_160: !MessageButton
+    geometry: 55x20 x 337x371
+    foreground: *black
+    background: *medm_color_30
+    pv: "29idb:m20.VAL"
+    text: "ARPES"
+    press-value: "-31"
+
+composite_161: !Group
+    geometry: 168x20 x 337x348
+    children:
+        RSXS_0: !MessageButton
+            geometry: 55x20 x 337x348
+            foreground: *black
+            background: *medm_color_30
+            pv: "29idb:m28.VAL"
+            text: "RSXS"
+            press-value: "-53"
+        text_update_1: !TextMonitor
+            geometry: 110x16 x 395x350
+            foreground: *medm_color_54
+            background: *medm_color_1
+            pv: "29idb:ca14:read"
+            format: exponential
+            alignment: Center
+
+rectangle_162: !Rectangle
+    geometry: 112x21 x 393x347
+    foreground: *medm_color_25
+
+rectangle_163: !Rectangle
+    geometry: 112x21 x 393x370
+    foreground: *medm_color_25

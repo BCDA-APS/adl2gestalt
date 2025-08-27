@@ -1,0 +1,44 @@
+#include colors.yml
+#include widgets.yml
+#include useful_templates.yml
+
+
+Form: !Form
+    title: "Granite Control"
+    margins: 10x10x10x10
+
+
+Content: !VFlow
+    padding: 30
+    
+    children:
+        - !HRepeat
+            repeat-over: 1
+            start-at: 1
+            padding: 10
+            children:
+                - !Apply:MiniMotor
+                    motor-pv: "$(P)$(M{N})"
+                
+                            
+        - !HCenter:HFlow
+            padding: 10
+            children:
+                - !VFlow
+                    padding: 10
+                    children:
+                        - !Text
+                            geometry: 160x20
+                            text: "Enable X"
+                            alignment: Center
+                    
+                        - !HCenter:ChoiceButton
+                            <<: *editable
+                            geometry: 80x20
+                            pv: "$(P)bo3:9.VAL"
+                            
+                        - !HCenter:LED
+                            geometry: 20x20
+                            false-color: *grey_dark
+                            true-color: *alarm_green
+                            pv: "$(P)bi3:17.VAL"

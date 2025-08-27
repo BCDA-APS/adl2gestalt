@@ -1,0 +1,1360 @@
+# Gestalt display file generated from MEDM ADL
+# Source: IEXMachinePhysics.adl
+# Generator: adl2gestalt
+
+#include colors.yml
+#include widgets.yml
+
+# Custom colors from MEDM color table
+_medm_color_1: &medm_color_1 $ececec
+_medm_color_2: &medm_color_2 $dadada
+_medm_color_3: &medm_color_3 $c8c8c8
+_medm_color_4: &medm_color_4 $bbbbbb
+_medm_color_5: &medm_color_5 $aeaeae
+_medm_color_6: &medm_color_6 $9e9e9e
+_medm_color_7: &medm_color_7 $919191
+_medm_color_8: &medm_color_8 $858585
+_medm_color_9: &medm_color_9 $787878
+_medm_color_10: &medm_color_10 $696969
+_medm_color_11: &medm_color_11 $5a5a5a
+_medm_color_12: &medm_color_12 $464646
+_medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_15: &medm_color_15 $00d800
+_medm_color_16: &medm_color_16 $1ebb00
+_medm_color_17: &medm_color_17 $339900
+_medm_color_18: &medm_color_18 $2d7f00
+_medm_color_19: &medm_color_19 $216c00
+_medm_color_20: &medm_color_20 $fd0000
+_medm_color_21: &medm_color_21 $de1309
+_medm_color_22: &medm_color_22 $be190b
+_medm_color_23: &medm_color_23 $a01207
+_medm_color_24: &medm_color_24 $820400
+_medm_color_25: &medm_color_25 $5893ff
+_medm_color_26: &medm_color_26 $597ee1
+_medm_color_27: &medm_color_27 $4b6ec7
+_medm_color_28: &medm_color_28 $3a5eab
+_medm_color_29: &medm_color_29 $27548d
+_medm_color_30: &medm_color_30 $fbf34a
+_medm_color_31: &medm_color_31 $f9da3c
+_medm_color_32: &medm_color_32 $eeb62b
+_medm_color_33: &medm_color_33 $e19015
+_medm_color_34: &medm_color_34 $cd6100
+_medm_color_35: &medm_color_35 $ffb0ff
+_medm_color_36: &medm_color_36 $d67fe2
+_medm_color_37: &medm_color_37 $ae4ebc
+_medm_color_38: &medm_color_38 $8b1a96
+_medm_color_39: &medm_color_39 $610a75
+_medm_color_40: &medm_color_40 $a4aaff
+_medm_color_41: &medm_color_41 $8793e2
+_medm_color_42: &medm_color_42 $6a73c1
+_medm_color_43: &medm_color_43 $4d52a4
+_medm_color_44: &medm_color_44 $343386
+_medm_color_45: &medm_color_45 $c7bb6d
+_medm_color_46: &medm_color_46 $b79d5c
+_medm_color_47: &medm_color_47 $a47e3c
+_medm_color_48: &medm_color_48 $7d5627
+_medm_color_49: &medm_color_49 $58340f
+_medm_color_50: &medm_color_50 $99ffff
+_medm_color_51: &medm_color_51 $73dfff
+_medm_color_52: &medm_color_52 $4ea5f9
+_medm_color_53: &medm_color_53 $2a63e4
+_medm_color_54: &medm_color_54 $0a00b8
+_medm_color_55: &medm_color_55 $ebf1b5
+_medm_color_56: &medm_color_56 $d4db9d
+_medm_color_57: &medm_color_57 $bbc187
+_medm_color_58: &medm_color_58 $a6a462
+_medm_color_59: &medm_color_59 $8b8239
+_medm_color_60: &medm_color_60 $73ff6b
+_medm_color_61: &medm_color_61 $52da3b
+_medm_color_62: &medm_color_62 $3cb420
+_medm_color_63: &medm_color_63 $289315
+_medm_color_64: &medm_color_64 $1a7309
+
+IEXMachinePhysics: !Form
+    geometry: 1033x874 x 554x202
+    foreground: *black
+    background: *medm_color_57
+
+rectangle_0: !Rectangle
+    geometry: 320x165 x 378x40
+    foreground: *medm_color_8
+
+rectangle_1: !Rectangle
+    geometry: 200x25 x 439x45
+    foreground: *medm_color_32
+
+rectangle_2: !Rectangle
+    geometry: 300x170 x 384x244
+    foreground: *medm_color_8
+
+rectangle_3: !Rectangle
+    geometry: 210x25 x 436x250
+    foreground: *medm_color_32
+
+rectangle_4: !Rectangle
+    geometry: 480x30 x 14x446
+    foreground: *medm_color_32
+
+rectangle_5: !Rectangle
+    geometry: 500x320 x 12x509
+    foreground: *medm_color_7
+
+rectangle_6: !Rectangle
+    geometry: 280x270 x 714x269
+    foreground: *medm_color_8
+
+rectangle_7: !Rectangle
+    geometry: 220x25 x 728x276
+    foreground: *medm_color_32
+
+rectangle_8: !Rectangle
+    geometry: 250x220 x 716x41
+    foreground: *medm_color_8
+
+rectangle_9: !Rectangle
+    geometry: 200x25 x 741x46
+    foreground: *medm_color_32
+
+rectangle_10: !Rectangle
+    geometry: 254x25 x 139x515
+    foreground: *medm_color_32
+
+rectangle_11: !Rectangle
+    geometry: 355x400 x 15x39
+    foreground: *medm_color_5
+
+text_update_12: !TextMonitor
+    geometry: 80x25 x 100x120
+    foreground: *medm_color_60
+    background: *medm_color_49
+    pv: "$(P)EnergyM.VAL"
+    alignment: Center
+
+text_entry_13: !TextEntry
+    geometry: 60x26 x 113x148
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)EnergySetC.VAL"
+
+text_update_14: !TextMonitor
+    geometry: 80x25 x 190x120
+    foreground: *medm_color_60
+    background: *medm_color_49
+    pv: "$(P)BxRdbkM.VAL"
+    alignment: Center
+
+H_coil,_A_15: !Text
+    geometry: 52x12 x 204x178
+    foreground: *black
+    text: "H coil, A"
+
+V_coil,_A_16: !Text
+    geometry: 52x12 x 294x178
+    foreground: *black
+    text: "V coil, A"
+
+Energy,_keV_17: !Text
+    geometry: 70x12 x 108x178
+    foreground: *black
+    text: "Energy, keV"
+
+text_entry_18: !TextEntry
+    geometry: 26x26 x 316x296
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)HarmonicValueC.VAL"
+
+text_entry_19: !TextEntry
+    geometry: 60x26 x 290x148
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)BySetC.VAL"
+
+text_update_20: !TextMonitor
+    geometry: 80x25 x 280x120
+    foreground: *medm_color_60
+    background: *medm_color_49
+    pv: "$(P)ByRdbkM.VAL"
+    alignment: Center
+
+rectangle_21: !Rectangle
+    geometry: 260x30 x 100x146
+    foreground: *medm_color_8
+
+text_update_22: !TextMonitor
+    geometry: 100x14 x 98x71
+    foreground: *medm_color_20
+    background: *medm_color_3
+    pv: "$(P)AccessSecurityC.VAL"
+    alignment: Center
+
+text_update_23: !TextMonitor
+    geometry: 120x20 x 32x16
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)locationM.VAL"
+
+text_update_24: !TextMonitor
+    geometry: 200x20 x 101x44
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)DeviceM.VAL"
+    alignment: Center
+
+choice_button_25: !ChoiceButton
+    geometry: 120x28 x 132x384
+    foreground: *medm_color_60
+    background: *medm_color_64
+    pv: "$(P)Main_on_offC.VAL"
+
+menu_26: !Menu
+    geometry: 120x25 x 241x353
+    foreground: *medm_color_50
+    background: *medm_color_54
+    pv: "$(P)DesiredModeC.VAL"
+
+Main_Power_27: !Text
+    geometry: 90x20 x 33x389
+    foreground: *black
+    text: "Main Power"
+
+text_update_28: !TextMonitor
+    geometry: 260x20 x 65x416
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)feedbackM.VAL"
+    alignment: Center
+
+Harmonic_29: !Text
+    geometry: 60x15 x 244x302
+    foreground: *black
+    text: "Harmonic"
+
+Machine_Physics_IEX__30: !Text
+    geometry: 300x26 x 441x8
+    foreground: *black
+    text: "Machine Physics IEX Controls"
+
+USbot_31: !Text
+    geometry: 60x26 x 23x571
+    foreground: *black
+    text: "USbot"
+
+UStop_32: !Text
+    geometry: 60x26 x 23x544
+    foreground: *black
+    text: "UStop"
+
+DSbot_33: !Text
+    geometry: 60x26 x 268x571
+    foreground: *black
+    text: "DSbot"
+
+DStop_34: !Text
+    geometry: 60x26 x 268x544
+    foreground: *black
+    text: "DStop"
+
+text_entry_35: !TextEntry
+    geometry: 65x23 x 90x546
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetUSTCorr_"
+
+text_entry_36: !TextEntry
+    geometry: 65x23 x 90x573
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetUSBCorr_"
+
+text_entry_37: !TextEntry
+    geometry: 65x23 x 335x546
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetDSTCorr_"
+
+text_entry_38: !TextEntry
+    geometry: 65x23 x 335x573
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetDSBCorr_"
+
+USq2_39: !Text
+    geometry: 60x26 x 23x627
+    foreground: *black
+    text: "USq2"
+
+USq1_40: !Text
+    geometry: 60x26 x 23x601
+    foreground: *black
+    text: "USq1"
+
+USq4_41: !Text
+    geometry: 60x26 x 23x679
+    foreground: *black
+    text: "USq4"
+
+USq3_42: !Text
+    geometry: 60x26 x 23x653
+    foreground: *black
+    text: "USq3"
+
+text_entry_43: !TextEntry
+    geometry: 65x23 x 90x603
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetUSQ1Corr_"
+
+text_entry_44: !TextEntry
+    geometry: 65x23 x 90x629
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetUSQ2Corr_"
+
+text_entry_45: !TextEntry
+    geometry: 65x23 x 90x655
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetUSQ3Corr_"
+
+text_entry_46: !TextEntry
+    geometry: 65x23 x 90x681
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetUSQ4Corr_"
+
+DSq2_47: !Text
+    geometry: 60x26 x 268x627
+    foreground: *black
+    text: "DSq2"
+
+DSq1_48: !Text
+    geometry: 60x26 x 268x601
+    foreground: *black
+    text: "DSq1"
+
+DSq4_49: !Text
+    geometry: 60x26 x 268x679
+    foreground: *black
+    text: "DSq4"
+
+DSq3_50: !Text
+    geometry: 60x26 x 268x653
+    foreground: *black
+    text: "DSq3"
+
+text_entry_51: !TextEntry
+    geometry: 65x23 x 335x603
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetDSQ1Corr_"
+
+text_entry_52: !TextEntry
+    geometry: 65x23 x 335x629
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetDSQ2Corr_"
+
+text_entry_53: !TextEntry
+    geometry: 65x23 x 335x655
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetDSQ3Corr_"
+
+text_entry_54: !TextEntry
+    geometry: 65x23 x 335x681
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)SetDSQ4Corr_"
+
+IEX_Correctors_55: !Text
+    geometry: 150x26 x 192x516
+    foreground: *black
+    text: "IEX Correctors"
+
+text_update_56: !TextMonitor
+    geometry: 80x22 x 167x546
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkUST_.VAL"
+
+text_update_57: !TextMonitor
+    geometry: 80x22 x 167x573
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkUSB_.VAL"
+
+text_update_58: !TextMonitor
+    geometry: 80x22 x 411x546
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkDST_.VAL"
+
+text_update_59: !TextMonitor
+    geometry: 80x22 x 411x573
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkDSB_.VAL"
+
+text_update_60: !TextMonitor
+    geometry: 80x22 x 167x603
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkUSQ1_.VAL"
+
+text_update_61: !TextMonitor
+    geometry: 80x22 x 167x629
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkUSQ2_.VAL"
+
+text_update_62: !TextMonitor
+    geometry: 80x22 x 167x655
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkUSQ3_.VAL"
+
+text_update_63: !TextMonitor
+    geometry: 80x22 x 167x681
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkUSQ4_.VAL"
+
+text_update_64: !TextMonitor
+    geometry: 80x22 x 411x603
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkDSQ1_.VAL"
+
+text_update_65: !TextMonitor
+    geometry: 80x22 x 411x629
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkDSQ2_.VAL"
+
+text_update_66: !TextMonitor
+    geometry: 80x22 x 411x655
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkDSQ3_.VAL"
+
+text_update_67: !TextMonitor
+    geometry: 80x22 x 411x681
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkDSQ4_.VAL"
+
+text_update_68: !TextMonitor
+    geometry: 80x22 x 125x747
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)CorrRdbkEarth_.VAL"
+
+Earth_69: !Text
+    geometry: 60x26 x 59x745
+    foreground: *black
+    text: "Earth"
+
+Bxq_70: !Text
+    geometry: 45x26 x 100x710
+    foreground: *black
+    text: "Bxq"
+
+Byq_71: !Text
+    geometry: 45x26 x 345x708
+    foreground: *black
+    text: "Byq"
+
+text_update_72: !TextMonitor
+    geometry: 80x22 x 167x711
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)BxqRdbk_"
+
+text_update_73: !TextMonitor
+    geometry: 80x22 x 411x710
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)ByqRdbk_"
+
+Ramping_74: !Text
+    geometry: 200x26 x 741x45
+    foreground: *black
+    text: "Ramping"
+
+Step_Size_75: !Text
+    geometry: 80x20 x 729x97
+    foreground: *black
+    text: "Step Size"
+
+text_entry_76: !TextEntry
+    geometry: 65x23 x 825x96
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)dVSetpt_"
+
+Time_Step_77: !Text
+    geometry: 80x20 x 729x123
+    foreground: *black
+    text: "Time/Step"
+
+text_entry_78: !TextEntry
+    geometry: 65x23 x 825x122
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)dTSetpt_"
+
+Hold_time_79: !Text
+    geometry: 80x20 x 729x150
+    foreground: *black
+    text: "Hold time"
+
+text_entry_80: !TextEntry
+    geometry: 65x23 x 825x149
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)dHSetpt_"
+
+ASYN_Ramps_81: !RelatedDisplay
+    geometry: 104x21 x 794x236
+    foreground: *black
+    background: *medm_color_4
+    links:
+        - { label: "Volts Delta", file: "asynOctet.adl", macros: "P=$(P),R=wDv_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Time Delta", file: "asynOctet.adl", macros: "P=$(P),R=wDt_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Hold Delta", file: "asynOctet.adl", macros: "P=$(P),R=wDh_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+
+Set_Outputs_82: !MessageButton
+    geometry: 100x25 x 219x746
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)SetOutputSeq_.PROC"
+    text: "Set Outputs"
+    press-value: "1"
+
+choice_button_83: !ChoiceButton
+    geometry: 110x30 x 741x305
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)DegaussMaskBx_"
+
+choice_button_84: !ChoiceButton
+    geometry: 110x30 x 741x339
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)DegaussMaskBy_"
+
+choice_button_85: !ChoiceButton
+    geometry: 110x30 x 864x305
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)DegaussMaskBxq_"
+
+choice_button_86: !ChoiceButton
+    geometry: 110x30 x 862x339
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)DegaussMaskByq_"
+
+Start_87: !MessageButton
+    geometry: 100x25 x 884x506
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)DegaussSeq_.PROC"
+    text: "Start"
+    press-value: "1"
+
+Magnet_Conditioning_88: !Text
+    geometry: 220x26 x 730x275
+    foreground: *black
+    text: "Magnet Conditioning"
+
+Step_Size_89: !Text
+    geometry: 80x20 x 722x413
+    foreground: *black
+    text: "Step Size"
+
+text_entry_90: !TextEntry
+    geometry: 75x23 x 826x412
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)dGticks_"
+
+Num_Cycles_91: !Text
+    geometry: 80x20 x 722x439
+    foreground: *black
+    text: "Num Cycles"
+
+text_entry_92: !TextEntry
+    geometry: 75x23 x 826x438
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)dGnum_"
+
+choice_button_93: !ChoiceButton
+    geometry: 110x30 x 727x471
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ConditioingSelect_"
+
+choice_button_94: !ChoiceButton
+    geometry: 110x30 x 741x373
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)CorrDegauss_"
+
+choice_button_95: !ChoiceButton
+    geometry: 125x30 x 574x509
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)SetPSLocRem_"
+
+choice_button_96: !ChoiceButton
+    geometry: 125x30 x 518x647
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)BxOnOff_"
+
+choice_button_97: !ChoiceButton
+    geometry: 125x30 x 518x716
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ByOnOff_"
+
+choice_button_98: !ChoiceButton
+    geometry: 125x30 x 518x681
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)BxqOnOff_"
+
+choice_button_99: !ChoiceButton
+    geometry: 125x30 x 518x750
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ByqOnOff_"
+
+Setpoint_100: !Text
+    geometry: 80x20 x 825x74
+    foreground: *black
+    text: "Setpoint"
+
+text_update_101: !TextMonitor
+    geometry: 260x20 x 405x177
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)Message2M.VAL"
+    alignment: Center
+
+text_update_102: !TextMonitor
+    geometry: 260x20 x 18x450
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)Message1M.VAL"
+    alignment: Center
+
+Last_Energy_Set_Erro_103: !Text
+    geometry: 200x20 x 281x452
+    foreground: *black
+    text: "Last Energy Set Error"
+
+Readback_104: !Text
+    geometry: 80x20 x 18x123
+    foreground: *black
+    text: "Readback"
+
+Setpoint_105: !Text
+    geometry: 80x20 x 18x151
+    foreground: *black
+    text: "Setpoint"
+
+Currents_106: !Text
+    geometry: 90x20 x 399x90
+    foreground: *black
+    text: "Currents"
+
+text_update_107: !TextMonitor
+    geometry: 80x25 x 496x89
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)EnergyToCurrent_.C"
+    alignment: Center
+
+text_update_108: !TextMonitor
+    geometry: 80x25 x 591x89
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)EnergyToCurrent_.D"
+    alignment: Center
+
+text_update_109: !TextMonitor
+    geometry: 80x25 x 496x117
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)EnergyToCurrent_.F"
+    alignment: Center
+
+text_update_110: !TextMonitor
+    geometry: 80x25 x 591x117
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)EnergyToCurrent_.G"
+    alignment: Center
+
+B_Fields_111: !Text
+    geometry: 90x20 x 399x118
+    foreground: *black
+    text: "B Fields"
+
+Energy_112: !Text
+    geometry: 90x20 x 399x281
+    foreground: *black
+    text: "Energy"
+
+text_update_113: !TextMonitor
+    geometry: 80x25 x 492x279
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)CurrentToEnergy_.B"
+    alignment: Center
+
+Currents_114: !Text
+    geometry: 90x20 x 399x323
+    foreground: *black
+    text: "Currents"
+
+text_update_115: !TextMonitor
+    geometry: 80x25 x 492x321
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)CurrentToEnergy_.C"
+    alignment: Center
+
+text_update_116: !TextMonitor
+    geometry: 80x25 x 579x321
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)CurrentToEnergy_.D"
+    alignment: Center
+
+text_update_117: !TextMonitor
+    geometry: 80x25 x 492x349
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)CurrentToEnergy_.F"
+    alignment: Center
+
+text_update_118: !TextMonitor
+    geometry: 80x25 x 579x349
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)CurrentToEnergy_.G"
+    alignment: Center
+
+B_Fields_119: !Text
+    geometry: 90x20 x 399x351
+    foreground: *black
+    text: "B Fields"
+
+Curr_to_Energy_Conv_120: !Text
+    geometry: 200x20 x 446x252
+    foreground: *black
+    text: "Curr to Energy Conv"
+
+Energy_to_Curr_Conv_121: !Text
+    geometry: 200x20 x 440x47
+    foreground: *black
+    text: "Energy to Curr Conv"
+
+choice_button_122: !ChoiceButton
+    geometry: 200x30 x 549x558
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)CoilCoupling_"
+
+text_update_123: !TextMonitor
+    geometry: 200x25 x 436x211
+    foreground: *medm_color_31
+    background: *medm_color_59
+    pv: "$(P)EtoCChange_"
+    alignment: Center
+
+text_update_124: !TextMonitor
+    geometry: 260x20 x 406x383
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)Message3M.VAL"
+    alignment: Center
+
+text_update_125: !TextMonitor
+    geometry: 80x25 x 190x92
+    foreground: *black
+    background: *medm_color_55
+    pv: "$(P)EnergyReadbackM.E"
+    alignment: Center
+
+text_update_126: !TextMonitor
+    geometry: 80x25 x 280x92
+    foreground: *black
+    background: *medm_color_55
+    pv: "$(P)EnergyReadbackM.F"
+    alignment: Center
+
+Magnetic_Fields_127: !Text
+    geometry: 150x20 x 20x97
+    foreground: *black
+    text: "Magnetic Fields"
+
+H_coil_128: !Text
+    geometry: 52x15 x 512x73
+    foreground: *black
+    text: "H coil"
+
+V_coil_129: !Text
+    geometry: 52x15 x 604x73
+    foreground: *black
+    text: "V coil"
+
+H_coil_130: !Text
+    geometry: 52x15 x 501x306
+    foreground: *black
+    text: "H coil"
+
+V_coil_131: !Text
+    geometry: 52x15 x 593x306
+    foreground: *black
+    text: "V coil"
+
+text_entry_132: !TextEntry
+    geometry: 60x26 x 103x302
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)QuasiRatioInC.C"
+
+Quasi_%_133: !Text
+    geometry: 70x20 x 25x298
+    foreground: *black
+    text: "Quasi %"
+
+text_update_134: !TextMonitor
+    geometry: 260x20 x 12x483
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)Message4M.VAL"
+    alignment: Center
+
+text_update_135: !TextMonitor
+    geometry: 260x20 x 278x482
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)Message5M.VAL"
+    alignment: Center
+
+text_entry_136: !TextEntry
+    geometry: 60x26 x 198x193
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)DesiredBxSetC.VAL"
+
+text_entry_137: !TextEntry
+    geometry: 60x26 x 288x193
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)DesiredBySetC.VAL"
+
+text_entry_138: !TextEntry
+    geometry: 65x23 x 160x224
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)BxStepLimitC"
+
+Bx_Step_Limit_139: !Text
+    geometry: 100x20 x 24x226
+    foreground: *black
+    text: "Bx Step Limit"
+
+Start_Ramp_140: !MessageButton
+    geometry: 100x20 x 41x195
+    foreground: *black
+    background: *medm_color_55
+    pv: "$(P)StartRampC.VAL"
+    text: "Start Ramp"
+    press-value: "1"
+    release-value: "0"
+
+choice_button_141: !ChoiceButton
+    geometry: 120x30 x 240x248
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)BeamlineC"
+
+text_entry_142: !TextEntry
+    geometry: 65x23 x 160x253
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)ByStepLimitC"
+
+By_Step_Limit_143: !Text
+    geometry: 100x20 x 23x255
+    foreground: *black
+    text: "By Step Limit"
+
+text_entry_144: !TextEntry
+    geometry: 60x26 x 198x148
+    foreground: *white
+    background: *medm_color_54
+    pv: "$(P)BxSetC.VAL"
+
+Ramp_Wait_145: !Text
+    geometry: 80x20 x 729x178
+    foreground: *black
+    text: "Ramp Wait"
+
+text_entry_146: !TextEntry
+    geometry: 65x23 x 825x177
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)RampWaitTime_"
+
+Load_SDDS_File_147: !MessageButton
+    geometry: 120x25 x 330x746
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ReadSDDSfile_.PROC"
+    text: "Load SDDS File"
+    press-value: "1"
+
+text_update_148: !TextMonitor
+    geometry: 35x20 x 899x97
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)dVSetpt_.EGU"
+    alignment: Center
+
+text_update_149: !TextMonitor
+    geometry: 35x20 x 899x123
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)dTSetpt_.EGU"
+    alignment: Center
+
+text_update_150: !TextMonitor
+    geometry: 35x20 x 899x178
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)RampWaitTime_.EGU"
+    alignment: Center
+
+text_update_151: !TextMonitor
+    geometry: 35x20 x 899x150
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)dHSetpt_.EGU"
+    alignment: Center
+
+Beamline_152: !Text
+    geometry: 75x20 x 267x229
+    foreground: *black
+    text: "Beamline"
+
+text_update_153: !TextMonitor
+    geometry: 120x20 x 38x353
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)ActualModeM"
+    alignment: Center
+
+Actual_Mode_154: !Text
+    geometry: 120x20 x 38x333
+    foreground: *black
+    text: "Actual Mode"
+
+Desired_Mode_155: !Text
+    geometry: 120x20 x 242x330
+    foreground: *black
+    text: "Desired Mode"
+
+text_update_156: !TextMonitor
+    geometry: 50x20 x 549x813
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)TableNumber_"
+    alignment: Center
+
+Table_Number_157: !Text
+    geometry: 120x20 x 514x790
+    foreground: *black
+    text: "Table Number"
+
+text_update_158: !TextMonitor
+    geometry: 120x20 x 651x814
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)TableDirection_"
+    alignment: Center
+
+Ramp_Direction_159: !Text
+    geometry: 140x20 x 641x791
+    foreground: *black
+    text: "Ramp Direction"
+
+menu_160: !Menu
+    geometry: 120x20 x 203x68
+    foreground: *medm_color_50
+    background: *medm_color_54
+    pv: "$(P)AccessSecurityC.VAL"
+
+related_display_161: !RelatedDisplay
+    geometry: 39x21 x 935x11
+    foreground: *black
+    background: *medm_color_57
+
+Related_Displays_162: !Text
+    geometry: 150x20 x 768x11
+    foreground: *black
+    text: "Related Displays"
+
+Max_Energy_Limit_163: !Text
+    geometry: 160x20 x 415x151
+    foreground: *black
+    text: "Max Energy Limit"
+
+text_entry_164: !TextEntry
+    geometry: 75x20 x 585x151
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)MaxEnergyLimit_"
+
+rectangle_165: !Rectangle
+    geometry: 220x230 x 788x560
+    foreground: *medm_color_8
+
+rectangle_166: !Rectangle
+    geometry: 200x25 x 798x571
+    foreground: *medm_color_32
+
+choice_button_167: !ChoiceButton
+    geometry: 100x25 x 854x608
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)Main_on_offC"
+
+Main_168: !Text
+    geometry: 50x25 x 802x608
+    foreground: *black
+    text: "Main"
+
+choice_button_169: !ChoiceButton
+    geometry: 100x25 x 854x636
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)BxPolaritySet_"
+
+choice_button_170: !ChoiceButton
+    geometry: 100x25 x 854x662
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ByPolaritySet_"
+
+choice_button_171: !ChoiceButton
+    geometry: 100x25 x 854x689
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)BxqPolaritySet_"
+
+choice_button_172: !ChoiceButton
+    geometry: 100x25 x 854x716
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ByqPolaritySet_"
+
+Bx_173: !Text
+    geometry: 40x25 x 802x636
+    foreground: *black
+    text: "Bx"
+
+By_174: !Text
+    geometry: 40x25 x 802x662
+    foreground: *black
+    text: "By"
+
+Bxq_175: !Text
+    geometry: 40x25 x 802x689
+    foreground: *black
+    text: "Bxq"
+
+Byq_176: !Text
+    geometry: 40x25 x 802x716
+    foreground: *black
+    text: "Byq"
+
+Polarity_Reset_177: !MessageButton
+    geometry: 125x20 x 803x760
+    foreground: *black
+    background: *medm_color_56
+    pv: "$(P)PolarityResetButton_.PROC"
+    text: "Polarity Reset"
+    press-value: "1"
+
+Polarity_178: !Text
+    geometry: 100x25 x 848x572
+    foreground: *black
+    text: "Polarity"
+
+Readback_Scan_1_Seco_179: !MessageButton
+    geometry: 200x20 x 282x778
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ReadbackScan_.PROC"
+    text: "Readback Scan 1 Second"
+    press-value: "1"
+
+Readback_Passive_Sca_180: !MessageButton
+    geometry: 200x20 x 54x778
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)ReadbackScanRst_.PROC"
+    text: "Readback Passive Scan"
+    press-value: "1"
+
+ASYN_Readbacks_181: !RelatedDisplay
+    geometry: 120x20 x 54x802
+    foreground: *black
+    background: *medm_color_4
+    links:
+        - { label: "Bx", file: "asynOctet.adl", macros: "P=$(P),R=Bx_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "By", file: "asynOctet.adl", macros: "P=$(P),R=By_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Bxq", file: "asynOctet.adl", macros: "P=$(P),R=Bxq_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Byq", file: "asynOctet.adl", macros: "P=$(P),R=Byq_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "UStop", file: "asynOctet.adl", macros: "P=$(P),R=UStop_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USbot", file: "asynOctet.adl", macros: "P=$(P),R=USbot_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DStop", file: "asynOctet.adl", macros: "P=$(P),R=DStop_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSbot", file: "asynOctet.adl", macros: "P=$(P),R=DSbot_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq1", file: "asynOctet.adl", macros: "P=$(P),R=USq1_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq2", file: "asynOctet.adl", macros: "P=$(P),R=USq2_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq3", file: "asynOctet.adl", macros: "P=$(P),R=USq3_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq4", file: "asynOctet.adl", macros: "P=$(P),R=USq4_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq1", file: "asynOctet.adl", macros: "P=$(P),R=DSq1_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq2", file: "asynOctet.adl", macros: "P=$(P),R=DSq2_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq3", file: "asynOctet.adl", macros: "P=$(P),R=DSq3_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq4", file: "asynOctet.adl", macros: "P=$(P),R=DSq4_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+
+ASYN_Writes_182: !RelatedDisplay
+    geometry: 120x20 x 185x802
+    foreground: *black
+    background: *medm_color_4
+    links:
+        - { label: "Bx", file: "asynOctet.adl", macros: "P=$(P),R=wBx_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "By", file: "asynOctet.adl", macros: "P=$(P),R=wBy_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Bxq", file: "asynOctet.adl", macros: "P=$(P),R=wBxq_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Byq", file: "asynOctet.adl", macros: "P=$(P),R=wByq_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "UStop", file: "asynOctet.adl", macros: "P=$(P),R=wUStop_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USbot", file: "asynOctet.adl", macros: "P=$(P),R=wUSbot_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DStop", file: "asynOctet.adl", macros: "P=$(P),R=wDStop_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSbot", file: "asynOctet.adl", macros: "P=$(P),R=wDSbot_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq1", file: "asynOctet.adl", macros: "P=$(P),R=wUSq1_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq2", file: "asynOctet.adl", macros: "P=$(P),R=wUSq2_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq3", file: "asynOctet.adl", macros: "P=$(P),R=wUSq3_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "USq4", file: "asynOctet.adl", macros: "P=$(P),R=wUSq4_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq1", file: "asynOctet.adl", macros: "P=$(P),R=wDSq1_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq2", file: "asynOctet.adl", macros: "P=$(P),R=wDSq2_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq3", file: "asynOctet.adl", macros: "P=$(P),R=wDSq3_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "DSq4", file: "asynOctet.adl", macros: "P=$(P),R=wDSq4_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+
+ASYN_Out_&_Degauss_183: !RelatedDisplay
+    geometry: 150x21 x 722x509
+    foreground: *black
+    background: *medm_color_4
+    links:
+        - { label: "Set Output", file: "asynOctet.adl", macros: "P=$(P),R=wOut_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Degauss Cmd", file: "asynOctet.adl", macros: "P=$(P),R=wDegauss_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+        - { label: "Reset Degauss Cmd", file: "asynOctet.adl", macros: "P=$(P),R=wRstDegauss_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
+
+text_update_184: !TextMonitor
+    geometry: 50x22 x 264x387
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)Main_on_offC.VAL"
+    alignment: Center
+
+text_update_185: !TextMonitor
+    geometry: 100x20 x 586x483
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)LocalRemote_"
+
+text_update_186: !TextMonitor
+    geometry: 200x20 x 549x592
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)CoilCoupling_"
+    alignment: Center
+
+text_update_187: !TextMonitor
+    geometry: 125x15 x 654x652
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)BxOnOff_"
+
+text_update_188: !TextMonitor
+    geometry: 125x15 x 654x686
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)BxqOnOff_"
+
+text_update_189: !TextMonitor
+    geometry: 125x15 x 654x720
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)ByOnOff_"
+
+text_update_190: !TextMonitor
+    geometry: 125x15 x 654x754
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)ByqOnOff_"
+
+oval_191: !Ellipse
+    geometry: 19x20 x 944x760
+    foreground: *medm_color_15
+
+choice_button_192: !ChoiceButton
+    geometry: 110x30 x 866x471
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)LinearCircular_"
+
+choice_button_193: !ChoiceButton
+    geometry: 125x30 x 899x815
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)SNLdebug_"
+
+Pol._Wait_194: !Text
+    geometry: 80x20 x 729x204
+    foreground: *black
+    text: "Pol. Wait"
+
+text_entry_195: !TextEntry
+    geometry: 65x23 x 825x203
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)PolarityWaitTime_"
+
+text_update_196: !TextMonitor
+    geometry: 35x20 x 899x204
+    foreground: *medm_color_54
+    background: *medm_color_3
+    pv: "$(P)PolarityWaitTime_.EGU"
+    alignment: Center
+
+choice_button_197: !ChoiceButton
+    geometry: 100x30 x 789x816
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)InitPScontrol_"
+
+Pos_198: !Text
+    geometry: 37x21 x 964x638
+    foreground: *black
+    text: "Pos"
+
+Pos_199: !Text
+    geometry: 37x21 x 964x664
+    foreground: *black
+    text: "Pos"
+
+Pos_200: !Text
+    geometry: 37x21 x 964x691
+    foreground: *black
+    text: "Pos"
+
+Pos_201: !Text
+    geometry: 37x21 x 964x718
+    foreground: *black
+    text: "Pos"
+
+Neg_202: !Text
+    geometry: 37x21 x 964x638
+    foreground: *black
+    text: "Neg"
+
+Neg_203: !Text
+    geometry: 37x21 x 964x664
+    foreground: *black
+    text: "Neg"
+
+Neg_204: !Text
+    geometry: 37x21 x 964x691
+    foreground: *black
+    text: "Neg"
+
+Neg_205: !Text
+    geometry: 37x21 x 964x718
+    foreground: *black
+    text: "Neg"
+
+choice_button_206: !ChoiceButton
+    geometry: 100x30 x 595x428
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)UserAbortRamp_"
+
+text_update_207: !TextMonitor
+    geometry: 60x26 x 168x302
+    foreground: *black
+    background: *medm_color_3
+    pv: "$(P)QuasiRatioM.RVAL"
+    alignment: Center
+
+Request_208: !Text
+    geometry: 70x15 x 97x284
+    foreground: *black
+    text: "Request"
+
+Actual_209: !Text
+    geometry: 70x15 x 165x284
+    foreground: *black
+    text: "Actual"
+
+rectangle_210: !Rectangle
+    geometry: 215x48 x 19x283
+    foreground: *black
+
+Local_Off_211: !MessageButton
+    geometry: 100x25 x 184x10
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)OpenDeviceC.VAL"
+    text: "Local Off"
+    press-value: "1"
+
+Local_On_212: !MessageButton
+    geometry: 100x25 x 290x10
+    foreground: *black
+    background: *medm_color_57
+    pv: "$(P)CloseDeviceC.VAL"
+    text: "Local On"
+    press-value: "1"
+
+SR_Energy_Adj._213: !Text
+    geometry: 140x20 x 24x840
+    foreground: *black
+    text: "SR Energy Adj."
+
+text_entry_214: !TextEntry
+    geometry: 75x20 x 170x840
+    foreground: *black
+    background: *medm_color_4
+    pv: "$(P)eBeamEnergyC"
+
+text_update_215: !TextMonitor
+    geometry: 80x25 x 427x838
+    foreground: *medm_color_60
+    background: *medm_color_49
+    pv: "$(P)TotalPowerM.VAL"
+    alignment: Center
+
+ID_Power_(W)_216: !Text
+    geometry: 130x20 x 291x841
+    foreground: *black
+    text: "ID Power (W)"

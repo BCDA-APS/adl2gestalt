@@ -1,0 +1,43 @@
+#include colors.yml
+#include on-off.yml
+
+_FilterLine: !Template:FilterLine
+    - !Defaults
+        height: 30
+        write-width: 40
+        name-width: 120
+        read-width: 40
+        filter: 0
+        bit: 0
+        
+    - !HFlow
+        geometry: "0x{height}"
+        padding: 5
+        
+        children:
+            Switch: !VStretch:ChoiceButton
+                geometry: "{write-width}x0"
+                horizontal: False
+                background: *edit_blue
+                foreground: *header_blue
+                pv: "$(P)BioEnc{filter}B{bit}.VAL"
+
+                
+            Description: !VStretch:Group
+                geometry: "{name-width}x0"
+                margins: 0x5x0x5
+                children: 
+                    - !AStretch:TextEntry
+                        background: *grey_light
+                        pv: "$(P)BioEnc{filter}B{bit}.VAL"
+                
+            
+            Readback: !VStretch:Group
+                geometry: "{read-width}x{height}"
+                margins: 0x5x0x5
+                children:
+                    - !VStretch:Apply:OnOffText
+                        text-width: "{read-width}"
+                        on-label: "Up"
+                        off-label: "Down"
+                        PV: "$(P)BioDecode{filter}.B"

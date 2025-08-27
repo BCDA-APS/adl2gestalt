@@ -1,0 +1,43 @@
+#include colors.yml
+
+anonymous_blue: &anonymous_blue $325D9C
+                       
+_OpsSlice: !Template:OPS_Slice
+    - !Defaults
+        name: ""
+        name-pos: 30
+        link-pos: 145
+        link-color: *anonymous_blue
+        links:
+            - { label: "", file: "", macros: "" }
+            
+        image: False
+        image-pos: 65
+        used: True
+
+    - !Group
+        geometry: 40x200
+        children:
+            - !If:used
+                children:
+                    Optics_Icon: !If:image
+                        - !Image { geometry: "0x{image-pos} x 40x60", file: "{image}" }
+                    
+                    Optics_Link: !HCenter:RelatedDisplay
+                        geometry: "0x{link-pos} x 24x24"
+                        background: "{link-color}"
+                        links: "{links}"
+
+                    Optics_Shell: !HCenter:ShellCommand
+                        geometry: "0x{link-pos} x 24x24"
+                        background: "{link-color}"
+                        commands: "{commands}"
+                                                
+                    Optics_Name: !HStretch:Text
+                        geometry: "0x{name-pos} x 0x15"
+                        font: -Liberation Sans -Regular -6
+                        text: "{name}"
+                        alignment: Center
+                        
+                    Second_Line: !If:name2
+                        - !Hstretch:Text { geometry: "0x47 x 0x15", text: "{name2}", alignment: Center }

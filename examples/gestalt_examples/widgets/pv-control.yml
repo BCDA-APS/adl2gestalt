@@ -1,0 +1,117 @@
+#include colors.yml
+
+_ReadWrite: !Template:PVControl
+    - !Defaults
+        fontname: "Liberation Sans"
+        spacing: 15
+        
+        height: 20
+        
+        desc-width:   60
+        label-width:  60
+        entry-width:  60
+        menu-width:   60
+        button-width: 60
+        read-width:   60
+        units-width:  60
+        
+        desc-background:   *grey_light
+        label-background:  *transparent
+        entry-background:  *edit_blue
+        menu-background:   *edit_blue
+        button-background: *edit_blue
+        read-background:   *transparent
+        units-background:  *transparent
+        
+        desc-foreground:   *black
+        label-foreground:  *black
+        entry-foreground:  *black
+        menu-foreground:   *black
+        button-foreground: *black
+        read-foreground:   *black
+        units-foreground:  *black
+        
+        desc-pv:   False
+        entry-pv:  False
+        menu-pv:   False
+        button-pv: False
+        read-pv:   False
+        
+        label: False
+        units: False
+        
+        button-text: ""
+        button-value: 1
+        
+    - !HFlow
+        children:
+            - !If:label
+                - !Text
+                    geometry: "0x0x{label-width}x{height}"
+                    font: "-{fontname}"
+                    alignment: CenterRight
+                    text: "{label}"
+                    
+            - !If:label        
+                - !Spacer { geometry: "{spacing}x0" }
+                
+            - !If:desc-pv
+                - !TextEntry
+                    geometry: "0x0x{desc-width}x{height}"
+                    background: "{desc-background}"
+                    foreground: "{desc-foreground}"
+                    pv: "{desc-pv}"
+                    
+            - !If:desc-pv        
+                - !Spacer { geometry: "{spacing}x0" }
+                    
+            - !If:entry-pv
+                - !TextEntry
+                    geometry: "0x0x{entry-width}x{height}"
+                    background: "{entry-background}"
+                    foreground: "{entry-foreground}"
+                    pv: "{entry-pv}"
+                    
+            - !If:entry-pv        
+                - !Spacer { geometry: "{spacing}x0" }
+                    
+            - !If:menu-pv
+                - !Menu
+                    geometry: "0x0x{menu-width}x{height}"
+                    background: "{menu-background}"
+                    foreground: "{menu-foreground}"
+                    pv: "{menu-pv}"
+            
+            - !If:menu-pv
+                - !Spacer { geometry: "{spacing}x0" }
+        
+            - !If:button-pv
+                - !MessageButton
+                    geometry: "0x0x{button-width}x{height}"
+                    background: "{button-background}"
+                    foreground: "{button-foreground}"
+                    pv:    "{button-pv}"
+                    value: "{button-value}"
+                    text:  "{button-text}"
+                    
+            - !If:button-pv
+                - !Spacer { geometry: "{spacing}x0" }
+                    
+            - !If:read-pv
+                - !TextMonitor
+                    geometry: "0x0x{read-width}x{height}"
+                    background: "{read-background}"
+                    foreground: "{read-foreground}"
+                    font: "-{fontname}"
+                    pv: "{read-pv}"
+                    
+            - !If:read-pv        
+                - !Spacer { geometry: "{spacing}x0" }
+                    
+            - !If:units
+                - !Text
+                    geometry: "0x0x{units-width}x{height}"
+                    background: "{units-background}"
+                    foreground: "{units-foreground}"
+                    font: "-{fontname}"
+                    text: "{units}"
