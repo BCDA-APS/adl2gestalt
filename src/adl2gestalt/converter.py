@@ -274,6 +274,11 @@ class MedmToGestaltConverter:
             Lines of YAML for this widget
         """
         widget_type = self.widget_map.get(widget.symbol)
+        if widget_type is None:
+            logger.warning(
+                f"Widget type '{widget.symbol}' has no match in Gestalt - skipping"
+            )
+            return []
         if not widget_type:
             logger.warning(f"Unknown widget type: {widget.symbol}")
             return []
