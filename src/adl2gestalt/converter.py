@@ -146,18 +146,15 @@ class MedmToGestaltConverter:
         )
 
         # Build display node
-        lines.append(f"{display_name}: !Form")
-
-        # Add geometry
-        if hasattr(medm, "geometry") and medm.geometry:
-            lines.append(
-                f"    geometry: {medm.geometry.width}x{medm.geometry.height} x {medm.geometry.x}x{medm.geometry.y}"
-            )
+        lines.append("Form: !Form")
 
         # Add title
         title = getattr(medm, "title", display_name)
         if title:
             lines.append(f'    title: "{title}"')
+
+        # Add margins (standard for Form nodes)
+        lines.append("    margins: 10x0x10x10")
 
         # Add display colors
         if medm.color:

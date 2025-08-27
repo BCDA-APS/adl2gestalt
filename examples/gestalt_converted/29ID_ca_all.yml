@@ -1,9 +1,10 @@
+#include colors.yml
+#include widgets.yml
+
 # Gestalt display file generated from MEDM ADL
 # Source: 29ID_ca_all.adl
 # Generator: adl2gestalt
 
-#include colors.yml
-#include widgets.yml
 
 # Custom colors from MEDM color table
 _medm_color_1: &medm_color_1 $ececec
@@ -70,19 +71,19 @@ _medm_color_62: &medm_color_62 $3cb420
 _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
-29ID_ca_all: !Form
-    geometry: 315x452 x 1168x88
-    foreground: *black
+Form: !Form
+    margins: 10x0x10x10
+    foreground: $000000
     background: *medm_color_3
 
 Current_Amplifiers_0: !Text
     geometry: 200x20 x 5x6
-    foreground: *black
+    foreground: $000000
     text: "Current Amplifiers"
 
 text_update_1: !TextMonitor
     geometry: 125x16 x 95x54
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca1:read"
     format: decimal
@@ -90,13 +91,13 @@ text_update_1: !TextMonitor
 
 menu_2: !Menu
     geometry: 75x16 x 227x53
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca1:read.SCAN"
 
 text_update_3: !TextMonitor
     geometry: 125x16 x 95x75
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca2:read"
     format: decimal
@@ -104,13 +105,13 @@ text_update_3: !TextMonitor
 
 menu_4: !Menu
     geometry: 75x16 x 227x74
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca2:read.SCAN"
 
 text_update_5: !TextMonitor
     geometry: 125x16 x 95x96
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca3:read"
     format: decimal
@@ -118,13 +119,13 @@ text_update_5: !TextMonitor
 
 menu_6: !Menu
     geometry: 75x16 x 227x95
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca3:read.SCAN"
 
 text_update_7: !TextMonitor
     geometry: 125x16 x 95x117
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca4:read"
     format: decimal
@@ -132,13 +133,13 @@ text_update_7: !TextMonitor
 
 menu_8: !Menu
     geometry: 75x16 x 227x116
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca4:read.SCAN"
 
 text_update_9: !TextMonitor
     geometry: 125x16 x 95x138
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca5:read"
     format: decimal
@@ -146,13 +147,13 @@ text_update_9: !TextMonitor
 
 menu_10: !Menu
     geometry: 75x16 x 227x137
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca5:read.SCAN"
 
 text_update_11: !TextMonitor
     geometry: 125x16 x 95x181
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca10:read"
     format: decimal
@@ -160,13 +161,13 @@ text_update_11: !TextMonitor
 
 menu_12: !Menu
     geometry: 75x16 x 227x180
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca10:read.SCAN"
 
 text_update_13: !TextMonitor
     geometry: 125x16 x 95x434
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca4:read"
     format: decimal
@@ -174,13 +175,13 @@ text_update_13: !TextMonitor
 
 menu_14: !Menu
     geometry: 75x16 x 227x433
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca4:read.SCAN"
 
 text_update_15: !TextMonitor
     geometry: 125x16 x 95x202
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca12:read"
     format: decimal
@@ -188,13 +189,13 @@ text_update_15: !TextMonitor
 
 menu_16: !Menu
     geometry: 75x16 x 227x201
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca12:read.SCAN"
 
 text_update_17: !TextMonitor
     geometry: 125x16 x 95x223
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca13:read"
     format: decimal
@@ -202,13 +203,13 @@ text_update_17: !TextMonitor
 
 menu_18: !Menu
     geometry: 75x16 x 227x222
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca13:read.SCAN"
 
 text_update_19: !TextMonitor
     geometry: 125x16 x 95x244
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca14:read"
     format: decimal
@@ -216,13 +217,13 @@ text_update_19: !TextMonitor
 
 menu_20: !Menu
     geometry: 75x16 x 227x243
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca14:read.SCAN"
 
 text_update_21: !TextMonitor
     geometry: 125x16 x 95x265
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca15:read"
     format: decimal
@@ -230,13 +231,13 @@ text_update_21: !TextMonitor
 
 menu_22: !Menu
     geometry: 75x16 x 227x264
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca15:read.SCAN"
 
 text_update_23: !TextMonitor
     geometry: 125x16 x 95x371
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca1:read"
     format: decimal
@@ -244,97 +245,97 @@ text_update_23: !TextMonitor
 
 menu_24: !Menu
     geometry: 75x16 x 227x370
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca1:read.SCAN"
 
 -29idbca1_25: !RelatedDisplay
     geometry: 80x20 x 5x53
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca1" }
 
 -29idbca2_26: !RelatedDisplay
     geometry: 80x20 x 5x74
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca2" }
 
 -29idbca3_27: !RelatedDisplay
     geometry: 80x20 x 5x95
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca3" }
 
 -29idbca4_28: !RelatedDisplay
     geometry: 80x20 x 5x116
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca4" }
 
 -29idbca5_29: !RelatedDisplay
     geometry: 80x20 x 5x137
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca5" }
 
 -29idbca10_30: !RelatedDisplay
     geometry: 80x20 x 5x180
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca10" }
 
 -29iddca4_31: !RelatedDisplay
     geometry: 80x20 x 5x433
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca4" }
 
 -29idbca12_32: !RelatedDisplay
     geometry: 80x20 x 5x201
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca12" }
 
 -29idbca13_33: !RelatedDisplay
     geometry: 80x20 x 5x222
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca13" }
 
 -29idbca14_34: !RelatedDisplay
     geometry: 80x20 x 5x243
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca14" }
 
 -29idbca15_35: !RelatedDisplay
     geometry: 80x20 x 5x264
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca15" }
 
 -29iddca1_36: !RelatedDisplay
     geometry: 80x20 x 5x370
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6487small.adl", file: "Keithley6487small.adl", macros: "P=29idd:,CA=ca1" }
 
 text_update_37: !TextMonitor
     geometry: 125x16 x 95x307
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idc:ca1:read"
     format: decimal
@@ -342,27 +343,27 @@ text_update_37: !TextMonitor
 
 menu_38: !Menu
     geometry: 75x16 x 227x306
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idc:ca1:read.SCAN"
 
 -29idcca1_39: !RelatedDisplay
     geometry: 80x20 x 5x306
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6487small.adl", file: "Keithley6487small.adl", macros: "P=29idc:,CA=ca1" }
 
 -29idcca2_40: !RelatedDisplay
     geometry: 80x20 x 5x327
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idc:,CA=ca2" }
 
 text_update_41: !TextMonitor
     geometry: 125x16 x 95x328
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idc:ca2:read"
     format: decimal
@@ -370,13 +371,13 @@ text_update_41: !TextMonitor
 
 menu_42: !Menu
     geometry: 75x16 x 227x327
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idc:ca2:read.SCAN"
 
 text_update_43: !TextMonitor
     geometry: 125x16 x 95x392
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca2:read"
     format: decimal
@@ -384,13 +385,13 @@ text_update_43: !TextMonitor
 
 menu_44: !Menu
     geometry: 75x16 x 227x391
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca2:read.SCAN"
 
 -29iddca2_45: !RelatedDisplay
     geometry: 80x20 x 5x391
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
@@ -400,11 +401,11 @@ composite_46: !Group
     children:
         A-Hutch_------------_0: !Text
             geometry: 301x12 x -51x-111
-            foreground: *black
+            foreground: $000000
             text: "A-Hutch ------------------------------------------"
         --------------------_1: !Text
             geometry: 301x10 x -3x-109
-            foreground: *black
+            foreground: $000000
             text: "------------------------------------------"
 
 composite_47: !Group
@@ -412,11 +413,11 @@ composite_47: !Group
     children:
         B-Branch_-----------_0: !Text
             geometry: 301x12 x 4x165
-            foreground: *black
+            foreground: $000000
             text: "B-Branch ------------------------------------------"
         --------------------_1: !Text
             geometry: 301x10 x 58x167
-            foreground: *black
+            foreground: $000000
             text: "------------------------------------------"
 
 composite_48: !Group
@@ -424,11 +425,11 @@ composite_48: !Group
     children:
         C-Branch_-----------_0: !Text
             geometry: 301x12 x 4x291
-            foreground: *black
+            foreground: $000000
             text: "C-Branch -----------------------------------------"
         --------------------_1: !Text
             geometry: 301x10 x 58x293
-            foreground: *black
+            foreground: $000000
             text: "-----------------------------------------"
 
 composite_49: !Group
@@ -436,11 +437,11 @@ composite_49: !Group
     children:
         D-Branch_-----------_0: !Text
             geometry: 301x12 x 4x355
-            foreground: *black
+            foreground: $000000
             text: "D-Branch -----------------------------------------"
         --------------------_1: !Text
             geometry: 301x10 x 58x357
-            foreground: *black
+            foreground: $000000
             text: "-----------------------------------------"
 
 composite_50: !Group
@@ -448,16 +449,16 @@ composite_50: !Group
     children:
         A-Hutch_------------_0: !Text
             geometry: 300x12 x 4x37
-            foreground: *black
+            foreground: $000000
             text: "A-Hutch ------------------------------------------"
         --------------------_1: !Text
             geometry: 300x10 x 52x39
-            foreground: *black
+            foreground: $000000
             text: "------------------------------------------"
 
 text_update_51: !TextMonitor
     geometry: 125x16 x 95x413
-    foreground: *black
+    foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca3:read"
     format: decimal
@@ -465,13 +466,13 @@ text_update_51: !TextMonitor
 
 menu_52: !Menu
     geometry: 75x16 x 227x412
-    foreground: *black
+    foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca3:read.SCAN"
 
 -29iddca3_53: !RelatedDisplay
     geometry: 80x20 x 5x412
-    foreground: *black
+    foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca3" }
