@@ -5,8 +5,8 @@
       <rect>
         <x>0</x>
         <y>0</y>
-        <width>383</width>
-        <height>732</height>
+        <width>379</width>
+        <height>463</height>
       </rect>
     </property>
     <property name="foreground">
@@ -37,8 +37,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <rect>
             <x>10</x>
             <y>0</y>
-            <width>363</width>
-            <height>722</height>
+            <width>359</width>
+            <height>453</height>
           </rect>
         </property>
         <widget class="caLabel" name="Current_Amplifiers_0">
@@ -2462,8 +2462,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>-102</x>
-              <y>-222</y>
+              <x>-51</x>
+              <y>-111</y>
               <width>301</width>
               <height>12</height>
             </rect>
@@ -2514,8 +2514,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>-54</x>
-              <y>-220</y>
+              <x>-3</x>
+              <y>-109</y>
               <width>301</width>
               <height>10</height>
             </rect>
@@ -2566,8 +2566,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>8</x>
-              <y>330</y>
+              <x>4</x>
+              <y>165</y>
               <width>301</width>
               <height>12</height>
             </rect>
@@ -2618,8 +2618,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>62</x>
-              <y>332</y>
+              <x>58</x>
+              <y>167</y>
               <width>301</width>
               <height>10</height>
             </rect>
@@ -2670,8 +2670,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>8</x>
-              <y>582</y>
+              <x>4</x>
+              <y>291</y>
               <width>301</width>
               <height>12</height>
             </rect>
@@ -2722,8 +2722,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>62</x>
-              <y>584</y>
+              <x>58</x>
+              <y>293</y>
               <width>301</width>
               <height>10</height>
             </rect>
@@ -2774,8 +2774,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>8</x>
-              <y>710</y>
+              <x>4</x>
+              <y>355</y>
               <width>301</width>
               <height>12</height>
             </rect>
@@ -2826,8 +2826,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>62</x>
-              <y>712</y>
+              <x>58</x>
+              <y>357</y>
               <width>301</width>
               <height>10</height>
             </rect>
@@ -2878,8 +2878,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>8</x>
-              <y>74</y>
+              <x>4</x>
+              <y>37</y>
               <width>300</width>
               <height>12</height>
             </rect>
@@ -2930,8 +2930,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>56</x>
-              <y>76</y>
+              <x>52</x>
+              <y>39</y>
               <width>300</width>
               <height>10</height>
             </rect>
