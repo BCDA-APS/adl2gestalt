@@ -83,19 +83,19 @@ Motors_0: !Text
     text: "Motors"
 
 polyline_1: !Polyline
-    geometry: 2x188
+    geometry: 146x0
     border-color: $000000
     points: [ 147x1, 147x187 ]
     border-width: 2
 
 polyline_3: !Polyline
-    geometry: 2x188
+    geometry: 284x0
     border-color: $000000
     points: [ 285x1, 285x187 ]
     border-width: 2
 
 polyline_4: !Polyline
-    geometry: 434x4
+    geometry: 0x194
     border-color: *medm_color_64
     points: [ 2x196, 432x196 ]
     border-width: 4
@@ -139,13 +139,13 @@ Digital_I_O_8: !Text
     text: "Digital I/O"
 
 polyline_9: !Polyline
-    geometry: 149x2
+    geometry: 0x84
     border-color: $000000
     points: [ 148x85, 1x85 ]
     border-width: 2
 
 polyline_10: !Polyline
-    geometry: 141x2
+    geometry: 146x97
     border-color: $000000
     points: [ 286x98, 147x98 ]
     border-width: 2

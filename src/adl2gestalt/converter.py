@@ -327,9 +327,9 @@ class MedmToGestaltConverter:
         # Add geometry if available
         if hasattr(widget, "geometry") and widget.geometry:
             geom = widget.geometry
-            # Polyline widgets use width x height for geometry, not x x y x width x height
+            # Polyline widgets use x x y for geometry, not x x y x width x height
             if widget_type == "Polyline":
-                lines.append(f"    geometry: {geom.width}x{geom.height}")
+                lines.append(f"    geometry: {geom.x}x{geom.y}")
             else:
                 lines.append(
                     f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}"
