@@ -526,6 +526,12 @@ class MedmToGestaltConverter:
                 points_str = ", ".join([f"{p.x}x{p.y}" for p in widget.points])
                 lines.append(f"    points: [ {points_str} ]")
 
+            # Add border-width for polylines
+            if widget_type == "Polyline" and "basic attribute" in contents:
+                basic_attrs = contents["basic attribute"]
+                if isinstance(basic_attrs, dict) and "width" in basic_attrs:
+                    lines.append(f'    border-width: {basic_attrs["width"]}')
+
         # Arc properties
         if widget_type == "Arc":
             if "beginAngle" in contents:

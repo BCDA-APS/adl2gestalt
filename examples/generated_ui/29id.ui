@@ -188,7 +188,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="lineSize">
-            <number>2</number>
+            <number>4</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
