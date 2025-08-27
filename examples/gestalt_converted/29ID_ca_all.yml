@@ -72,406 +72,391 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
+    geometry: 315x452
     margins: 10x0x10x10
     foreground: $000000
     background: *medm_color_3
 
 Current_Amplifiers_0: !Text
-    geometry: 200x20 x 5x6
+    geometry: 5x6 x 200x20
     foreground: $000000
     text: "Current Amplifiers"
 
 text_update_1: !TextMonitor
-    geometry: 125x16 x 95x54
+    geometry: 95x54 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca1:read"
-    format: decimal
     alignment: Center
 
 menu_2: !Menu
-    geometry: 75x16 x 227x53
+    geometry: 227x53 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca1:read.SCAN"
 
 text_update_3: !TextMonitor
-    geometry: 125x16 x 95x75
+    geometry: 95x75 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca2:read"
-    format: decimal
     alignment: Center
 
 menu_4: !Menu
-    geometry: 75x16 x 227x74
+    geometry: 227x74 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca2:read.SCAN"
 
 text_update_5: !TextMonitor
-    geometry: 125x16 x 95x96
+    geometry: 95x96 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca3:read"
-    format: decimal
     alignment: Center
 
 menu_6: !Menu
-    geometry: 75x16 x 227x95
+    geometry: 227x95 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca3:read.SCAN"
 
 text_update_7: !TextMonitor
-    geometry: 125x16 x 95x117
+    geometry: 95x117 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca4:read"
-    format: decimal
     alignment: Center
 
 menu_8: !Menu
-    geometry: 75x16 x 227x116
+    geometry: 227x116 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca4:read.SCAN"
 
 text_update_9: !TextMonitor
-    geometry: 125x16 x 95x138
+    geometry: 95x138 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca5:read"
-    format: decimal
     alignment: Center
 
 menu_10: !Menu
-    geometry: 75x16 x 227x137
+    geometry: 227x137 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca5:read.SCAN"
 
 text_update_11: !TextMonitor
-    geometry: 125x16 x 95x181
+    geometry: 95x181 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca10:read"
-    format: decimal
     alignment: Center
 
 menu_12: !Menu
-    geometry: 75x16 x 227x180
+    geometry: 227x180 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca10:read.SCAN"
 
 text_update_13: !TextMonitor
-    geometry: 125x16 x 95x434
+    geometry: 95x434 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca4:read"
-    format: decimal
     alignment: Center
 
 menu_14: !Menu
-    geometry: 75x16 x 227x433
+    geometry: 227x433 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca4:read.SCAN"
 
 text_update_15: !TextMonitor
-    geometry: 125x16 x 95x202
+    geometry: 95x202 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca12:read"
-    format: decimal
     alignment: Center
 
 menu_16: !Menu
-    geometry: 75x16 x 227x201
+    geometry: 227x201 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca12:read.SCAN"
 
 text_update_17: !TextMonitor
-    geometry: 125x16 x 95x223
+    geometry: 95x223 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca13:read"
-    format: decimal
     alignment: Center
 
 menu_18: !Menu
-    geometry: 75x16 x 227x222
+    geometry: 227x222 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca13:read.SCAN"
 
 text_update_19: !TextMonitor
-    geometry: 125x16 x 95x244
+    geometry: 95x244 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca14:read"
-    format: decimal
     alignment: Center
 
 menu_20: !Menu
-    geometry: 75x16 x 227x243
+    geometry: 227x243 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca14:read.SCAN"
 
 text_update_21: !TextMonitor
-    geometry: 125x16 x 95x265
+    geometry: 95x265 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca15:read"
-    format: decimal
     alignment: Center
 
 menu_22: !Menu
-    geometry: 75x16 x 227x264
+    geometry: 227x264 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca15:read.SCAN"
 
 text_update_23: !TextMonitor
-    geometry: 125x16 x 95x371
+    geometry: 95x371 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca1:read"
-    format: decimal
     alignment: Center
 
 menu_24: !Menu
-    geometry: 75x16 x 227x370
+    geometry: 227x370 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca1:read.SCAN"
 
 -29idbca1_25: !RelatedDisplay
-    geometry: 80x20 x 5x53
+    geometry: 5x53 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca1" }
 
 -29idbca2_26: !RelatedDisplay
-    geometry: 80x20 x 5x74
+    geometry: 5x74 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca2" }
 
 -29idbca3_27: !RelatedDisplay
-    geometry: 80x20 x 5x95
+    geometry: 5x95 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca3" }
 
 -29idbca4_28: !RelatedDisplay
-    geometry: 80x20 x 5x116
+    geometry: 5x116 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca4" }
 
 -29idbca5_29: !RelatedDisplay
-    geometry: 80x20 x 5x137
+    geometry: 5x137 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca5" }
 
 -29idbca10_30: !RelatedDisplay
-    geometry: 80x20 x 5x180
+    geometry: 5x180 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca10" }
 
 -29iddca4_31: !RelatedDisplay
-    geometry: 80x20 x 5x433
+    geometry: 5x433 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca4" }
 
 -29idbca12_32: !RelatedDisplay
-    geometry: 80x20 x 5x201
+    geometry: 5x201 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca12" }
 
 -29idbca13_33: !RelatedDisplay
-    geometry: 80x20 x 5x222
+    geometry: 5x222 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca13" }
 
 -29idbca14_34: !RelatedDisplay
-    geometry: 80x20 x 5x243
+    geometry: 5x243 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca14" }
 
 -29idbca15_35: !RelatedDisplay
-    geometry: 80x20 x 5x264
+    geometry: 5x264 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca15" }
 
 -29iddca1_36: !RelatedDisplay
-    geometry: 80x20 x 5x370
+    geometry: 5x370 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6487small.adl", file: "Keithley6487small.adl", macros: "P=29idd:,CA=ca1" }
 
 text_update_37: !TextMonitor
-    geometry: 125x16 x 95x307
+    geometry: 95x307 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idc:ca1:read"
-    format: decimal
     alignment: Center
 
 menu_38: !Menu
-    geometry: 75x16 x 227x306
+    geometry: 227x306 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idc:ca1:read.SCAN"
 
 -29idcca1_39: !RelatedDisplay
-    geometry: 80x20 x 5x306
+    geometry: 5x306 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6487small.adl", file: "Keithley6487small.adl", macros: "P=29idc:,CA=ca1" }
 
 -29idcca2_40: !RelatedDisplay
-    geometry: 80x20 x 5x327
+    geometry: 5x327 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idc:,CA=ca2" }
 
 text_update_41: !TextMonitor
-    geometry: 125x16 x 95x328
+    geometry: 95x328 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idc:ca2:read"
-    format: decimal
     alignment: Center
 
 menu_42: !Menu
-    geometry: 75x16 x 227x327
+    geometry: 227x327 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idc:ca2:read.SCAN"
 
 text_update_43: !TextMonitor
-    geometry: 125x16 x 95x392
+    geometry: 95x392 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca2:read"
-    format: decimal
     alignment: Center
 
 menu_44: !Menu
-    geometry: 75x16 x 227x391
+    geometry: 227x391 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca2:read.SCAN"
 
 -29iddca2_45: !RelatedDisplay
-    geometry: 80x20 x 5x391
+    geometry: 5x391 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
 
 composite_46: !Group
-    geometry: 349x12 x -51x-111
+    geometry: -51x-111 x 349x12
     children:
         A-Hutch_------------_0: !Text
-            geometry: 301x12 x -51x-111
+            geometry: -51x-111 x 301x12
             foreground: $000000
             text: "A-Hutch ------------------------------------------"
         --------------------_1: !Text
-            geometry: 301x10 x -3x-109
+            geometry: -3x-109 x 301x10
             foreground: $000000
             text: "------------------------------------------"
 
 composite_47: !Group
-    geometry: 355x12 x 4x165
+    geometry: 4x165 x 355x12
     children:
         B-Branch_-----------_0: !Text
-            geometry: 301x12 x 4x165
+            geometry: 4x165 x 301x12
             foreground: $000000
             text: "B-Branch ------------------------------------------"
         --------------------_1: !Text
-            geometry: 301x10 x 58x167
+            geometry: 58x167 x 301x10
             foreground: $000000
             text: "------------------------------------------"
 
 composite_48: !Group
-    geometry: 355x12 x 4x291
+    geometry: 4x291 x 355x12
     children:
         C-Branch_-----------_0: !Text
-            geometry: 301x12 x 4x291
+            geometry: 4x291 x 301x12
             foreground: $000000
             text: "C-Branch -----------------------------------------"
         --------------------_1: !Text
-            geometry: 301x10 x 58x293
+            geometry: 58x293 x 301x10
             foreground: $000000
             text: "-----------------------------------------"
 
 composite_49: !Group
-    geometry: 355x12 x 4x355
+    geometry: 4x355 x 355x12
     children:
         D-Branch_-----------_0: !Text
-            geometry: 301x12 x 4x355
+            geometry: 4x355 x 301x12
             foreground: $000000
             text: "D-Branch -----------------------------------------"
         --------------------_1: !Text
-            geometry: 301x10 x 58x357
+            geometry: 58x357 x 301x10
             foreground: $000000
             text: "-----------------------------------------"
 
 composite_50: !Group
-    geometry: 348x12 x 4x37
+    geometry: 4x37 x 348x12
     children:
         A-Hutch_------------_0: !Text
-            geometry: 300x12 x 4x37
+            geometry: 4x37 x 300x12
             foreground: $000000
             text: "A-Hutch ------------------------------------------"
         --------------------_1: !Text
-            geometry: 300x10 x 52x39
+            geometry: 52x39 x 300x10
             foreground: $000000
             text: "------------------------------------------"
 
 text_update_51: !TextMonitor
-    geometry: 125x16 x 95x413
+    geometry: 95x413 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca3:read"
-    format: decimal
     alignment: Center
 
 menu_52: !Menu
-    geometry: 75x16 x 227x412
+    geometry: 227x412 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idd:ca3:read.SCAN"
 
 -29iddca3_53: !RelatedDisplay
-    geometry: 80x20 x 5x412
+    geometry: 5x412 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:

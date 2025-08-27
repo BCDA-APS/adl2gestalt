@@ -296,7 +296,7 @@ class MedmToGestaltConverter:
         if hasattr(widget, "geometry") and widget.geometry:
             geom = widget.geometry
             lines.append(
-                f"    geometry: {geom.width}x{geom.height} x {geom.x}x{geom.y}"
+                f"    geometry: {geom.x}x{geom.y} x {geom.width}x{geom.height}"
             )
 
         # Add colors
@@ -382,18 +382,21 @@ class MedmToGestaltConverter:
 
         # Text entry/update properties
         if widget_type in ["TextEntry", "TextMonitor"]:
-            if "format" in contents:
-                format_map = {
-                    "decimal": "decimal",
-                    "exponential": "exponential",
-                    "engr_notation": "engineering",
-                    "compact": "compact",
-                    "hexadecimal": "hex",
-                    "octal": "octal",
-                    "string": "string",
-                }
-                fmt = format_map.get(contents["format"], "decimal")
-                lines.append(f"    format: {fmt}")
+            # Note: Gestalt TextMonitor doesn't seem to support format property
+            # Working examples don't specify format, so we'll skip it
+            # if "format" in contents:
+            #     format_map = {
+            #         "decimal": "decimal",
+            #         "exponential": "exponential",
+            #         "engr. notation": "engineering",
+            #         "engr_notation": "engineering",
+            #         "compact": "compact",
+            #         "hexadecimal": "hex",
+            #         "octal": "octal",
+            #         "string": "string",
+            #     }
+            #     fmt = format_map.get(contents["format"], "decimal")
+            #     lines.append(f"    format: {fmt}")
 
             if "align" in contents:
                 align_map = {
