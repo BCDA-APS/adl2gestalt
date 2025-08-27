@@ -78,12 +78,12 @@ Form: !Form
     background: *medm_color_3
 
 Current_Amplifiers_0: !Text
-    geometry: 200x20 x 5x6
+    geometry: 5x6 x 200x20
     foreground: $000000
     text: "Current Amplifiers"
 
 text_update_1: !TextMonitor
-    geometry: 125x16 x 95x54
+    geometry: 95x54 x 125x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca1:read"
@@ -91,13 +91,13 @@ text_update_1: !TextMonitor
     alignment: Center
 
 menu_2: !Menu
-    geometry: 75x16 x 227x53
+    geometry: 227x53 x 75x16
     foreground: $000000
     background: *medm_color_4
     pv: "29idb:ca1:read.SCAN"
 
 -29idbca1_25: !RelatedDisplay
-    geometry: 80x20 x 5x53
+    geometry: 5x53 x 80x20
     foreground: $000000
     background: *medm_color_50
     links:
