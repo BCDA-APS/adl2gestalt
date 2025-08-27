@@ -87,6 +87,7 @@ text_update_1: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca1:read"
+    format: Engineering
     alignment: Center
 
 menu_2: !Menu
@@ -100,6 +101,7 @@ text_update_3: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca2:read"
+    format: Engineering
     alignment: Center
 
 menu_4: !Menu
@@ -113,6 +115,7 @@ text_update_5: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca3:read"
+    format: Engineering
     alignment: Center
 
 menu_6: !Menu
@@ -126,6 +129,7 @@ text_update_7: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca4:read"
+    format: Engineering
     alignment: Center
 
 menu_8: !Menu
@@ -139,6 +143,7 @@ text_update_9: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca5:read"
+    format: Engineering
     alignment: Center
 
 menu_10: !Menu
@@ -152,6 +157,7 @@ text_update_11: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca10:read"
+    format: Engineering
     alignment: Center
 
 menu_12: !Menu
@@ -165,6 +171,7 @@ text_update_13: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca4:read"
+    format: Engineering
     alignment: Center
 
 menu_14: !Menu
@@ -178,6 +185,7 @@ text_update_15: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca12:read"
+    format: Engineering
     alignment: Center
 
 menu_16: !Menu
@@ -191,6 +199,7 @@ text_update_17: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca13:read"
+    format: Engineering
     alignment: Center
 
 menu_18: !Menu
@@ -204,6 +213,7 @@ text_update_19: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca14:read"
+    format: Engineering
     alignment: Center
 
 menu_20: !Menu
@@ -217,6 +227,7 @@ text_update_21: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:ca15:read"
+    format: Engineering
     alignment: Center
 
 menu_22: !Menu
@@ -230,6 +241,7 @@ text_update_23: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca1:read"
+    format: Engineering
     alignment: Center
 
 menu_24: !Menu
@@ -242,6 +254,7 @@ menu_24: !Menu
     geometry: 5x53 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca1"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca1" }
 
@@ -249,6 +262,7 @@ menu_24: !Menu
     geometry: 5x74 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca2"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca2" }
 
@@ -256,6 +270,7 @@ menu_24: !Menu
     geometry: 5x95 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca3"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca3" }
 
@@ -263,6 +278,7 @@ menu_24: !Menu
     geometry: 5x116 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca4"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca4" }
 
@@ -270,6 +286,7 @@ menu_24: !Menu
     geometry: 5x137 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca5"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca5" }
 
@@ -277,6 +294,7 @@ menu_24: !Menu
     geometry: 5x180 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca10"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca10" }
 
@@ -284,6 +302,7 @@ menu_24: !Menu
     geometry: 5x433 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idd:ca4"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca4" }
 
@@ -291,6 +310,7 @@ menu_24: !Menu
     geometry: 5x201 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca12"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca12" }
 
@@ -298,6 +318,7 @@ menu_24: !Menu
     geometry: 5x222 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca13"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca13" }
 
@@ -305,6 +326,7 @@ menu_24: !Menu
     geometry: 5x243 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca14"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca14" }
 
@@ -312,6 +334,7 @@ menu_24: !Menu
     geometry: 5x264 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idb:ca15"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca15" }
 
@@ -319,6 +342,7 @@ menu_24: !Menu
     geometry: 5x370 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idd:ca1"
     links:
         - { label: "Keithley6487small.adl", file: "Keithley6487small.adl", macros: "P=29idd:,CA=ca1" }
 
@@ -327,6 +351,7 @@ text_update_37: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idc:ca1:read"
+    format: Engineering
     alignment: Center
 
 menu_38: !Menu
@@ -339,6 +364,7 @@ menu_38: !Menu
     geometry: 5x306 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idc:ca1"
     links:
         - { label: "Keithley6487small.adl", file: "Keithley6487small.adl", macros: "P=29idc:,CA=ca1" }
 
@@ -346,6 +372,7 @@ menu_38: !Menu
     geometry: 5x327 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idc:ca2"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idc:,CA=ca2" }
 
@@ -354,6 +381,7 @@ text_update_41: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idc:ca2:read"
+    format: Engineering
     alignment: Center
 
 menu_42: !Menu
@@ -367,6 +395,7 @@ text_update_43: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca2:read"
+    format: Engineering
     alignment: Center
 
 menu_44: !Menu
@@ -379,6 +408,7 @@ menu_44: !Menu
     geometry: 5x391 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idd:ca2"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
 
@@ -447,6 +477,7 @@ text_update_51: !TextMonitor
     foreground: $000000
     background: *medm_color_55
     pv: "29idd:ca3:read"
+    format: Engineering
     alignment: Center
 
 menu_52: !Menu
@@ -459,5 +490,6 @@ menu_52: !Menu
     geometry: 5x412 x 80x20
     foreground: $000000
     background: *medm_color_50
+    text: "-29idd:ca3"
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca3" }

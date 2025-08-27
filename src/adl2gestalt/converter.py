@@ -382,21 +382,20 @@ class MedmToGestaltConverter:
 
         # Text entry/update properties
         if widget_type in ["TextEntry", "TextMonitor"]:
-            # Note: Gestalt TextMonitor doesn't seem to support format property
-            # Working examples don't specify format, so we'll skip it
-            # if "format" in contents:
-            #     format_map = {
-            #         "decimal": "decimal",
-            #         "exponential": "exponential",
-            #         "engr. notation": "engineering",
-            #         "engr_notation": "engineering",
-            #         "compact": "compact",
-            #         "hexadecimal": "hex",
-            #         "octal": "octal",
-            #         "string": "string",
-            #     }
-            #     fmt = format_map.get(contents["format"], "decimal")
-            #     lines.append(f"    format: {fmt}")
+            if "format" in contents:
+                format_map = {
+                    "decimal": "Decimal",
+                    "exponential": "Exponential",
+                    "engr. notation": "Engineering",
+                    "engr_notation": "Engineering",
+                    "compact": "Compact",
+                    "hexadecimal": "Hexadecimal",
+                    "octal": "Octal",
+                    "string": "String",
+                    "binary": "Binary",
+                }
+                fmt = format_map.get(contents["format"], "Decimal")
+                lines.append(f"    format: {fmt}")
 
             if "align" in contents:
                 align_map = {
@@ -438,6 +437,17 @@ class MedmToGestaltConverter:
 
         # Related display properties
         if widget_type == "RelatedDisplay" and hasattr(widget, "displays"):
+            # Add text property for the button label
+            if "label" in contents:
+                lines.append(f'    text: "{contents["label"]}"')
+            elif widget.displays and len(widget.displays) > 0:
+                # Use the first display's label as the button text
+                first_display = widget.displays[0]
+                if "label" in first_display:
+                    lines.append(f'    text: "{first_display["label"]}"')
+                elif "name" in first_display:
+                    lines.append(f'    text: "{first_display["name"]}"')
+
             if widget.displays:
                 lines.append("    links:")
                 for display in widget.displays:
