@@ -214,12 +214,13 @@ class MedmToGestaltConverter:
             # Check if this is a standard color
             rgb_tuple = (color.r, color.g, color.b)
             if rgb_tuple in standard_colors:
-                self.color_map[i] = f"*{standard_colors[rgb_tuple]}"
+                # Use direct hex for standard colors instead of aliases
+                self.color_map[i] = color_hex
             else:
                 # Create a custom color alias
-                alias_name = f"_medm_color_{i}"
-                self.color_aliases[alias_name] = color_hex
-                self.color_map[i] = f"*medm_color_{i}"
+                alias_name = f"medm_color_{i}"
+                self.color_aliases[f"_{alias_name}"] = color_hex
+                self.color_map[i] = f"*{alias_name}"
 
     def get_color_reference(self, color, color_table: List) -> str:
         """
