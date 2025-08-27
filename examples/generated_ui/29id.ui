@@ -1985,7 +1985,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               </color>
             </property>
             <property name="label">
-              <string>-</string>
+              <string>-EDM</string>
             </property>
             <property name="labels">
               <string>M0 Mirror;M1 mirror;M3R mirror;Mono</string>
@@ -2044,7 +2044,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               </color>
             </property>
             <property name="label">
-              <string>-</string>
+              <string>-Tools</string>
             </property>
             <property name="labels">
               <string>dview;sview;StripTool;Probe;Beeper;ipython local;ipython;ImageJ</string>

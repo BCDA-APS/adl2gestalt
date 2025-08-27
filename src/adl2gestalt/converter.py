@@ -465,15 +465,15 @@ class MedmToGestaltConverter:
             if "release_msg" in contents:
                 lines.append(f'    release-value: "{contents["release_msg"]}"')
 
+        # Helper function to remove leading "-" from MEDM labels
+        def clean_medm_label(label):
+            """Remove leading '-' from MEDM labels to avoid folder icons"""
+            if label and label.startswith("-"):
+                return label[1:]  # Remove the leading "-"
+            return label
+
         # Related display properties
         if widget_type == "RelatedDisplay" and hasattr(widget, "displays"):
-            # Helper function to remove leading "-" from MEDM labels
-            def clean_medm_label(label):
-                """Remove leading '-' from MEDM labels to avoid folder icons"""
-                if label and label.startswith("-"):
-                    return label[1:]  # Remove the leading "-"
-                return label
-
             # Add text property for the button label
             if "label" in contents:
                 clean_label = clean_medm_label(contents["label"])
@@ -501,6 +501,15 @@ class MedmToGestaltConverter:
 
         # Shell command properties
         if widget_type == "ShellCommand" and hasattr(widget, "commands"):
+            # Add text property for the button label
+            if "label" in contents:
+                lines.append(f'    text: "{contents["label"]}"')
+            elif widget.commands and len(widget.commands) > 0:
+                # Use the first command's label as the button text
+                first_cmd = widget.commands[0]
+                if "label" in first_cmd:
+                    lines.append(f'    text: "{first_cmd["label"]}"')
+
             if widget.commands:
                 lines.append("    commands:")
                 for cmd in widget.commands:

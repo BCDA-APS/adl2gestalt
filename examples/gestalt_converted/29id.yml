@@ -362,6 +362,7 @@ EDM_35: !ShellCommand
     geometry: 360x165x46x20
     foreground: $000000
     background: *medm_color_55
+    text: "EDM"
     commands:
         - { label: "M0 Mirror", command: "/net/s29dserv/xorApps/adl/start_opi_M0.sh" }
         - { label: "M1 mirror", command: "/net/s29dserv/xorApps/adl/start_opi_M1.sh" }
@@ -372,6 +373,7 @@ Tools_36: !ShellCommand
     geometry: 294x165x62x20
     foreground: $000000
     background: *medm_color_55
+    text: "Tools"
     commands:
         - { label: "dview", command: "/APSshare/bin/dview /net/s29data/export/data_29id/2016_3/mda& " }
         - { label: "sview", command: "/APSshare/bin/sview -m 800000 29idb:scan1&" }
