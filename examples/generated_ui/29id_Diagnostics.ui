@@ -1,0 +1,5272 @@
+<ui version="4.0">
+  <class>Form</class>
+  <widget class="QMainWindow" name="Form">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>379</width>
+        <height>733</height>
+      </rect>
+    </property>
+    <property name="foreground">
+      <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+      </color>
+    </property>
+    <property name="styleSheet">
+      <string>QWidget#centralwidget {background: rgba(200,200,200,255);}
+QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
+    </property>
+    <property name="windowTitle">
+      <string></string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>0</width>
+          <height>0</height>
+        </rect>
+      </property>
+      <widget class="caFrame" name="content">
+        <property name="geometry">
+          <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>359</width>
+            <height>723</height>
+          </rect>
+        </property>
+        <widget class="caLabel" name="Diagnostics_Position_0">
+          <property name="text">
+            <string>Diagnostics Positions</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>5</x>
+              <y>5</y>
+              <width>295</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLineEdit" name="text_update_1">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>58</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m1.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame1">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>80</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_2">
+            <property name="press-value">
+              <string>-4</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m1.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame2">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>80</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="START_3">
+            <property name="press-value">
+              <string>-14</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>START</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m1.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame3">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>56</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-H-wire_4">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>H-wire</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m1</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-H-wire</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_5">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>106</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m2.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame4">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>128</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_6">
+            <property name="press-value">
+              <string>-10</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m2.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame5">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>128</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="START_7">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>START</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m2.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame6">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>104</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-V-wire_8">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>V-wire</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m2</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-V-wire</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame7">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>56</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_9">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m1:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame8">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>104</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_10">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m2:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_11">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>174</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m3.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame9">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>196</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_12">
+            <property name="press-value">
+              <string>-4</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m3.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame10">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>196</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Si-2800_13">
+            <property name="press-value">
+              <string>-14</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Si-2800</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m3.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame11">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>172</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-H-Diagon_14">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>DiaGon-H</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m3</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-H-Diagon</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_15">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>223</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m4.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame12">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>221</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-V-Diagon_16">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>DiaGon-V</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m4</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-V-Diagon</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame13">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>172</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_17">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m3:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame14">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>221</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_18">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m4:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame15">
+          <property name="geometry">
+            <rect>
+              <x>123</x>
+              <y>196</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="ML-400_19">
+            <property name="press-value">
+              <string>-22</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>ML-400</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m3.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame16">
+          <property name="geometry">
+            <rect>
+              <x>179</x>
+              <y>196</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="ML-460_20">
+            <property name="press-value">
+              <string>-30</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>ML-460</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m3.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame17">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>245</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_21">
+            <property name="press-value">
+              <string>-4</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m4.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame18">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>245</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Si-2800_22">
+            <property name="press-value">
+              <string>-14</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Si-2800</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m4.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame19">
+          <property name="geometry">
+            <rect>
+              <x>123</x>
+              <y>245</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="ML-400_23">
+            <property name="press-value">
+              <string>-22</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>ML-400</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m4.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame20">
+          <property name="geometry">
+            <rect>
+              <x>179</x>
+              <y>245</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="ML-460_24">
+            <property name="press-value">
+              <string>-30</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>ML-460</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m4.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_25">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>290</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m5.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame21">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>288</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-D1A_(W-mesh)_26">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>D1A</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m5</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-D1A (W-mesh)</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame22">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>288</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_27">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m5:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame23">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>312</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_28">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m5.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame24">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>312</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="MESH_29">
+            <property name="press-value">
+              <string>-55</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>MESH</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m5.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_30">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>370</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m6.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame25">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>368</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-D2B_(post-Mono)_31">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>D2B</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m6</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-D2B (post-Mono)</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame26">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>368</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_32">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m6:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame27">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>392</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_33">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m6.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame28">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>392</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="MESH_34">
+            <property name="press-value">
+              <string>-46</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>MESH</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m6.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame29">
+          <property name="geometry">
+            <rect>
+              <x>108</x>
+              <y>392</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="YAG_35">
+            <property name="press-value">
+              <string>-64</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>YAG</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m6.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame30">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>445</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_36">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m7.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame31">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>445</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="YAG_37">
+            <property name="press-value">
+              <string>-49</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>YAG</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m7.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame32">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>420</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_38">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m7:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_39">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>422</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m7.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame33">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>420</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-D3B_(post-M3R)_40">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>D3B</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m7</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-D3B (post-M3R)</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLabel" name="--------------------_41">
+          <property name="text">
+            <string>-----------------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>10</x>
+              <y>151</y>
+              <width>301</width>
+              <height>10</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="--------------------_42">
+          <property name="text">
+            <string>-----------------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>10</x>
+              <y>267</y>
+              <width>301</width>
+              <height>10</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="A-Hutch_------------_0">
+          <property name="text">
+            <string>A-Hutch ------------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>5</x>
+              <y>37</y>
+              <width>300</width>
+              <height>12</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="--------------------_1">
+          <property name="text">
+            <string>------------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>53</x>
+              <y>39</y>
+              <width>300</width>
+              <height>10</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="B-Branch_-----------_0">
+          <property name="text">
+            <string>B-Branch ------------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>5</x>
+              <y>347</y>
+              <width>300</width>
+              <height>12</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="--------------------_12">
+          <property name="text">
+            <string>------------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>59</x>
+              <y>349</y>
+              <width>300</width>
+              <height>10</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="C-Branch_-----------_0">
+          <property name="text">
+            <string>C-Branch -----------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>5</x>
+              <y>480</y>
+              <width>300</width>
+              <height>12</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="--------------------_13">
+          <property name="text">
+            <string>-----------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>59</x>
+              <y>482</y>
+              <width>300</width>
+              <height>10</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="D-Branch_-----------_0">
+          <property name="text">
+            <string>D-Branch -----------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>5</x>
+              <y>609</y>
+              <width>300</width>
+              <height>12</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="--------------------_14">
+          <property name="text">
+            <string>-----------------------------------------</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>59</x>
+              <y>611</y>
+              <width>300</width>
+              <height>10</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame34">
+          <property name="geometry">
+            <rect>
+              <x>108</x>
+              <y>524</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="YAG_47">
+            <property name="press-value">
+              <string>-81.5</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>YAG</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m17.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame35">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>524</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="MESH_48">
+            <property name="press-value">
+              <string>-56</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>MESH</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m17.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame36">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>524</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_49">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m17.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame37">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>500</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-D4C_(pre-Slit)_50">
+            <property name="foreground">
+              <color alpha="255">
+                <red>10</red>
+                <green>0</green>
+                <blue>184</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>D4C</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m17</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-D4C (pre-Slit)</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_51">
+          <property name="foreground">
+            <color alpha="255">
+              <red>10</red>
+              <green>0</green>
+              <blue>184</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>186</x>
+              <y>502</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m17.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame38">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>500</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_52">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m17:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_53">
+          <property name="foreground">
+            <color alpha="255">
+              <red>10</red>
+              <green>0</green>
+              <blue>184</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>555</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m20.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame39">
+          <property name="geometry">
+            <rect>
+              <x>123</x>
+              <y>577</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Diode2_54">
+            <property name="press-value">
+              <string>-67.74</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Diode2</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m20.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame40">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>577</y>
+              <width>50</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Diode-1_55">
+            <property name="press-value">
+              <string>-31</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Diode-1</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m20.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>50</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame41">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>577</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_56">
+            <property name="press-value">
+              <string>-10</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m20.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame42">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>553</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_57">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m20:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame43">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>553</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-gas-cell_58">
+            <property name="foreground">
+              <color alpha="255">
+                <red>10</red>
+                <green>0</green>
+                <blue>184</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>gas-cell</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m20</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-gas-cell</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame44">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>631</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-D4D_(pre-Slit)_59">
+            <property name="foreground">
+              <color alpha="255">
+                <red>33</red>
+                <green>108</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>D4D (pre-Slit)</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m25</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-D4D (pre-Slit)</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame45">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>655</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_60">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m25.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame46">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>655</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="MESH_61">
+            <property name="press-value">
+              <string>-53</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>MESH</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m25.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame47">
+          <property name="geometry">
+            <rect>
+              <x>108</x>
+              <y>655</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="YAG_62">
+            <property name="press-value">
+              <string>-72</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>YAG</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m25.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_63">
+          <property name="foreground">
+            <color alpha="255">
+              <red>33</red>
+              <green>108</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>633</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m25.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame48">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>631</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_64">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m25:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame49">
+          <property name="geometry">
+            <rect>
+              <x>278</x>
+              <y>684</y>
+              <width>21</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Ld_65">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Ld</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m28:scanParms.LOAD</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>21</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLineEdit" name="text_update_66">
+          <property name="foreground">
+            <color alpha="255">
+              <red>33</red>
+              <green>108</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>235</red>
+              <green>241</green>
+              <blue>181</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>188</x>
+              <y>686</y>
+              <width>80</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:m28.RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame50">
+          <property name="geometry">
+            <rect>
+              <x>8</x>
+              <y>684</y>
+              <width>130</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="-D5D_(pre-RSXS)_67">
+            <property name="foreground">
+              <color alpha="255">
+                <red>33</red>
+                <green>108</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>153</red>
+                <green>255</green>
+                <blue>255</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>D5D (pre RSXS)</string>
+            </property>
+            <property name="files">
+              <string>motorx.ui</string>
+            </property>
+            <property name="args">
+              <string>P=29idb:,M=m28</string>
+            </property>
+            <property name="removeParent">
+              <string>false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-D5D (pre-RSXS)</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>130</width>
+                <height>20</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame51">
+          <property name="geometry">
+            <rect>
+              <x>28</x>
+              <y>708</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="OUT_68">
+            <property name="press-value">
+              <string>-20</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m28.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame52">
+          <property name="geometry">
+            <rect>
+              <x>68</x>
+              <y>708</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="MESH_69">
+            <property name="press-value">
+              <string>-53</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>238</red>
+                <green>182</green>
+                <blue>43</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>MESH</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m28.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame53">
+          <property name="geometry">
+            <rect>
+              <x>108</x>
+              <y>708</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="YAG_70">
+            <property name="press-value">
+              <string>-72</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>YAG</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m28.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame54">
+          <property name="geometry">
+            <rect>
+              <x>148</x>
+              <y>708</y>
+              <width>35</width>
+              <height>15</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="Diode_71">
+            <property name="press-value">
+              <string>-86.75</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>253</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>Diode</string>
+            </property>
+            <property name="channel">
+              <string>29idb:m28.VAL</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>35</width>
+                <height>15</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="QFrame" name="QFrame55">
+          <property name="geometry">
+            <rect>
+              <x>226</x>
+              <y>6</y>
+              <width>70</width>
+              <height>25</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="ALL_OUT_72">
+            <property name="press-value">
+              <string>1</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>115</red>
+                <green>255</green>
+                <blue>107</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>ALL OUT</string>
+            </property>
+            <property name="channel">
+              <string>29idb:userStringSeq3.PROC</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>70</width>
+                <height>25</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caLabel" name="m1_73">
+          <property name="text">
+            <string>m1:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>58</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m2_74">
+          <property name="text">
+            <string>m2:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>106</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m3_75">
+          <property name="text">
+            <string>m3:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>174</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m4_76">
+          <property name="text">
+            <string>m4:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>223</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m5_77">
+          <property name="text">
+            <string>m5:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>290</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m6_78">
+          <property name="text">
+            <string>m6:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>370</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m7_79">
+          <property name="text">
+            <string>m7:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>422</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m17_80">
+          <property name="text">
+            <string>m17:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>502</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m20_81">
+          <property name="text">
+            <string>m20:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>555</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m25_82">
+          <property name="text">
+            <string>m25:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>633</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m28_83">
+          <property name="text">
+            <string>m28:</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>150</x>
+              <y>686</y>
+              <width>30</width>
+              <height>16</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</ui>

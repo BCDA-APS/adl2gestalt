@@ -1238,7 +1238,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca1</string>
+              <string>-29idb:ca1</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1303,7 +1303,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca2</string>
+              <string>-29idb:ca2</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1368,7 +1368,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca3</string>
+              <string>-29idb:ca3</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1433,7 +1433,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca4</string>
+              <string>-29idb:ca4</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1498,7 +1498,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca5</string>
+              <string>-29idb:ca5</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1563,7 +1563,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca10</string>
+              <string>-29idb:ca10</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1628,7 +1628,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idd:ca4</string>
+              <string>-29idd:ca4</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1693,7 +1693,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca12</string>
+              <string>-29idb:ca12</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1758,7 +1758,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca13</string>
+              <string>-29idb:ca13</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1823,7 +1823,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca14</string>
+              <string>-29idb:ca14</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1888,7 +1888,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idb:ca15</string>
+              <string>-29idb:ca15</string>
             </property>
             <property name="geometry">
               <rect>
@@ -1953,7 +1953,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idd:ca1</string>
+              <string>-29idd:ca1</string>
             </property>
             <property name="geometry">
               <rect>
@@ -2109,7 +2109,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idc:ca1</string>
+              <string>-29idc:ca1</string>
             </property>
             <property name="geometry">
               <rect>
@@ -2174,7 +2174,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idc:ca2</string>
+              <string>-29idc:ca2</string>
             </property>
             <property name="geometry">
               <rect>
@@ -2421,7 +2421,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idd:ca2</string>
+              <string>-29idd:ca2</string>
             </property>
             <property name="geometry">
               <rect>
@@ -3097,7 +3097,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <enum>EPushButton::WidthAndHeight</enum>
             </property>
             <property name="label">
-              <string>--29idd:ca3</string>
+              <string>-29idd:ca3</string>
             </property>
             <property name="geometry">
               <rect>
