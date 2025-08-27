@@ -1,0 +1,525 @@
+<ui version="4.0">
+  <class>Form</class>
+  <widget class="QMainWindow" name="Form">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>350</width>
+        <height>150</height>
+      </rect>
+    </property>
+    <property name="styleSheet">
+      <string>QWidget#centralwidget {background: rgba(187,187,187,255);}
+QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
+    </property>
+    <property name="windowTitle">
+      <string>Granite Control</string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>0</width>
+          <height>0</height>
+        </rect>
+      </property>
+      <widget class="caFrame" name="content">
+        <property name="geometry">
+          <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>330</width>
+            <height>140</height>
+          </rect>
+        </property>
+        <widget class="caLabel" name="caLabel1">
+          <property name="text">
+            <string>Enable Y</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>60</y>
+              <width>160</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caChoice" name="caChoice1">
+          <property name="foreground">
+            <color alpha="255">
+              <red>36</red>
+              <green>36</green>
+              <blue>36</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>87</red>
+              <green>202</green>
+              <blue>228</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>40</x>
+              <y>90</y>
+              <width>80</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P)bo6:8.VAL</string>
+          </property>
+          <property name="bordercolor">
+            <color alpha="255">
+              <red>87</red>
+              <green>202</green>
+              <blue>228</blue>
+            </color>
+          </property>
+          <property name="stackingMode">
+            <enum>Column</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caChoice::Static</enum>
+          </property>
+        </widget>
+        <widget class="caLed" name="caLed1">
+          <property name="geometry">
+            <rect>
+              <x>70</x>
+              <y>120</y>
+              <width>20</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P)bi6:17.VAL</string>
+          </property>
+          <property name="rectangular">
+            <bool>false</bool>
+          </property>
+          <property name="falseColor">
+            <color alpha="255">
+              <red>100</red>
+              <green>100</green>
+              <blue>100</blue>
+            </color>
+          </property>
+          <property name="falseValue">
+            <number>0</number>
+          </property>
+          <property name="trueColor">
+            <color alpha="255">
+              <red>30</red>
+              <green>228</green>
+              <blue>30</blue>
+            </color>
+          </property>
+          <property name="trueValue">
+            <number>1</number>
+          </property>
+          <property name="undefinedColor">
+            <color alpha="255">
+              <red>160</red>
+              <green>160</green>
+              <blue>164</blue>
+            </color>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="gradientEnabled">
+            <bool>false</bool>
+          </property>
+          <property name="scaleContents">
+            <bool>true</bool>
+          </property>
+          <property name="ledWidth">
+            <number>18</number>
+          </property>
+          <property name="ledHeight">
+            <number>18</number>
+          </property>
+        </widget>
+        <widget class="caLabel" name="caLabel2">
+          <property name="text">
+            <string>Enable XZ</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>170</x>
+              <y>60</y>
+              <width>160</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caChoice" name="caChoice2">
+          <property name="foreground">
+            <color alpha="255">
+              <red>36</red>
+              <green>36</green>
+              <blue>36</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>87</red>
+              <green>202</green>
+              <blue>228</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>210</x>
+              <y>90</y>
+              <width>80</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P)bo6:9.VAL</string>
+          </property>
+          <property name="bordercolor">
+            <color alpha="255">
+              <red>87</red>
+              <green>202</green>
+              <blue>228</blue>
+            </color>
+          </property>
+          <property name="stackingMode">
+            <enum>Column</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caChoice::Static</enum>
+          </property>
+        </widget>
+        <widget class="caLed" name="caLed2">
+          <property name="geometry">
+            <rect>
+              <x>210</x>
+              <y>120</y>
+              <width>20</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P)bi4:17.VAL</string>
+          </property>
+          <property name="rectangular">
+            <bool>false</bool>
+          </property>
+          <property name="falseColor">
+            <color alpha="255">
+              <red>100</red>
+              <green>100</green>
+              <blue>100</blue>
+            </color>
+          </property>
+          <property name="falseValue">
+            <number>0</number>
+          </property>
+          <property name="trueColor">
+            <color alpha="255">
+              <red>30</red>
+              <green>228</green>
+              <blue>30</blue>
+            </color>
+          </property>
+          <property name="trueValue">
+            <number>1</number>
+          </property>
+          <property name="undefinedColor">
+            <color alpha="255">
+              <red>160</red>
+              <green>160</green>
+              <blue>164</blue>
+            </color>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="gradientEnabled">
+            <bool>false</bool>
+          </property>
+          <property name="scaleContents">
+            <bool>true</bool>
+          </property>
+          <property name="ledWidth">
+            <number>18</number>
+          </property>
+          <property name="ledHeight">
+            <number>18</number>
+          </property>
+        </widget>
+        <widget class="caLed" name="caLed3">
+          <property name="geometry">
+            <rect>
+              <x>240</x>
+              <y>120</y>
+              <width>20</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P)bi5:17.VAL</string>
+          </property>
+          <property name="rectangular">
+            <bool>false</bool>
+          </property>
+          <property name="falseColor">
+            <color alpha="255">
+              <red>100</red>
+              <green>100</green>
+              <blue>100</blue>
+            </color>
+          </property>
+          <property name="falseValue">
+            <number>0</number>
+          </property>
+          <property name="trueColor">
+            <color alpha="255">
+              <red>30</red>
+              <green>228</green>
+              <blue>30</blue>
+            </color>
+          </property>
+          <property name="trueValue">
+            <number>1</number>
+          </property>
+          <property name="undefinedColor">
+            <color alpha="255">
+              <red>160</red>
+              <green>160</green>
+              <blue>164</blue>
+            </color>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="gradientEnabled">
+            <bool>false</bool>
+          </property>
+          <property name="scaleContents">
+            <bool>true</bool>
+          </property>
+          <property name="ledWidth">
+            <number>18</number>
+          </property>
+          <property name="ledHeight">
+            <number>18</number>
+          </property>
+        </widget>
+        <widget class="caLed" name="caLed4">
+          <property name="geometry">
+            <rect>
+              <x>270</x>
+              <y>120</y>
+              <width>20</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P)bi7:17.VAL</string>
+          </property>
+          <property name="rectangular">
+            <bool>false</bool>
+          </property>
+          <property name="falseColor">
+            <color alpha="255">
+              <red>100</red>
+              <green>100</green>
+              <blue>100</blue>
+            </color>
+          </property>
+          <property name="falseValue">
+            <number>0</number>
+          </property>
+          <property name="trueColor">
+            <color alpha="255">
+              <red>30</red>
+              <green>228</green>
+              <blue>30</blue>
+            </color>
+          </property>
+          <property name="trueValue">
+            <number>1</number>
+          </property>
+          <property name="undefinedColor">
+            <color alpha="255">
+              <red>160</red>
+              <green>160</green>
+              <blue>164</blue>
+            </color>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="gradientEnabled">
+            <bool>false</bool>
+          </property>
+          <property name="scaleContents">
+            <bool>true</bool>
+          </property>
+          <property name="ledWidth">
+            <number>18</number>
+          </property>
+          <property name="ledHeight">
+            <number>18</number>
+          </property>
+        </widget>
+        <widget class="caLabel" name="caLabel3">
+          <property name="text">
+            <string>8-ID-E Granite Control</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>228</red>
+              <green>228</green>
+              <blue>228</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>0</red>
+              <green>53</green>
+              <blue>132</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>16</pointsize>
+              <bold>true</bold>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>330</width>
+              <height>45</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>36</red>
+              <green>36</green>
+              <blue>36</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>3</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</ui>

@@ -1,6 +1,5 @@
 #include colors.yml
 #include widgets.yml
-#include useful_templates.yml
 
 
 Form: !Form
@@ -13,13 +12,7 @@ Content: !VFlow
     padding: 30
     
     children:
-        - !HRepeat
-            repeat-over: 3
-            start-at: 1
-            padding: 10
-            children:
-                - !Apply:MiniMotor
-                    motor-pv: "$(P)$(M{N})"
+
                 
                             
         - !HCenter:HFlow
