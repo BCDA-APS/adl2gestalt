@@ -486,8 +486,51 @@ class MedmToGestaltConverter:
             # Recursively convert child widgets
             if widget.widgets:
                 lines.append("    children:")
+
+                # Get the group's absolute position for calculating relative child coordinates
+                group_x = (
+                    widget.geometry.x
+                    if hasattr(widget, "geometry") and widget.geometry
+                    else 0
+                )
+                group_y = (
+                    widget.geometry.y
+                    if hasattr(widget, "geometry") and widget.geometry
+                    else 0
+                )
+
                 for i, child in enumerate(widget.widgets):
-                    child_lines = self.convert_widget_to_lines(child, i, color_table)
+                    # Create a copy of the child with relative coordinates
+                    from .parser import Geometry
+
+                    if hasattr(child, "geometry") and child.geometry:
+                        # Calculate relative coordinates: child_absolute - group_absolute
+                        relative_x = child.geometry.x - group_x
+                        relative_y = child.geometry.y - group_y
+
+                        # Create a new geometry object with relative coordinates
+                        relative_geometry = Geometry(
+                            relative_x,
+                            relative_y,
+                            child.geometry.width,
+                            child.geometry.height,
+                        )
+
+                        # Temporarily replace the child's geometry with relative coordinates
+                        original_geometry = child.geometry
+                        child.geometry = relative_geometry
+
+                        child_lines = self.convert_widget_to_lines(
+                            child, i, color_table
+                        )
+
+                        # Restore original geometry
+                        child.geometry = original_geometry
+                    else:
+                        child_lines = self.convert_widget_to_lines(
+                            child, i, color_table
+                        )
+
                     if child_lines:
                         # Indent child lines
                         for line in child_lines:
