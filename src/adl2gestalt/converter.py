@@ -295,9 +295,7 @@ class MedmToGestaltConverter:
         # Add geometry if available
         if hasattr(widget, "geometry") and widget.geometry:
             geom = widget.geometry
-            lines.append(
-                f"    geometry: {geom.x}x{geom.y} x {geom.width}x{geom.height}"
-            )
+            lines.append(f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}")
 
         # Add colors
         if hasattr(widget, "color") and widget.color:
