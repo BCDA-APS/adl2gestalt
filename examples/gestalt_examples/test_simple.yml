@@ -1,0 +1,11 @@
+#include colors.yml
+#include widgets.yml
+
+Form: !Form
+    margins: 10x0x10x10
+
+TestText: !Text
+    geometry: 100x20 x 50x50
+    text: "Hello World"
+    foreground: $000000
+    background: $ffffff 
