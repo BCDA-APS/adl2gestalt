@@ -327,13 +327,23 @@ class MedmToGestaltConverter:
         # Add geometry if available
         if hasattr(widget, "geometry") and widget.geometry:
             geom = widget.geometry
-            lines.append(f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}")
+            # Polyline widgets use width x height for geometry, not x x y x width x height
+            if widget_type == "Polyline":
+                lines.append(f"    geometry: {geom.width}x{geom.height}")
+            else:
+                lines.append(
+                    f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}"
+                )
 
         # Add colors
         if hasattr(widget, "color") and widget.color:
             fg_color = self.get_color_reference(widget.color, color_table)
             if fg_color:
-                lines.append(f"    foreground: {fg_color}")
+                # Use border-color for Polyline widgets, foreground for others
+                if widget_type == "Polyline":
+                    lines.append(f"    border-color: {fg_color}")
+                else:
+                    lines.append(f"    foreground: {fg_color}")
 
         if hasattr(widget, "background_color") and widget.background_color:
             bg_color = self.get_color_reference(widget.background_color, color_table)
