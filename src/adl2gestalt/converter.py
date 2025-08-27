@@ -153,6 +153,10 @@ class MedmToGestaltConverter:
         if title:
             lines.append(f'    title: "{title}"')
 
+        # Add display geometry if available
+        if hasattr(medm, "geometry") and medm.geometry:
+            lines.append(f"    geometry: {medm.geometry.width}x{medm.geometry.height}")
+
         # Add margins (standard for Form nodes)
         lines.append("    margins: 10x0x10x10")
 
