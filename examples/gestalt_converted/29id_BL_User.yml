@@ -72,108 +72,110 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
+    geometry: 701x563
     margins: 10x0x10x10
     foreground: *medm_color_3
     background: *medm_color_3
 
 text_update_0: !TextMonitor
-    geometry: 125x14 x 207x18
+    geometry: 207x18x125x14
     foreground: $000000
     background: *medm_color_2
     pv: "S:IOC:timeOfDayForm2SI"
     alignment: Center
 
 polyline_1: !Polyline
-    geometry: 2x201 x 254x57
+    geometry: 254x57x2x201
     foreground: *medm_color_9
     points: [ 255x58, 255x257 ]
 
 29ID_status__2: !Text
-    geometry: 230x40 x 5x5
+    geometry: 5x5x230x40
     foreground: *medm_color_13
     text: "29ID status: "
 
 eV_3: !Text
-    geometry: 20x20 x 184x223
+    geometry: 184x223x20x20
     foreground: $000000
     text: "eV"
 
 -_ID__4: !RelatedDisplay
-    geometry: 60x25 x 10x218
+    geometry: 10x218x60x25
     foreground: $000000
     background: *medm_color_55
+    text: " ID "
     links:
         - { label: "29ID", file: "iexUser.adl", macros: "P=ID29:" }
 
 oval_5: !Ellipse
-    geometry: 15x15 x 216x226
+    geometry: 216x226x15x15
     foreground: *medm_color_60
 
 oval_6: !Ellipse
-    geometry: 15x15 x 216x226
+    geometry: 216x226x15x15
     foreground: *medm_color_32
 
 oval_7: !Ellipse
-    geometry: 15x15 x 216x226
+    geometry: 216x226x15x15
     foreground: $000000
 
 text_update_8: !TextMonitor
-    geometry: 100x20 x 79x196
+    geometry: 79x196x100x20
     foreground: *medm_color_54
     background: *medm_color_2
     pv: "ID29:EnergyRBV"
     alignment: Center
 
 oval_9: !Ellipse
-    geometry: 15x15 x 216x129
+    geometry: 216x129x15x15
     foreground: *medm_color_60
 
 text_update_10: !TextMonitor
-    geometry: 100x20 x 79x100
+    geometry: 79x100x100x20
     foreground: *medm_color_54
     background: *medm_color_2
     pv: "29idmono:ENERGY_MON"
     alignment: Center
 
 eV_11: !Text
-    geometry: 20x20 x 184x127
+    geometry: 184x127x20x20
     foreground: $000000
     text: "eV"
 
 text_entry_12: !TextEntry
-    geometry: 100x25 x 79x125
+    geometry: 79x125x100x25
     foreground: *medm_color_54
     background: *medm_color_40
     pv: "29idmono:ENERGY_SP"
 
 -Mono_13: !ShellCommand
-    geometry: 60x25 x 10x125
+    geometry: 10x125x60x25
     foreground: $000000
     background: *medm_color_55
     commands:
         - { label: "Mono", command: "/net/s29dserv/xorApps/adl/start_mono" }
 
 oval_14: !Ellipse
-    geometry: 15x15 x 216x129
+    geometry: 216x129x15x15
     foreground: *medm_color_32
 
 composite_15: !Group
-    geometry: 100x20 x 78x155
+    geometry: 78x155x100x20
     children:
         -_0: !MessageButton
-            geometry: 20x20 x 78x155
+            geometry: 0x0x20x20
             foreground: $000000
             background: *medm_color_51
             pv: "29id:MonoEnergyTweakDec.PROC"
             text: "-"
             press-value: "1"
         text_entry_1: !TextEntry
-            geometry: 60x20 x 98x155
+            geometry: 20x0x60x20
             foreground: $000000
             background: *medm_color_51
             pv: "29id:MonoEnergyTweakValue"
         +_2: !MessageButton
-            geometry: 20x20 x 158x155
+            geometry: 80x0x20x20
             foreground: $000000
             background: *medm_color_51
             pv: "29id:MonoEnergyTweakInc.PROC"
@@ -181,7 +183,7 @@ composite_15: !Group
             press-value: "1"
 
 STOP_16: !MessageButton
-    geometry: 40x20 x 20x155
+    geometry: 20x155x40x20
     foreground: $ffffff
     background: *medm_color_20
     pv: "29idmono:STOP_CMD.PROC"
@@ -189,194 +191,194 @@ STOP_16: !MessageButton
     press-value: "1"
 
 polyline_17: !Polyline
-    geometry: 2x201 x 538x57
+    geometry: 538x57x2x201
     foreground: *medm_color_9
     points: [ 539x58, 539x257 ]
 
 text_update_18: !TextMonitor
-    geometry: 100x20 x 78x223
+    geometry: 78x223x100x20
     foreground: *medm_color_54
     background: *medm_color_40
     pv: "ID29:EnergyScanSeteV"
     alignment: Center
 
 image_19: !Image
-    geometry: 2x2 x 550x272
+    geometry: 550x272x2x2
 
 rectangle_20: !Rectangle
-    geometry: 439x5 x 40x467
+    geometry: 40x467x439x5
     foreground: *medm_color_55
 
 rectangle_21: !Rectangle
-    geometry: 44x20 x 229x459
+    geometry: 229x459x44x20
     foreground: $000000
 
 rectangle_22: !Rectangle
-    geometry: 230x5 x 40x321
+    geometry: 40x321x230x5
     foreground: *medm_color_55
 
 rectangle_23: !Rectangle
-    geometry: 77x5 x 40x321
+    geometry: 40x321x77x5
     foreground: *medm_color_60
 
 rectangle_24: !Rectangle
-    geometry: 77x5 x 40x467
+    geometry: 40x467x77x5
     foreground: *medm_color_60
 
 oval_25: !Ellipse
-    geometry: 65x65 x 7x290
+    geometry: 7x290x65x65
     foreground: *medm_color_54
 
 rectangle_26: !Rectangle
-    geometry: 112x5 x 117x321
+    geometry: 117x321x112x5
     foreground: *medm_color_60
 
 text_update_27: !TextMonitor
-    geometry: 65x15 x 8x369
+    geometry: 8x369x65x15
     foreground: $000000
     background: *medm_color_1
     pv: "29idb:VS11D.VAL"
-    format: exponential
+    format: Exponential
 
 VS11D_28: !Text
-    geometry: 40x10 x 20x390
+    geometry: 20x390x40x10
     foreground: $000000
     text: "VS11D"
 
 RSXS_29: !Text
-    geometry: 40x13 x 19x305
+    geometry: 19x305x40x13
     foreground: $000000
     text: "RSXS"
 
 rectangle_30: !Rectangle
-    geometry: 7x15 x 175x306
+    geometry: 175x306x7x15
     foreground: $000000
 
 rectangle_31: !Rectangle
-    geometry: 7x15 x 175x326
+    geometry: 175x326x7x15
     foreground: $000000
 
 3D_32: !Text
-    geometry: 20x15 x 168x289
+    geometry: 168x289x20x15
     foreground: $000000
     text: "3D"
 
 text_update_33: !TextMonitor
-    geometry: 65x15 x 146x369
+    geometry: 146x369x65x15
     foreground: $000000
     background: *medm_color_1
     pv: "29idb:VS10D.VAL"
-    format: exponential
+    format: Exponential
 
 VS10D_34: !Text
-    geometry: 40x10 x 158x390
+    geometry: 158x390x40x10
     foreground: $000000
     text: "VS10D"
 
 oval_35: !Ellipse
-    geometry: 65x65 x 7x436
+    geometry: 7x436x65x65
     foreground: *medm_color_54
 
 rectangle_36: !Rectangle
-    geometry: 112x5 x 117x467
+    geometry: 117x467x112x5
     foreground: *medm_color_60
 
 rectangle_37: !Rectangle
-    geometry: 138x5 x 273x467
+    geometry: 273x467x138x5
     foreground: *medm_color_60
 
 text_update_38: !TextMonitor
-    geometry: 65x15 x 8x515
+    geometry: 8x515x65x15
     foreground: $000000
     background: *medm_color_1
     pv: "29idc:VS11C.VAL"
-    format: exponential
+    format: Exponential
 
 VS11C_39: !Text
-    geometry: 40x10 x 20x536
+    geometry: 20x536x40x10
     foreground: $000000
     text: "VS11C"
 
 ARPES_40: !Text
-    geometry: 40x13 x 21x450
+    geometry: 21x450x40x13
     foreground: $000000
     text: "ARPES"
 
 rectangle_41: !Rectangle
-    geometry: 25x40 x 480x449
+    geometry: 480x449x25x40
     foreground: $000000
 
 rectangle_42: !Rectangle
-    geometry: 7x15 x 175x452
+    geometry: 175x452x7x15
     foreground: $000000
 
 rectangle_43: !Rectangle
-    geometry: 7x15 x 175x472
+    geometry: 175x472x7x15
     foreground: $000000
 
 3C_44: !Text
-    geometry: 20x15 x 168x435
+    geometry: 168x435x20x15
     foreground: $000000
     text: "3C"
 
 rectangle_45: !Rectangle
-    geometry: 25x5 x 455x467
+    geometry: 455x467x25x5
     foreground: *medm_color_60
 
 text_update_46: !TextMonitor
-    geometry: 65x15 x 146x515
+    geometry: 146x515x65x15
     foreground: $000000
     background: *medm_color_1
     pv: "29idb:VS10C.VAL"
-    format: exponential
+    format: Exponential
 
 VS10C_47: !Text
-    geometry: 40x10 x 158x536
+    geometry: 158x536x40x10
     foreground: $000000
     text: "VS10C"
 
 rectangle_48: !Rectangle
-    geometry: 40x5 x 273x321
+    geometry: 273x321x40x5
     foreground: *medm_color_55
 
 rectangle_49: !Rectangle
-    geometry: 5x150 x 308x322
+    geometry: 308x322x5x150
     foreground: *medm_color_55
 
 rectangle_50: !Rectangle
-    geometry: 5x150 x 308x322
+    geometry: 308x322x5x150
     foreground: *medm_color_60
 
 rectangle_51: !Rectangle
-    geometry: 40x5 x 273x321
+    geometry: 273x321x40x5
     foreground: *medm_color_60
 
 rectangle_52: !Rectangle
-    geometry: 138x5 x 273x467
+    geometry: 273x467x138x5
     foreground: *medm_color_32
 
 rectangle_53: !Rectangle
-    geometry: 138x5 x 273x467
+    geometry: 273x467x138x5
     foreground: *medm_color_32
 
 rectangle_54: !Rectangle
-    geometry: 113x5 x 116x467
+    geometry: 116x467x113x5
     foreground: *medm_color_32
 
 rectangle_55: !Rectangle
-    geometry: 113x5 x 116x321
+    geometry: 116x321x113x5
     foreground: *medm_color_32
 
 rectangle_56: !Rectangle
-    geometry: 77x5 x 40x321
+    geometry: 40x321x77x5
     foreground: *medm_color_32
 
 rectangle_57: !Rectangle
-    geometry: 77x5 x 40x467
+    geometry: 40x467x77x5
     foreground: *medm_color_32
 
 OPEN_58: !MessageButton
-    geometry: 40x20 x 96x356
+    geometry: 96x356x40x20
     foreground: $000000
     background: *medm_color_60
     pv: "29id:BLEPS:GV14:OPEN.VAL"
@@ -384,7 +386,7 @@ OPEN_58: !MessageButton
     press-value: "1"
 
 CLOSE_59: !MessageButton
-    geometry: 40x20 x 96x381
+    geometry: 96x381x40x20
     foreground: $000000
     background: *medm_color_20
     pv: "29id:BLEPS:GV14:CLOSE.VAL"
@@ -392,12 +394,12 @@ CLOSE_59: !MessageButton
     press-value: "1"
 
 V10C_60: !Text
-    geometry: 40x10 x 96x435
+    geometry: 96x435x40x10
     foreground: $000000
     text: "V10C"
 
 OPEN_61: !MessageButton
-    geometry: 40x20 x 96x502
+    geometry: 96x502x40x20
     foreground: $000000
     background: *medm_color_60
     pv: "29id:BLEPS:GV10:OPEN.VAL"
@@ -405,7 +407,7 @@ OPEN_61: !MessageButton
     press-value: "1"
 
 CLOSE_62: !MessageButton
-    geometry: 40x20 x 96x527
+    geometry: 96x527x40x20
     foreground: $000000
     background: *medm_color_20
     pv: "29id:BLEPS:GV10:CLOSE.VAL"
@@ -413,23 +415,23 @@ CLOSE_62: !MessageButton
     press-value: "1"
 
 rectangle_63: !Rectangle
-    geometry: 40x5 x 273x321
+    geometry: 273x321x40x5
     foreground: *medm_color_32
 
 rectangle_64: !Rectangle
-    geometry: 40x5 x 273x321
+    geometry: 273x321x40x5
     foreground: *medm_color_32
 
 rectangle_65: !Rectangle
-    geometry: 5x150 x 308x322
+    geometry: 308x322x5x150
     foreground: *medm_color_32
 
 rectangle_66: !Rectangle
-    geometry: 5x150 x 308x322
+    geometry: 308x322x5x150
     foreground: *medm_color_32
 
 DS_OPEN_67: !MessageButton
-    geometry: 60x20 x 221x356
+    geometry: 221x356x60x20
     foreground: $000000
     background: *medm_color_60
     pv: "PC:29ID:SDS_OPEN_REQUEST.VAL"
@@ -437,7 +439,7 @@ DS_OPEN_67: !MessageButton
     press-value: "1"
 
 DS_CLOSE_68: !MessageButton
-    geometry: 60x20 x 221x381
+    geometry: 221x381x60x20
     foreground: $000000
     background: *medm_color_20
     pv: "PC:29ID:SDS_CLOSE_REQUEST.VAL"
@@ -445,7 +447,7 @@ DS_CLOSE_68: !MessageButton
     press-value: "1"
 
 CS_OPEN_69: !MessageButton
-    geometry: 60x20 x 221x502
+    geometry: 221x502x60x20
     foreground: $000000
     background: *medm_color_60
     pv: "PC:29ID:SCS_OPEN_REQUEST.VAL"
@@ -453,7 +455,7 @@ CS_OPEN_69: !MessageButton
     press-value: "1"
 
 CS_CLOSE_70: !MessageButton
-    geometry: 60x20 x 221x527
+    geometry: 221x527x60x20
     foreground: $000000
     background: *medm_color_20
     pv: "PC:29ID:SCS_CLOSE_REQUEST.VAL"
@@ -461,65 +463,65 @@ CS_CLOSE_70: !MessageButton
     press-value: "1"
 
 C_Shutter_71: !Text
-    geometry: 50x10 x 227x435
+    geometry: 227x435x50x10
     foreground: $000000
     text: "C Shutter"
 
 composite_72: !Group
-    geometry: 40x16 x 231x461
+    geometry: 231x461x40x16
     children:
         rectangle_0: !Rectangle
-            geometry: 40x16 x 231x461
+            geometry: 0x0x40x16
             foreground: *medm_color_20
         CLOSED_1: !Text
-            geometry: 37x12 x 233x463
+            geometry: 2x2x37x12
             foreground: $000000
             text: "CLOSED"
 
 composite_73: !Group
-    geometry: 40x16 x 231x461
+    geometry: 231x461x40x16
     children:
         rectangle_0: !Rectangle
-            geometry: 40x16 x 231x461
+            geometry: 0x0x40x16
             foreground: *medm_color_15
         OPEN_1: !Text
-            geometry: 37x12 x 233x463
+            geometry: 2x2x37x12
             foreground: $000000
             text: "OPEN"
 
 D_Shutter_74: !Text
-    geometry: 50x10 x 225x289
+    geometry: 225x289x50x10
     foreground: $000000
     text: "D Shutter"
 
 rectangle_75: !Rectangle
-    geometry: 44x20 x 229x313
+    geometry: 229x313x44x20
     foreground: $000000
 
 composite_76: !Group
-    geometry: 40x16 x 231x315
+    geometry: 231x315x40x16
     children:
         rectangle_0: !Rectangle
-            geometry: 40x16 x 231x315
+            geometry: 0x0x40x16
             foreground: *medm_color_20
         CLOSED_1: !Text
-            geometry: 37x12 x 233x317
+            geometry: 2x2x37x12
             foreground: $000000
             text: "CLOSED"
 
 composite_77: !Group
-    geometry: 40x16 x 231x315
+    geometry: 231x315x40x16
     children:
         rectangle_0: !Rectangle
-            geometry: 40x16 x 231x315
+            geometry: 0x0x40x16
             foreground: *medm_color_15
         OPEN_1: !Text
-            geometry: 37x12 x 233x317
+            geometry: 2x2x37x12
             foreground: $000000
             text: "OPEN"
 
 MS_OPEN_78: !MessageButton
-    geometry: 60x20 x 403x502
+    geometry: 403x502x60x20
     foreground: $000000
     background: *medm_color_60
     pv: "PC:29ID:FES_OPEN_REQUEST.VAL"
@@ -527,7 +529,7 @@ MS_OPEN_78: !MessageButton
     press-value: "1"
 
 MS_CLOSE_79: !MessageButton
-    geometry: 60x20 x 403x527
+    geometry: 403x527x60x20
     foreground: $000000
     background: *medm_color_20
     pv: "PC:29ID:FES_CLOSE_REQUEST.VAL"
@@ -535,161 +537,161 @@ MS_CLOSE_79: !MessageButton
     press-value: "1"
 
 rectangle_80: !Rectangle
-    geometry: 7x15 x 379x452
+    geometry: 379x452x7x15
     foreground: $000000
 
 rectangle_81: !Rectangle
-    geometry: 7x15 x 379x472
+    geometry: 379x472x7x15
     foreground: $000000
 
 1A_82: !Text
-    geometry: 20x15 x 372x491
+    geometry: 372x491x20x15
     foreground: $000000
     text: "1A"
 
 rectangle_83: !Rectangle
-    geometry: 44x20 x 411x460
+    geometry: 411x460x44x20
     foreground: $000000
 
 composite_84: !Group
-    geometry: 40x16 x 413x462
+    geometry: 413x462x40x16
     children:
         rectangle_0: !Rectangle
-            geometry: 40x16 x 413x462
+            geometry: 0x0x40x16
             foreground: *medm_color_20
         CLOSED_1: !Text
-            geometry: 30x11 x 418x465
+            geometry: 5x3x30x11
             foreground: $000000
             text: "CLOSED"
 
 composite_85: !Group
-    geometry: 40x16 x 413x462
+    geometry: 413x462x40x16
     children:
         rectangle_0: !Rectangle
-            geometry: 40x16 x 413x462
+            geometry: 0x0x40x16
             foreground: *medm_color_61
         OPEN_1: !Text
-            geometry: 30x11 x 418x465
+            geometry: 5x3x30x11
             foreground: $000000
             text: "OPEN"
 
 rectangle_86: !Rectangle
-    geometry: 7x15 x 344x452
+    geometry: 344x452x7x15
     foreground: $000000
 
 rectangle_87: !Rectangle
-    geometry: 7x15 x 344x472
+    geometry: 344x472x7x15
     foreground: $000000
 
 2B_88: !Text
-    geometry: 20x15 x 337x491
+    geometry: 337x491x20x15
     foreground: $000000
     text: "2B"
 
 composite_89: !Group
-    geometry: 75x20 x 396x430
+    geometry: 396x430x75x20
     children:
         Shutter_0: !Text
-            geometry: 75x10 x 396x440
+            geometry: 0x10x75x10
             foreground: $000000
             text: "Shutter"
         Main_1: !Text
-            geometry: 75x10 x 396x430
+            geometry: 0x0x75x10
             foreground: $000000
             text: "Main"
 
 V10D_90: !Text
-    geometry: 40x10 x 96x289
+    geometry: 96x289x40x10
     foreground: $000000
     text: "V10D"
 
 composite_91: !Group
-    geometry: 18x42 x 107x302
+    geometry: 107x302x18x42
     children:
         polygon_0: !Polygon
-            geometry: 14x18 x 109x304
+            geometry: 2x2x14x18
             foreground: *medm_color_20
             points: [ 109x304, 123x304, 116x322, 109x304 ]
         polygon_1: !Polygon
-            geometry: 14x18 x 109x304
+            geometry: 2x2x14x18
             foreground: *medm_color_61
             points: [ 109x304, 123x304, 116x322, 109x304 ]
         polygon_2: !Polygon
-            geometry: 14x18 x 109x324
+            geometry: 2x22x14x18
             foreground: *medm_color_20
             points: [ 109x342, 123x342, 116x324, 109x342 ]
         polygon_3: !Polygon
-            geometry: 14x18 x 109x324
+            geometry: 2x22x14x18
             foreground: *medm_color_61
             points: [ 109x342, 123x342, 116x324, 109x342 ]
         rectangle_4: !Rectangle
-            geometry: 18x42 x 107x302
+            geometry: 0x0x18x42
             foreground: $000000
 
 M3R_92: !Text
-    geometry: 25x15 x 296x491
+    geometry: 296x491x25x15
     foreground: $000000
     text: "M3R"
 
 polyline_93: !Polyline
-    geometry: 51x5 x 285x477
+    geometry: 285x477x51x5
     foreground: *medm_color_54
     points: [ 287x479, 333x479 ]
 
 rectangle_94: !Rectangle
-    geometry: 32x5 x 273x467
+    geometry: 273x467x32x5
     foreground: *medm_color_55
 
 composite_95: !Group
-    geometry: 18x42 x 107x448
+    geometry: 107x448x18x42
     children:
         polygon_0: !Polygon
-            geometry: 14x18 x 109x450
+            geometry: 2x2x14x18
             foreground: *medm_color_20
             points: [ 109x450, 123x450, 116x468, 109x450 ]
         polygon_1: !Polygon
-            geometry: 14x18 x 109x450
+            geometry: 2x2x14x18
             foreground: *medm_color_61
             points: [ 109x450, 123x450, 116x468, 109x450 ]
         polygon_2: !Polygon
-            geometry: 14x18 x 109x470
+            geometry: 2x22x14x18
             foreground: *medm_color_20
             points: [ 109x488, 123x488, 116x470, 109x488 ]
         polygon_3: !Polygon
-            geometry: 14x18 x 109x470
+            geometry: 2x22x14x18
             foreground: *medm_color_61
             points: [ 109x488, 123x488, 116x470, 109x488 ]
         rectangle_4: !Rectangle
-            geometry: 18x42 x 107x448
+            geometry: 0x0x18x42
             foreground: $000000
 
 rectangle_96: !Rectangle
-    geometry: 40x5 x 273x321
+    geometry: 273x321x40x5
     foreground: *medm_color_55
 
 rectangle_97: !Rectangle
-    geometry: 5x145 x 308x322
+    geometry: 308x322x5x145
     foreground: *medm_color_55
 
 polyline_98: !Polyline
-    geometry: 38x38 x 289x452
+    geometry: 289x452x38x38
     foreground: *medm_color_54
     points: [ 291x454, 324x487 ]
 
 composite_99: !Group
-    geometry: 699x6 x 1x267
+    geometry: 1x267x699x6
     children:
         polyline_0: !Polyline
-            geometry: 699x2 x 1x271
+            geometry: 0x4x699x2
             foreground: *medm_color_9
             points: [ 2x272, 699x272 ]
         polyline_1: !Polyline
-            geometry: 699x2 x 1x267
+            geometry: 0x0x699x2
             foreground: *medm_color_9
             points: [ 2x268, 699x268 ]
 
 Sync_All_100: !MessageButton
-    geometry: 100x20 x 556x285
+    geometry: 556x285x100x20
     foreground: $000000
     background: *medm_color_40
     pv: "29idb:userStringSeq5.PROC"
@@ -697,165 +699,165 @@ Sync_All_100: !MessageButton
     press-value: "1"
 
 composite_101: !Group
-    geometry: 171x63 x 521x312
+    geometry: 521x312x171x63
     children:
         rectangle_0: !Rectangle
-            geometry: 83x20 x 607x353
+            geometry: 86x41x83x20
             foreground: *medm_color_55
         At_1: !Text
-            geometry: 20x14 x 609x357
+            geometry: 88x45x20x14
             foreground: $000000
             text: "At:"
         rectangle_2: !Rectangle
-            geometry: 83x20 x 522x353
+            geometry: 1x41x83x20
             foreground: *medm_color_55
         At_3: !Text
-            geometry: 20x14 x 525x357
+            geometry: 4x45x20x14
             foreground: $000000
             text: "At:"
         text_update_4: !TextMonitor
-            geometry: 80x14 x 608x337
+            geometry: 87x25x80x14
             foreground: *medm_color_54
             background: *medm_color_3
             pv: "29idb:Slit1Vt2.C"
             alignment: Center
         rectangle_5: !Rectangle
-            geometry: 83x20 x 607x313
+            geometry: 86x1x83x20
             foreground: $ffffff
         1A-V_6: !Text
-            geometry: 80x14 x 608x317
+            geometry: 87x5x80x14
             foreground: *medm_color_24
             text: "1A-V"
         text_update_7: !TextMonitor
-            geometry: 80x14 x 523x337
+            geometry: 2x25x80x14
             foreground: *medm_color_54
             background: *medm_color_3
             pv: "29idb:Slit1Ht2.C"
             alignment: Center
         rectangle_8: !Rectangle
-            geometry: 83x20 x 522x313
+            geometry: 1x1x83x20
             foreground: $ffffff
         1A-H_9: !Text
-            geometry: 80x14 x 523x317
+            geometry: 2x5x80x14
             foreground: *medm_color_24
             text: "1A-H"
         rectangle_10: !Rectangle
-            geometry: 171x62 x 521x312
+            geometry: 0x0x171x62
             foreground: $000000
         polyline_11: !Polyline
-            geometry: 1x61 x 606x314
+            geometry: 85x2x1x61
             foreground: *medm_color_11
             points: [ 606x314, 606x374 ]
         text_update_12: !TextMonitor
-            geometry: 50x14 x 547x357
+            geometry: 26x45x50x14
             foreground: *medm_color_54
             background: *medm_color_55
             pv: "29idb:Slit1Ht2.D"
             alignment: Center
         text_update_13: !TextMonitor
-            geometry: 50x14 x 632x357
+            geometry: 111x45x50x14
             foreground: *medm_color_54
             background: *medm_color_55
             pv: "29idb:Slit1Vt2.D"
             alignment: Center
 
 composite_102: !Group
-    geometry: 171x62 x 521x380
+    geometry: 521x380x171x62
     children:
         rectangle_0: !Rectangle
-            geometry: 83x20 x 608x421
+            geometry: 87x41x83x20
             foreground: *medm_color_40
         rectangle_1: !Rectangle
-            geometry: 83x20 x 523x421
+            geometry: 2x41x83x20
             foreground: *medm_color_40
         text_update_2: !TextMonitor
-            geometry: 50x14 x 633x425
+            geometry: 112x45x50x14
             foreground: *medm_color_54
             background: *medm_color_40
             pv: "29idb:Slit2Vt2.D"
             alignment: Center
         At_3: !Text
-            geometry: 20x14 x 610x425
+            geometry: 89x45x20x14
             foreground: $000000
             text: "At:"
         text_update_4: !TextMonitor
-            geometry: 50x14 x 548x425
+            geometry: 27x45x50x14
             foreground: *medm_color_54
             background: *medm_color_40
             pv: "29idb:Slit2Ht2.D"
             alignment: Center
         At_5: !Text
-            geometry: 20x14 x 526x425
+            geometry: 5x45x20x14
             foreground: $000000
             text: "At:"
         text_update_6: !TextMonitor
-            geometry: 80x14 x 609x405
+            geometry: 88x25x80x14
             foreground: *medm_color_54
             background: *medm_color_3
             pv: "29idb:Slit2Vt2.C"
             alignment: Center
         rectangle_7: !Rectangle
-            geometry: 83x20 x 608x381
+            geometry: 87x1x83x20
             foreground: $ffffff
         2B-V_8: !Text
-            geometry: 80x14 x 609x385
+            geometry: 88x5x80x14
             foreground: *medm_color_24
             text: "2B-V"
         text_update_9: !TextMonitor
-            geometry: 80x14 x 524x405
+            geometry: 3x25x80x14
             foreground: *medm_color_54
             background: *medm_color_3
             pv: "29idb:Slit2Ht2.C"
             alignment: Center
         rectangle_10: !Rectangle
-            geometry: 83x20 x 523x381
+            geometry: 2x1x83x20
             foreground: $ffffff
         2B-H_11: !Text
-            geometry: 80x14 x 524x385
+            geometry: 3x5x80x14
             foreground: *medm_color_24
             text: "2B-H"
         rectangle_12: !Rectangle
-            geometry: 171x62 x 521x380
+            geometry: 0x0x171x62
             foreground: $000000
         polyline_13: !Polyline
-            geometry: 1x61 x 606x381
+            geometry: 85x1x1x61
             foreground: *medm_color_11
             points: [ 606x381, 606x441 ]
 
 rectangle_103: !Rectangle
-    geometry: 82x20 x 609x525
+    geometry: 609x525x82x20
     foreground: *medm_color_55
 
 text_update_104: !TextMonitor
-    geometry: 80x14 x 609x469
+    geometry: 609x469x80x14
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "29idb:Slit4Vt2.C"
     alignment: Center
 
 text_entry_105: !TextEntry
-    geometry: 80x20 x 610x484
+    geometry: 610x484x80x20
     foreground: $000000
     background: *medm_color_51
     pv: "29idb:Slit4Vsize.VAL"
 
 composite_106: !Group
-    geometry: 80x16 x 610x506
+    geometry: 610x506x80x16
     children:
         -_0: !MessageButton
-            geometry: 16x16 x 610x506
+            geometry: 0x0x16x16
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit4Vsize_tweak.A"
             text: "-"
             press-value: "1"
         text_entry_1: !TextEntry
-            geometry: 50x16 x 625x506
+            geometry: 15x0x50x16
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit4Vsize_tweakVal.VAL"
         +_2: !MessageButton
-            geometry: 16x16 x 674x506
+            geometry: 64x0x16x16
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit4Vsize_tweak.B"
@@ -863,32 +865,32 @@ composite_106: !Group
             press-value: "1"
 
 rectangle_107: !Rectangle
-    geometry: 83x20 x 608x450
+    geometry: 608x450x83x20
     foreground: $ffffff
 
 rectangle_108: !Rectangle
-    geometry: 85x99 x 607x448
+    geometry: 607x448x85x99
     foreground: $000000
 
 RSXS_(um)_109: !Text
-    geometry: 80x14 x 611x454
+    geometry: 611x454x80x14
     foreground: *medm_color_24
     text: "RSXS (um)"
 
 text_update_110: !TextMonitor
-    geometry: 50x14 x 639x528
+    geometry: 639x528x50x14
     foreground: *medm_color_54
     background: *medm_color_55
     pv: "29idb:Slit4Vt2.D"
     alignment: Center
 
 At_111: !Text
-    geometry: 20x14 x 615x528
+    geometry: 615x528x20x14
     foreground: $000000
     text: "At:"
 
 STOP_112: !MessageButton
-    geometry: 70x30 x 623x124
+    geometry: 623x124x70x30
     foreground: *medm_color_30
     background: *medm_color_20
     pv: "29idb:allstop.VAL"
@@ -896,35 +898,39 @@ STOP_112: !MessageButton
     press-value: "1"
 
 -CA_113: !RelatedDisplay
-    geometry: 42x20 x 650x200
+    geometry: 650x200x42x20
     foreground: $ffffff
     background: *medm_color_25
+    text: "CA"
     links:
         - { label: "29ID Keithleys", file: "29ID_ca_all.adl", macros: "" }
 
 -Diag_114: !RelatedDisplay
-    geometry: 42x20 x 650x176
+    geometry: 650x176x42x20
     foreground: $ffffff
     background: *medm_color_25
+    text: "Diag"
     links:
         - { label: "29ID Diagnostics", file: "29id_Diagnostics.adl", macros: "" }
 
 -ARPES_115: !RelatedDisplay
-    geometry: 55x20 x 556x149
+    geometry: 556x149x55x20
     foreground: $000000
     background: *medm_color_55
+    text: "ARPES"
     links:
         - { label: "29ID-C ARPES graphic", file: "29idc_graphic.adl", macros: "P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8" }
 
 29idb_116: !Text
-    geometry: 38x13 x 640x155
+    geometry: 640x155x38x13
     foreground: $000000
     text: "29idb"
 
 -_PPS_EPS_117: !RelatedDisplay
-    geometry: 70x20 x 556x200
+    geometry: 556x200x70x20
     foreground: $000000
     background: *medm_color_60
+    text: " PPS/EPS"
     links:
         - { label: "PSS", file: "Main_29ID.adl", macros: "xx=29,yy=ID" }
         - { label: "EPS-FE", file: "FEEPS_ID_FE.adl", macros: "a=29,ID1=29ds,e=29us,TYPE_NAME=BEWIN,VVID=29" }
@@ -934,7 +940,7 @@ STOP_112: !MessageButton
         - { label: "EPS-D", file: "29ID_BLEPS_D.adl", macros: "" }
 
 Tools_118: !ShellCommand
-    geometry: 70x20 x 556x225
+    geometry: 556x225x70x20
     foreground: $000000
     background: *medm_color_55
     commands:
@@ -949,9 +955,10 @@ Tools_118: !ShellCommand
         - { label: "ImageJ", command: "ImageJ&" }
 
 -_Camera_119: !RelatedDisplay
-    geometry: 62x20 x 630x225
+    geometry: 630x225x62x20
     foreground: $000000
     background: *medm_color_55
+    text: " Camera"
     links:
         - { label: "Camera 1", file: "prosilica.adl", macros: "P=29id_ps1:, R=cam1:" }
         - { label: "Camera 2", file: "prosilica.adl", macros: "P=29id_ps2:, R=cam1:" }
@@ -960,55 +967,57 @@ Tools_118: !ShellCommand
         - { label: "Camera 6", file: "prosilica.adl", macros: "P=29id_ps6:, R=cam1:" }
 
 -RSXS_120: !RelatedDisplay
-    geometry: 55x20 x 556x124
+    geometry: 556x124x55x20
     foreground: $000000
     background: *medm_color_55
+    text: "RSXS"
     links:
         - { label: "29ID-D 2C graphic", file: "29idd_graphic.adl", macros: "P=29idd:,M1=m1,M2=m2,M3=m3,M4=m7,M5=m6" }
 
 Mirror_121: !Text
-    geometry: 70x20 x 271x105
+    geometry: 271x105x70x20
     foreground: $000000
     text: "Mirror"
 
 ID_QP_%_122: !Text
-    geometry: 70x20 x 272x225
+    geometry: 272x225x70x20
     foreground: $000000
     text: "ID QP %"
 
 ID_Mode_123: !Text
-    geometry: 70x20 x 272x190
+    geometry: 272x190x70x20
     foreground: $000000
     text: "ID Mode"
 
 -Infos_124: !RelatedDisplay
-    geometry: 45x20 x 473x58
+    geometry: 473x58x45x20
     foreground: $000000
     background: *medm_color_55
+    text: "Infos"
     links:
         - { label: "Storage Ring Status", file: "/APSshare/adlsys/sr/fe/SR_Status.adl", macros: "" }
         - { label: "24h Beam History ", file: "beamHistory.adl", macros: "" }
         - { label: "APS Top-Up Info", file: "/APSshare/adlsys/sr/fe/TopUp.adl", macros: "" }
 
 Ring_I_125: !Text
-    geometry: 66x20 x 273x58
+    geometry: 273x58x66x20
     foreground: $000000
     text: "Ring I"
 
 text_update_126: !TextMonitor
-    geometry: 80x20 x 348x58
+    geometry: 348x58x80x20
     foreground: *medm_color_54
     background: *medm_color_2
     pv: "S:SRcurrentAI.VAL"
     alignment: Center
 
 mA_127: !Text
-    geometry: 24x20 x 438x58
+    geometry: 438x58x24x20
     foreground: $000000
     text: "mA"
 
 ON_128: !MessageButton
-    geometry: 37x20 x 438x225
+    geometry: 438x225x37x20
     foreground: $000000
     background: *medm_color_51
     pv: "ID29:SetQuasiOn.VAL"
@@ -1016,7 +1025,7 @@ ON_128: !MessageButton
     press-value: "1"
 
 OFF_129: !MessageButton
-    geometry: 37x20 x 481x225
+    geometry: 481x225x37x20
     foreground: $000000
     background: *medm_color_51
     pv: "ID29:SetQuasiOff.VAL"
@@ -1024,58 +1033,58 @@ OFF_129: !MessageButton
     press-value: "1"
 
 menu_130: !Menu
-    geometry: 80x20 x 438x190
+    geometry: 438x190x80x20
     foreground: *medm_color_50
     background: *medm_color_54
     pv: "ID29:DesiredMode.VAL"
 
 rectangle_131: !Rectangle
-    geometry: 80x20 x 348x105
+    geometry: 348x105x80x20
     foreground: *medm_color_10
 
 Silicon_132: !Text
-    geometry: 80x18 x 348x106
+    geometry: 348x106x80x18
     foreground: *medm_color_15
     text: "Silicon"
 
 text_update_133: !TextMonitor
-    geometry: 80x20 x 348x190
+    geometry: 348x190x80x20
     foreground: *medm_color_15
     background: *medm_color_10
     pv: "ID29:ActualMode"
     alignment: Center
 
 Carbon_134: !Text
-    geometry: 80x18 x 348x106
+    geometry: 348x106x80x18
     foreground: *medm_color_15
     text: "Carbon"
 
 Au_135: !Text
-    geometry: 80x20 x 348x105
+    geometry: 348x105x80x20
     foreground: *medm_color_15
     text: "Au"
 
 rectangle_136: !Rectangle
-    geometry: 80x20 x 348x225
+    geometry: 348x225x80x20
     foreground: *medm_color_10
 
 OFF_(100%)_137: !Text
-    geometry: 80x18 x 350x227
+    geometry: 350x227x80x18
     foreground: *medm_color_15
     text: "OFF (100%)"
 
 ON_(85%)_138: !Text
-    geometry: 80x18 x 350x227
+    geometry: 350x227x80x18
     foreground: *medm_color_15
     text: "ON (85%)"
 
 Grating_139: !Text
-    geometry: 70x20 x 272x140
+    geometry: 272x140x70x20
     foreground: $000000
     text: "Grating"
 
 Move_140: !MessageButton
-    geometry: 80x20 x 438x140
+    geometry: 438x140x80x20
     foreground: $000000
     background: *medm_color_51
     pv: "29idb:gr:move"
@@ -1083,54 +1092,55 @@ Move_140: !MessageButton
     press-value: "1"
 
 menu_141: !Menu
-    geometry: 80x20 x 438x117
+    geometry: 438x117x80x20
     foreground: $000000
     background: *medm_color_51
     pv: "29idmonoGRT_TYPE_SP"
 
 rectangle_142: !Rectangle
-    geometry: 80x20 x 348x140
+    geometry: 348x140x80x20
     foreground: *medm_color_10
 
 HEG_143: !Text
-    geometry: 30x20 x 373x140
+    geometry: 373x140x30x20
     foreground: *medm_color_15
     text: "HEG"
 
 MEG_144: !Text
-    geometry: 30x20 x 373x140
+    geometry: 373x140x30x20
     foreground: *medm_color_15
     text: "MEG"
 
 -More_145: !RelatedDisplay
-    geometry: 55x20 x 638x5
+    geometry: 638x5x55x20
     foreground: $ffffff
     background: *medm_color_17
+    text: "More"
     links:
         - { label: "BL Expert", file: "29id_BL_Expert.adl", macros: "" }
 
 composite_146: !Group
-    geometry: 108x32 x 570x63
+    geometry: 570x63x108x32
     children:
         Moving_0: !Text
-            geometry: 105x30 x 570x63
+            geometry: 0x0x105x30
             foreground: *medm_color_50
             text: "Moving"
         Moving_1: !Text
-            geometry: 105x30 x 573x65
+            geometry: 3x2x105x30
             foreground: *medm_color_54
             text: "Moving"
 
 rectangle_147: !Rectangle
-    geometry: 185x85 x 328x312
+    geometry: 328x312x185x85
     foreground: *medm_color_10
 
 oval_148: !Ellipse
-    geometry: 15x15 x 445x321
+    geometry: 445x321x15x15
     foreground: *medm_color_60
 
 Out_149: !MessageButton
-    geometry: 40x20 x 467x319
+    geometry: 467x319x40x20
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:userStringSeq3.PROC"
@@ -1138,104 +1148,105 @@ Out_149: !MessageButton
     press-value: "1"
 
 Diagnostics_150: !Text
-    geometry: 100x15 x 335x321
+    geometry: 335x321x100x15
     foreground: $000000
     text: "Diagnostics:"
 
 oval_151: !Ellipse
-    geometry: 15x15 x 445x321
+    geometry: 445x321x15x15
     foreground: *medm_color_20
 
 oval_152: !Ellipse
-    geometry: 15x15 x 445x321
+    geometry: 445x321x15x15
     foreground: *medm_color_20
 
 oval_153: !Ellipse
-    geometry: 15x15 x 445x321
+    geometry: 445x321x15x15
     foreground: *medm_color_20
 
 text_entry_154: !TextEntry
-    geometry: 100x25 x 78x56
+    geometry: 78x56x100x25
     foreground: *medm_color_54
     background: *medm_color_40
     pv: "29id:BeamlineEnergySet"
 
 BL_eV_155: !Text
-    geometry: 60x20 x 9x58
+    geometry: 9x58x60x20
     foreground: $000000
     text: "BL eV"
 
 text_update_156: !TextMonitor
-    geometry: 50x15 x 185x61
+    geometry: 185x61x50x15
     foreground: $000000
     background: *medm_color_2
     pv: "29id:BeamlineEnergyAllow"
     alignment: Center
 
 composite_157: !Group
-    geometry: 85x99 x 521x448
+    geometry: 521x448x85x99
     children:
         text_update_0: !TextMonitor
-            geometry: 80x14 x 523x469
+            geometry: 2x21x80x14
             foreground: *medm_color_54
             background: *medm_color_3
             pv: "29idb:Slit3CRBV"
             alignment: Center
         text_entry_1: !TextEntry
-            geometry: 80x20 x 524x484
+            geometry: 3x36x80x20
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit3CFit.A"
         rectangle_2: !Rectangle
-            geometry: 83x20 x 522x450
+            geometry: 1x2x83x20
             foreground: $ffffff
         rectangle_3: !Rectangle
-            geometry: 85x99 x 521x448
+            geometry: 0x0x85x99
             foreground: $000000
         ARPES_(um)_4: !Text
-            geometry: 80x14 x 525x454
+            geometry: 4x6x80x14
             foreground: *medm_color_24
             text: "ARPES (um)"
         text_entry_5: !TextEntry
-            geometry: 50x16 x 539x506
+            geometry: 18x58x50x16
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit3CTweakVal"
         -_6: !MessageButton
-            geometry: 16x16 x 524x506
+            geometry: 3x58x16x16
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit3CTweak.A"
             text: "-"
             press-value: "1"
         +_7: !MessageButton
-            geometry: 16x16 x 588x506
+            geometry: 67x58x16x16
             foreground: $000000
             background: *medm_color_51
             pv: "29idb:Slit3CTweak.B"
             text: "+"
             press-value: "1"
         -_3C_Motor_8: !RelatedDisplay
-            geometry: 80x20 x 524x525
+            geometry: 3x77x80x20
             foreground: $000000
             background: *medm_color_40
+            text: " 3C Motor"
             links:
                 - { label: "3C Slit Motors", file: "motorx.adl", macros: "P=29idb:,M=m24" }
 
 oval_158: !Ellipse
-    geometry: 15x15 x 216x226
+    geometry: 216x226x15x15
     foreground: *medm_color_20
 
 text_update_159: !TextMonitor
-    geometry: 110x16 x 395x373
+    geometry: 395x373x110x16
     foreground: *medm_color_54
     background: *medm_color_1
     pv: "29idb:ca15:read"
-    format: exponential
+    format: Exponential
     alignment: Center
 
 ARPES_160: !MessageButton
-    geometry: 55x20 x 337x371
+    geometry: 337x371x55x20
     foreground: $000000
     background: *medm_color_30
     pv: "29idb:m20.VAL"
@@ -1243,27 +1254,27 @@ ARPES_160: !MessageButton
     press-value: "-31"
 
 composite_161: !Group
-    geometry: 168x20 x 337x348
+    geometry: 337x348x168x20
     children:
         RSXS_0: !MessageButton
-            geometry: 55x20 x 337x348
+            geometry: 0x0x55x20
             foreground: $000000
             background: *medm_color_30
             pv: "29idb:m28.VAL"
             text: "RSXS"
             press-value: "-53"
         text_update_1: !TextMonitor
-            geometry: 110x16 x 395x350
+            geometry: 58x2x110x16
             foreground: *medm_color_54
             background: *medm_color_1
             pv: "29idb:ca14:read"
-            format: exponential
+            format: Exponential
             alignment: Center
 
 rectangle_162: !Rectangle
-    geometry: 112x21 x 393x347
+    geometry: 393x347x112x21
     foreground: *medm_color_25
 
 rectangle_163: !Rectangle
-    geometry: 112x21 x 393x370
+    geometry: 393x370x112x21
     foreground: *medm_color_25

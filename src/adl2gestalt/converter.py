@@ -440,25 +440,36 @@ class MedmToGestaltConverter:
 
         # Related display properties
         if widget_type == "RelatedDisplay" and hasattr(widget, "displays"):
+            # Helper function to remove leading "-" from MEDM labels
+            def clean_medm_label(label):
+                """Remove leading '-' from MEDM labels to avoid folder icons"""
+                if label and label.startswith("-"):
+                    return label[1:]  # Remove the leading "-"
+                return label
+
             # Add text property for the button label
             if "label" in contents:
-                lines.append(f'    text: "{contents["label"]}"')
+                clean_label = clean_medm_label(contents["label"])
+                lines.append(f'    text: "{clean_label}"')
             elif widget.displays and len(widget.displays) > 0:
                 # Use the first display's label as the button text
                 first_display = widget.displays[0]
                 if "label" in first_display:
-                    lines.append(f'    text: "{first_display["label"]}"')
+                    clean_label = clean_medm_label(first_display["label"])
+                    lines.append(f'    text: "{clean_label}"')
                 elif "name" in first_display:
-                    lines.append(f'    text: "{first_display["name"]}"')
+                    clean_label = clean_medm_label(first_display["name"])
+                    lines.append(f'    text: "{clean_label}"')
 
             if widget.displays:
                 lines.append("    links:")
                 for display in widget.displays:
                     if "name" in display:
                         label = display.get("label", display["name"])
+                        clean_label = clean_medm_label(label)
                         macros = display.get("args", "")
                         lines.append(
-                            f'        - {{ label: "{label}", file: "{display["name"]}", macros: "{macros}" }}'
+                            f'        - {{ label: "{clean_label}", file: "{display["name"]}", macros: "{macros}" }}'
                         )
 
         # Shell command properties

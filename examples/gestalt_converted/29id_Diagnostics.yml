@@ -72,24 +72,25 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
+    geometry: 308x727
     margins: 10x0x10x10
     foreground: $000000
     background: *medm_color_3
 
 Diagnostics_Position_0: !Text
-    geometry: 295x20 x 5x5
+    geometry: 5x5x295x20
     foreground: $000000
     text: "Diagnostics Positions"
 
 text_update_1: !TextMonitor
-    geometry: 80x16 x 188x58
+    geometry: 188x58x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m1.RBV"
     alignment: Center
 
 OUT_2: !MessageButton
-    geometry: 35x15 x 28x80
+    geometry: 28x80x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m1.VAL"
@@ -97,7 +98,7 @@ OUT_2: !MessageButton
     press-value: "-4"
 
 START_3: !MessageButton
-    geometry: 35x15 x 68x80
+    geometry: 68x80x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m1.VAL"
@@ -105,21 +106,22 @@ START_3: !MessageButton
     press-value: "-14"
 
 -H-wire_4: !RelatedDisplay
-    geometry: 130x20 x 8x56
+    geometry: 8x56x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "H-wire"
     links:
-        - { label: "-H-wire", file: "motorx.adl", macros: "P=29idb:,M=m1" }
+        - { label: "H-wire", file: "motorx.adl", macros: "P=29idb:,M=m1" }
 
 text_update_5: !TextMonitor
-    geometry: 80x16 x 188x106
+    geometry: 188x106x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m2.RBV"
     alignment: Center
 
 OUT_6: !MessageButton
-    geometry: 35x15 x 28x128
+    geometry: 28x128x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m2.VAL"
@@ -127,7 +129,7 @@ OUT_6: !MessageButton
     press-value: "-10"
 
 START_7: !MessageButton
-    geometry: 35x15 x 68x128
+    geometry: 68x128x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m2.VAL"
@@ -135,14 +137,15 @@ START_7: !MessageButton
     press-value: "-20"
 
 -V-wire_8: !RelatedDisplay
-    geometry: 130x20 x 8x104
+    geometry: 8x104x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "V-wire"
     links:
-        - { label: "-V-wire", file: "motorx.adl", macros: "P=29idb:,M=m2" }
+        - { label: "V-wire", file: "motorx.adl", macros: "P=29idb:,M=m2" }
 
 Ld_9: !MessageButton
-    geometry: 21x20 x 278x56
+    geometry: 278x56x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m1:scanParms.LOAD"
@@ -150,7 +153,7 @@ Ld_9: !MessageButton
     press-value: "1"
 
 Ld_10: !MessageButton
-    geometry: 21x20 x 278x104
+    geometry: 278x104x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m2:scanParms.LOAD"
@@ -158,14 +161,14 @@ Ld_10: !MessageButton
     press-value: "1"
 
 text_update_11: !TextMonitor
-    geometry: 80x16 x 188x174
+    geometry: 188x174x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m3.RBV"
     alignment: Center
 
 OUT_12: !MessageButton
-    geometry: 35x15 x 28x196
+    geometry: 28x196x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m3.VAL"
@@ -173,7 +176,7 @@ OUT_12: !MessageButton
     press-value: "-4"
 
 Si-2800_13: !MessageButton
-    geometry: 50x15 x 68x196
+    geometry: 68x196x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m3.VAL"
@@ -181,28 +184,30 @@ Si-2800_13: !MessageButton
     press-value: "-14"
 
 -H-Diagon_14: !RelatedDisplay
-    geometry: 130x20 x 8x172
+    geometry: 8x172x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "H-Diagon"
     links:
-        - { label: "-DiaGon-H", file: "motorx.adl", macros: "P=29idb:,M=m3" }
+        - { label: "DiaGon-H", file: "motorx.adl", macros: "P=29idb:,M=m3" }
 
 text_update_15: !TextMonitor
-    geometry: 80x16 x 188x223
+    geometry: 188x223x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m4.RBV"
     alignment: Center
 
 -V-Diagon_16: !RelatedDisplay
-    geometry: 130x20 x 8x221
+    geometry: 8x221x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "V-Diagon"
     links:
-        - { label: "-DiaGon-V", file: "motorx.adl", macros: "P=29idb:,M=m4" }
+        - { label: "DiaGon-V", file: "motorx.adl", macros: "P=29idb:,M=m4" }
 
 Ld_17: !MessageButton
-    geometry: 21x20 x 278x172
+    geometry: 278x172x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m3:scanParms.LOAD"
@@ -210,7 +215,7 @@ Ld_17: !MessageButton
     press-value: "1"
 
 Ld_18: !MessageButton
-    geometry: 21x20 x 278x221
+    geometry: 278x221x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m4:scanParms.LOAD"
@@ -218,7 +223,7 @@ Ld_18: !MessageButton
     press-value: "1"
 
 ML-400_19: !MessageButton
-    geometry: 50x15 x 123x196
+    geometry: 123x196x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m3.VAL"
@@ -226,7 +231,7 @@ ML-400_19: !MessageButton
     press-value: "-22"
 
 ML-460_20: !MessageButton
-    geometry: 50x15 x 179x196
+    geometry: 179x196x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m3.VAL"
@@ -234,7 +239,7 @@ ML-460_20: !MessageButton
     press-value: "-30"
 
 OUT_21: !MessageButton
-    geometry: 35x15 x 28x245
+    geometry: 28x245x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m4.VAL"
@@ -242,7 +247,7 @@ OUT_21: !MessageButton
     press-value: "-4"
 
 Si-2800_22: !MessageButton
-    geometry: 50x15 x 68x245
+    geometry: 68x245x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m4.VAL"
@@ -250,7 +255,7 @@ Si-2800_22: !MessageButton
     press-value: "-14"
 
 ML-400_23: !MessageButton
-    geometry: 50x15 x 123x245
+    geometry: 123x245x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m4.VAL"
@@ -258,7 +263,7 @@ ML-400_23: !MessageButton
     press-value: "-22"
 
 ML-460_24: !MessageButton
-    geometry: 50x15 x 179x245
+    geometry: 179x245x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m4.VAL"
@@ -266,21 +271,22 @@ ML-460_24: !MessageButton
     press-value: "-30"
 
 text_update_25: !TextMonitor
-    geometry: 80x16 x 188x290
+    geometry: 188x290x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m5.RBV"
     alignment: Center
 
 -D1A_(W-mesh)_26: !RelatedDisplay
-    geometry: 130x20 x 8x288
+    geometry: 8x288x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "D1A (W-mesh)"
     links:
-        - { label: "-D1A", file: "motorx.adl", macros: "P=29idb:,M=m5" }
+        - { label: "D1A", file: "motorx.adl", macros: "P=29idb:,M=m5" }
 
 Ld_27: !MessageButton
-    geometry: 21x20 x 278x288
+    geometry: 278x288x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m5:scanParms.LOAD"
@@ -288,7 +294,7 @@ Ld_27: !MessageButton
     press-value: "1"
 
 OUT_28: !MessageButton
-    geometry: 35x15 x 28x312
+    geometry: 28x312x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m5.VAL"
@@ -296,7 +302,7 @@ OUT_28: !MessageButton
     press-value: "-20"
 
 MESH_29: !MessageButton
-    geometry: 35x15 x 68x312
+    geometry: 68x312x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m5.VAL"
@@ -304,21 +310,22 @@ MESH_29: !MessageButton
     press-value: "-55"
 
 text_update_30: !TextMonitor
-    geometry: 80x16 x 188x370
+    geometry: 188x370x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m6.RBV"
     alignment: Center
 
 -D2B_(post-Mono)_31: !RelatedDisplay
-    geometry: 130x20 x 8x368
+    geometry: 8x368x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "D2B (post-Mono)"
     links:
-        - { label: "-D2B", file: "motorx.adl", macros: "P=29idb:,M=m6" }
+        - { label: "D2B", file: "motorx.adl", macros: "P=29idb:,M=m6" }
 
 Ld_32: !MessageButton
-    geometry: 21x20 x 278x368
+    geometry: 278x368x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m6:scanParms.LOAD"
@@ -326,7 +333,7 @@ Ld_32: !MessageButton
     press-value: "1"
 
 OUT_33: !MessageButton
-    geometry: 35x15 x 28x392
+    geometry: 28x392x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m6.VAL"
@@ -334,7 +341,7 @@ OUT_33: !MessageButton
     press-value: "-20"
 
 MESH_34: !MessageButton
-    geometry: 35x15 x 68x392
+    geometry: 68x392x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m6.VAL"
@@ -342,7 +349,7 @@ MESH_34: !MessageButton
     press-value: "-46"
 
 YAG_35: !MessageButton
-    geometry: 35x15 x 108x392
+    geometry: 108x392x35x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m6.VAL"
@@ -350,7 +357,7 @@ YAG_35: !MessageButton
     press-value: "-64"
 
 OUT_36: !MessageButton
-    geometry: 35x15 x 28x445
+    geometry: 28x445x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m7.VAL"
@@ -358,7 +365,7 @@ OUT_36: !MessageButton
     press-value: "-20"
 
 YAG_37: !MessageButton
-    geometry: 35x15 x 68x445
+    geometry: 68x445x35x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m7.VAL"
@@ -366,7 +373,7 @@ YAG_37: !MessageButton
     press-value: "-49"
 
 Ld_38: !MessageButton
-    geometry: 21x20 x 278x420
+    geometry: 278x420x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m7:scanParms.LOAD"
@@ -374,79 +381,80 @@ Ld_38: !MessageButton
     press-value: "1"
 
 text_update_39: !TextMonitor
-    geometry: 80x16 x 188x422
+    geometry: 188x422x80x16
     foreground: $000000
     background: *medm_color_55
     pv: "29idb:m7.RBV"
     alignment: Center
 
 -D3B_(post-M3R)_40: !RelatedDisplay
-    geometry: 130x20 x 8x420
+    geometry: 8x420x130x20
     foreground: $000000
     background: *medm_color_50
+    text: "D3B (post-M3R)"
     links:
         - { label: "D3B ", file: "motorx.adl", macros: "P=29idb:,M=m7" }
 
 --------------------_41: !Text
-    geometry: 301x10 x 10x151
+    geometry: 10x151x301x10
     foreground: $000000
     text: "-----------------------------------------------"
 
 --------------------_42: !Text
-    geometry: 301x10 x 10x267
+    geometry: 10x267x301x10
     foreground: $000000
     text: "-----------------------------------------------"
 
 composite_43: !Group
-    geometry: 348x12 x 5x37
+    geometry: 5x37x348x12
     children:
         A-Hutch_------------_0: !Text
-            geometry: 300x12 x 5x37
+            geometry: 0x0x300x12
             foreground: $000000
             text: "A-Hutch ------------------------------------------"
         --------------------_1: !Text
-            geometry: 300x10 x 53x39
+            geometry: 48x2x300x10
             foreground: $000000
             text: "------------------------------------------"
 
 composite_44: !Group
-    geometry: 354x12 x 5x347
+    geometry: 5x347x354x12
     children:
         B-Branch_-----------_0: !Text
-            geometry: 300x12 x 5x347
+            geometry: 0x0x300x12
             foreground: $000000
             text: "B-Branch ------------------------------------------"
         --------------------_1: !Text
-            geometry: 300x10 x 59x349
+            geometry: 54x2x300x10
             foreground: $000000
             text: "------------------------------------------"
 
 composite_45: !Group
-    geometry: 354x12 x 5x480
+    geometry: 5x480x354x12
     children:
         C-Branch_-----------_0: !Text
-            geometry: 300x12 x 5x480
+            geometry: 0x0x300x12
             foreground: $000000
             text: "C-Branch -----------------------------------------"
         --------------------_1: !Text
-            geometry: 300x10 x 59x482
+            geometry: 54x2x300x10
             foreground: $000000
             text: "-----------------------------------------"
 
 composite_46: !Group
-    geometry: 354x12 x 5x609
+    geometry: 5x609x354x12
     children:
         D-Branch_-----------_0: !Text
-            geometry: 300x12 x 5x609
+            geometry: 0x0x300x12
             foreground: $000000
             text: "D-Branch -----------------------------------------"
         --------------------_1: !Text
-            geometry: 300x10 x 59x611
+            geometry: 54x2x300x10
             foreground: $000000
             text: "-----------------------------------------"
 
 YAG_47: !MessageButton
-    geometry: 35x15 x 108x524
+    geometry: 108x524x35x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m17.VAL"
@@ -454,7 +462,7 @@ YAG_47: !MessageButton
     press-value: "-81.5"
 
 MESH_48: !MessageButton
-    geometry: 35x15 x 68x524
+    geometry: 68x524x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m17.VAL"
@@ -462,7 +470,7 @@ MESH_48: !MessageButton
     press-value: "-56"
 
 OUT_49: !MessageButton
-    geometry: 35x15 x 28x524
+    geometry: 28x524x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m17.VAL"
@@ -470,21 +478,22 @@ OUT_49: !MessageButton
     press-value: "-20"
 
 -D4C_(pre-Slit)_50: !RelatedDisplay
-    geometry: 130x20 x 8x500
+    geometry: 8x500x130x20
     foreground: *medm_color_54
     background: *medm_color_50
+    text: "D4C (pre-Slit)"
     links:
         - { label: "D4C", file: "motorx.adl", macros: "P=29idb:,M=m17" }
 
 text_update_51: !TextMonitor
-    geometry: 80x16 x 186x502
+    geometry: 186x502x80x16
     foreground: *medm_color_54
     background: *medm_color_55
     pv: "29idb:m17.RBV"
     alignment: Center
 
 Ld_52: !MessageButton
-    geometry: 21x20 x 278x500
+    geometry: 278x500x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m17:scanParms.LOAD"
@@ -492,14 +501,14 @@ Ld_52: !MessageButton
     press-value: "1"
 
 text_update_53: !TextMonitor
-    geometry: 80x16 x 188x555
+    geometry: 188x555x80x16
     foreground: *medm_color_54
     background: *medm_color_55
     pv: "29idb:m20.RBV"
     alignment: Center
 
 Diode2_54: !MessageButton
-    geometry: 50x15 x 123x577
+    geometry: 123x577x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m20.VAL"
@@ -507,7 +516,7 @@ Diode2_54: !MessageButton
     press-value: "-67.74"
 
 Diode-1_55: !MessageButton
-    geometry: 50x15 x 68x577
+    geometry: 68x577x50x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m20.VAL"
@@ -515,7 +524,7 @@ Diode-1_55: !MessageButton
     press-value: "-31"
 
 OUT_56: !MessageButton
-    geometry: 35x15 x 28x577
+    geometry: 28x577x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m20.VAL"
@@ -523,7 +532,7 @@ OUT_56: !MessageButton
     press-value: "-10"
 
 Ld_57: !MessageButton
-    geometry: 21x20 x 278x553
+    geometry: 278x553x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m20:scanParms.LOAD"
@@ -531,21 +540,23 @@ Ld_57: !MessageButton
     press-value: "1"
 
 -gas-cell_58: !RelatedDisplay
-    geometry: 130x20 x 8x553
+    geometry: 8x553x130x20
     foreground: *medm_color_54
     background: *medm_color_50
+    text: "gas-cell"
     links:
         - { label: "gas-cell", file: "motorx.adl", macros: "P=29idb:,M=m20" }
 
 -D4D_(pre-Slit)_59: !RelatedDisplay
-    geometry: 130x20 x 8x631
+    geometry: 8x631x130x20
     foreground: *medm_color_19
     background: *medm_color_50
+    text: "D4D (pre-Slit)"
     links:
         - { label: "D4D (pre-Slit)", file: "motorx.adl", macros: "P=29idb:,M=m25" }
 
 OUT_60: !MessageButton
-    geometry: 35x15 x 28x655
+    geometry: 28x655x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m25.VAL"
@@ -553,7 +564,7 @@ OUT_60: !MessageButton
     press-value: "-20"
 
 MESH_61: !MessageButton
-    geometry: 35x15 x 68x655
+    geometry: 68x655x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m25.VAL"
@@ -561,7 +572,7 @@ MESH_61: !MessageButton
     press-value: "-53"
 
 YAG_62: !MessageButton
-    geometry: 35x15 x 108x655
+    geometry: 108x655x35x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m25.VAL"
@@ -569,14 +580,14 @@ YAG_62: !MessageButton
     press-value: "-72"
 
 text_update_63: !TextMonitor
-    geometry: 80x16 x 188x633
+    geometry: 188x633x80x16
     foreground: *medm_color_19
     background: *medm_color_55
     pv: "29idb:m25.RBV"
     alignment: Center
 
 Ld_64: !MessageButton
-    geometry: 21x20 x 278x631
+    geometry: 278x631x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m25:scanParms.LOAD"
@@ -584,7 +595,7 @@ Ld_64: !MessageButton
     press-value: "1"
 
 Ld_65: !MessageButton
-    geometry: 21x20 x 278x684
+    geometry: 278x684x21x20
     foreground: $000000
     background: *medm_color_50
     pv: "29idb:m28:scanParms.LOAD"
@@ -592,21 +603,22 @@ Ld_65: !MessageButton
     press-value: "1"
 
 text_update_66: !TextMonitor
-    geometry: 80x16 x 188x686
+    geometry: 188x686x80x16
     foreground: *medm_color_19
     background: *medm_color_55
     pv: "29idb:m28.RBV"
     alignment: Center
 
 -D5D_(pre-RSXS)_67: !RelatedDisplay
-    geometry: 130x20 x 8x684
+    geometry: 8x684x130x20
     foreground: *medm_color_19
     background: *medm_color_50
+    text: "D5D (pre-RSXS)"
     links:
-        - { label: "-D5D (pre RSXS)", file: "motorx.adl", macros: "P=29idb:,M=m28" }
+        - { label: "D5D (pre RSXS)", file: "motorx.adl", macros: "P=29idb:,M=m28" }
 
 OUT_68: !MessageButton
-    geometry: 35x15 x 28x708
+    geometry: 28x708x35x15
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:m28.VAL"
@@ -614,7 +626,7 @@ OUT_68: !MessageButton
     press-value: "-20"
 
 MESH_69: !MessageButton
-    geometry: 35x15 x 68x708
+    geometry: 68x708x35x15
     foreground: $000000
     background: *medm_color_32
     pv: "29idb:m28.VAL"
@@ -622,7 +634,7 @@ MESH_69: !MessageButton
     press-value: "-53"
 
 YAG_70: !MessageButton
-    geometry: 35x15 x 108x708
+    geometry: 108x708x35x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m28.VAL"
@@ -630,7 +642,7 @@ YAG_70: !MessageButton
     press-value: "-72"
 
 Diode_71: !MessageButton
-    geometry: 35x15 x 148x708
+    geometry: 148x708x35x15
     foreground: $000000
     background: *medm_color_20
     pv: "29idb:m28.VAL"
@@ -638,7 +650,7 @@ Diode_71: !MessageButton
     press-value: "-86.75"
 
 ALL_OUT_72: !MessageButton
-    geometry: 70x25 x 226x6
+    geometry: 226x6x70x25
     foreground: $000000
     background: *medm_color_60
     pv: "29idb:userStringSeq3.PROC"
@@ -646,56 +658,56 @@ ALL_OUT_72: !MessageButton
     press-value: "1"
 
 m1_73: !Text
-    geometry: 30x16 x 150x58
+    geometry: 150x58x30x16
     foreground: $000000
     text: "m1:"
 
 m2_74: !Text
-    geometry: 30x16 x 150x106
+    geometry: 150x106x30x16
     foreground: $000000
     text: "m2:"
 
 m3_75: !Text
-    geometry: 30x16 x 150x174
+    geometry: 150x174x30x16
     foreground: $000000
     text: "m3:"
 
 m4_76: !Text
-    geometry: 30x16 x 150x223
+    geometry: 150x223x30x16
     foreground: $000000
     text: "m4:"
 
 m5_77: !Text
-    geometry: 30x16 x 150x290
+    geometry: 150x290x30x16
     foreground: $000000
     text: "m5:"
 
 m6_78: !Text
-    geometry: 30x16 x 150x370
+    geometry: 150x370x30x16
     foreground: $000000
     text: "m6:"
 
 m7_79: !Text
-    geometry: 30x16 x 150x422
+    geometry: 150x422x30x16
     foreground: $000000
     text: "m7:"
 
 m17_80: !Text
-    geometry: 30x16 x 150x502
+    geometry: 150x502x30x16
     foreground: $000000
     text: "m17:"
 
 m20_81: !Text
-    geometry: 30x16 x 150x555
+    geometry: 150x555x30x16
     foreground: $000000
     text: "m20:"
 
 m25_82: !Text
-    geometry: 30x16 x 150x633
+    geometry: 150x633x30x16
     foreground: $000000
     text: "m25:"
 
 m28_83: !Text
-    geometry: 30x16 x 150x686
+    geometry: 150x686x30x16
     foreground: $000000
     text: "m28:"

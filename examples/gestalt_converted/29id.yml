@@ -72,44 +72,46 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
+    geometry: 437x274
     margins: 10x0x10x10
     foreground: *medm_color_19
     background: *medm_color_3
 
 Motors_0: !Text
-    geometry: 50x14 x 30x8
+    geometry: 30x8x50x14
     foreground: *medm_color_64
     text: "Motors"
 
 polyline_1: !Polyline
-    geometry: 2x188 x 146x0
+    geometry: 146x0x2x188
     foreground: $000000
     points: [ 147x1, 147x187 ]
 
 related_display_2: !RelatedDisplay
-    geometry: 136x23 x -114x538
+    geometry: -114x538x136x23
     foreground: *medm_color_54
     background: *medm_color_52
 
 polyline_3: !Polyline
-    geometry: 2x188 x 284x0
+    geometry: 284x0x2x188
     foreground: $000000
     points: [ 285x1, 285x187 ]
 
 polyline_4: !Polyline
-    geometry: 434x4 x 0x194
+    geometry: 0x194x434x4
     foreground: *medm_color_64
     points: [ 2x196, 432x196 ]
 
 related_display_5: !RelatedDisplay
-    geometry: 20x20 x 5x5
+    geometry: 5x5x20x20
     foreground: $000000
     background: *medm_color_51
 
 -B_6: !RelatedDisplay
-    geometry: 20x20 x 294x27
+    geometry: 294x27x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "B"
     links:
         - { label: "29ID-B asyn 1", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_1" }
         - { label: "29ID-B asyn 2 ", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_2" }
@@ -129,34 +131,35 @@ related_display_5: !RelatedDisplay
         - { label: "29ID-B deviceCmdReply 8", file: "deviceCmdReply.adl", macros: "P=29idb:,N=8" }
 
 Serial_7: !Text
-    geometry: 35x14 x 360x30
+    geometry: 360x30x35x14
     foreground: *medm_color_64
     text: "Serial"
 
 Digital_I_O_8: !Text
-    geometry: 75x14 x 320x8
+    geometry: 320x8x75x14
     foreground: *medm_color_64
     text: "Digital I/O"
 
 polyline_9: !Polyline
-    geometry: 149x2 x 0x84
+    geometry: 0x84x149x2
     foreground: $000000
     points: [ 148x85, 1x85 ]
 
 polyline_10: !Polyline
-    geometry: 141x2 x 146x97
+    geometry: 146x97x141x2
     foreground: $000000
     points: [ 286x98, 147x98 ]
 
 related_display_11: !RelatedDisplay
-    geometry: 20x20 x 294x5
+    geometry: 294x5x20x20
     foreground: $000000
     background: *medm_color_51
 
 -B_12: !RelatedDisplay
-    geometry: 20x20 x 5x99
+    geometry: 5x99x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "B"
     links:
         - { label: "IP1A", file: "Pump.adl", macros: "P=29idb:,PUMP=IP1A" }
         - { label: "IP2A", file: "Pump.adl", macros: "P=29idb:,PUMP=IP2A" }
@@ -168,14 +171,15 @@ related_display_11: !RelatedDisplay
         - { label: "IP7B", file: "Pump.adl", macros: "P=29idb:,PUMP=IP7B" }
 
 IP_13: !Text
-    geometry: 20x14 x 71x102
+    geometry: 71x102x20x14
     foreground: *medm_color_64
     text: "IP"
 
 -B_14: !RelatedDisplay
-    geometry: 20x20 x 5x121
+    geometry: 5x121x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "B"
     links:
         - { label: "VS1A", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS1A" }
         - { label: "VS2A", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS2A" }
@@ -186,14 +190,15 @@ IP_13: !Text
         - { label: "VS7B", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS7B" }
 
 IG_15: !Text
-    geometry: 20x14 x 71x125
+    geometry: 71x125x20x14
     foreground: *medm_color_64
     text: "IG"
 
 -C_16: !RelatedDisplay
-    geometry: 20x20 x 25x99
+    geometry: 25x99x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "C"
     links:
         - { label: "IP7C", file: "Pump.adl", macros: "P=29idb:,PUMP=IP7C" }
         - { label: "IP8C1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP8C1" }
@@ -206,19 +211,20 @@ IG_15: !Text
         - { label: "IPCUBE", file: "Pump.adl", macros: "P=29idc:,PUMP=IPCUBE" }
 
 related_display_17: !RelatedDisplay
-    geometry: 20x20 x 294x56
+    geometry: 294x56x20x20
     foreground: $ffffff
     background: *medm_color_64
 
 MW100_18: !Text
-    geometry: 50x14 x 319x59
+    geometry: 319x59x50x14
     foreground: *medm_color_64
     text: "MW100"
 
 -D_19: !RelatedDisplay
-    geometry: 20x20 x 334x27
+    geometry: 334x27x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "D"
     links:
         - { label: "29ID-D asyn 1", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_1" }
         - { label: "29ID-D asyn 2 ", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_2" }
@@ -238,29 +244,30 @@ MW100_18: !Text
         - { label: "29ID-D deviceCmdReply 8", file: "deviceCmdReply.adl", macros: "P=29idd:,N=8" }
 
 related_display_20: !RelatedDisplay
-    geometry: 20x20 x 5x165
+    geometry: 5x165x20x20
     foreground: $000000
     background: *medm_color_51
 
 Cameras_21: !Text
-    geometry: 50x14 x 30x168
+    geometry: 30x168x50x14
     foreground: *medm_color_64
     text: "Cameras"
 
 related_display_22: !RelatedDisplay
-    geometry: 20x20 x 294x78
+    geometry: 294x78x20x20
     foreground: $ffffff
     background: *medm_color_64
 
 SoftGlue_23: !Text
-    geometry: 60x14 x 319x81
+    geometry: 319x81x60x14
     foreground: *medm_color_64
     text: "SoftGlue"
 
 -C_24: !RelatedDisplay
-    geometry: 20x20 x 314x27
+    geometry: 314x27x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "C"
     links:
         - { label: "29ID-C asyn 1", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_1" }
         - { label: "29ID-C asyn 2 ", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_2" }
@@ -280,66 +287,69 @@ SoftGlue_23: !Text
         - { label: "29ID-C deviceCmdReply 8", file: "deviceCmdReply.adl", macros: "P=29idc:,N=8" }
 
 -_CA__25: !RelatedDisplay
-    geometry: 35x20 x 395x56
+    geometry: 395x56x35x20
     foreground: $000000
     background: *medm_color_25
+    text: " CA "
     links:
         - { label: "29ID Keithleys", file: "29ID_ca_all.adl", macros: "" }
 
 -Diag_26: !RelatedDisplay
-    geometry: 35x20 x 395x78
+    geometry: 395x78x35x20
     foreground: $000000
     background: *medm_color_25
+    text: "Diag"
     links:
         - { label: "29ID Diagnostics", file: "29id_Diagnostics.adl", macros: "" }
 
 text_update_27: !TextMonitor
-    geometry: 125x14 x 169x217
+    geometry: 169x217x125x14
     foreground: $000000
     background: *medm_color_2
     pv: "S:IOC:timeOfDayForm2SI"
     alignment: Center
 
 Ring_I_28: !Text
-    geometry: 50x14 x 310x217
+    geometry: 310x217x50x14
     foreground: $000000
     text: "Ring I"
 
 text_update_29: !TextMonitor
-    geometry: 40x14 x 370x217
+    geometry: 370x217x40x14
     foreground: $000000
     background: *medm_color_2
     pv: "S:SRcurrentAI.VAL"
     alignment: Center
 
 mA_30: !Text
-    geometry: 20x14 x 415x217
+    geometry: 415x217x20x14
     foreground: $000000
     text: "mA"
 
 Undulator_31: !Text
-    geometry: 80x14 x 263x255
+    geometry: 263x255x80x14
     foreground: $000000
     text: "Undulator"
 
 text_update_32: !TextMonitor
-    geometry: 50x14 x 348x255
+    geometry: 348x255x50x14
     foreground: $000000
     background: *medm_color_2
     pv: "ID29:Energy.VAL"
     alignment: Center
 
 text_update_33: !TextMonitor
-    geometry: 25x14 x 403x255
+    geometry: 403x255x25x14
     foreground: $000000
     background: *medm_color_2
     pv: "ID29:Energy.EGU"
     alignment: Center
 
 -User_Calc_34: !RelatedDisplay
-    geometry: 70x20 x 294x115
+    geometry: 294x115x70x20
     foreground: $ffffff
     background: *medm_color_34
+    text: "User Calc"
     links:
         - { label: "User Calcs 1-10", file: "userCalcs10.adl", macros: "P=29idb:" }
         - { label: "User CalcOuts 1-10", file: "userCalcOuts10.adl", macros: "P=29idb:" }
@@ -354,7 +364,7 @@ text_update_33: !TextMonitor
         - { label: "Beamline Energy SSeq", file: "userStringSeq_full.adl", macros: "P=29id:,S=BeamlineEnergySSeq" }
 
 EDM_35: !ShellCommand
-    geometry: 46x20 x 360x165
+    geometry: 360x165x46x20
     foreground: $000000
     background: *medm_color_55
     commands:
@@ -364,7 +374,7 @@ EDM_35: !ShellCommand
         - { label: "Mono", command: "/net/s29dserv/xorApps/adl/start_mono" }
 
 Tools_36: !ShellCommand
-    geometry: 62x20 x 294x165
+    geometry: 294x165x62x20
     foreground: $000000
     background: *medm_color_55
     commands:
@@ -378,9 +388,10 @@ Tools_36: !ShellCommand
         - { label: "ImageJ", command: "ImageJ&" }
 
 -_Status_37: !RelatedDisplay
-    geometry: 62x20 x 368x115
+    geometry: 368x115x62x20
     foreground: $ffffff
     background: *medm_color_54
+    text: " Status"
     links:
         - { label: "29idb IOC stats", file: "ioc_stats_vxworks.adl", macros: "ioc=29idb" }
         - { label: "29idb save_restore Status", file: "save_restoreStatus.adl", macros: "P=29idb:" }
@@ -393,9 +404,10 @@ Tools_36: !ShellCommand
         - { label: "29idd alive", file: "aliveRecord.adl", macros: "P=29idd:" }
 
 -Scan_Ctrl_38: !RelatedDisplay
-    geometry: 70x20 x 294x140
+    geometry: 294x140x70x20
     foreground: $ffffff
     background: *medm_color_34
+    text: "Scan Ctrl"
     links:
         - { label: "Scan1 (for all scans)", file: "scan.adl", macros: "P=29idb:,N=1,S=scan1,DW=Dwait1,PW=Pwait1" }
         - { label: "Scan2 (for 2D & higher scans)", file: "scan.adl", macros: "P=29idb:,N=2,S=scan2,DW=Dwait2,PW=Pwait2" }
@@ -407,9 +419,10 @@ Tools_36: !ShellCommand
         - { label: "Scan1Menu", file: "configMenu.adl", macros: "P=29idb:,CONFIG=scan1" }
 
 -!!_39: !RelatedDisplay
-    geometry: 20x20 x 410x165
+    geometry: 410x165x20x20
     foreground: $ffffff
     background: *medm_color_20
+    text: "!!"
     links:
         - { label: "M0 Scan1", file: "scan.adl", macros: "P=29id_m0:,N=1,S=SCAN,DW=Dwait1,PW=Pwait1" }
         - { label: "M0 Scan2", file: "scan.adl", macros: "P=29id_m0:,N=2,S=SCAN_LOOP,DW=Dwait2,PW=Pwait2" }
@@ -419,9 +432,10 @@ Tools_36: !ShellCommand
         - { label: "M1 SaveData Controls", file: "scan_saveData.adl", macros: "P=29id_m1:SCAN" }
 
 -_C_40: !RelatedDisplay
-    geometry: 30x20 x 368x140
+    geometry: 368x140x30x20
     foreground: $ffffff
     background: *medm_color_34
+    text: " C"
     links:
         - { label: "Scan1 (for all scans)", file: "scan.adl", macros: "P=29idc:,N=1,S=scan1,DW=Dwait1,PW=Pwait1" }
         - { label: "Scan2 (for 2D & higher scans)", file: "scan.adl", macros: "P=29idc:,N=2,S=scan2,DW=Dwait2,PW=Pwait2" }
@@ -432,9 +446,10 @@ Tools_36: !ShellCommand
         - { label: "ScanProgress", file: "ProgressBar.adl", macros: "P=29idc:,B=29idc:scanProgress:" }
 
 -_D_41: !RelatedDisplay
-    geometry: 30x20 x 400x140
+    geometry: 400x140x30x20
     foreground: $ffffff
     background: *medm_color_34
+    text: " D"
     links:
         - { label: "Scan1 (for all scans)", file: "scan.adl", macros: "P=29idd:,N=1,S=scan1,DW=Dwait1,PW=Pwait1" }
         - { label: "Scan2 (for 2D & higher scans)", file: "scan.adl", macros: "P=29idd:,N=2,S=scan2,DW=Dwait2,PW=Pwait2" }
@@ -445,52 +460,53 @@ Tools_36: !ShellCommand
         - { label: "ScanProgress", file: "ProgressBar.adl", macros: "P=29idd:,B=29idd:scanProgress:" }
 
 composite_42: !Group
-    geometry: 146x14 x 5x255
+    geometry: 5x255x146x14
     children:
         oval_0: !Ellipse
-            geometry: 10x10 x 89x257
+            geometry: 84x2x10x10
             foreground: *medm_color_15
         oval_1: !Ellipse
-            geometry: 10x10 x 115x257
+            geometry: 110x2x10x10
             foreground: *medm_color_15
         oval_2: !Ellipse
-            geometry: 10x10 x 141x257
+            geometry: 136x2x10x10
             foreground: *medm_color_15
         A_3: !Text
-            geometry: 10x14 x 80x255
+            geometry: 75x0x10x14
             foreground: *medm_color_19
             text: "A"
         text_4: !Text
-            geometry: 5x5 x 112x260
+            geometry: 107x5x5x5
             foreground: *medm_color_19
             text: "None"
         C_5: !Text
-            geometry: 10x14 x 106x255
+            geometry: 101x0x10x14
             foreground: *medm_color_19
             text: "C"
         D_6: !Text
-            geometry: 10x14 x 132x255
+            geometry: 127x0x10x14
             foreground: *medm_color_19
             text: "D"
         Shutters_7: !Text
-            geometry: 65x14 x 5x255
+            geometry: 0x0x65x14
             foreground: *medm_color_64
             text: "Shutters:"
 
 related_display_43: !RelatedDisplay
-    geometry: 20x20 x 5x143
+    geometry: 5x143x20x20
     foreground: $000000
     background: *medm_color_51
 
 Televac_44: !Text
-    geometry: 50x14 x 30x146
+    geometry: 30x146x50x14
     foreground: *medm_color_64
     text: "Televac"
 
 -D_45: !RelatedDisplay
-    geometry: 20x20 x 45x99
+    geometry: 45x99x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "D"
     links:
         - { label: "IP7D", file: "Pump.adl", macros: "P=29idb:,PUMP=IP7D" }
         - { label: "IP8D1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP8D1" }
@@ -500,19 +516,20 @@ Televac_44: !Text
         - { label: "IP10D2", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10D2" }
 
 Moving_46: !Text
-    geometry: 95x30 x 25x35
+    geometry: 25x35x95x30
     foreground: *medm_color_50
     text: "Moving"
 
 Moving_47: !Text
-    geometry: 95x30 x 27x37
+    geometry: 27x37x95x30
     foreground: *medm_color_54
     text: "Moving"
 
 -B_48: !RelatedDisplay
-    geometry: 20x20 x 155x110
+    geometry: 155x110x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "B"
     links:
         - { label: "Amp 1", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca1" }
         - { label: "Amp 2", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca2" }
@@ -528,65 +545,70 @@ Moving_47: !Text
         - { label: "Amp 16", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca16" }
 
 CA_49: !Text
-    geometry: 50x14 x 219x113
+    geometry: 219x113x50x14
     foreground: *medm_color_64
     text: "CA"
 
 related_display_50: !RelatedDisplay
-    geometry: 20x20 x 155x130
+    geometry: 155x130x20x20
     foreground: $000000
     background: *medm_color_51
 
 Slits_51: !Text
-    geometry: 90x14 x 180x133
+    geometry: 180x133x90x14
     foreground: *medm_color_64
     text: "Slits"
 
 related_display_52: !RelatedDisplay
-    geometry: 20x20 x 155x150
+    geometry: 155x150x20x20
     foreground: $000000
     background: *medm_color_51
 
 Newport_Hxp_53: !Text
-    geometry: 80x14 x 180x153
+    geometry: 180x153x80x14
     foreground: *medm_color_64
     text: "Newport Hxp"
 
 -C_54: !RelatedDisplay
-    geometry: 20x20 x 175x110
+    geometry: 175x110x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "C"
     links:
         - { label: "29idc CA1/PS", file: "Keithley6487small.adl", macros: "P=29idc:,CA=ca1" }
         - { label: "29idc CA2", file: "Keithley6485small.adl", macros: "P=29idc:,CA=ca2" }
 
 -D_55: !RelatedDisplay
-    geometry: 20x20 x 195x110
+    geometry: 195x110x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "D"
     links:
         - { label: "29idd CA1/PS", file: "Keithley6487small.adl", macros: "P=29idd:,CA=ca1" }
         - { label: "29idd CA2", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
         - { label: "29idd CA3", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca3" }
 
 -ARPES_56: !RelatedDisplay
-    geometry: 42x20 x 97x99
+    geometry: 97x99x42x20
     foreground: $000000
     background: *medm_color_55
+    text: "ARPES"
     links:
         - { label: "29ID-C ARPES graphic", file: "29idc_graphic.adl", macros: "P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8" }
 
 -RSXS_57: !RelatedDisplay
-    geometry: 42x20 x 97x121
+    geometry: 97x121x42x20
     foreground: $000000
     background: *medm_color_55
+    text: "RSXS"
     links:
         - { label: "29ID-D 2C graphic", file: "29idd_graphic.adl", macros: "P=29idd:,M1=m1,M2=m2,M3=m3,M4=m7,M5=m6" }
 
 -_SES_58: !RelatedDisplay
-    geometry: 42x20 x 97x165
+    geometry: 97x165x42x20
     foreground: $000000
     background: *medm_color_55
+    text: " SES"
     links:
         - { label: "SES Area Det", file: "ADBase.adl", macros: "P=29idcEA:, R=det1:" }
         - { label: "EAV Area Det", file: "ADBase.adl", macros: "P=29idcEAV:, R=cam1:" }
@@ -594,7 +616,7 @@ Newport_Hxp_53: !Text
         - { label: "SES Scans", file: "29idc_SESall.adl", macros: "P=29idcEA:, R=det1:" }
 
 STOP_59: !MessageButton
-    geometry: 42x20 x 97x6
+    geometry: 97x6x42x20
     foreground: *medm_color_30
     background: *medm_color_20
     pv: "29idb:allstop.VAL"
@@ -602,9 +624,10 @@ STOP_59: !MessageButton
     press-value: "1"
 
 -C_60: !RelatedDisplay
-    geometry: 20x20 x 25x121
+    geometry: 25x121x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "C"
     links:
         - { label: "VS8C", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS8C" }
         - { label: "VS8CSP", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS8CSP" }
@@ -614,9 +637,10 @@ STOP_59: !MessageButton
         - { label: "VSCUBE", file: "VacSen.adl", macros: "P=29idc:,GAUGE=VSCUBE" }
 
 -D_61: !RelatedDisplay
-    geometry: 20x20 x 45x121
+    geometry: 45x121x20x20
     foreground: $000000
     background: *medm_color_51
+    text: "D"
     links:
         - { label: "VS8D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS8D" }
         - { label: "VS9D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS9D" }
@@ -625,59 +649,60 @@ STOP_59: !MessageButton
         - { label: "VS12D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS12D" }
 
 related_display_62: !RelatedDisplay
-    geometry: 20x20 x 157x49
+    geometry: 157x49x20x20
     foreground: $000000
     background: *medm_color_51
 
 related_display_63: !RelatedDisplay
-    geometry: 20x20 x 157x71
+    geometry: 157x71x20x20
     foreground: $000000
     background: *medm_color_40
 
 Beam_Info_64: !Text
-    geometry: 80x14 x 182x8
+    geometry: 182x8x80x14
     foreground: *medm_color_64
     text: "Beam Info"
 
 Undulator_65: !Text
-    geometry: 80x14 x 182x52
+    geometry: 182x52x80x14
     foreground: *medm_color_64
     text: "Undulator"
 
 related_display_66: !RelatedDisplay
-    geometry: 20x20 x 157x5
+    geometry: 157x5x20x20
     foreground: $000000
     background: *medm_color_51
 
 related_display_67: !RelatedDisplay
-    geometry: 20x20 x 157x27
+    geometry: 157x27x20x20
     foreground: $000000
     background: *medm_color_60
 
 PSS_EPS_68: !Text
-    geometry: 80x14 x 182x30
+    geometry: 182x30x80x14
     foreground: *medm_color_64
     text: "PSS/EPS"
 
 BL_Overview_69: !Text
-    geometry: 80x14 x 182x74
+    geometry: 182x74x80x14
     foreground: *medm_color_64
     text: "BL Overview"
 
 related_display_70: !RelatedDisplay
-    geometry: 20x20 x 155x170
+    geometry: 155x170x20x20
     foreground: $000000
     background: *medm_color_51
 
 Lakeshore_71: !Text
-    geometry: 80x14 x 180x173
+    geometry: 180x173x80x14
     foreground: *medm_color_64
     text: "Lakeshore"
 
 -BL_Calcs_72: !RelatedDisplay
-    geometry: 70x20 x 185x240
+    geometry: 185x240x70x20
     foreground: $ffffff
     background: *medm_color_34
+    text: "BL Calcs"
     links:
         - { label: "29ID-B StringSeqs", file: "BL_StrSeqs10.adl", macros: "P=29idb:" }
         - { label: "29ID-C StringSeqs", file: "BL_StrSeqs10.adl", macros: "P=29idc:" }
@@ -685,6 +710,6 @@ Lakeshore_71: !Text
         - { label: "Current Branch", file: "userCalcOut.adl", macros: "P=29id:,C=CurrentBranch" }
 
 related_display_73: !RelatedDisplay
-    geometry: 20x20 x 10x215
+    geometry: 10x215x20x20
     foreground: $000000
     background: *medm_color_51

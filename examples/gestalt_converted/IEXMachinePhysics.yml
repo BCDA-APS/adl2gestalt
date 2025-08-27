@@ -72,461 +72,463 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
+    geometry: 1033x874
     margins: 10x0x10x10
     foreground: $000000
     background: *medm_color_57
 
 rectangle_0: !Rectangle
-    geometry: 320x165 x 378x40
+    geometry: 378x40x320x165
     foreground: *medm_color_8
 
 rectangle_1: !Rectangle
-    geometry: 200x25 x 439x45
+    geometry: 439x45x200x25
     foreground: *medm_color_32
 
 rectangle_2: !Rectangle
-    geometry: 300x170 x 384x244
+    geometry: 384x244x300x170
     foreground: *medm_color_8
 
 rectangle_3: !Rectangle
-    geometry: 210x25 x 436x250
+    geometry: 436x250x210x25
     foreground: *medm_color_32
 
 rectangle_4: !Rectangle
-    geometry: 480x30 x 14x446
+    geometry: 14x446x480x30
     foreground: *medm_color_32
 
 rectangle_5: !Rectangle
-    geometry: 500x320 x 12x509
+    geometry: 12x509x500x320
     foreground: *medm_color_7
 
 rectangle_6: !Rectangle
-    geometry: 280x270 x 714x269
+    geometry: 714x269x280x270
     foreground: *medm_color_8
 
 rectangle_7: !Rectangle
-    geometry: 220x25 x 728x276
+    geometry: 728x276x220x25
     foreground: *medm_color_32
 
 rectangle_8: !Rectangle
-    geometry: 250x220 x 716x41
+    geometry: 716x41x250x220
     foreground: *medm_color_8
 
 rectangle_9: !Rectangle
-    geometry: 200x25 x 741x46
+    geometry: 741x46x200x25
     foreground: *medm_color_32
 
 rectangle_10: !Rectangle
-    geometry: 254x25 x 139x515
+    geometry: 139x515x254x25
     foreground: *medm_color_32
 
 rectangle_11: !Rectangle
-    geometry: 355x400 x 15x39
+    geometry: 15x39x355x400
     foreground: *medm_color_5
 
 text_update_12: !TextMonitor
-    geometry: 80x25 x 100x120
+    geometry: 100x120x80x25
     foreground: *medm_color_60
     background: *medm_color_49
     pv: "$(P)EnergyM.VAL"
     alignment: Center
 
 text_entry_13: !TextEntry
-    geometry: 60x26 x 113x148
+    geometry: 113x148x60x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)EnergySetC.VAL"
 
 text_update_14: !TextMonitor
-    geometry: 80x25 x 190x120
+    geometry: 190x120x80x25
     foreground: *medm_color_60
     background: *medm_color_49
     pv: "$(P)BxRdbkM.VAL"
     alignment: Center
 
 H_coil,_A_15: !Text
-    geometry: 52x12 x 204x178
+    geometry: 204x178x52x12
     foreground: $000000
     text: "H coil, A"
 
 V_coil,_A_16: !Text
-    geometry: 52x12 x 294x178
+    geometry: 294x178x52x12
     foreground: $000000
     text: "V coil, A"
 
 Energy,_keV_17: !Text
-    geometry: 70x12 x 108x178
+    geometry: 108x178x70x12
     foreground: $000000
     text: "Energy, keV"
 
 text_entry_18: !TextEntry
-    geometry: 26x26 x 316x296
+    geometry: 316x296x26x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)HarmonicValueC.VAL"
 
 text_entry_19: !TextEntry
-    geometry: 60x26 x 290x148
+    geometry: 290x148x60x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)BySetC.VAL"
 
 text_update_20: !TextMonitor
-    geometry: 80x25 x 280x120
+    geometry: 280x120x80x25
     foreground: *medm_color_60
     background: *medm_color_49
     pv: "$(P)ByRdbkM.VAL"
     alignment: Center
 
 rectangle_21: !Rectangle
-    geometry: 260x30 x 100x146
+    geometry: 100x146x260x30
     foreground: *medm_color_8
 
 text_update_22: !TextMonitor
-    geometry: 100x14 x 98x71
+    geometry: 98x71x100x14
     foreground: *medm_color_20
     background: *medm_color_3
     pv: "$(P)AccessSecurityC.VAL"
     alignment: Center
 
 text_update_23: !TextMonitor
-    geometry: 120x20 x 32x16
+    geometry: 32x16x120x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)locationM.VAL"
 
 text_update_24: !TextMonitor
-    geometry: 200x20 x 101x44
+    geometry: 101x44x200x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)DeviceM.VAL"
     alignment: Center
 
 choice_button_25: !ChoiceButton
-    geometry: 120x28 x 132x384
+    geometry: 132x384x120x28
     foreground: *medm_color_60
     background: *medm_color_64
     pv: "$(P)Main_on_offC.VAL"
 
 menu_26: !Menu
-    geometry: 120x25 x 241x353
+    geometry: 241x353x120x25
     foreground: *medm_color_50
     background: *medm_color_54
     pv: "$(P)DesiredModeC.VAL"
 
 Main_Power_27: !Text
-    geometry: 90x20 x 33x389
+    geometry: 33x389x90x20
     foreground: $000000
     text: "Main Power"
 
 text_update_28: !TextMonitor
-    geometry: 260x20 x 65x416
+    geometry: 65x416x260x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)feedbackM.VAL"
     alignment: Center
 
 Harmonic_29: !Text
-    geometry: 60x15 x 244x302
+    geometry: 244x302x60x15
     foreground: $000000
     text: "Harmonic"
 
 Machine_Physics_IEX__30: !Text
-    geometry: 300x26 x 441x8
+    geometry: 441x8x300x26
     foreground: $000000
     text: "Machine Physics IEX Controls"
 
 USbot_31: !Text
-    geometry: 60x26 x 23x571
+    geometry: 23x571x60x26
     foreground: $000000
     text: "USbot"
 
 UStop_32: !Text
-    geometry: 60x26 x 23x544
+    geometry: 23x544x60x26
     foreground: $000000
     text: "UStop"
 
 DSbot_33: !Text
-    geometry: 60x26 x 268x571
+    geometry: 268x571x60x26
     foreground: $000000
     text: "DSbot"
 
 DStop_34: !Text
-    geometry: 60x26 x 268x544
+    geometry: 268x544x60x26
     foreground: $000000
     text: "DStop"
 
 text_entry_35: !TextEntry
-    geometry: 65x23 x 90x546
+    geometry: 90x546x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetUSTCorr_"
 
 text_entry_36: !TextEntry
-    geometry: 65x23 x 90x573
+    geometry: 90x573x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetUSBCorr_"
 
 text_entry_37: !TextEntry
-    geometry: 65x23 x 335x546
+    geometry: 335x546x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetDSTCorr_"
 
 text_entry_38: !TextEntry
-    geometry: 65x23 x 335x573
+    geometry: 335x573x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetDSBCorr_"
 
 USq2_39: !Text
-    geometry: 60x26 x 23x627
+    geometry: 23x627x60x26
     foreground: $000000
     text: "USq2"
 
 USq1_40: !Text
-    geometry: 60x26 x 23x601
+    geometry: 23x601x60x26
     foreground: $000000
     text: "USq1"
 
 USq4_41: !Text
-    geometry: 60x26 x 23x679
+    geometry: 23x679x60x26
     foreground: $000000
     text: "USq4"
 
 USq3_42: !Text
-    geometry: 60x26 x 23x653
+    geometry: 23x653x60x26
     foreground: $000000
     text: "USq3"
 
 text_entry_43: !TextEntry
-    geometry: 65x23 x 90x603
+    geometry: 90x603x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetUSQ1Corr_"
 
 text_entry_44: !TextEntry
-    geometry: 65x23 x 90x629
+    geometry: 90x629x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetUSQ2Corr_"
 
 text_entry_45: !TextEntry
-    geometry: 65x23 x 90x655
+    geometry: 90x655x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetUSQ3Corr_"
 
 text_entry_46: !TextEntry
-    geometry: 65x23 x 90x681
+    geometry: 90x681x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetUSQ4Corr_"
 
 DSq2_47: !Text
-    geometry: 60x26 x 268x627
+    geometry: 268x627x60x26
     foreground: $000000
     text: "DSq2"
 
 DSq1_48: !Text
-    geometry: 60x26 x 268x601
+    geometry: 268x601x60x26
     foreground: $000000
     text: "DSq1"
 
 DSq4_49: !Text
-    geometry: 60x26 x 268x679
+    geometry: 268x679x60x26
     foreground: $000000
     text: "DSq4"
 
 DSq3_50: !Text
-    geometry: 60x26 x 268x653
+    geometry: 268x653x60x26
     foreground: $000000
     text: "DSq3"
 
 text_entry_51: !TextEntry
-    geometry: 65x23 x 335x603
+    geometry: 335x603x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetDSQ1Corr_"
 
 text_entry_52: !TextEntry
-    geometry: 65x23 x 335x629
+    geometry: 335x629x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetDSQ2Corr_"
 
 text_entry_53: !TextEntry
-    geometry: 65x23 x 335x655
+    geometry: 335x655x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetDSQ3Corr_"
 
 text_entry_54: !TextEntry
-    geometry: 65x23 x 335x681
+    geometry: 335x681x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)SetDSQ4Corr_"
 
 IEX_Correctors_55: !Text
-    geometry: 150x26 x 192x516
+    geometry: 192x516x150x26
     foreground: $000000
     text: "IEX Correctors"
 
 text_update_56: !TextMonitor
-    geometry: 80x22 x 167x546
+    geometry: 167x546x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkUST_.VAL"
 
 text_update_57: !TextMonitor
-    geometry: 80x22 x 167x573
+    geometry: 167x573x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkUSB_.VAL"
 
 text_update_58: !TextMonitor
-    geometry: 80x22 x 411x546
+    geometry: 411x546x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkDST_.VAL"
 
 text_update_59: !TextMonitor
-    geometry: 80x22 x 411x573
+    geometry: 411x573x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkDSB_.VAL"
 
 text_update_60: !TextMonitor
-    geometry: 80x22 x 167x603
+    geometry: 167x603x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkUSQ1_.VAL"
 
 text_update_61: !TextMonitor
-    geometry: 80x22 x 167x629
+    geometry: 167x629x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkUSQ2_.VAL"
 
 text_update_62: !TextMonitor
-    geometry: 80x22 x 167x655
+    geometry: 167x655x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkUSQ3_.VAL"
 
 text_update_63: !TextMonitor
-    geometry: 80x22 x 167x681
+    geometry: 167x681x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkUSQ4_.VAL"
 
 text_update_64: !TextMonitor
-    geometry: 80x22 x 411x603
+    geometry: 411x603x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkDSQ1_.VAL"
 
 text_update_65: !TextMonitor
-    geometry: 80x22 x 411x629
+    geometry: 411x629x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkDSQ2_.VAL"
 
 text_update_66: !TextMonitor
-    geometry: 80x22 x 411x655
+    geometry: 411x655x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkDSQ3_.VAL"
 
 text_update_67: !TextMonitor
-    geometry: 80x22 x 411x681
+    geometry: 411x681x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkDSQ4_.VAL"
 
 text_update_68: !TextMonitor
-    geometry: 80x22 x 125x747
+    geometry: 125x747x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)CorrRdbkEarth_.VAL"
 
 Earth_69: !Text
-    geometry: 60x26 x 59x745
+    geometry: 59x745x60x26
     foreground: $000000
     text: "Earth"
 
 Bxq_70: !Text
-    geometry: 45x26 x 100x710
+    geometry: 100x710x45x26
     foreground: $000000
     text: "Bxq"
 
 Byq_71: !Text
-    geometry: 45x26 x 345x708
+    geometry: 345x708x45x26
     foreground: $000000
     text: "Byq"
 
 text_update_72: !TextMonitor
-    geometry: 80x22 x 167x711
+    geometry: 167x711x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)BxqRdbk_"
 
 text_update_73: !TextMonitor
-    geometry: 80x22 x 411x710
+    geometry: 411x710x80x22
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)ByqRdbk_"
 
 Ramping_74: !Text
-    geometry: 200x26 x 741x45
+    geometry: 741x45x200x26
     foreground: $000000
     text: "Ramping"
 
 Step_Size_75: !Text
-    geometry: 80x20 x 729x97
+    geometry: 729x97x80x20
     foreground: $000000
     text: "Step Size"
 
 text_entry_76: !TextEntry
-    geometry: 65x23 x 825x96
+    geometry: 825x96x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)dVSetpt_"
 
 Time_Step_77: !Text
-    geometry: 80x20 x 729x123
+    geometry: 729x123x80x20
     foreground: $000000
     text: "Time/Step"
 
 text_entry_78: !TextEntry
-    geometry: 65x23 x 825x122
+    geometry: 825x122x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)dTSetpt_"
 
 Hold_time_79: !Text
-    geometry: 80x20 x 729x150
+    geometry: 729x150x80x20
     foreground: $000000
     text: "Hold time"
 
 text_entry_80: !TextEntry
-    geometry: 65x23 x 825x149
+    geometry: 825x149x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)dHSetpt_"
 
 ASYN_Ramps_81: !RelatedDisplay
-    geometry: 104x21 x 794x236
+    geometry: 794x236x104x21
     foreground: $000000
     background: *medm_color_4
+    text: "ASYN Ramps"
     links:
         - { label: "Volts Delta", file: "asynOctet.adl", macros: "P=$(P),R=wDv_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
         - { label: "Time Delta", file: "asynOctet.adl", macros: "P=$(P),R=wDt_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
         - { label: "Hold Delta", file: "asynOctet.adl", macros: "P=$(P),R=wDh_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
 
 Set_Outputs_82: !MessageButton
-    geometry: 100x25 x 219x746
+    geometry: 219x746x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)SetOutputSeq_.PROC"
@@ -534,31 +536,31 @@ Set_Outputs_82: !MessageButton
     press-value: "1"
 
 choice_button_83: !ChoiceButton
-    geometry: 110x30 x 741x305
+    geometry: 741x305x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskBx_"
 
 choice_button_84: !ChoiceButton
-    geometry: 110x30 x 741x339
+    geometry: 741x339x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskBy_"
 
 choice_button_85: !ChoiceButton
-    geometry: 110x30 x 864x305
+    geometry: 864x305x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskBxq_"
 
 choice_button_86: !ChoiceButton
-    geometry: 110x30 x 862x339
+    geometry: 862x339x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskByq_"
 
 Start_87: !MessageButton
-    geometry: 100x25 x 884x506
+    geometry: 884x506x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussSeq_.PROC"
@@ -566,315 +568,315 @@ Start_87: !MessageButton
     press-value: "1"
 
 Magnet_Conditioning_88: !Text
-    geometry: 220x26 x 730x275
+    geometry: 730x275x220x26
     foreground: $000000
     text: "Magnet Conditioning"
 
 Step_Size_89: !Text
-    geometry: 80x20 x 722x413
+    geometry: 722x413x80x20
     foreground: $000000
     text: "Step Size"
 
 text_entry_90: !TextEntry
-    geometry: 75x23 x 826x412
+    geometry: 826x412x75x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)dGticks_"
 
 Num_Cycles_91: !Text
-    geometry: 80x20 x 722x439
+    geometry: 722x439x80x20
     foreground: $000000
     text: "Num Cycles"
 
 text_entry_92: !TextEntry
-    geometry: 75x23 x 826x438
+    geometry: 826x438x75x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)dGnum_"
 
 choice_button_93: !ChoiceButton
-    geometry: 110x30 x 727x471
+    geometry: 727x471x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ConditioingSelect_"
 
 choice_button_94: !ChoiceButton
-    geometry: 110x30 x 741x373
+    geometry: 741x373x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)CorrDegauss_"
 
 choice_button_95: !ChoiceButton
-    geometry: 125x30 x 574x509
+    geometry: 574x509x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)SetPSLocRem_"
 
 choice_button_96: !ChoiceButton
-    geometry: 125x30 x 518x647
+    geometry: 518x647x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxOnOff_"
 
 choice_button_97: !ChoiceButton
-    geometry: 125x30 x 518x716
+    geometry: 518x716x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByOnOff_"
 
 choice_button_98: !ChoiceButton
-    geometry: 125x30 x 518x681
+    geometry: 518x681x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxqOnOff_"
 
 choice_button_99: !ChoiceButton
-    geometry: 125x30 x 518x750
+    geometry: 518x750x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByqOnOff_"
 
 Setpoint_100: !Text
-    geometry: 80x20 x 825x74
+    geometry: 825x74x80x20
     foreground: $000000
     text: "Setpoint"
 
 text_update_101: !TextMonitor
-    geometry: 260x20 x 405x177
+    geometry: 405x177x260x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)Message2M.VAL"
     alignment: Center
 
 text_update_102: !TextMonitor
-    geometry: 260x20 x 18x450
+    geometry: 18x450x260x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)Message1M.VAL"
     alignment: Center
 
 Last_Energy_Set_Erro_103: !Text
-    geometry: 200x20 x 281x452
+    geometry: 281x452x200x20
     foreground: $000000
     text: "Last Energy Set Error"
 
 Readback_104: !Text
-    geometry: 80x20 x 18x123
+    geometry: 18x123x80x20
     foreground: $000000
     text: "Readback"
 
 Setpoint_105: !Text
-    geometry: 80x20 x 18x151
+    geometry: 18x151x80x20
     foreground: $000000
     text: "Setpoint"
 
 Currents_106: !Text
-    geometry: 90x20 x 399x90
+    geometry: 399x90x90x20
     foreground: $000000
     text: "Currents"
 
 text_update_107: !TextMonitor
-    geometry: 80x25 x 496x89
+    geometry: 496x89x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)EnergyToCurrent_.C"
     alignment: Center
 
 text_update_108: !TextMonitor
-    geometry: 80x25 x 591x89
+    geometry: 591x89x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)EnergyToCurrent_.D"
     alignment: Center
 
 text_update_109: !TextMonitor
-    geometry: 80x25 x 496x117
+    geometry: 496x117x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)EnergyToCurrent_.F"
     alignment: Center
 
 text_update_110: !TextMonitor
-    geometry: 80x25 x 591x117
+    geometry: 591x117x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)EnergyToCurrent_.G"
     alignment: Center
 
 B_Fields_111: !Text
-    geometry: 90x20 x 399x118
+    geometry: 399x118x90x20
     foreground: $000000
     text: "B Fields"
 
 Energy_112: !Text
-    geometry: 90x20 x 399x281
+    geometry: 399x281x90x20
     foreground: $000000
     text: "Energy"
 
 text_update_113: !TextMonitor
-    geometry: 80x25 x 492x279
+    geometry: 492x279x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)CurrentToEnergy_.B"
     alignment: Center
 
 Currents_114: !Text
-    geometry: 90x20 x 399x323
+    geometry: 399x323x90x20
     foreground: $000000
     text: "Currents"
 
 text_update_115: !TextMonitor
-    geometry: 80x25 x 492x321
+    geometry: 492x321x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)CurrentToEnergy_.C"
     alignment: Center
 
 text_update_116: !TextMonitor
-    geometry: 80x25 x 579x321
+    geometry: 579x321x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)CurrentToEnergy_.D"
     alignment: Center
 
 text_update_117: !TextMonitor
-    geometry: 80x25 x 492x349
+    geometry: 492x349x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)CurrentToEnergy_.F"
     alignment: Center
 
 text_update_118: !TextMonitor
-    geometry: 80x25 x 579x349
+    geometry: 579x349x80x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)CurrentToEnergy_.G"
     alignment: Center
 
 B_Fields_119: !Text
-    geometry: 90x20 x 399x351
+    geometry: 399x351x90x20
     foreground: $000000
     text: "B Fields"
 
 Curr_to_Energy_Conv_120: !Text
-    geometry: 200x20 x 446x252
+    geometry: 446x252x200x20
     foreground: $000000
     text: "Curr to Energy Conv"
 
 Energy_to_Curr_Conv_121: !Text
-    geometry: 200x20 x 440x47
+    geometry: 440x47x200x20
     foreground: $000000
     text: "Energy to Curr Conv"
 
 choice_button_122: !ChoiceButton
-    geometry: 200x30 x 549x558
+    geometry: 549x558x200x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)CoilCoupling_"
 
 text_update_123: !TextMonitor
-    geometry: 200x25 x 436x211
+    geometry: 436x211x200x25
     foreground: *medm_color_31
     background: *medm_color_59
     pv: "$(P)EtoCChange_"
     alignment: Center
 
 text_update_124: !TextMonitor
-    geometry: 260x20 x 406x383
+    geometry: 406x383x260x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)Message3M.VAL"
     alignment: Center
 
 text_update_125: !TextMonitor
-    geometry: 80x25 x 190x92
+    geometry: 190x92x80x25
     foreground: $000000
     background: *medm_color_55
     pv: "$(P)EnergyReadbackM.E"
     alignment: Center
 
 text_update_126: !TextMonitor
-    geometry: 80x25 x 280x92
+    geometry: 280x92x80x25
     foreground: $000000
     background: *medm_color_55
     pv: "$(P)EnergyReadbackM.F"
     alignment: Center
 
 Magnetic_Fields_127: !Text
-    geometry: 150x20 x 20x97
+    geometry: 20x97x150x20
     foreground: $000000
     text: "Magnetic Fields"
 
 H_coil_128: !Text
-    geometry: 52x15 x 512x73
+    geometry: 512x73x52x15
     foreground: $000000
     text: "H coil"
 
 V_coil_129: !Text
-    geometry: 52x15 x 604x73
+    geometry: 604x73x52x15
     foreground: $000000
     text: "V coil"
 
 H_coil_130: !Text
-    geometry: 52x15 x 501x306
+    geometry: 501x306x52x15
     foreground: $000000
     text: "H coil"
 
 V_coil_131: !Text
-    geometry: 52x15 x 593x306
+    geometry: 593x306x52x15
     foreground: $000000
     text: "V coil"
 
 text_entry_132: !TextEntry
-    geometry: 60x26 x 103x302
+    geometry: 103x302x60x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)QuasiRatioInC.C"
 
 Quasi_%_133: !Text
-    geometry: 70x20 x 25x298
+    geometry: 25x298x70x20
     foreground: $000000
     text: "Quasi %"
 
 text_update_134: !TextMonitor
-    geometry: 260x20 x 12x483
+    geometry: 12x483x260x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)Message4M.VAL"
     alignment: Center
 
 text_update_135: !TextMonitor
-    geometry: 260x20 x 278x482
+    geometry: 278x482x260x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)Message5M.VAL"
     alignment: Center
 
 text_entry_136: !TextEntry
-    geometry: 60x26 x 198x193
+    geometry: 198x193x60x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)DesiredBxSetC.VAL"
 
 text_entry_137: !TextEntry
-    geometry: 60x26 x 288x193
+    geometry: 288x193x60x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)DesiredBySetC.VAL"
 
 text_entry_138: !TextEntry
-    geometry: 65x23 x 160x224
+    geometry: 160x224x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)BxStepLimitC"
 
 Bx_Step_Limit_139: !Text
-    geometry: 100x20 x 24x226
+    geometry: 24x226x100x20
     foreground: $000000
     text: "Bx Step Limit"
 
 Start_Ramp_140: !MessageButton
-    geometry: 100x20 x 41x195
+    geometry: 41x195x100x20
     foreground: $000000
     background: *medm_color_55
     pv: "$(P)StartRampC.VAL"
@@ -883,41 +885,41 @@ Start_Ramp_140: !MessageButton
     release-value: "0"
 
 choice_button_141: !ChoiceButton
-    geometry: 120x30 x 240x248
+    geometry: 240x248x120x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BeamlineC"
 
 text_entry_142: !TextEntry
-    geometry: 65x23 x 160x253
+    geometry: 160x253x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)ByStepLimitC"
 
 By_Step_Limit_143: !Text
-    geometry: 100x20 x 23x255
+    geometry: 23x255x100x20
     foreground: $000000
     text: "By Step Limit"
 
 text_entry_144: !TextEntry
-    geometry: 60x26 x 198x148
+    geometry: 198x148x60x26
     foreground: $ffffff
     background: *medm_color_54
     pv: "$(P)BxSetC.VAL"
 
 Ramp_Wait_145: !Text
-    geometry: 80x20 x 729x178
+    geometry: 729x178x80x20
     foreground: $000000
     text: "Ramp Wait"
 
 text_entry_146: !TextEntry
-    geometry: 65x23 x 825x177
+    geometry: 825x177x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)RampWaitTime_"
 
 Load_SDDS_File_147: !MessageButton
-    geometry: 120x25 x 330x746
+    geometry: 330x746x120x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ReadSDDSfile_.PROC"
@@ -925,171 +927,171 @@ Load_SDDS_File_147: !MessageButton
     press-value: "1"
 
 text_update_148: !TextMonitor
-    geometry: 35x20 x 899x97
+    geometry: 899x97x35x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)dVSetpt_.EGU"
     alignment: Center
 
 text_update_149: !TextMonitor
-    geometry: 35x20 x 899x123
+    geometry: 899x123x35x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)dTSetpt_.EGU"
     alignment: Center
 
 text_update_150: !TextMonitor
-    geometry: 35x20 x 899x178
+    geometry: 899x178x35x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)RampWaitTime_.EGU"
     alignment: Center
 
 text_update_151: !TextMonitor
-    geometry: 35x20 x 899x150
+    geometry: 899x150x35x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)dHSetpt_.EGU"
     alignment: Center
 
 Beamline_152: !Text
-    geometry: 75x20 x 267x229
+    geometry: 267x229x75x20
     foreground: $000000
     text: "Beamline"
 
 text_update_153: !TextMonitor
-    geometry: 120x20 x 38x353
+    geometry: 38x353x120x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)ActualModeM"
     alignment: Center
 
 Actual_Mode_154: !Text
-    geometry: 120x20 x 38x333
+    geometry: 38x333x120x20
     foreground: $000000
     text: "Actual Mode"
 
 Desired_Mode_155: !Text
-    geometry: 120x20 x 242x330
+    geometry: 242x330x120x20
     foreground: $000000
     text: "Desired Mode"
 
 text_update_156: !TextMonitor
-    geometry: 50x20 x 549x813
+    geometry: 549x813x50x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)TableNumber_"
     alignment: Center
 
 Table_Number_157: !Text
-    geometry: 120x20 x 514x790
+    geometry: 514x790x120x20
     foreground: $000000
     text: "Table Number"
 
 text_update_158: !TextMonitor
-    geometry: 120x20 x 651x814
+    geometry: 651x814x120x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)TableDirection_"
     alignment: Center
 
 Ramp_Direction_159: !Text
-    geometry: 140x20 x 641x791
+    geometry: 641x791x140x20
     foreground: $000000
     text: "Ramp Direction"
 
 menu_160: !Menu
-    geometry: 120x20 x 203x68
+    geometry: 203x68x120x20
     foreground: *medm_color_50
     background: *medm_color_54
     pv: "$(P)AccessSecurityC.VAL"
 
 related_display_161: !RelatedDisplay
-    geometry: 39x21 x 935x11
+    geometry: 935x11x39x21
     foreground: $000000
     background: *medm_color_57
 
 Related_Displays_162: !Text
-    geometry: 150x20 x 768x11
+    geometry: 768x11x150x20
     foreground: $000000
     text: "Related Displays"
 
 Max_Energy_Limit_163: !Text
-    geometry: 160x20 x 415x151
+    geometry: 415x151x160x20
     foreground: $000000
     text: "Max Energy Limit"
 
 text_entry_164: !TextEntry
-    geometry: 75x20 x 585x151
+    geometry: 585x151x75x20
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)MaxEnergyLimit_"
 
 rectangle_165: !Rectangle
-    geometry: 220x230 x 788x560
+    geometry: 788x560x220x230
     foreground: *medm_color_8
 
 rectangle_166: !Rectangle
-    geometry: 200x25 x 798x571
+    geometry: 798x571x200x25
     foreground: *medm_color_32
 
 choice_button_167: !ChoiceButton
-    geometry: 100x25 x 854x608
+    geometry: 854x608x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)Main_on_offC"
 
 Main_168: !Text
-    geometry: 50x25 x 802x608
+    geometry: 802x608x50x25
     foreground: $000000
     text: "Main"
 
 choice_button_169: !ChoiceButton
-    geometry: 100x25 x 854x636
+    geometry: 854x636x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxPolaritySet_"
 
 choice_button_170: !ChoiceButton
-    geometry: 100x25 x 854x662
+    geometry: 854x662x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByPolaritySet_"
 
 choice_button_171: !ChoiceButton
-    geometry: 100x25 x 854x689
+    geometry: 854x689x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxqPolaritySet_"
 
 choice_button_172: !ChoiceButton
-    geometry: 100x25 x 854x716
+    geometry: 854x716x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByqPolaritySet_"
 
 Bx_173: !Text
-    geometry: 40x25 x 802x636
+    geometry: 802x636x40x25
     foreground: $000000
     text: "Bx"
 
 By_174: !Text
-    geometry: 40x25 x 802x662
+    geometry: 802x662x40x25
     foreground: $000000
     text: "By"
 
 Bxq_175: !Text
-    geometry: 40x25 x 802x689
+    geometry: 802x689x40x25
     foreground: $000000
     text: "Bxq"
 
 Byq_176: !Text
-    geometry: 40x25 x 802x716
+    geometry: 802x716x40x25
     foreground: $000000
     text: "Byq"
 
 Polarity_Reset_177: !MessageButton
-    geometry: 125x20 x 803x760
+    geometry: 803x760x125x20
     foreground: $000000
     background: *medm_color_56
     pv: "$(P)PolarityResetButton_.PROC"
@@ -1097,12 +1099,12 @@ Polarity_Reset_177: !MessageButton
     press-value: "1"
 
 Polarity_178: !Text
-    geometry: 100x25 x 848x572
+    geometry: 848x572x100x25
     foreground: $000000
     text: "Polarity"
 
 Readback_Scan_1_Seco_179: !MessageButton
-    geometry: 200x20 x 282x778
+    geometry: 282x778x200x20
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ReadbackScan_.PROC"
@@ -1110,7 +1112,7 @@ Readback_Scan_1_Seco_179: !MessageButton
     press-value: "1"
 
 Readback_Passive_Sca_180: !MessageButton
-    geometry: 200x20 x 54x778
+    geometry: 54x778x200x20
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ReadbackScanRst_.PROC"
@@ -1118,9 +1120,10 @@ Readback_Passive_Sca_180: !MessageButton
     press-value: "1"
 
 ASYN_Readbacks_181: !RelatedDisplay
-    geometry: 120x20 x 54x802
+    geometry: 54x802x120x20
     foreground: $000000
     background: *medm_color_4
+    text: "ASYN Readbacks"
     links:
         - { label: "Bx", file: "asynOctet.adl", macros: "P=$(P),R=Bx_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
         - { label: "By", file: "asynOctet.adl", macros: "P=$(P),R=By_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
@@ -1140,9 +1143,10 @@ ASYN_Readbacks_181: !RelatedDisplay
         - { label: "DSq4", file: "asynOctet.adl", macros: "P=$(P),R=DSq4_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
 
 ASYN_Writes_182: !RelatedDisplay
-    geometry: 120x20 x 185x802
+    geometry: 185x802x120x20
     foreground: $000000
     background: *medm_color_4
+    text: "ASYN Writes"
     links:
         - { label: "Bx", file: "asynOctet.adl", macros: "P=$(P),R=wBx_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
         - { label: "By", file: "asynOctet.adl", macros: "P=$(P),R=wBy_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
@@ -1162,167 +1166,168 @@ ASYN_Writes_182: !RelatedDisplay
         - { label: "DSq4", file: "asynOctet.adl", macros: "P=$(P),R=wDSq4_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
 
 ASYN_Out_&_Degauss_183: !RelatedDisplay
-    geometry: 150x21 x 722x509
+    geometry: 722x509x150x21
     foreground: $000000
     background: *medm_color_4
+    text: "ASYN Out & Degauss"
     links:
         - { label: "Set Output", file: "asynOctet.adl", macros: "P=$(P),R=wOut_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
         - { label: "Degauss Cmd", file: "asynOctet.adl", macros: "P=$(P),R=wDegauss_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
         - { label: "Reset Degauss Cmd", file: "asynOctet.adl", macros: "P=$(P),R=wRstDegauss_,PORT=IEX,ADDR=-1,OMAX=80,IMAX=80" }
 
 text_update_184: !TextMonitor
-    geometry: 50x22 x 264x387
+    geometry: 264x387x50x22
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)Main_on_offC.VAL"
     alignment: Center
 
 text_update_185: !TextMonitor
-    geometry: 100x20 x 586x483
+    geometry: 586x483x100x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)LocalRemote_"
 
 text_update_186: !TextMonitor
-    geometry: 200x20 x 549x592
+    geometry: 549x592x200x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)CoilCoupling_"
     alignment: Center
 
 text_update_187: !TextMonitor
-    geometry: 125x15 x 654x652
+    geometry: 654x652x125x15
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)BxOnOff_"
 
 text_update_188: !TextMonitor
-    geometry: 125x15 x 654x686
+    geometry: 654x686x125x15
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)BxqOnOff_"
 
 text_update_189: !TextMonitor
-    geometry: 125x15 x 654x720
+    geometry: 654x720x125x15
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)ByOnOff_"
 
 text_update_190: !TextMonitor
-    geometry: 125x15 x 654x754
+    geometry: 654x754x125x15
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)ByqOnOff_"
 
 oval_191: !Ellipse
-    geometry: 19x20 x 944x760
+    geometry: 944x760x19x20
     foreground: *medm_color_15
 
 choice_button_192: !ChoiceButton
-    geometry: 110x30 x 866x471
+    geometry: 866x471x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)LinearCircular_"
 
 choice_button_193: !ChoiceButton
-    geometry: 125x30 x 899x815
+    geometry: 899x815x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)SNLdebug_"
 
 Pol._Wait_194: !Text
-    geometry: 80x20 x 729x204
+    geometry: 729x204x80x20
     foreground: $000000
     text: "Pol. Wait"
 
 text_entry_195: !TextEntry
-    geometry: 65x23 x 825x203
+    geometry: 825x203x65x23
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)PolarityWaitTime_"
 
 text_update_196: !TextMonitor
-    geometry: 35x20 x 899x204
+    geometry: 899x204x35x20
     foreground: *medm_color_54
     background: *medm_color_3
     pv: "$(P)PolarityWaitTime_.EGU"
     alignment: Center
 
 choice_button_197: !ChoiceButton
-    geometry: 100x30 x 789x816
+    geometry: 789x816x100x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)InitPScontrol_"
 
 Pos_198: !Text
-    geometry: 37x21 x 964x638
+    geometry: 964x638x37x21
     foreground: $000000
     text: "Pos"
 
 Pos_199: !Text
-    geometry: 37x21 x 964x664
+    geometry: 964x664x37x21
     foreground: $000000
     text: "Pos"
 
 Pos_200: !Text
-    geometry: 37x21 x 964x691
+    geometry: 964x691x37x21
     foreground: $000000
     text: "Pos"
 
 Pos_201: !Text
-    geometry: 37x21 x 964x718
+    geometry: 964x718x37x21
     foreground: $000000
     text: "Pos"
 
 Neg_202: !Text
-    geometry: 37x21 x 964x638
+    geometry: 964x638x37x21
     foreground: $000000
     text: "Neg"
 
 Neg_203: !Text
-    geometry: 37x21 x 964x664
+    geometry: 964x664x37x21
     foreground: $000000
     text: "Neg"
 
 Neg_204: !Text
-    geometry: 37x21 x 964x691
+    geometry: 964x691x37x21
     foreground: $000000
     text: "Neg"
 
 Neg_205: !Text
-    geometry: 37x21 x 964x718
+    geometry: 964x718x37x21
     foreground: $000000
     text: "Neg"
 
 choice_button_206: !ChoiceButton
-    geometry: 100x30 x 595x428
+    geometry: 595x428x100x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)UserAbortRamp_"
 
 text_update_207: !TextMonitor
-    geometry: 60x26 x 168x302
+    geometry: 168x302x60x26
     foreground: $000000
     background: *medm_color_3
     pv: "$(P)QuasiRatioM.RVAL"
     alignment: Center
 
 Request_208: !Text
-    geometry: 70x15 x 97x284
+    geometry: 97x284x70x15
     foreground: $000000
     text: "Request"
 
 Actual_209: !Text
-    geometry: 70x15 x 165x284
+    geometry: 165x284x70x15
     foreground: $000000
     text: "Actual"
 
 rectangle_210: !Rectangle
-    geometry: 215x48 x 19x283
+    geometry: 19x283x215x48
     foreground: $000000
 
 Local_Off_211: !MessageButton
-    geometry: 100x25 x 184x10
+    geometry: 184x10x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)OpenDeviceC.VAL"
@@ -1330,7 +1335,7 @@ Local_Off_211: !MessageButton
     press-value: "1"
 
 Local_On_212: !MessageButton
-    geometry: 100x25 x 290x10
+    geometry: 290x10x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)CloseDeviceC.VAL"
@@ -1338,24 +1343,24 @@ Local_On_212: !MessageButton
     press-value: "1"
 
 SR_Energy_Adj._213: !Text
-    geometry: 140x20 x 24x840
+    geometry: 24x840x140x20
     foreground: $000000
     text: "SR Energy Adj."
 
 text_entry_214: !TextEntry
-    geometry: 75x20 x 170x840
+    geometry: 170x840x75x20
     foreground: $000000
     background: *medm_color_4
     pv: "$(P)eBeamEnergyC"
 
 text_update_215: !TextMonitor
-    geometry: 80x25 x 427x838
+    geometry: 427x838x80x25
     foreground: *medm_color_60
     background: *medm_color_49
     pv: "$(P)TotalPowerM.VAL"
     alignment: Center
 
 ID_Power_(W)_216: !Text
-    geometry: 130x20 x 291x841
+    geometry: 291x841x130x20
     foreground: $000000
     text: "ID Power (W)"

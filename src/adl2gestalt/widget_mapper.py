@@ -36,8 +36,8 @@ WIDGET_TYPE_MAP = {
     # Special Objects
     "composite": "Group",  # Composite -> GroupNode or ConditionalNode
     "embedded display": "Embed",
-    # Display (main container) - no direct match, handled separately
-    "display": None,
+    # Display (main container) - maps to Form node
+    "display": "Form",
 }
 
 # MEDM color modes to Gestalt color modes
