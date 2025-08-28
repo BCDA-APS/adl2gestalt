@@ -402,18 +402,10 @@ class MedmToGestaltConverter:
                     lines.append(f'    maximum: {limits["hoprDefault"]}')
 
         if widget_type in ["Scale"]:
-            if "direction" in contents:
-                orientation = (
-                    "vertical"
-                    if contents["direction"] in ["up", "down"]
-                    else "horizontal"
-                )
-                # Scale is vertical by default
-                lines.append(
-                    f'    horizontal: {str(orientation == "horizontal").lower()}'
-                )
-            else:
+            if "direction" in contents and contents["direction"] in ["up", "down"]:
                 lines.append("    horizontal: false")
+            else:
+                lines.append("    horizontal: true")
 
             # Add limits if present
             if "limits" in contents:
