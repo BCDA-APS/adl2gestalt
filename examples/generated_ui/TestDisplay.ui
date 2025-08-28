@@ -308,7 +308,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>QwtThermoMarker::NoScale</enum>
           </property>
           <property name="direction">
-            <enum>Up</enum>
+            <enum>Right</enum>
           </property>
         </widget>
         <widget class="caThermo" name="bar_7">
