@@ -149,8 +149,7 @@ Move_11: !MessageButton
     background: *medm_color_55
     pv: "fr:m1.TWF"
     text: "Move"
-    press-value: "1"
-    release-value: "0"
+    value: "1"
 
 valuator_12: !Slider
     geometry: 283x327x180x39

@@ -394,13 +394,13 @@ class MedmToGestaltConverter:
                     lines.append(f'    maximum: {limits["hoprDefault"]}')
 
         # Button properties
-        if widget_type in ["PushButton", "MessageButton"]:
+        if widget_type in ["MessageButton"]:
             if "label" in contents:
                 lines.append(f'    text: "{contents["label"]}"')
             if "press_msg" in contents:
-                lines.append(f'    press-value: "{contents["press_msg"]}"')
-            if "release_msg" in contents:
-                lines.append(f'    release-value: "{contents["release_msg"]}"')
+                lines.append(f'    value: "{contents["press_msg"]}"')
+            # if "release_msg" in contents: # no release value in gestalt
+            #     lines.append(f'    release-value: "{contents["release_msg"]}"')
 
         # Helper function to remove leading "-" from MEDM labels
         def clean_medm_label(label):
