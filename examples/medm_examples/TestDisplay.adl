@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1366
-		y=300
+		x=1498
+		y=244
 		width=562
 		height=584
 	}
@@ -177,7 +177,7 @@ text {
 }
 indicator {
 	object {
-		x=269
+		x=285
 		y=110
 		width=165
 		height=47
@@ -185,22 +185,9 @@ indicator {
 	monitor {
 		chan="fr:m1.RBV"
 		clr=54
-		bclr=4
+		bclr=60
 	}
 	limits {
-	}
-}
-byte {
-	object {
-		x=476
-		y=124
-		width=68
-		height=86
-	}
-	monitor {
-		chan="fr:m1.SET"
-		clr=14
-		bclr=4
 	}
 }
 bar {
@@ -212,8 +199,8 @@ bar {
 	}
 	monitor {
 		chan="fr:m1.VAL"
-		clr=14
-		bclr=4
+		clr=29
+		bclr=33
 	}
 	direction="up"
 	limits {
@@ -229,7 +216,7 @@ bar {
 	monitor {
 		chan="fr:m1.RBV"
 		clr=14
-		bclr=4
+		bclr=2
 	}
 	limits {
 	}
@@ -244,7 +231,7 @@ bar {
 	control {
 		chan="fr:m1.VAL"
 		clr=14
-		bclr=4
+		bclr=51
 	}
 	limits {
 	}
@@ -259,7 +246,7 @@ bar {
 	control {
 		chan="fr:m1.SET"
 		clr=14
-		bclr=4
+		bclr=52
 	}
 }
 "message button" {
@@ -272,7 +259,7 @@ bar {
 	control {
 		chan="fr:m1.TWF"
 		clr=14
-		bclr=4
+		bclr=55
 	}
 	label="Move"
 	press_msg="1"
@@ -287,8 +274,8 @@ valuator {
 	}
 	control {
 		chan="fr:m1.VAL"
-		clr=14
-		bclr=4
+		clr=26
+		bclr=41
 	}
 	dPrecision=1.000000
 	limits {
@@ -304,7 +291,7 @@ indicator {
 	monitor {
 		chan="fr:m1.VAL"
 		clr=54
-		bclr=4
+		bclr=30
 	}
 	direction="up"
 	limits {
@@ -312,7 +299,7 @@ indicator {
 }
 image {
 	object {
-		x=152
+		x=65
 		y=416
 		width=158
 		height=124
@@ -321,5 +308,18 @@ image {
 	"image name"="arrow.gif"
 	"dynamic attribute" {
 		chan="fr:m1.VAL"
+	}
+}
+byte {
+	object {
+		x=316
+		y=439
+		width=228
+		height=85
+	}
+	monitor {
+		chan="fr:m1.VAL"
+		clr=14
+		bclr=36
 	}
 }

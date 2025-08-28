@@ -108,63 +108,63 @@ Hello_World!_5: !Text
     text: "Hello World!"
 
 indicator_6: !Scale
-    geometry: 269x110x165x47
+    geometry: 285x110x165x47
     foreground: *medm_color_54
-    background: *medm_color_4
+    background: *medm_color_60
     pv: "fr:m1.RBV"
 
-byte_7: !ByteMonitor
-    geometry: 476x124x68x86
-    foreground: $000000
-    background: *medm_color_4
-    pv: "fr:m1.SET"
-
-bar_8: !Scale
+bar_7: !Scale
     geometry: 488x226x48x162
-    foreground: $000000
-    background: *medm_color_4
+    foreground: *medm_color_29
+    background: *medm_color_33
     pv: "fr:m1.VAL"
     horizontal: false
 
-text_update_9: !TextMonitor
+text_update_8: !TextMonitor
     geometry: 41x183x188x38
     foreground: $000000
-    background: *medm_color_4
+    background: *medm_color_2
     pv: "fr:m1.RBV"
 
-text_entry_10: !TextEntry
+text_entry_9: !TextEntry
     geometry: 42x233x186x39
     foreground: $000000
-    background: *medm_color_4
+    background: *medm_color_51
     pv: "fr:m1.VAL"
 
-choice_button_11: !ChoiceButton
+choice_button_10: !ChoiceButton
     geometry: 51x322x46x57
     foreground: $000000
-    background: *medm_color_4
+    background: *medm_color_52
     pv: "fr:m1.SET"
 
-Move_12: !MessageButton
+Move_11: !MessageButton
     geometry: 116x327x142x44
     foreground: $000000
-    background: *medm_color_4
+    background: *medm_color_55
     pv: "fr:m1.TWF"
     text: "Move"
     press-value: "1"
     release-value: "0"
 
-valuator_13: !Slider
+valuator_12: !Slider
     geometry: 283x327x180x39
-    foreground: $000000
-    background: *medm_color_4
+    foreground: *medm_color_26
+    background: *medm_color_41
     pv: "fr:m1.VAL"
 
-indicator_14: !Scale
+indicator_13: !Scale
     geometry: 338x179x51x127
     foreground: *medm_color_54
-    background: *medm_color_4
+    background: *medm_color_30
     pv: "fr:m1.VAL"
     horizontal: false
 
-image_15: !Image
-    geometry: 152x416x158x124
+image_14: !Image
+    geometry: 65x416x158x124
+
+byte_15: !ByteMonitor
+    geometry: 316x439x228x85
+    foreground: $000000
+    background: *medm_color_36
+    pv: "fr:m1.VAL"

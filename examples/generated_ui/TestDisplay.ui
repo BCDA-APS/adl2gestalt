@@ -281,9 +281,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
         <widget class="caThermo" name="indicator_6">
           <property name="background">
             <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>115</red>
+              <green>255</green>
+              <blue>107</blue>
             </color>
           </property>
           <property name="foreground">
@@ -295,7 +295,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>269</x>
+              <x>285</x>
               <y>110</y>
               <width>165</width>
               <height>47</height>
@@ -311,55 +311,19 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>Up</enum>
           </property>
         </widget>
-        <widget class="caByteController" name="byte_7">
-          <property name="foreground">
-            <color alpha="255">
-              <red>0</red>
-              <green>255</green>
-              <blue>0</blue>
-            </color>
-          </property>
+        <widget class="caThermo" name="bar_7">
           <property name="background">
             <color alpha="255">
-              <red>60</red>
-              <green>100</green>
-              <blue>60</blue>
-            </color>
-          </property>
-          <property name="geometry">
-            <rect>
-              <x>476</x>
-              <y>124</y>
-              <width>68</width>
-              <height>86</height>
-            </rect>
-          </property>
-          <property name="channel">
-            <string>fr:m1.SET</string>
-          </property>
-          <property name="startBit">
-            <number>0</number>
-          </property>
-          <property name="direction">
-            <enum>Right</enum>
-          </property>
-          <property name="endBit">
-            <number>31</number>
-          </property>
-        </widget>
-        <widget class="caThermo" name="bar_8">
-          <property name="background">
-            <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>225</red>
+              <green>144</green>
+              <blue>21</blue>
             </color>
           </property>
           <property name="foreground">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>39</red>
+              <green>84</green>
+              <blue>141</blue>
             </color>
           </property>
           <property name="geometry">
@@ -380,7 +344,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>Up</enum>
           </property>
         </widget>
-        <widget class="caLineEdit" name="text_update_9">
+        <widget class="caLineEdit" name="text_update_8">
           <property name="foreground">
             <color alpha="255">
               <red>0</red>
@@ -390,9 +354,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="background">
             <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>218</red>
+              <green>218</green>
+              <blue>218</blue>
             </color>
           </property>
           <property name="border-style">
@@ -438,7 +402,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caLineEdit::Height</enum>
           </property>
         </widget>
-        <widget class="caTextEntry" name="text_entry_10">
+        <widget class="caTextEntry" name="text_entry_9">
           <property name="font">
             <font>
               <family>Liberation Sans</family>
@@ -447,9 +411,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="background">
             <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>115</red>
+              <green>223</green>
+              <blue>255</blue>
             </color>
           </property>
           <property name="foreground">
@@ -483,7 +447,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caLineEdit::Height</enum>
           </property>
         </widget>
-        <widget class="caChoice" name="choice_button_11">
+        <widget class="caChoice" name="choice_button_10">
           <property name="foreground">
             <color alpha="255">
               <red>0</red>
@@ -493,9 +457,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="background">
             <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>78</red>
+              <green>165</green>
+              <blue>249</blue>
             </color>
           </property>
           <property name="geometry">
@@ -511,9 +475,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="bordercolor">
             <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>78</red>
+              <green>165</green>
+              <blue>249</blue>
             </color>
           </property>
           <property name="stackingMode">
@@ -542,7 +506,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 }
 </string>
           </property>
-          <widget class="caMessageButton" name="Move_12">
+          <widget class="caMessageButton" name="Move_11">
             <property name="press-value">
               <string>1</string>
             </property>
@@ -558,9 +522,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
             <property name="background">
               <color alpha="255">
-                <red>187</red>
-                <green>187</green>
-                <blue>187</blue>
+                <red>235</red>
+                <green>241</green>
+                <blue>181</blue>
               </color>
             </property>
             <property name="label">
@@ -588,12 +552,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="caSlider" name="valuator_13">
+        <widget class="caSlider" name="valuator_12">
           <property name="foreground">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>89</red>
+              <green>126</green>
+              <blue>225</blue>
             </color>
           </property>
           <property name="background">
@@ -624,12 +588,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caSlider::Alarm_Static</enum>
           </property>
         </widget>
-        <widget class="caThermo" name="indicator_14">
+        <widget class="caThermo" name="indicator_13">
           <property name="background">
             <color alpha="255">
-              <red>187</red>
-              <green>187</green>
-              <blue>187</blue>
+              <red>251</red>
+              <green>243</green>
+              <blue>74</blue>
             </color>
           </property>
           <property name="foreground">
@@ -657,10 +621,10 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>Up</enum>
           </property>
         </widget>
-        <widget class="caImage" name="image_15">
+        <widget class="caImage" name="image_14">
           <property name="geometry">
             <rect>
-              <x>152</x>
+              <x>65</x>
               <y>416</y>
               <width>158</width>
               <height>124</height>
@@ -668,6 +632,42 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="filename">
             <string></string>
+          </property>
+        </widget>
+        <widget class="caByteController" name="byte_15">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>60</red>
+              <green>100</green>
+              <blue>60</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>316</x>
+              <y>439</y>
+              <width>228</width>
+              <height>85</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>fr:m1.VAL</string>
+          </property>
+          <property name="startBit">
+            <number>0</number>
+          </property>
+          <property name="direction">
+            <enum>Right</enum>
+          </property>
+          <property name="endBit">
+            <number>31</number>
           </property>
         </widget>
       </widget>
