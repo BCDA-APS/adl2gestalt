@@ -90,7 +90,7 @@ arc_1: !Arc
     span: 90
 
 polyline_2: !Polyline
-    geometry: 224x9
+    geometry: 224x9x92x83
     border-color: *medm_color_42
     points: [ 245x59, 267x11, 314x46, 281x90, 226x72 ]
     border-width: 4
