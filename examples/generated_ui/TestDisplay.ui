@@ -148,7 +148,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>245,59;267,11;314,46;281,90;226,72</string>
+            <string>21,50;43,2;90,37;57,81;2,63</string>
           </property>
         </widget>
         <widget class="caPolyLine" name="polygon_3">
@@ -187,7 +187,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Filled</enum>
           </property>
           <property name="xyPairs">
-            <string>346,20;354,89;428,47;427,44;398,15;381,13;346,20</string>
+            <string>0,7;8,76;82,34;81,31;52,2;35,0;0,7</string>
           </property>
         </widget>
         <widget class="caGraphics" name="oval_4">

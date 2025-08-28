@@ -92,14 +92,14 @@ arc_1: !Arc
 polyline_2: !Polyline
     geometry: 224x9x92x83
     border-color: *medm_color_42
-    points: [ 245x59, 267x11, 314x46, 281x90, 226x72 ]
+    points: [ 21x50, 43x2, 90x37, 57x81, 2x63 ]
     border-width: 4
 
 polygon_3: !Polygon
     geometry: 346x13x82x76
     background: *medm_color_38
     border-color: *medm_color_38
-    points: [ 346x20, 354x89, 428x47, 427x44, 398x15, 381x13, 346x20 ]
+    points: [ 0x7, 8x76, 82x34, 81x31, 52x2, 35x0, 0x7 ]
 
 oval_4: !Ellipse
     geometry: 459x14x83x92

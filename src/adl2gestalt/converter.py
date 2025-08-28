@@ -488,7 +488,26 @@ class MedmToGestaltConverter:
         # Polyline/Polygon points
         if widget_type in ["Polyline", "Polygon"] and hasattr(widget, "points"):
             if widget.points:
-                points_str = ", ".join([f"{p.x}x{p.y}" for p in widget.points])
+                # Calculate relative coordinates based on widget geometry
+                widget_x = (
+                    widget.geometry.x
+                    if hasattr(widget, "geometry") and widget.geometry
+                    else 0
+                )
+                widget_y = (
+                    widget.geometry.y
+                    if hasattr(widget, "geometry") and widget.geometry
+                    else 0
+                )
+
+                # Convert absolute points to relative points
+                relative_points = []
+                for p in widget.points:
+                    rel_x = p.x - widget_x
+                    rel_y = p.y - widget_y
+                    relative_points.append(f"{rel_x}x{rel_y}")
+
+                points_str = ", ".join(relative_points)
                 lines.append(f"    points: [ {points_str} ]")
 
             # Add border-width for polylines
