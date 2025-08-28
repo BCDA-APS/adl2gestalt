@@ -288,13 +288,8 @@ class MedmToGestaltConverter:
         # Add geometry if available
         if hasattr(widget, "geometry") and widget.geometry:
             geom = widget.geometry
-            # Polyline widgets use x x y for geometry, not x x y x width x height
-            if widget_type == "Polyline":
-                lines.append(f"    geometry: {geom.x}x{geom.y}")
-            else:
-                lines.append(
-                    f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}"
-                )
+            # All widgets use x x y x width x height for geometry
+            lines.append(f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}")
 
         # Add colors
         shapes = ["Arc", "Ellipse", "Rectangle", "Polygon"]
