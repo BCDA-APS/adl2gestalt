@@ -507,12 +507,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Move_11">
-            <property name="press-value">
-              <string>1</string>
-            </property>
-            <property name="release-value">
-              <string>0</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -534,7 +528,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>fr:m1.TWF</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
