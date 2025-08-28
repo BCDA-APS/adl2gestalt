@@ -79,11 +79,13 @@ Form: !Form
 
 rectangle_0: !Rectangle
     geometry: 23x14x76x61
-    foreground: *medm_color_21
+    background: *medm_color_21
+    border-color: *medm_color_21
 
 arc_1: !Arc
     geometry: 137x17x70x70
-    foreground: *medm_color_25
+    background: *medm_color_25
+    border-color: *medm_color_25
     start-angle: 0
     span: 90
 
@@ -95,12 +97,14 @@ polyline_2: !Polyline
 
 polygon_3: !Polygon
     geometry: 346x13x82x76
-    foreground: *medm_color_38
+    background: *medm_color_38
+    border-color: *medm_color_38
     points: [ 346x20, 354x89, 428x47, 427x44, 398x15, 381x13, 346x20 ]
 
 oval_4: !Ellipse
     geometry: 459x14x83x92
-    foreground: *medm_color_30
+    background: *medm_color_30
+    border-color: *medm_color_30
 
 Hello_World!_5: !Text
     geometry: 36x117x202x53

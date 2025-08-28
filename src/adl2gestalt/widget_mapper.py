@@ -39,163 +39,164 @@ WIDGET_TYPE_MAP = {
     "display": "Form",
 }
 
-# MEDM color modes to Gestalt color modes
-COLOR_MODE_MAP = {
-    "static": "Static",
-    "alarm": "Alarm",
-    "discrete": "Discrete",
-}
 
-# MEDM visibility modes
-VISIBILITY_MODE_MAP = {
-    "static": "Static",
-    "if not zero": "IfNotZero",
-    "if zero": "IfZero",
-    "calc": "Calc",
-}
+# def map_pv_name(channel: str) -> str:
+#     """
+#     Convert MEDM channel to Gestalt PV name.
 
-# MEDM direction to Gestalt direction
-DIRECTION_MAP = {
-    "up": "Up",
-    "down": "Down",
-    "left": "Left",
-    "right": "Right",
-}
+#     In most cases this is a direct mapping, but handles
+#     special cases and macro substitutions.
+#     """
+#     if not channel:
+#         return ""
+
+#     # Handle macro substitutions - MEDM uses $(...) while Gestalt might differ
+#     # For now, keep the same format
+#     return channel
 
 
-# Font mapping - MEDM to Gestalt font format
-def map_font(medm_font: str) -> str:
-    """
-    Convert MEDM font specification to Gestalt format.
+# # MEDM color modes to Gestalt color modes
+# COLOR_MODE_MAP = {
+#     "static": "Static",
+#     "alarm": "Alarm",
+#     "discrete": "Discrete",
+# }
 
-    MEDM format: "helvetica-medium-r-18.0"
-    Gestalt format: "-Helvetica - regular - 18"
-    """
-    if not medm_font:
-        return "-Liberation Sans - regular - 12"
+# # MEDM visibility modes
+# VISIBILITY_MODE_MAP = {
+#     "static": "Static",
+#     "if not zero": "IfNotZero",
+#     "if zero": "IfZero",
+#     "calc": "Calc",
+# }
 
-    parts = medm_font.lower().split("-")
-
-    # Extract font family, weight, and size
-    family = parts[0] if len(parts) > 0 else "liberation sans"
-    weight = "bold" if "bold" in medm_font.lower() else "regular"
-    size = "12"
-
-    # Try to extract size from the font string
-    for part in parts:
-        if "." in part:
-            try:
-                size = str(int(float(part)))
-                break
-            except (ValueError, TypeError):
-                pass
-
-    # Map common MEDM fonts to modern equivalents
-    font_family_map = {
-        "helvetica": "Liberation Sans",
-        "courier": "Liberation Mono",
-        "times": "Liberation Serif",
-    }
-
-    family = font_family_map.get(family, family.title())
-
-    return f"-{family} - {weight} - {size}"
+# # MEDM direction to Gestalt direction
+# DIRECTION_MAP = {
+#     "up": "Up",
+#     "down": "Down",
+#     "left": "Left",
+#     "right": "Right",
+# }
 
 
-def map_color(color_index: int, color_table: list) -> str:
-    """
-    Convert MEDM color index to hex color string.
+# # Font mapping - MEDM to Gestalt font format
+# def map_font(medm_font: str) -> str:
+#     """
+#     Convert MEDM font specification to Gestalt format.
 
-    Parameters
-    ----------
-    color_index : int
-        Index into MEDM color table
-    color_table : list
-        List of Color namedtuples with r, g, b values
+#     MEDM format: "helvetica-medium-r-18.0"
+#     Gestalt format: "-Helvetica - regular - 18"
+#     """
+#     if not medm_font:
+#         return "-Liberation Sans - regular - 14"
 
-    Returns
-    -------
-    str
-        Hex color string like "#RRGGBB"
-    """
-    if color_table and 0 <= color_index < len(color_table):
-        color = color_table[color_index]
-        return f"#{color.r:02x}{color.g:02x}{color.b:02x}"
+#     parts = medm_font.lower().split("-")
 
-    # Default colors if index out of range
-    defaults = {
-        0: "#FFFFFF",  # White
-        1: "#000000",  # Black
-        14: "#F0F0F0",  # Light gray
-        19: "#808080",  # Gray
-    }
+#     # Extract font family, weight, and size
+#     family = parts[0] if len(parts) > 0 else "liberation sans"
+#     weight = "bold" if "bold" in medm_font.lower() else "regular"
+#     size = "14"
 
-    return defaults.get(color_index, "#000000")
+#     # Try to extract size from the font string
+#     for part in parts:
+#         if "." in part:
+#             try:
+#                 size = str(int(float(part)))
+#                 break
+#             except (ValueError, TypeError):
+#                 pass
 
+#     # Map common MEDM fonts to modern equivalents
+#     font_family_map = {
+#         "helvetica": "Liberation Sans",
+#         "courier": "Liberation Mono",
+#         "times": "Liberation Serif",
+#     }
 
-def map_geometry(geometry: Any) -> Dict[str, int]:
-    """
-    Convert MEDM geometry to Gestalt format.
+#     family = font_family_map.get(family, family.title())
 
-    Parameters
-    ----------
-    geometry : Geometry namedtuple
-        MEDM geometry with x, y, width, height
-
-    Returns
-    -------
-    Dict
-        Gestalt geometry specification
-    """
-    return {
-        "x": geometry.x,
-        "y": geometry.y,
-        "width": geometry.width,
-        "height": geometry.height,
-    }
+#     return f"-{family} - {weight} - {size}"
 
 
-def map_pv_name(channel: str) -> str:
-    """
-    Convert MEDM channel to Gestalt PV name.
+# def map_color(color_index: int, color_table: list) -> str:
+#     """
+#     Convert MEDM color index to hex color string.
 
-    In most cases this is a direct mapping, but handles
-    special cases and macro substitutions.
-    """
-    if not channel:
-        return ""
+#     Parameters
+#     ----------
+#     color_index : int
+#         Index into MEDM color table
+#     color_table : list
+#         List of Color namedtuples with r, g, b values
 
-    # Handle macro substitutions - MEDM uses $(...) while Gestalt might differ
-    # For now, keep the same format
-    return channel
+#     Returns
+#     -------
+#     str
+#         Hex color string like "#RRGGBB"
+#     """
+#     if color_table and 0 <= color_index < len(color_table):
+#         color = color_table[color_index]
+#         return f"#{color.r:02x}{color.g:02x}{color.b:02x}"
+
+#     # Default colors if index out of range
+#     defaults = {
+#         0: "#FFFFFF",  # White
+#         1: "#000000",  # Black
+#         14: "#F0F0F0",  # Light gray
+#         19: "#808080",  # Gray
+#     }
+
+#     return defaults.get(color_index, "#000000")
 
 
-def map_limits(limits: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Convert MEDM limits to Gestalt limits format.
-    """
-    gestalt_limits = {}
+# def map_geometry(geometry: Any) -> Dict[str, int]:
+#     """
+#     Convert MEDM geometry to Gestalt format.
 
-    if "loprSrc" in limits:
-        source_map = {
-            "0": "Default",
-            "1": "Channel",
-            "2": "User",
-        }
-        gestalt_limits["min_source"] = source_map.get(limits["loprSrc"], "Default")
+#     Parameters
+#     ----------
+#     geometry : Geometry namedtuple
+#         MEDM geometry with x, y, width, height
 
-    if "hoprSrc" in limits:
-        source_map = {
-            "0": "Default",
-            "1": "Channel",
-            "2": "User",
-        }
-        gestalt_limits["max_source"] = source_map.get(limits["hoprSrc"], "Default")
+#     Returns
+#     -------
+#     Dict
+#         Gestalt geometry specification
+#     """
+#     return {
+#         "x": geometry.x,
+#         "y": geometry.y,
+#         "width": geometry.width,
+#         "height": geometry.height,
+#     }
 
-    if "loprDefault" in limits:
-        gestalt_limits["min_value"] = float(limits["loprDefault"])
 
-    if "hoprDefault" in limits:
-        gestalt_limits["max_value"] = float(limits["hoprDefault"])
+# def map_limits(limits: Dict[str, Any]) -> Dict[str, Any]:
+#     """
+#     Convert MEDM limits to Gestalt limits format.
+#     """
+#     gestalt_limits = {}
 
-    return gestalt_limits
+#     if "loprSrc" in limits:
+#         source_map = {
+#             "0": "Default",
+#             "1": "Channel",
+#             "2": "User",
+#         }
+#         gestalt_limits["min_source"] = source_map.get(limits["loprSrc"], "Default")
+
+#     if "hoprSrc" in limits:
+#         source_map = {
+#             "0": "Default",
+#             "1": "Channel",
+#             "2": "User",
+#         }
+#         gestalt_limits["max_source"] = source_map.get(limits["hoprSrc"], "Default")
+
+#     if "loprDefault" in limits:
+#         gestalt_limits["min_value"] = float(limits["loprDefault"])
+
+#     if "hoprDefault" in limits:
+#         gestalt_limits["max_value"] = float(limits["hoprDefault"])
+
+#     return gestalt_limits

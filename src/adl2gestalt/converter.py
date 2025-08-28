@@ -8,37 +8,9 @@ import logging
 from .parser import MedmMainWidget
 from .widget_mapper import (
     WIDGET_TYPE_MAP,
-    COLOR_MODE_MAP,
-    VISIBILITY_MODE_MAP,
-    DIRECTION_MAP,
-    map_font,
-    map_color,
-    map_geometry,
-    map_pv_name,
-    map_limits,
 )
 
 logger = logging.getLogger(__name__)
-
-
-# Custom YAML representers for Gestalt format
-def gestalt_widget_representer(dumper, data):
-    """Custom representer for widget nodes with !WidgetType tags."""
-    widget_type = data.pop("_type", "Widget")
-    # Create a tagged node
-    return dumper.represent_mapping(f"!{widget_type}", data, flow_style=False)
-
-
-def setup_yaml():
-    """Configure YAML for Gestalt output format."""
-    # Add custom representer for dicts that have '_type' key
-    yaml.add_representer(dict, gestalt_widget_representer)
-
-    # Configure YAML output style
-    yaml.SafeDumper.add_representer(
-        type(None),
-        lambda dumper, value: dumper.represent_scalar("tag:yaml.org,2002:null", ""),
-    )
 
 
 class MedmToGestaltConverter:
@@ -87,7 +59,9 @@ class MedmToGestaltConverter:
         else:
             output_path = Path(output_path)
             if output_path.is_dir():
+                # If output_path is a directory, create filename inside it
                 output_path = output_path / adl_path.with_suffix(".yml").name
+            # If output_path is not a directory, use it as-is (assumes it's a file path)
 
         # Ensure output directory exists
         output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -149,18 +123,8 @@ class MedmToGestaltConverter:
 
         lines.append("")
 
-        # Convert display properties
-        display_name = (
-            Path(medm.given_filename).stem.replace("-", "_").replace(" ", "_")
-        )
-
         # Build display node
         lines.append("Form: !Form")
-
-        # Add title
-        title = getattr(medm, "title", display_name)
-        if title:
-            lines.append(f'    title: "{title}"')
 
         # Add display geometry if available
         if hasattr(medm, "geometry") and medm.geometry:
@@ -306,9 +270,6 @@ class MedmToGestaltConverter:
                 f"Widget type '{widget.symbol}' has no match in Gestalt - skipping"
             )
             return []
-        if not widget_type:
-            logger.warning(f"Unknown widget type: {widget.symbol}")
-            return []
 
         lines = []
 
@@ -336,18 +297,22 @@ class MedmToGestaltConverter:
                 )
 
         # Add colors
+        shapes = ["Arc", "Ellipse", "Rectangle", "Polygon"]
         if hasattr(widget, "color") and widget.color:
             fg_color = self.get_color_reference(widget.color, color_table)
-            if fg_color:
+            if fg_color and widget_type not in shapes:
                 # Use border-color for Polyline widgets, foreground for others
                 if widget_type == "Polyline":
                     lines.append(f"    border-color: {fg_color}")
                 else:
                     lines.append(f"    foreground: {fg_color}")
+            else:
+                lines.append(f"    background: {fg_color}")
+                lines.append(f"    border-color: {fg_color}")
 
         if hasattr(widget, "background_color") and widget.background_color:
             bg_color = self.get_color_reference(widget.background_color, color_table)
-            if bg_color:
+            if bg_color and widget_type not in shapes:
                 lines.append(f"    background: {bg_color}")
 
         # Add widget-specific properties
@@ -380,9 +345,7 @@ class MedmToGestaltConverter:
             control = contents["control"]
             if isinstance(control, dict):
                 if "chan" in control:
-                    pv = map_pv_name(control["chan"])
-                    if pv:
-                        lines.append(f'    pv: "{pv}"')
+                    lines.append(f'    pv: "{control["chan"]}"')
                 if "clr" in control:
                     fg_color = self.get_color_reference(
                         int(control["clr"]), color_table
@@ -400,9 +363,7 @@ class MedmToGestaltConverter:
             monitor = contents["monitor"]
             if isinstance(monitor, dict):
                 if "chan" in monitor:
-                    pv = map_pv_name(monitor["chan"])
-                    if pv:
-                        lines.append(f'    pv: "{pv}"')
+                    lines.append(f'    pv: "{monitor["chan"]}"')
                 if "clr" in monitor:
                     fg_color = self.get_color_reference(
                         int(monitor["clr"]), color_table
