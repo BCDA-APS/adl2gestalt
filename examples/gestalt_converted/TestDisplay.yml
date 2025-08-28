@@ -116,13 +116,14 @@ indicator_6: !Scale
     foreground: *medm_color_54
     background: *medm_color_60
     pv: "fr:m1.RBV"
+    horizontal: false
 
 bar_7: !Scale
     geometry: 488x226x48x162
     foreground: *medm_color_29
     background: *medm_color_33
     pv: "fr:m1.VAL"
-    horizontal: true
+    horizontal: false
 
 text_update_8: !TextMonitor
     geometry: 41x183x188x38
@@ -156,13 +157,14 @@ valuator_12: !Slider
     foreground: *medm_color_26
     background: *medm_color_41
     pv: "fr:m1.VAL"
+    horizontal: true
 
 indicator_13: !Scale
     geometry: 338x179x51x127
     foreground: *medm_color_54
     background: *medm_color_30
     pv: "fr:m1.VAL"
-    horizontal: true
+    horizontal: false
 
 image_14: !Image
     geometry: 5x416x158x124
@@ -178,6 +180,7 @@ bar_16: !Scale
     foreground: *medm_color_26
     background: *medm_color_41
     pv: "fr:m1.VAL"
+    horizontal: false
 
 valuator_17: !Slider
     geometry: 235x404x50x146

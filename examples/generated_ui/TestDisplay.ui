@@ -341,7 +341,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>QwtThermoMarker::NoScale</enum>
           </property>
           <property name="direction">
-            <enum>Right</enum>
+            <enum>Up</enum>
           </property>
         </widget>
         <widget class="caLineEdit" name="text_update_8">
@@ -618,7 +618,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>QwtThermoMarker::NoScale</enum>
           </property>
           <property name="direction">
-            <enum>Right</enum>
+            <enum>Up</enum>
           </property>
         </widget>
         <widget class="caImage" name="image_14">

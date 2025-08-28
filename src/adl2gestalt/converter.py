@@ -390,6 +390,16 @@ class MedmToGestaltConverter:
                 lines.append(
                     f'    horizontal: {str(orientation == "horizontal").lower()}'
                 )
+            else:
+                lines.append("    horizontal: true")
+
+            # Add limits if present
+            if "limits" in contents:
+                limits = contents.get("limits", {})
+                if "loprDefault" in limits:
+                    lines.append(f'    minimum: {limits["loprDefault"]}')
+                if "hoprDefault" in limits:
+                    lines.append(f'    maximum: {limits["hoprDefault"]}')
 
         if widget_type in ["Scale"]:
             if "direction" in contents:
@@ -400,8 +410,10 @@ class MedmToGestaltConverter:
                 )
                 # Scale is vertical by default
                 lines.append(
-                    f'    horizontal: {str(orientation == "vertical").lower()}'
+                    f'    horizontal: {str(orientation == "horizontal").lower()}'
                 )
+            else:
+                lines.append("    horizontal: false")
 
             # Add limits if present
             if "limits" in contents:
