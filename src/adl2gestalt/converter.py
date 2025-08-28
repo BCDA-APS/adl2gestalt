@@ -291,7 +291,7 @@ class MedmToGestaltConverter:
             # All widgets use x x y x width x height for geometry
             lines.append(f"    geometry: {geom.x}x{geom.y}x{geom.width}x{geom.height}")
 
-        # Add colors
+        # Add colors (except for shapes which are handled in add_widget_properties_lines)
         shapes = ["Arc", "Ellipse", "Rectangle", "Polygon"]
         if hasattr(widget, "color") and widget.color:
             fg_color = self.get_color_reference(widget.color, color_table)
@@ -301,9 +301,6 @@ class MedmToGestaltConverter:
                     lines.append(f"    border-color: {fg_color}")
                 else:
                     lines.append(f"    foreground: {fg_color}")
-            else:
-                lines.append(f"    background: {fg_color}")
-                lines.append(f"    border-color: {fg_color}")
 
         if hasattr(widget, "background_color") and widget.background_color:
             bg_color = self.get_color_reference(widget.background_color, color_table)
@@ -441,11 +438,6 @@ class MedmToGestaltConverter:
             # Add text property for the button label
             if "label" in contents:
                 lines.append(f'    text: "{contents["label"]}"')
-            elif widget.commands and len(widget.commands) > 0:
-                # Use the first command's label as the button text
-                first_cmd = widget.commands[0]
-                if "label" in first_cmd:
-                    lines.append(f'    text: "{first_cmd["label"]}"')
 
             if widget.commands:
                 lines.append("    commands:")
@@ -487,6 +479,35 @@ class MedmToGestaltConverter:
                 basic_attrs = contents["basic attribute"]
                 if isinstance(basic_attrs, dict) and "width" in basic_attrs:
                     lines.append(f'    border-width: {basic_attrs["width"]}')
+
+        # Shape color and border properties (Arc, Ellipse, Rectangle, Polygon)
+        shapes = ["Arc", "Ellipse", "Rectangle", "Polygon"]
+        if widget_type in shapes and hasattr(widget, "color") and widget.color:
+            fg_color = self.get_color_reference(widget.color, color_table)
+            if fg_color:
+                # Check if shape is outlined
+                is_outlined = False
+                if "basic attribute" in contents:
+                    basic_attrs = contents["basic attribute"]
+                    if (
+                        isinstance(basic_attrs, dict)
+                        and basic_attrs.get("fill") == "outline"
+                    ):
+                        is_outlined = True
+
+                if is_outlined:
+                    # For outlined shapes: only border-color, no background
+                    lines.append(f"    border-color: {fg_color}")
+                else:
+                    # For filled shapes: both background and border-color
+                    lines.append(f"    background: {fg_color}")
+                    lines.append(f"    border-color: {fg_color}")
+
+                # Add border-width for all shapes
+                if "basic attribute" in contents:
+                    basic_attrs = contents["basic attribute"]
+                    if isinstance(basic_attrs, dict) and "width" in basic_attrs:
+                        lines.append(f'    border-width: {basic_attrs["width"]}')
 
         # Arc properties
         if widget_type == "Arc":

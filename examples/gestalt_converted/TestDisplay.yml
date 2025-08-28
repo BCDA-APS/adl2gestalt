@@ -97,14 +97,16 @@ polyline_2: !Polyline
 
 polygon_3: !Polygon
     geometry: 346x13x82x76
+    points: [ 0x7, 8x76, 82x34, 81x31, 52x2, 35x0, 0x7 ]
     background: *medm_color_38
     border-color: *medm_color_38
-    points: [ 0x7, 8x76, 82x34, 81x31, 52x2, 35x0, 0x7 ]
+    border-width: 4
 
 oval_4: !Ellipse
     geometry: 459x14x83x92
     background: *medm_color_30
     border-color: *medm_color_30
+    border-width: 4
 
 Hello_World!_5: !Text
     geometry: 36x117x202x53
@@ -187,3 +189,8 @@ valuator_17: !Slider
     background: *medm_color_41
     pv: "fr:m1.VAL"
     horizontal: false
+
+oval_18: !Ellipse
+    geometry: 137x501x56x58
+    border-color: $000000
+    border-width: 4

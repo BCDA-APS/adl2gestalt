@@ -38,7 +38,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <x>10</x>
             <y>0</y>
             <width>551</width>
-            <height>550</height>
+            <height>559</height>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
@@ -168,7 +168,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="lineSize">
-            <number>2</number>
+            <number>4</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
@@ -207,7 +207,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="lineSize">
-            <number>2</number>
+            <number>4</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
@@ -731,6 +731,42 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="colorMode">
             <enum>caSlider::Alarm_Static</enum>
+          </property>
+        </widget>
+        <widget class="caGraphics" name="oval_18">
+          <property name="geometry">
+            <rect>
+              <x>137</x>
+              <y>501</y>
+              <width>56</width>
+              <height>58</height>
+            </rect>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="lineSize">
+            <number>4</number>
+          </property>
+          <property name="lineColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="linestyle">
+            <enum>caGraphics::Solid</enum>
+          </property>
+          <property name="form">
+            <enum>caGraphics::Circle</enum>
+          </property>
+          <property name="fillstyle">
+            <enum>caGraphics::Filled</enum>
           </property>
         </widget>
       </widget>

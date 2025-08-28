@@ -355,3 +355,16 @@ valuator {
 	limits {
 	}
 }
+oval {
+	object {
+		x=137
+		y=501
+		width=56
+		height=58
+	}
+	"basic attribute" {
+		clr=14
+		fill="outline"
+		width=4
+	}
+}
