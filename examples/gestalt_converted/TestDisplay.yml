@@ -1,0 +1,159 @@
+#include colors.yml
+#include widgets.yml
+
+# Gestalt display file generated from MEDM ADL
+# Source: TestDisplay.adl
+# Generator: adl2gestalt
+
+
+# Custom colors from MEDM color table
+_medm_color_1: &medm_color_1 $ececec
+_medm_color_2: &medm_color_2 $dadada
+_medm_color_3: &medm_color_3 $c8c8c8
+_medm_color_4: &medm_color_4 $bbbbbb
+_medm_color_5: &medm_color_5 $aeaeae
+_medm_color_6: &medm_color_6 $9e9e9e
+_medm_color_7: &medm_color_7 $919191
+_medm_color_8: &medm_color_8 $858585
+_medm_color_9: &medm_color_9 $787878
+_medm_color_10: &medm_color_10 $696969
+_medm_color_11: &medm_color_11 $5a5a5a
+_medm_color_12: &medm_color_12 $464646
+_medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_15: &medm_color_15 $00d800
+_medm_color_16: &medm_color_16 $1ebb00
+_medm_color_17: &medm_color_17 $339900
+_medm_color_18: &medm_color_18 $2d7f00
+_medm_color_19: &medm_color_19 $216c00
+_medm_color_20: &medm_color_20 $fd0000
+_medm_color_21: &medm_color_21 $de1309
+_medm_color_22: &medm_color_22 $be190b
+_medm_color_23: &medm_color_23 $a01207
+_medm_color_24: &medm_color_24 $820400
+_medm_color_25: &medm_color_25 $5893ff
+_medm_color_26: &medm_color_26 $597ee1
+_medm_color_27: &medm_color_27 $4b6ec7
+_medm_color_28: &medm_color_28 $3a5eab
+_medm_color_29: &medm_color_29 $27548d
+_medm_color_30: &medm_color_30 $fbf34a
+_medm_color_31: &medm_color_31 $f9da3c
+_medm_color_32: &medm_color_32 $eeb62b
+_medm_color_33: &medm_color_33 $e19015
+_medm_color_34: &medm_color_34 $cd6100
+_medm_color_35: &medm_color_35 $ffb0ff
+_medm_color_36: &medm_color_36 $d67fe2
+_medm_color_37: &medm_color_37 $ae4ebc
+_medm_color_38: &medm_color_38 $8b1a96
+_medm_color_39: &medm_color_39 $610a75
+_medm_color_40: &medm_color_40 $a4aaff
+_medm_color_41: &medm_color_41 $8793e2
+_medm_color_42: &medm_color_42 $6a73c1
+_medm_color_43: &medm_color_43 $4d52a4
+_medm_color_44: &medm_color_44 $343386
+_medm_color_45: &medm_color_45 $c7bb6d
+_medm_color_46: &medm_color_46 $b79d5c
+_medm_color_47: &medm_color_47 $a47e3c
+_medm_color_48: &medm_color_48 $7d5627
+_medm_color_49: &medm_color_49 $58340f
+_medm_color_50: &medm_color_50 $99ffff
+_medm_color_51: &medm_color_51 $73dfff
+_medm_color_52: &medm_color_52 $4ea5f9
+_medm_color_53: &medm_color_53 $2a63e4
+_medm_color_54: &medm_color_54 $0a00b8
+_medm_color_55: &medm_color_55 $ebf1b5
+_medm_color_56: &medm_color_56 $d4db9d
+_medm_color_57: &medm_color_57 $bbc187
+_medm_color_58: &medm_color_58 $a6a462
+_medm_color_59: &medm_color_59 $8b8239
+_medm_color_60: &medm_color_60 $73ff6b
+_medm_color_61: &medm_color_61 $52da3b
+_medm_color_62: &medm_color_62 $3cb420
+_medm_color_63: &medm_color_63 $289315
+_medm_color_64: &medm_color_64 $1a7309
+
+Form: !Form
+    geometry: 562x584
+    margins: 10x0x10x10
+    foreground: $000000
+    background: *medm_color_4
+
+rectangle_0: !Rectangle
+    geometry: 23x14x76x61
+    foreground: *medm_color_21
+
+arc_1: !Arc
+    geometry: 137x17x70x70
+    foreground: *medm_color_25
+    start-angle: 0
+    span: 90
+
+polyline_2: !Polyline
+    geometry: 224x9
+    border-color: *medm_color_42
+    points: [ 245x59, 267x11, 314x46, 281x90, 226x72 ]
+    border-width: 4
+
+polygon_3: !Polygon
+    geometry: 346x13x82x76
+    foreground: *medm_color_38
+    points: [ 346x20, 354x89, 428x47, 427x44, 398x15, 381x13, 346x20 ]
+
+oval_4: !Ellipse
+    geometry: 459x14x83x92
+    foreground: *medm_color_30
+
+Hello_World!_5: !Text
+    geometry: 36x117x202x53
+    foreground: *medm_color_54
+    text: "Hello World!"
+
+indicator_6: !Scale
+    geometry: 269x110x165x47
+    foreground: *medm_color_54
+    background: *medm_color_4
+    pv: "29idb:m1.VAL"
+
+byte_7: !ByteMonitor
+    geometry: 476x124x68x86
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:ca1:read"
+
+bar_8: !Scale
+    geometry: 488x226x48x162
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:m1.VAL"
+
+text_update_9: !TextMonitor
+    geometry: 41x183x188x38
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:ca1:read"
+
+text_entry_10: !TextEntry
+    geometry: 42x233x186x39
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:ca1:read"
+
+choice_button_11: !ChoiceButton
+    geometry: 51x322x46x57
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:ca1:read.SCAN"
+
+2_seconds_12: !MessageButton
+    geometry: 116x327x142x44
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:ca1:read.SCAN"
+    text: "2 seconds"
+    press-value: "5"
+    release-value: "5"
+
+valuator_13: !Slider
+    geometry: 283x327x180x39
+    foreground: $000000
+    background: *medm_color_4
+    pv: "29idb:ca1:read.SCAN"

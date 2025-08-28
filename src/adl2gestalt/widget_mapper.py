@@ -19,10 +19,9 @@ WIDGET_TYPE_MAP = {
     "byte": "ByteMonitor",
     "cartesian plot": None,  # No match in Gestalt
     "meter": None,  # No match in Gestalt
-    "scale": "Scale",  # Scale Monitor -> Scale
     "strip chart": None,  # No match in Gestalt
     "text update": "TextMonitor",  # Text Monitor -> TextMonitor
-    "indicator": "LED",
+    "indicator": "Scale",  # indicator = Scale Monitor -> Scale
     # Controller Objects
     "choice button": "ChoiceButton",
     "menu": "Menu",

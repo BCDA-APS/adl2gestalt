@@ -545,9 +545,13 @@ class MedmToGestaltConverter:
         # Arc properties
         if widget_type == "Arc":
             if "beginAngle" in contents:
-                lines.append(f'    start-angle: {contents["beginAngle"]}')
+                # Convert to integer to avoid float issues
+                angle = int(float(contents["beginAngle"]))
+                lines.append(f"    start-angle: {angle}")
             if "pathAngle" in contents:
-                lines.append(f'    span: {contents["pathAngle"]}')
+                # Convert to integer to avoid float issues
+                span = int(float(contents["pathAngle"]))
+                lines.append(f"    span: {span}")
 
         # Composite/Group properties
         if widget_type == "Group" and hasattr(widget, "widgets"):

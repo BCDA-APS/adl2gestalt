@@ -1,0 +1,630 @@
+<ui version="4.0">
+  <class>Form</class>
+  <widget class="QMainWindow" name="Form">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>564</width>
+        <height>584</height>
+      </rect>
+    </property>
+    <property name="foreground">
+      <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+      </color>
+    </property>
+    <property name="styleSheet">
+      <string>QWidget#centralwidget {background: rgba(187,187,187,255);}
+QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
+    </property>
+    <property name="windowTitle">
+      <string></string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>0</width>
+          <height>0</height>
+        </rect>
+      </property>
+      <widget class="caFrame" name="content">
+        <property name="geometry">
+          <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>544</width>
+            <height>388</height>
+          </rect>
+        </property>
+        <widget class="caGraphics" name="rectangle_0">
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>23</x>
+              <y>14</y>
+              <width>76</width>
+              <height>61</height>
+            </rect>
+          </property>
+          <property name="lineSize">
+            <number>2</number>
+          </property>
+          <property name="lineColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="linestyle">
+            <enum>caGraphics::Solid</enum>
+          </property>
+          <property name="form">
+            <enum>caGraphics::Rectangle</enum>
+          </property>
+          <property name="fillstyle">
+            <enum>caGraphics::Filled</enum>
+          </property>
+        </widget>
+        <widget class="caGraphics" name="arc_1">
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>137</x>
+              <y>17</y>
+              <width>70</width>
+              <height>70</height>
+            </rect>
+          </property>
+          <property name="lineSize">
+            <number>2</number>
+          </property>
+          <property name="lineColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="linestyle">
+            <enum>caGraphics::Solid</enum>
+          </property>
+          <property name="startAngle">
+            <number>0</number>
+          </property>
+          <property name="spanAngle">
+            <number>90</number>
+          </property>
+          <property name="form">
+            <enum>caGraphics::Arc</enum>
+          </property>
+          <property name="fillstyle">
+            <enum>caGraphics::Filled</enum>
+          </property>
+        </widget>
+        <widget class="caPolyLine" name="polyline_2">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>224</width>
+              <height>9</height>
+            </rect>
+          </property>
+          <property name="lineSize">
+            <number>4</number>
+          </property>
+          <property name="lineColor">
+            <color alpha="255">
+              <red>106</red>
+              <green>115</green>
+              <blue>193</blue>
+            </color>
+          </property>
+          <property name="linestyle">
+            <enum>caPolyLine::Solid</enum>
+          </property>
+          <property name="polystyle">
+            <enum>caPolyLine::Polyline</enum>
+          </property>
+          <property name="fillstyle">
+            <enum>caPolyLine::Outline</enum>
+          </property>
+          <property name="xyPairs">
+            <string>245,59;267,11;314,46;281,90;226,72</string>
+          </property>
+        </widget>
+        <widget class="caPolyLine" name="polygon_3">
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>346</x>
+              <y>13</y>
+              <width>82</width>
+              <height>76</height>
+            </rect>
+          </property>
+          <property name="lineSize">
+            <number>2</number>
+          </property>
+          <property name="lineColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="linestyle">
+            <enum>caPolyLine::Solid</enum>
+          </property>
+          <property name="polystyle">
+            <enum>caPolyLine::Polygon</enum>
+          </property>
+          <property name="fillstyle">
+            <enum>caPolyLine::Filled</enum>
+          </property>
+          <property name="xyPairs">
+            <string>346,20;354,89;428,47;427,44;398,15;381,13;346,20</string>
+          </property>
+        </widget>
+        <widget class="caGraphics" name="oval_4">
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>459</x>
+              <y>14</y>
+              <width>83</width>
+              <height>92</height>
+            </rect>
+          </property>
+          <property name="lineSize">
+            <number>2</number>
+          </property>
+          <property name="lineColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="linestyle">
+            <enum>caGraphics::Solid</enum>
+          </property>
+          <property name="form">
+            <enum>caGraphics::Circle</enum>
+          </property>
+          <property name="fillstyle">
+            <enum>caGraphics::Filled</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="Hello_World!_5">
+          <property name="text">
+            <string>Hello World!</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>10</red>
+              <green>0</green>
+              <blue>184</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>36</x>
+              <y>117</y>
+              <width>202</width>
+              <height>53</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caThermo" name="indicator_6">
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>10</red>
+              <green>0</green>
+              <blue>184</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>269</x>
+              <y>110</y>
+              <width>165</width>
+              <height>47</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>29idb:m1.VAL</string>
+          </property>
+          <property name="scalePosition">
+            <enum>QwtThermoMarker::NoScale</enum>
+          </property>
+          <property name="direction">
+            <enum>Up</enum>
+          </property>
+        </widget>
+        <widget class="caByteController" name="byte_7">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>255</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>60</red>
+              <green>100</green>
+              <blue>60</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>476</x>
+              <y>124</y>
+              <width>68</width>
+              <height>86</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>29idb:ca1:read</string>
+          </property>
+          <property name="startBit">
+            <number>0</number>
+          </property>
+          <property name="direction">
+            <enum>Right</enum>
+          </property>
+          <property name="endBit">
+            <number>31</number>
+          </property>
+        </widget>
+        <widget class="caThermo" name="bar_8">
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>488</x>
+              <y>226</y>
+              <width>48</width>
+              <height>162</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>29idb:m1.VAL</string>
+          </property>
+          <property name="scalePosition">
+            <enum>QwtThermoMarker::NoScale</enum>
+          </property>
+          <property name="direction">
+            <enum>Up</enum>
+          </property>
+        </widget>
+        <widget class="caLineEdit" name="text_update_9">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>41</x>
+              <y>183</y>
+              <width>188</width>
+              <height>38</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:ca1:read</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="caTextEntry" name="text_entry_10">
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>42</x>
+              <y>233</y>
+              <width>186</width>
+              <height>39</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>29idb:ca1:read</string>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="caChoice" name="choice_button_11">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>51</x>
+              <y>322</y>
+              <width>46</width>
+              <height>57</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>29idb:ca1:read.SCAN</string>
+          </property>
+          <property name="bordercolor">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="stackingMode">
+            <enum>Column</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caChoice::Static</enum>
+          </property>
+        </widget>
+        <widget class="QFrame" name="QFrame1">
+          <property name="geometry">
+            <rect>
+              <x>116</x>
+              <y>327</y>
+              <width>142</width>
+              <height>44</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caMessageButton" name="2_seconds_12">
+            <property name="press-value">
+              <string>5</string>
+            </property>
+            <property name="release-value">
+              <string>5</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>187</red>
+                <green>187</green>
+                <blue>187</blue>
+              </color>
+            </property>
+            <property name="label">
+              <string>2 seconds</string>
+            </property>
+            <property name="channel">
+              <string>29idb:ca1:read.SCAN</string>
+            </property>
+            <property name="pressMessage">
+              <string></string>
+            </property>
+            <property name="colorMode">
+              <enum>caMessageButton::Static</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::Height</enum>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>142</width>
+                <height>44</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caSlider" name="valuator_13">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>196</red>
+              <green>196</green>
+              <blue>196</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>283</x>
+              <y>327</y>
+              <width>180</width>
+              <height>39</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>29idb:ca1:read.SCAN</string>
+          </property>
+          <property name="direction">
+            <enum>Right</enum>
+          </property>
+          <property name="borderWidth">
+            <number>2</number>
+          </property>
+          <property name="colorMode">
+            <enum>caSlider::Alarm_Static</enum>
+          </property>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</ui>
