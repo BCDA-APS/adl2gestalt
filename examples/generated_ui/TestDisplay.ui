@@ -5,7 +5,7 @@
       <rect>
         <x>0</x>
         <y>0</y>
-        <width>564</width>
+        <width>571</width>
         <height>584</height>
       </rect>
     </property>
@@ -37,8 +37,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <rect>
             <x>10</x>
             <y>0</y>
-            <width>544</width>
-            <height>540</height>
+            <width>551</width>
+            <height>550</height>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
@@ -624,7 +624,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
         <widget class="caImage" name="image_14">
           <property name="geometry">
             <rect>
-              <x>65</x>
+              <x>5</x>
               <y>416</y>
               <width>158</width>
               <height>124</height>
@@ -668,6 +668,75 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="endBit">
             <number>31</number>
+          </property>
+        </widget>
+        <widget class="caThermo" name="bar_16">
+          <property name="background">
+            <color alpha="255">
+              <red>135</red>
+              <green>147</green>
+              <blue>226</blue>
+            </color>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>89</red>
+              <green>126</green>
+              <blue>225</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>413</x>
+              <y>167</y>
+              <width>138</width>
+              <height>36</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>fr:m1.VAL</string>
+          </property>
+          <property name="scalePosition">
+            <enum>QwtThermoMarker::NoScale</enum>
+          </property>
+          <property name="direction">
+            <enum>Up</enum>
+          </property>
+        </widget>
+        <widget class="caSlider" name="valuator_17">
+          <property name="foreground">
+            <color alpha="255">
+              <red>89</red>
+              <green>126</green>
+              <blue>225</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>196</red>
+              <green>196</green>
+              <blue>196</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>235</x>
+              <y>404</y>
+              <width>50</width>
+              <height>146</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>fr:m1.VAL</string>
+          </property>
+          <property name="direction">
+            <enum>Up</enum>
+          </property>
+          <property name="borderWidth">
+            <number>2</number>
+          </property>
+          <property name="colorMode">
+            <enum>caSlider::Alarm_Static</enum>
           </property>
         </widget>
       </widget>

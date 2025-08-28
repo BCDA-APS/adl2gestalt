@@ -166,10 +166,23 @@ indicator_13: !Scale
     horizontal: false
 
 image_14: !Image
-    geometry: 65x416x158x124
+    geometry: 5x416x158x124
 
 byte_15: !ByteMonitor
     geometry: 316x439x228x85
     foreground: $000000
     background: *medm_color_36
     pv: "fr:m1.VAL"
+
+bar_16: !Scale
+    geometry: 413x167x138x36
+    foreground: *medm_color_26
+    background: *medm_color_41
+    pv: "fr:m1.VAL"
+
+valuator_17: !Slider
+    geometry: 235x404x50x146
+    foreground: *medm_color_26
+    background: *medm_color_41
+    pv: "fr:m1.VAL"
+    horizontal: false

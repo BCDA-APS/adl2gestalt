@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1498
-		y=244
+		x=981
+		y=527
 		width=562
 		height=584
 	}
@@ -299,7 +299,7 @@ indicator {
 }
 image {
 	object {
-		x=65
+		x=5
 		y=416
 		width=158
 		height=124
@@ -321,5 +321,37 @@ byte {
 		chan="fr:m1.VAL"
 		clr=14
 		bclr=36
+	}
+}
+bar {
+	object {
+		x=413
+		y=167
+		width=138
+		height=36
+	}
+	monitor {
+		chan="fr:m1.VAL"
+		clr=26
+		bclr=41
+	}
+	limits {
+	}
+}
+valuator {
+	object {
+		x=235
+		y=404
+		width=50
+		height=146
+	}
+	control {
+		chan="fr:m1.VAL"
+		clr=26
+		bclr=41
+	}
+	direction="up"
+	dPrecision=1.000000
+	limits {
 	}
 }
