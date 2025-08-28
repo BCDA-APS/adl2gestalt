@@ -116,14 +116,13 @@ indicator_6: !Scale
     foreground: *medm_color_54
     background: *medm_color_60
     pv: "fr:m1.RBV"
-    horizontal: true
 
 bar_7: !Scale
     geometry: 488x226x48x162
     foreground: *medm_color_29
     background: *medm_color_33
     pv: "fr:m1.VAL"
-    horizontal: false
+    horizontal: true
 
 text_update_8: !TextMonitor
     geometry: 41x183x188x38
@@ -163,7 +162,7 @@ indicator_13: !Scale
     foreground: *medm_color_54
     background: *medm_color_30
     pv: "fr:m1.VAL"
-    horizontal: false
+    horizontal: true
 
 image_14: !Image
     geometry: 5x416x158x124

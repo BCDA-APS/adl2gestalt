@@ -341,36 +341,12 @@ class MedmToGestaltConverter:
             if isinstance(control, dict):
                 if "chan" in control:
                     lines.append(f'    pv: "{control["chan"]}"')
-                if "clr" in control:
-                    fg_color = self.get_color_reference(
-                        int(control["clr"]), color_table
-                    )
-                    if fg_color:
-                        lines.append(f"    foreground: {fg_color}")
-                if "bclr" in control:
-                    bg_color = self.get_color_reference(
-                        int(control["bclr"]), color_table
-                    )
-                    if bg_color:
-                        lines.append(f"    background: {bg_color}")
 
         if "monitor" in contents:
             monitor = contents["monitor"]
             if isinstance(monitor, dict):
                 if "chan" in monitor:
                     lines.append(f'    pv: "{monitor["chan"]}"')
-                if "clr" in monitor:
-                    fg_color = self.get_color_reference(
-                        int(monitor["clr"]), color_table
-                    )
-                    if fg_color:
-                        lines.append(f"    foreground: {fg_color}")
-                if "bclr" in monitor:
-                    bg_color = self.get_color_reference(
-                        int(monitor["bclr"]), color_table
-                    )
-                    if bg_color:
-                        lines.append(f"    background: {bg_color}")
 
         # Text widget properties
         if widget_type == "Text" and hasattr(widget, "title"):
@@ -403,15 +379,28 @@ class MedmToGestaltConverter:
                 lines.append(f"    alignment: {alignment}")
 
         # Bar/Meter properties
-        if widget_type in ["ProgressBar", "Gauge", "Slider", "Scale"]:
+        if widget_type in ["Slider"]:
             if "direction" in contents:
                 orientation = (
                     "vertical"
                     if contents["direction"] in ["up", "down"]
                     else "horizontal"
                 )
+                # Slider is horizontal by default
                 lines.append(
                     f'    horizontal: {str(orientation == "horizontal").lower()}'
+                )
+
+        if widget_type in ["Scale"]:
+            if "direction" in contents:
+                orientation = (
+                    "vertical"
+                    if contents["direction"] in ["up", "down"]
+                    else "horizontal"
+                )
+                # Scale is vertical by default
+                lines.append(
+                    f'    horizontal: {str(orientation == "vertical").lower()}'
                 )
 
             # Add limits if present
