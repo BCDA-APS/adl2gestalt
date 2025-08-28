@@ -378,30 +378,8 @@ class MedmToGestaltConverter:
                 alignment = align_map.get(contents["align"], "Left")
                 lines.append(f"    alignment: {alignment}")
 
-        # Bar/Meter properties
-        if widget_type in ["Slider"]:
-            if "direction" in contents:
-                orientation = (
-                    "vertical"
-                    if contents["direction"] in ["up", "down"]
-                    else "horizontal"
-                )
-                # Slider is horizontal by default
-                lines.append(
-                    f'    horizontal: {str(orientation == "horizontal").lower()}'
-                )
-            else:
-                lines.append("    horizontal: true")
-
-            # Add limits if present
-            if "limits" in contents:
-                limits = contents.get("limits", {})
-                if "loprDefault" in limits:
-                    lines.append(f'    minimum: {limits["loprDefault"]}')
-                if "hoprDefault" in limits:
-                    lines.append(f'    maximum: {limits["hoprDefault"]}')
-
-        if widget_type in ["Scale"]:
+        # Bar/Slider properties
+        if widget_type in ["Scale", "Slider"]:
             if "direction" in contents and contents["direction"] in ["up", "down"]:
                 lines.append("    horizontal: false")
             else:
