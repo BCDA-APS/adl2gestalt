@@ -169,6 +169,7 @@ indicator_13: !Scale
 
 image_14: !Image
     geometry: 5x416x158x124
+    file: "arrow.gif"
 
 byte_15: !ByteMonitor
     geometry: 316x439x228x85

@@ -509,6 +509,11 @@ class MedmToGestaltConverter:
                     if isinstance(basic_attrs, dict) and "width" in basic_attrs:
                         lines.append(f'    border-width: {basic_attrs["width"]}')
 
+        # Image properties
+        if widget_type == "Image":
+            if "image name" in contents:
+                lines.append(f'    file: "{contents["image name"]}"')
+
         # Arc properties
         if widget_type == "Arc":
             if "beginAngle" in contents:

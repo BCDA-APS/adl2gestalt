@@ -625,7 +625,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="filename">
-            <string></string>
+            <string>arrow.gif</string>
           </property>
         </widget>
         <widget class="caByteController" name="byte_15">
