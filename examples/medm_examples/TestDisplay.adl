@@ -1,12 +1,12 @@
 
 file {
-	name="TestDisplay.adl"
+	name="/home/beams3/RODOLAKIS/workspace/adl2gestalt/examples/medm_examples/TestDisplay.adl"
 	version=030111
 }
 display {
 	object {
-		x=1376
-		y=308
+		x=1366
+		y=300
 		width=562
 		height=584
 	}
@@ -183,7 +183,7 @@ indicator {
 		height=47
 	}
 	monitor {
-		chan="29idb:m1.VAL"
+		chan="fr:m1.RBV"
 		clr=54
 		bclr=4
 	}
@@ -198,7 +198,7 @@ byte {
 		height=86
 	}
 	monitor {
-		chan="29idb:ca1:read"
+		chan="fr:m1.SET"
 		clr=14
 		bclr=4
 	}
@@ -211,10 +211,11 @@ bar {
 		height=162
 	}
 	monitor {
-		chan="29idb:m1.VAL"
+		chan="fr:m1.VAL"
 		clr=14
 		bclr=4
 	}
+	direction="up"
 	limits {
 	}
 }
@@ -226,7 +227,7 @@ bar {
 		height=38
 	}
 	monitor {
-		chan="29idb:ca1:read"
+		chan="fr:m1.RBV"
 		clr=14
 		bclr=4
 	}
@@ -241,7 +242,7 @@ bar {
 		height=39
 	}
 	control {
-		chan="29idb:ca1:read"
+		chan="fr:m1.VAL"
 		clr=14
 		bclr=4
 	}
@@ -256,7 +257,7 @@ bar {
 		height=57
 	}
 	control {
-		chan="29idb:ca1:read.SCAN"
+		chan="fr:m1.SET"
 		clr=14
 		bclr=4
 	}
@@ -269,13 +270,13 @@ bar {
 		height=44
 	}
 	control {
-		chan="29idb:ca1:read.SCAN"
+		chan="fr:m1.TWF"
 		clr=14
 		bclr=4
 	}
-	label="2 seconds"
-	press_msg="5"
-	release_msg="5"
+	label="Move"
+	press_msg="1"
+	release_msg="0"
 }
 valuator {
 	object {
@@ -285,11 +286,40 @@ valuator {
 		height=39
 	}
 	control {
-		chan="29idb:ca1:read.SCAN"
+		chan="fr:m1.VAL"
 		clr=14
 		bclr=4
 	}
 	dPrecision=1.000000
 	limits {
+	}
+}
+indicator {
+	object {
+		x=338
+		y=179
+		width=51
+		height=127
+	}
+	monitor {
+		chan="fr:m1.VAL"
+		clr=54
+		bclr=4
+	}
+	direction="up"
+	limits {
+	}
+}
+image {
+	object {
+		x=152
+		y=416
+		width=158
+		height=124
+	}
+	type="gif"
+	"image name"="arrow.gif"
+	"dynamic attribute" {
+		chan="fr:m1.VAL"
 	}
 }

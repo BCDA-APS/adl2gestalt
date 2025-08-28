@@ -111,49 +111,60 @@ indicator_6: !Scale
     geometry: 269x110x165x47
     foreground: *medm_color_54
     background: *medm_color_4
-    pv: "29idb:m1.VAL"
+    pv: "fr:m1.RBV"
 
 byte_7: !ByteMonitor
     geometry: 476x124x68x86
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:ca1:read"
+    pv: "fr:m1.SET"
 
 bar_8: !Scale
     geometry: 488x226x48x162
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:m1.VAL"
+    pv: "fr:m1.VAL"
+    horizontal: false
 
 text_update_9: !TextMonitor
     geometry: 41x183x188x38
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:ca1:read"
+    pv: "fr:m1.RBV"
 
 text_entry_10: !TextEntry
     geometry: 42x233x186x39
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:ca1:read"
+    pv: "fr:m1.VAL"
 
 choice_button_11: !ChoiceButton
     geometry: 51x322x46x57
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:ca1:read.SCAN"
+    pv: "fr:m1.SET"
 
-2_seconds_12: !MessageButton
+Move_12: !MessageButton
     geometry: 116x327x142x44
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:ca1:read.SCAN"
-    text: "2 seconds"
-    press-value: "5"
-    release-value: "5"
+    pv: "fr:m1.TWF"
+    text: "Move"
+    press-value: "1"
+    release-value: "0"
 
 valuator_13: !Slider
     geometry: 283x327x180x39
     foreground: $000000
     background: *medm_color_4
-    pv: "29idb:ca1:read.SCAN"
+    pv: "fr:m1.VAL"
+
+indicator_14: !Scale
+    geometry: 338x179x51x127
+    foreground: *medm_color_54
+    background: *medm_color_4
+    pv: "fr:m1.VAL"
+    horizontal: false
+
+image_15: !Image
+    geometry: 152x416x158x124

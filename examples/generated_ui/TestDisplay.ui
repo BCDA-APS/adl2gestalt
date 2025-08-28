@@ -38,7 +38,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <x>10</x>
             <y>0</y>
             <width>544</width>
-            <height>388</height>
+            <height>540</height>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
@@ -302,7 +302,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="channel">
-            <string>29idb:m1.VAL</string>
+            <string>fr:m1.RBV</string>
           </property>
           <property name="scalePosition">
             <enum>QwtThermoMarker::NoScale</enum>
@@ -335,7 +335,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="channel">
-            <string>29idb:ca1:read</string>
+            <string>fr:m1.SET</string>
           </property>
           <property name="startBit">
             <number>0</number>
@@ -371,7 +371,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="channel">
-            <string>29idb:m1.VAL</string>
+            <string>fr:m1.VAL</string>
           </property>
           <property name="scalePosition">
             <enum>QwtThermoMarker::NoScale</enum>
@@ -416,7 +416,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
           <property name="channel">
-            <string>29idb:ca1:read</string>
+            <string>fr:m1.RBV</string>
           </property>
           <property name="frameColor">
             <color alpha="255">
@@ -471,7 +471,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
           <property name="channel">
-            <string>29idb:ca1:read</string>
+            <string>fr:m1.VAL</string>
           </property>
           <property name="formatType">
             <enum>caLineEdit::decimal</enum>
@@ -507,7 +507,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="channel">
-            <string>29idb:ca1:read.SCAN</string>
+            <string>fr:m1.SET</string>
           </property>
           <property name="bordercolor">
             <color alpha="255">
@@ -542,12 +542,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 }
 </string>
           </property>
-          <widget class="caMessageButton" name="2_seconds_12">
+          <widget class="caMessageButton" name="Move_12">
             <property name="press-value">
-              <string>5</string>
+              <string>1</string>
             </property>
             <property name="release-value">
-              <string>5</string>
+              <string>0</string>
             </property>
             <property name="foreground">
               <color alpha="255">
@@ -564,10 +564,10 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               </color>
             </property>
             <property name="label">
-              <string>2 seconds</string>
+              <string>Move</string>
             </property>
             <property name="channel">
-              <string>29idb:ca1:read.SCAN</string>
+              <string>fr:m1.TWF</string>
             </property>
             <property name="pressMessage">
               <string></string>
@@ -612,7 +612,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="channel">
-            <string>29idb:ca1:read.SCAN</string>
+            <string>fr:m1.VAL</string>
           </property>
           <property name="direction">
             <enum>Right</enum>
@@ -622,6 +622,52 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="colorMode">
             <enum>caSlider::Alarm_Static</enum>
+          </property>
+        </widget>
+        <widget class="caThermo" name="indicator_14">
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>10</red>
+              <green>0</green>
+              <blue>184</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>338</x>
+              <y>179</y>
+              <width>51</width>
+              <height>127</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>fr:m1.VAL</string>
+          </property>
+          <property name="scalePosition">
+            <enum>QwtThermoMarker::NoScale</enum>
+          </property>
+          <property name="direction">
+            <enum>Up</enum>
+          </property>
+        </widget>
+        <widget class="caImage" name="image_15">
+          <property name="geometry">
+            <rect>
+              <x>152</x>
+              <y>416</y>
+              <width>158</width>
+              <height>124</height>
+            </rect>
+          </property>
+          <property name="filename">
+            <string></string>
           </property>
         </widget>
       </widget>
