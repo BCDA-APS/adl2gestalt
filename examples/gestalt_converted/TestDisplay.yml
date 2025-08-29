@@ -195,3 +195,4 @@ oval_18: !Ellipse
     geometry: 137x501x56x58
     border-color: $000000
     border-width: 4
+    border-style: Dashed

@@ -356,10 +356,8 @@ class MedmToGestaltConverter:
                     "decimal": "Decimal",
                     "exponential": "Exponential",
                     "engr. notation": "Engineering",
-                    "engr_notation": "Engineering",
                     "compact": "Compact",
                     "hexadecimal": "Hexadecimal",
-                    "octal": "Octal",
                     "string": "String",
                     "binary": "Binary",
                 }
@@ -381,14 +379,6 @@ class MedmToGestaltConverter:
                 lines.append("    horizontal: false")
             else:
                 lines.append("    horizontal: true")
-
-            # Add limits if present
-            if "limits" in contents:
-                limits = contents.get("limits", {})
-                if "loprDefault" in limits:
-                    lines.append(f'    minimum: {limits["loprDefault"]}')
-                if "hoprDefault" in limits:
-                    lines.append(f'    maximum: {limits["hoprDefault"]}')
 
         # Button properties
         if widget_type in ["MessageButton"]:
@@ -412,15 +402,6 @@ class MedmToGestaltConverter:
             if "label" in contents:
                 clean_label = clean_medm_label(contents["label"])
                 lines.append(f'    text: "{clean_label}"')
-            elif widget.displays and len(widget.displays) > 0:
-                # Use the first display's label as the button text
-                first_display = widget.displays[0]
-                if "label" in first_display:
-                    clean_label = clean_medm_label(first_display["label"])
-                    lines.append(f'    text: "{clean_label}"')
-                elif "name" in first_display:
-                    clean_label = clean_medm_label(first_display["name"])
-                    lines.append(f'    text: "{clean_label}"')
 
             if widget.displays:
                 lines.append("    links:")
@@ -503,11 +484,21 @@ class MedmToGestaltConverter:
                     lines.append(f"    background: {fg_color}")
                     lines.append(f"    border-color: {fg_color}")
 
-                # Add border-width for all shapes
+                # Add border-width and border-style for all shapes
                 if "basic attribute" in contents:
                     basic_attrs = contents["basic attribute"]
-                    if isinstance(basic_attrs, dict) and "width" in basic_attrs:
-                        lines.append(f'    border-width: {basic_attrs["width"]}')
+                    if isinstance(basic_attrs, dict):
+                        if "width" in basic_attrs:
+                            lines.append(f'    border-width: {basic_attrs["width"]}')
+                        if "style" in basic_attrs:
+                            # Map MEDM style to Gestalt border-style
+                            style_map = {
+                                "solid": "Solid",
+                                "dash": "Dashed",
+                            }
+                            medm_style = basic_attrs["style"].lower()
+                            gestalt_style = style_map.get(medm_style, "Solid")
+                            lines.append(f"    border-style: {gestalt_style}")
 
         # Image properties
         if widget_type == "Image":

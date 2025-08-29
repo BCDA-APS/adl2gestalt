@@ -364,6 +364,7 @@ oval {
 	}
 	"basic attribute" {
 		clr=14
+		style="dash"
 		fill="outline"
 		width=4
 	}

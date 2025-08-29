@@ -760,7 +760,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="linestyle">
-            <enum>caGraphics::Solid</enum>
+            <enum>caGraphics::Dash</enum>
           </property>
           <property name="form">
             <enum>caGraphics::Circle</enum>
