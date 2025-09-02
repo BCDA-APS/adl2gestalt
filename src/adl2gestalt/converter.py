@@ -526,6 +526,13 @@ class MedmToGestaltConverter:
                 )
                 lines.append(f"    off-color: {off_color}")
 
+        # Choice button properties
+        if widget_type == "ChoiceButton" and isinstance(contents, dict):
+            if "stacking" in contents:
+                lines.append("    horizontal: True")
+            else:
+                lines.append("    horizontal: False")
+
         # Arc properties
         if widget_type == "Arc":
             if "beginAngle" in contents:

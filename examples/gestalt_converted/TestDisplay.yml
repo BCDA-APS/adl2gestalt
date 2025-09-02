@@ -146,6 +146,7 @@ choice_button_10: !ChoiceButton
     foreground: $000000
     background: *medm_color_52
     pv: "fr:m1.SET"
+    horizontal: False
 
 Move_11: !MessageButton
     geometry: 116x327x142x44

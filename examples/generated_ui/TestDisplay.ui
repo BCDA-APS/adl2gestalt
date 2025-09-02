@@ -481,7 +481,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
