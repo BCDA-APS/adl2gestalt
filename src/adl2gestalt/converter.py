@@ -313,6 +313,71 @@ class MedmToGestaltConverter:
 
         return lines
 
+    def convert_medm_to_python(self, medm_expression: str) -> str:
+        """
+        Convert MEDM C-like expression syntax to Python syntax.
+
+        MEDM uses: # (not equal), = (equal), && (and), || (or), ! (not)
+        Python needs: !=, ==, and, or, not
+        """
+        if not medm_expression:
+            return medm_expression
+
+        # Replace MEDM operators with Python equivalents
+        # MEDM uses: # (not equal), = (equal), && (and), || (or), ! (not)
+        # Python needs: !=, ==, and, or, not
+
+        # Initialize the Python expression with the MEDM expression
+        python_expr = medm_expression
+
+        # Replace == (MEDM uses =) - do this FIRST
+        python_expr = python_expr.replace("=", "==")
+
+        # Replace boolean negation (MEDM ! becomes Python not) - do this SECOND
+        # But be careful - ! in MEDM can also mean "not equal" in some contexts
+        # Only replace ! when it's a standalone logical operator, not part of variable names
+        python_expr = python_expr.replace(" !", " not ")
+        python_expr = python_expr.replace("! ", "not ")
+        # PV names never contain !, so we can safely replace all standalone ! with not
+        python_expr = python_expr.replace("!", "not")
+
+        # Replace != (MEDM uses #) - do this LAST to avoid interference
+        python_expr = python_expr.replace("#", "!=")
+
+        # Replace logical operators
+        python_expr = python_expr.replace("&&", " and ")
+        python_expr = python_expr.replace("||", " or ")
+
+        # Replace MEDM mathematical functions with Python equivalents
+        # Note: Python math functions need to be prefixed with math. or imported
+        # For now, we'll use the Python math module functions
+        function_mappings = {
+            "ABS": "abs",
+            "SQR": "math.sqrt",  # MEDM SQR is square root
+            "MIN": "min",
+            "MAX": "max",
+            "CEIL": "math.ceil",
+            "FLOOR": "math.floor",
+            "LOG": "math.log10",  # MEDM LOG is base-10 logarithm
+            "LOGE": "math.log",  # MEDM LOGE is natural logarithm
+            "EXP": "math.exp",
+            "SIN": "math.sin",
+            "SINH": "math.sinh",
+            "ASIN": "math.asin",
+            "COS": "math.cos",
+            "COSH": "math.cosh",
+            "ACOS": "math.acos",
+            "TAN": "math.tan",
+            "TANH": "math.tanh",
+            "ATAN": "math.atan",
+        }
+
+        # Replace functions
+        for medm_func, python_func in function_mappings.items():
+            python_expr = python_expr.replace(medm_func.upper(), python_func)
+
+        return python_expr
+
     def add_widget_properties_lines(
         self, widget: Any, lines: List[str], widget_type: str, color_table: List
     ) -> None:
@@ -604,7 +669,9 @@ class MedmToGestaltConverter:
                 lines.append(f"")
                 lines.append(f"# Calc node for visibility: {calc_info['name']}")
                 lines.append(f"{calc_info['name']}: !Calc")
-                lines.append(f"    calc: \"{calc_info['expression']}\"")
+                # Convert MEDM expression to Python syntax
+                python_expression = self.convert_medm_to_python(calc_info["expression"])
+                lines.append(f'    calc: "{python_expression}"')
                 lines.append(f"    A: \"{calc_info['channel_a']}\"")
                 if calc_info["channel_b"]:
                     lines.append(f"    B: \"{calc_info['channel_b']}\"")
