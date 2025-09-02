@@ -1305,41 +1305,49 @@ Pos_198: !Text
     geometry: 964x638x37x21
     foreground: $000000
     text: "Pos"
+    visibility: "$(P)xPolarity_.VAL"
 
 Pos_199: !Text
     geometry: 964x664x37x21
     foreground: $000000
     text: "Pos"
+    visibility: "$(P)yPolarity_.VAL"
 
 Pos_200: !Text
     geometry: 964x691x37x21
     foreground: $000000
     text: "Pos"
+    visibility: "$(P)xqPolarity_.VAL"
 
 Pos_201: !Text
     geometry: 964x718x37x21
     foreground: $000000
     text: "Pos"
+    visibility: "$(P)yqPolarity_.VAL"
 
 Neg_202: !Text
     geometry: 964x638x37x21
     foreground: $000000
     text: "Neg"
+    visibility: !Not "$(P)xPolarity_.VAL"
 
 Neg_203: !Text
     geometry: 964x664x37x21
     foreground: $000000
     text: "Neg"
+    visibility: !Not "$(P)yPolarity_.VAL"
 
 Neg_204: !Text
     geometry: 964x691x37x21
     foreground: $000000
     text: "Neg"
+    visibility: !Not "$(P)xqPolarity_.VAL"
 
 Neg_205: !Text
     geometry: 964x718x37x21
     foreground: $000000
     text: "Neg"
+    visibility: !Not "$(P)yqPolarity_.VAL"
 
 choice_button_206: !ChoiceButton
     geometry: 595x428x100x30
