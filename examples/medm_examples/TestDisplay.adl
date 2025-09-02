@@ -377,7 +377,7 @@ text {
 		x=96
 		y=739
 		width=251
-		height=57
+		height=20
 	}
 	"basic attribute" {
 		clr=14
@@ -393,7 +393,7 @@ text {
 		x=91
 		y=802
 		width=251
-		height=57
+		height=30
 	}
 	"basic attribute" {
 		clr=14
@@ -407,9 +407,9 @@ text {
 text {
 	object {
 		x=304
-		y=749
+		y=775
 		width=251
-		height=57
+		height=40
 	}
 	"basic attribute" {
 		clr=14

@@ -205,18 +205,18 @@ oval_18: !Ellipse
     border-style: Dashed
 
 test_if_not_zero_19: !Text
-    geometry: 96x739x251x57
+    geometry: 96x739x251x20
     foreground: $000000
     text: "test if not zero"
     visibility: "fr:m1.RBV"
 
 test_if_zero_20: !Text
-    geometry: 91x802x251x57
+    geometry: 91x802x251x30
     foreground: $000000
     text: "test if zero"
     visibility: !Not "fr:m1.RBV"
 
 test_if_rbv_is_2_21: !Text
-    geometry: 304x749x251x57
+    geometry: 304x775x251x40
     foreground: $000000
     text: "test if rbv is 2"
