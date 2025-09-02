@@ -323,6 +323,8 @@ byte {
 		clr=14
 		bclr=36
 	}
+	sbit=30
+	ebit=1
 }
 bar {
 	object {

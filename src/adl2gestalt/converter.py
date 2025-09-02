@@ -506,6 +506,26 @@ class MedmToGestaltConverter:
             if "image name" in contents:
                 lines.append(f'    file: "{contents["image name"]}"')
 
+        # ByteMonitor properties
+        if widget_type == "ByteMonitor":
+            sbit = int(contents.get("sbit", 15))
+            ebit = int(contents.get("ebit", 0))
+            # Calculate number of bits to display
+            num_bits = abs(sbit - ebit) + 1
+            # Use the smaller value as start-bit
+            start_bit = min(sbit, ebit)
+            lines.append(f"    bits: {num_bits}")
+            lines.append(f"    start-bit: {start_bit}")
+            # Map colors - widget.color is the on-color, widget.background_color is the off-color
+            if hasattr(widget, "color") and widget.color:
+                on_color = self.get_color_reference(widget.color, color_table)
+                lines.append(f"    on-color: {on_color}")
+            if hasattr(widget, "background_color") and widget.background_color:
+                off_color = self.get_color_reference(
+                    widget.background_color, color_table
+                )
+                lines.append(f"    off-color: {off_color}")
+
         # Arc properties
         if widget_type == "Arc":
             if "beginAngle" in contents:
