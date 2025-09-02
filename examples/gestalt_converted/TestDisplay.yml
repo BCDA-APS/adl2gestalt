@@ -178,6 +178,10 @@ byte_15: !ByteMonitor
     foreground: $000000
     background: *medm_color_36
     pv: "fr:m1.VAL"
+    bits: 30
+    start-bit: 1
+    on-color: $000000
+    off-color: *medm_color_36
 
 bar_16: !Scale
     geometry: 413x167x138x36
