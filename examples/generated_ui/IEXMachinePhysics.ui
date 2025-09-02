@@ -10052,6 +10052,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
+          <property name="channel">
+            <string>$(P)xPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
+          </property>
           <property name="borderColor">
             <color alpha="255">
               <red>0</red>
@@ -10103,6 +10109,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>$(P)yPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
           </property>
           <property name="borderColor">
             <color alpha="255">
@@ -10156,6 +10168,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
+          <property name="channel">
+            <string>$(P)xqPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
+          </property>
           <property name="borderColor">
             <color alpha="255">
               <red>0</red>
@@ -10207,6 +10225,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>$(P)yqPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
           </property>
           <property name="borderColor">
             <color alpha="255">
@@ -10260,6 +10284,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
+          <property name="channel">
+            <string>$(P)xPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfZero</enum>
+          </property>
           <property name="borderColor">
             <color alpha="255">
               <red>0</red>
@@ -10311,6 +10341,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>$(P)yPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfZero</enum>
           </property>
           <property name="borderColor">
             <color alpha="255">
@@ -10364,6 +10400,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
+          <property name="channel">
+            <string>$(P)xqPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfZero</enum>
+          </property>
           <property name="borderColor">
             <color alpha="255">
               <red>0</red>
@@ -10415,6 +10457,12 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="alignment">
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>$(P)yqPolarity_.VAL</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfZero</enum>
           </property>
           <property name="borderColor">
             <color alpha="255">
