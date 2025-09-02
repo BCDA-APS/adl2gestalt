@@ -72,7 +72,7 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
-    geometry: 562x584
+    geometry: 562x900
     margins: 10x0x10x10
     foreground: $000000
     background: *medm_color_4
@@ -142,11 +142,11 @@ text_entry_9: !TextEntry
     pv: "fr:m1.VAL"
 
 choice_button_10: !ChoiceButton
-    geometry: 52x322x46x57
+    geometry: 51x322x46x57
     foreground: $000000
     background: *medm_color_52
     pv: "fr:m1.SET"
-    horizontal: True
+    horizontal: False
 
 Move_11: !MessageButton
     geometry: 116x327x142x44
@@ -203,3 +203,20 @@ oval_18: !Ellipse
     border-color: $000000
     border-width: 4
     border-style: Dashed
+
+test_if_not_zero_19: !Text
+    geometry: 96x739x251x57
+    foreground: $000000
+    text: "test if not zero"
+    visibility: "fr:m1.RBV"
+
+test_if_zero_20: !Text
+    geometry: 91x802x251x57
+    foreground: $000000
+    text: "test if zero"
+    visibility: "!fr:m1.RBV"
+
+test_if_rbv_is_2_21: !Text
+    geometry: 304x749x251x57
+    foreground: $000000
+    text: "test if rbv is 2"

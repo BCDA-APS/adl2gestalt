@@ -5,8 +5,8 @@
       <rect>
         <x>0</x>
         <y>0</y>
-        <width>571</width>
-        <height>584</height>
+        <width>575</width>
+        <height>900</height>
       </rect>
     </property>
     <property name="foreground">
@@ -37,8 +37,8 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <rect>
             <x>10</x>
             <y>0</y>
-            <width>551</width>
-            <height>559</height>
+            <width>555</width>
+            <height>859</height>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
@@ -464,7 +464,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>52</x>
+              <x>51</x>
               <y>322</y>
               <width>46</width>
               <height>57</height>
@@ -481,7 +481,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -767,6 +767,174 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="fillstyle">
             <enum>caGraphics::Filled</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="test_if_not_zero_19">
+          <property name="text">
+            <string>test if not zero</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>96</x>
+              <y>739</y>
+              <width>251</width>
+              <height>57</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>fr:m1.RBV</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="test_if_zero_20">
+          <property name="text">
+            <string>test if zero</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>91</x>
+              <y>802</y>
+              <width>251</width>
+              <height>57</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>!fr:m1.RBV</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="test_if_rbv_is_2_21">
+          <property name="text">
+            <string>test if rbv is 2</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>304</x>
+              <y>749</y>
+              <width>251</width>
+              <height>57</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
       </widget>

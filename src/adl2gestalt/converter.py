@@ -506,6 +506,25 @@ class MedmToGestaltConverter:
             if "image name" in contents:
                 lines.append(f'    file: "{contents["image name"]}"')
 
+        # Visibility properties (common to all widgets)
+        if "dynamic attribute" in contents and isinstance(
+            contents["dynamic attribute"], dict
+        ):
+            dynamic_attrs = contents["dynamic attribute"]
+
+            # Check for visibility mode and channel
+            if "vis" in dynamic_attrs and "chan" in dynamic_attrs:
+                visibility_mode = dynamic_attrs["vis"]
+                channel_name = dynamic_attrs["chan"]
+
+                if visibility_mode == "if not zero":
+                    # Widget visible when PV ≠ 0, hidden when PV = 0
+                    lines.append(f'    visibility: "{channel_name}"')
+                elif visibility_mode == "if zero":
+                    # Widget visible when PV = 0, hidden when PV ≠ 0 (use !Not tag)
+                    lines.append(f'    visibility: "!{channel_name}"')
+                # Note: "static" visibility doesn't need a visibility property
+
         # ByteMonitor properties
         if widget_type == "ByteMonitor":
             sbit = int(contents.get("sbit", 15))

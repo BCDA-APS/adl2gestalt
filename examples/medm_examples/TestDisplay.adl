@@ -8,7 +8,7 @@ display {
 		x=981
 		y=527
 		width=562
-		height=584
+		height=900
 	}
 	clr=14
 	bclr=4
@@ -371,4 +371,53 @@ oval {
 		fill="outline"
 		width=4
 	}
+}
+text {
+	object {
+		x=96
+		y=739
+		width=251
+		height=57
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="fr:m1.RBV"
+	}
+	textix="test if not zero"
+}
+text {
+	object {
+		x=91
+		y=802
+		width=251
+		height=57
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="fr:m1.RBV"
+	}
+	textix="test if zero"
+}
+text {
+	object {
+		x=304
+		y=749
+		width=251
+		height=57
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=2"
+		chan="fr:m1.RBV"
+	}
+	textix="test if rbv is 2"
 }
