@@ -866,10 +866,10 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <set>Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
           <property name="channel">
-            <string>!Not fr:m1.RBV</string>
+            <string>fr:m1.RBV</string>
           </property>
           <property name="visibility">
-            <enum>caLabel::IfNotZero</enum>
+            <enum>caLabel::IfZero</enum>
           </property>
           <property name="borderColor">
             <color alpha="255">

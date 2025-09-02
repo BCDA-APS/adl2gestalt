@@ -522,7 +522,7 @@ class MedmToGestaltConverter:
                     lines.append(f'    visibility: "{channel_name}"')
                 elif visibility_mode == "if zero":
                     # Widget visible when PV = 0, hidden when PV ≠ 0 (use !Not tag)
-                    lines.append(f'    visibility: "!Not {channel_name}"')
+                    lines.append(f'    visibility: !Not "{channel_name}"')
                 # Note: "static" visibility doesn't need a visibility property
 
         # ByteMonitor properties
