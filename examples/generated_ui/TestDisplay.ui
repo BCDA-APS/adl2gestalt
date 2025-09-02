@@ -655,13 +655,13 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>fr:m1.VAL</string>
           </property>
           <property name="startBit">
-            <number>1</number>
+            <number>0</number>
           </property>
           <property name="direction">
             <enum>Right</enum>
           </property>
           <property name="endBit">
-            <number>30</number>
+            <number>10</number>
           </property>
         </widget>
         <widget class="caThermo" name="bar_16">
