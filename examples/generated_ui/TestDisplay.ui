@@ -769,7 +769,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caGraphics::Filled</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_not_zero_19">
+        <widget class="caLabel" name="test_if_not_zero_0">
           <property name="text">
             <string>test if not zero</string>
           </property>
@@ -827,7 +827,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_zero_20">
+        <widget class="caLabel" name="test_if_zero_1">
           <property name="text">
             <string>test if zero</string>
           </property>
@@ -885,7 +885,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_rbv_is_2_21">
+        <widget class="caLabel" name="test_if_rbv_is_2_2">
           <property name="text">
             <string>test if rbv is 2</string>
           </property>
