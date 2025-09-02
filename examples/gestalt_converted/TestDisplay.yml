@@ -214,7 +214,7 @@ test_if_zero_20: !Text
     geometry: 91x802x251x57
     foreground: $000000
     text: "test if zero"
-    visibility: "!fr:m1.RBV"
+    visibility: "!Not fr:m1.RBV"
 
 test_if_rbv_is_2_21: !Text
     geometry: 304x749x251x57
