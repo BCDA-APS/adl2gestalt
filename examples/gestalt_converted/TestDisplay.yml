@@ -142,11 +142,11 @@ text_entry_9: !TextEntry
     pv: "fr:m1.VAL"
 
 choice_button_10: !ChoiceButton
-    geometry: 51x322x46x57
+    geometry: 52x322x46x57
     foreground: $000000
     background: *medm_color_52
     pv: "fr:m1.SET"
-    horizontal: False
+    horizontal: True
 
 Move_11: !MessageButton
     geometry: 116x327x142x44

@@ -464,7 +464,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="geometry">
             <rect>
-              <x>51</x>
+              <x>52</x>
               <y>322</y>
               <width>46</width>
               <height>57</height>
@@ -481,7 +481,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Row</enum>
+            <enum>Column</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
