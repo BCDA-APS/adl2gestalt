@@ -372,63 +372,53 @@ oval {
 		width=4
 	}
 }
-composite {
+text {
+	object {
+		x=96
+		y=739
+		width=251
+		height=20
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="if not zero"
+		chan="fr:m1.RBV"
+	}
+	textix="test if not zero"
+}
+text {
 	object {
 		x=91
-		y=739
-		width=464
-		height=93
+		y=802
+		width=251
+		height=30
 	}
-	"composite name"=""
-	children {
-		text {
-			object {
-				x=96
-				y=739
-				width=251
-				height=20
-			}
-			"basic attribute" {
-				clr=14
-			}
-			"dynamic attribute" {
-				vis="if not zero"
-				chan="fr:m1.RBV"
-			}
-			textix="test if not zero"
-		}
-		text {
-			object {
-				x=91
-				y=802
-				width=251
-				height=30
-			}
-			"basic attribute" {
-				clr=14
-			}
-			"dynamic attribute" {
-				vis="if zero"
-				chan="fr:m1.RBV"
-			}
-			textix="test if zero"
-		}
-		text {
-			object {
-				x=304
-				y=775
-				width=251
-				height=40
-			}
-			"basic attribute" {
-				clr=14
-			}
-			"dynamic attribute" {
-				vis="calc"
-				calc="A=2"
-				chan="fr:m1.RBV"
-			}
-			textix="test if rbv is 2"
-		}
+	"basic attribute" {
+		clr=14
 	}
+	"dynamic attribute" {
+		vis="if zero"
+		chan="fr:m1.RBV"
+	}
+	textix="test if zero"
+}
+text {
+	object {
+		x=304
+		y=775
+		width=251
+		height=40
+	}
+	"basic attribute" {
+		clr=14
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A<B"
+		chan="fr:m1.RBV"
+		chanB="fr:m1.VAL"
+	}
+	textix="test if rbv is 2"
 }

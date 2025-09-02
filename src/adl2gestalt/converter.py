@@ -515,14 +515,49 @@ class MedmToGestaltConverter:
             # Check for visibility mode and channel
             if "vis" in dynamic_attrs and "chan" in dynamic_attrs:
                 visibility_mode = dynamic_attrs["vis"]
-                channel_name = dynamic_attrs["chan"]
+                chan_a = dynamic_attrs["chan"]
 
                 if visibility_mode == "if not zero":
                     # Widget visible when PV ≠ 0, hidden when PV = 0
-                    lines.append(f'    visibility: "{channel_name}"')
+                    lines.append(f'    visibility: "{chan_a}"')
                 elif visibility_mode == "if zero":
                     # Widget visible when PV = 0, hidden when PV ≠ 0 (use !Not tag)
-                    lines.append(f'    visibility: !Not "{channel_name}"')
+                    lines.append(f'    visibility: !Not "{chan_a}"')
+                elif visibility_mode == "calc":
+                    # Complex calculation-based visibility - use Calc node
+                    calc_expression = dynamic_attrs.get("calc", "")
+                    chan_b = dynamic_attrs.get("chanB", "")
+                    chan_c = dynamic_attrs.get("chanC", "")
+                    chan_d = dynamic_attrs.get("chanD", "")
+
+                    if calc_expression and chan_a:
+                        # Create a Calc node for complex visibility
+                        if not hasattr(self, "calc_node_counter"):
+                            self.calc_node_counter = 0
+                        self.calc_node_counter += 1
+                        calc_name = f"EnableCalc_{self.calc_node_counter}"
+
+                        # Set visibility to reference the Calc node's output PV
+                        lines.append(f'    visibility: "{calc_name}.CALC"')
+
+                        # Store calc info for later processing
+                        if not hasattr(self, "calc_nodes"):
+                            self.calc_nodes = []
+
+                        # Store calc info for later processing
+                        if not hasattr(self, "calc_nodes"):
+                            self.calc_nodes = []
+
+                        self.calc_nodes.append(
+                            {
+                                "name": calc_name,
+                                "expression": calc_expression,
+                                "channel_a": chan_a,
+                                "channel_b": chan_b,
+                                "channel_c": chan_c,
+                                "channel_d": chan_d,
+                            }
+                        )
                 # Note: "static" visibility doesn't need a visibility property
 
         # ByteMonitor properties
@@ -562,6 +597,22 @@ class MedmToGestaltConverter:
                 # Convert to integer to avoid float issues
                 span = int(float(contents["pathAngle"]))
                 lines.append(f"    span: {span}")
+
+        # Generate Calc nodes for complex visibility
+        if hasattr(self, "calc_nodes") and self.calc_nodes:
+            for calc_info in self.calc_nodes:
+                lines.append(f"")
+                lines.append(f"# Calc node for visibility: {calc_info['name']}")
+                lines.append(f"{calc_info['name']}: !Calc")
+                lines.append(f"    calc: \"{calc_info['expression']}\"")
+                lines.append(f"    A: \"{calc_info['channel_a']}\"")
+                if calc_info["channel_b"]:
+                    lines.append(f"    B: \"{calc_info['channel_b']}\"")
+                if calc_info["channel_c"]:
+                    lines.append(f"    C: \"{calc_info['channel_c']}\"")
+                if calc_info["channel_d"]:
+                    lines.append(f"    D: \"{calc_info['channel_d']}\"")
+                lines.append(f"    pv: \"{calc_info['name']}.CALC\"")
 
         # Composite/Group properties
         if widget_type == "Group" and hasattr(widget, "widgets"):

@@ -204,20 +204,27 @@ oval_18: !Ellipse
     border-width: 4
     border-style: Dashed
 
-composite_19: !Group
-    geometry: 91x739x464x93
-    children:
-        test_if_not_zero_0: !Text
-            geometry: 5x0x251x20
-            foreground: $000000
-            text: "test if not zero"
-            visibility: "fr:m1.RBV"
-        test_if_zero_1: !Text
-            geometry: 0x63x251x30
-            foreground: $000000
-            text: "test if zero"
-            visibility: !Not "fr:m1.RBV"
-        test_if_rbv_is_2_2: !Text
-            geometry: 213x36x251x40
-            foreground: $000000
-            text: "test if rbv is 2"
+test_if_not_zero_19: !Text
+    geometry: 96x739x251x20
+    foreground: $000000
+    text: "test if not zero"
+    visibility: "fr:m1.RBV"
+
+test_if_zero_20: !Text
+    geometry: 91x802x251x30
+    foreground: $000000
+    text: "test if zero"
+    visibility: !Not "fr:m1.RBV"
+
+test_if_rbv_is_2_21: !Text
+    geometry: 304x775x251x40
+    foreground: $000000
+    text: "test if rbv is 2"
+    visibility: "EnableCalc_1.CALC"
+
+# Calc node for visibility: EnableCalc_1
+EnableCalc_1: !Calc
+    calc: "A<B"
+    A: "fr:m1.RBV"
+    B: "fr:m1.VAL"
+    pv: "EnableCalc_1.CALC"
