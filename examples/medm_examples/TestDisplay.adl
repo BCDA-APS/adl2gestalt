@@ -120,6 +120,7 @@ polyline {
 	}
 	"basic attribute" {
 		clr=42
+		style="dash"
 		width=4
 	}
 	points {

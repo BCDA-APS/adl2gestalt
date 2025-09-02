@@ -139,7 +139,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="linestyle">
-            <enum>caPolyLine::Solid</enum>
+            <enum>caPolyLine::Dash</enum>
           </property>
           <property name="polystyle">
             <enum>caPolyLine::Polyline</enum>

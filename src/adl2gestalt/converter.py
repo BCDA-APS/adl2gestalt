@@ -455,15 +455,16 @@ class MedmToGestaltConverter:
                 points_str = ", ".join(relative_points)
                 lines.append(f"    points: [ {points_str} ]")
 
-            # Add border-width for polylines
-            if widget_type == "Polyline" and "basic attribute" in contents:
-                basic_attrs = contents["basic attribute"]
-                if isinstance(basic_attrs, dict) and "width" in basic_attrs:
-                    lines.append(f'    border-width: {basic_attrs["width"]}')
+        # Polyline properties - always outlined, never filled
+        if widget_type == "Polyline" and hasattr(widget, "color") and widget.color:
+            fg_color = self.get_color_reference(widget.color, color_table)
+            if fg_color:
+                # Polyline is always outlined - only border-color
+                lines.append(f"    border-color: {fg_color}")
 
-        # Shape color and border properties (Arc, Ellipse, Rectangle, Polygon)
-        shapes = ["Arc", "Ellipse", "Rectangle", "Polygon"]
-        if widget_type in shapes and hasattr(widget, "color") and widget.color:
+        # Closed shapes (Arc, Ellipse, Rectangle, Polygon) - can be filled or outlined
+        closed_shapes = ["Arc", "Ellipse", "Rectangle", "Polygon"]
+        if widget_type in closed_shapes and hasattr(widget, "color") and widget.color:
             fg_color = self.get_color_reference(widget.color, color_table)
             if fg_color:
                 # Check if shape is outlined
@@ -483,22 +484,22 @@ class MedmToGestaltConverter:
                     # For filled shapes: both background and border-color
                     lines.append(f"    background: {fg_color}")
                     lines.append(f"    border-color: {fg_color}")
-
-                # Add border-width and border-style for all shapes
-                if "basic attribute" in contents:
-                    basic_attrs = contents["basic attribute"]
-                    if isinstance(basic_attrs, dict):
-                        if "width" in basic_attrs:
-                            lines.append(f'    border-width: {basic_attrs["width"]}')
-                        if "style" in basic_attrs:
-                            # Map MEDM style to Gestalt border-style
-                            style_map = {
-                                "solid": "Solid",
-                                "dash": "Dashed",
-                            }
-                            medm_style = basic_attrs["style"].lower()
-                            gestalt_style = style_map.get(medm_style, "Solid")
-                            lines.append(f"    border-style: {gestalt_style}")
+        # Border properties for all shapes (width and style)
+        all_shapes = ["Arc", "Ellipse", "Rectangle", "Polygon", "Polyline"]
+        if widget_type in all_shapes and "basic attribute" in contents:
+            basic_attrs = contents["basic attribute"]
+            if isinstance(basic_attrs, dict):
+                if "width" in basic_attrs:
+                    lines.append(f'    border-width: {basic_attrs["width"]}')
+                if "style" in basic_attrs:
+                    # Map MEDM style to Gestalt border-style
+                    style_map = {
+                        "solid": "Solid",
+                        "dash": "Dashed",
+                    }
+                    medm_style = basic_attrs["style"].lower()
+                    gestalt_style = style_map.get(medm_style, "Solid")
+                    lines.append(f"    border-style: {gestalt_style}")
 
         # Image properties
         if widget_type == "Image":

@@ -93,7 +93,9 @@ polyline_2: !Polyline
     geometry: 224x9x92x83
     border-color: *medm_color_42
     points: [ 21x50, 43x2, 90x37, 57x81, 2x63 ]
+    border-color: *medm_color_42
     border-width: 4
+    border-style: Dashed
 
 polygon_3: !Polygon
     geometry: 346x13x82x76
