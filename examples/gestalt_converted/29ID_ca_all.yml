@@ -412,18 +412,6 @@ menu_44: !Menu
     links:
         - { label: "Keithley6485small.adl", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
 
-composite_46: !Group
-    geometry: -51x-111x349x12
-    children:
-        A-Hutch_------------_0: !Text
-            geometry: 0x0x301x12
-            foreground: $000000
-            text: "A-Hutch ------------------------------------------"
-        --------------------_1: !Text
-            geometry: 48x2x301x10
-            foreground: $000000
-            text: "------------------------------------------"
-
 composite_47: !Group
     geometry: 4x165x355x12
     children:

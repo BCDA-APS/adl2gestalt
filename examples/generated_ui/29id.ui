@@ -96,10 +96,10 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
         <widget class="caPolyLine" name="polyline_1">
           <property name="geometry">
             <rect>
-              <x>0</x>
+              <x>146</x>
               <y>0</y>
-              <width>146</width>
-              <height>0</height>
+              <width>2</width>
+              <height>188</height>
             </rect>
           </property>
           <property name="lineSize">
@@ -122,16 +122,16 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>147,1;147,187</string>
+            <string>1,1;1,187</string>
           </property>
         </widget>
         <widget class="caPolyLine" name="polyline_3">
           <property name="geometry">
             <rect>
-              <x>0</x>
+              <x>284</x>
               <y>0</y>
-              <width>284</width>
-              <height>0</height>
+              <width>2</width>
+              <height>188</height>
             </rect>
           </property>
           <property name="lineSize">
@@ -154,16 +154,16 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>285,1;285,187</string>
+            <string>1,1;1,187</string>
           </property>
         </widget>
         <widget class="caPolyLine" name="polyline_4">
           <property name="geometry">
             <rect>
               <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>194</height>
+              <y>194</y>
+              <width>434</width>
+              <height>4</height>
             </rect>
           </property>
           <property name="lineSize">
@@ -186,7 +186,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>2,196;432,196</string>
+            <string>2,2;432,2</string>
           </property>
         </widget>
         <widget class="QFrame" name="QFrame1">
@@ -427,9 +427,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           <property name="geometry">
             <rect>
               <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>84</height>
+              <y>84</y>
+              <width>149</width>
+              <height>2</height>
             </rect>
           </property>
           <property name="lineSize">
@@ -452,16 +452,16 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>148,85;1,85</string>
+            <string>148,1;1,1</string>
           </property>
         </widget>
         <widget class="caPolyLine" name="polyline_10">
           <property name="geometry">
             <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>146</width>
-              <height>97</height>
+              <x>146</x>
+              <y>97</y>
+              <width>141</width>
+              <height>2</height>
             </rect>
           </property>
           <property name="lineSize">
@@ -484,7 +484,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>286,98;147,98</string>
+            <string>140,1;1,1</string>
           </property>
         </widget>
         <widget class="QFrame" name="QFrame3">
@@ -2359,13 +2359,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </widget>
         </widget>
         <widget class="caGraphics" name="oval_0">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>89</x>
@@ -2374,13 +2367,20 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>10</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>216</green>
+              <blue>0</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
               <red>0</red>
-              <green>0</green>
+              <green>216</green>
               <blue>0</blue>
             </color>
           </property>
@@ -2395,13 +2395,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="oval_1">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>115</x>
@@ -2410,13 +2403,20 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>10</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>216</green>
+              <blue>0</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
               <red>0</red>
-              <green>0</green>
+              <green>216</green>
               <blue>0</blue>
             </color>
           </property>
@@ -2431,13 +2431,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="oval_2">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>141</x>
@@ -2446,13 +2439,20 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>10</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>216</green>
+              <blue>0</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
               <red>0</red>
-              <green>0</green>
+              <green>216</green>
               <blue>0</blue>
             </color>
           </property>
@@ -3708,9 +3708,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="STOP_59">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>251</red>
@@ -3732,7 +3729,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:allstop.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>

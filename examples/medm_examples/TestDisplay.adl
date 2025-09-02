@@ -239,7 +239,7 @@ bar {
 }
 "choice button" {
 	object {
-		x=52
+		x=51
 		y=322
 		width=46
 		height=57
@@ -249,7 +249,6 @@ bar {
 		clr=14
 		bclr=52
 	}
-	stacking="column"
 }
 "message button" {
 	object {

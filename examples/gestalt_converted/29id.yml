@@ -83,21 +83,24 @@ Motors_0: !Text
     text: "Motors"
 
 polyline_1: !Polyline
-    geometry: 146x0
+    geometry: 146x0x2x188
     border-color: $000000
-    points: [ 147x1, 147x187 ]
+    points: [ 1x1, 1x187 ]
+    border-color: $000000
     border-width: 2
 
 polyline_3: !Polyline
-    geometry: 284x0
+    geometry: 284x0x2x188
     border-color: $000000
-    points: [ 285x1, 285x187 ]
+    points: [ 1x1, 1x187 ]
+    border-color: $000000
     border-width: 2
 
 polyline_4: !Polyline
-    geometry: 0x194
+    geometry: 0x194x434x4
     border-color: *medm_color_64
-    points: [ 2x196, 432x196 ]
+    points: [ 2x2, 432x2 ]
+    border-color: *medm_color_64
     border-width: 4
 
 related_display_5: !RelatedDisplay
@@ -139,15 +142,17 @@ Digital_I_O_8: !Text
     text: "Digital I/O"
 
 polyline_9: !Polyline
-    geometry: 0x84
+    geometry: 0x84x149x2
     border-color: $000000
-    points: [ 148x85, 1x85 ]
+    points: [ 148x1, 1x1 ]
+    border-color: $000000
     border-width: 2
 
 polyline_10: !Polyline
-    geometry: 146x97
+    geometry: 146x97x141x2
     border-color: $000000
-    points: [ 286x98, 147x98 ]
+    points: [ 140x1, 1x1 ]
+    border-color: $000000
     border-width: 2
 
 related_display_11: !RelatedDisplay
@@ -466,13 +471,16 @@ composite_42: !Group
     children:
         oval_0: !Ellipse
             geometry: 84x2x10x10
-            foreground: *medm_color_15
+            background: *medm_color_15
+            border-color: *medm_color_15
         oval_1: !Ellipse
             geometry: 110x2x10x10
-            foreground: *medm_color_15
+            background: *medm_color_15
+            border-color: *medm_color_15
         oval_2: !Ellipse
             geometry: 136x2x10x10
-            foreground: *medm_color_15
+            background: *medm_color_15
+            border-color: *medm_color_15
         A_3: !Text
             geometry: 75x0x10x14
             foreground: *medm_color_19
@@ -623,7 +631,7 @@ STOP_59: !MessageButton
     background: *medm_color_20
     pv: "29idb:allstop.VAL"
     text: "STOP"
-    press-value: "1"
+    value: "1"
 
 -C_60: !RelatedDisplay
     geometry: 25x121x20x20

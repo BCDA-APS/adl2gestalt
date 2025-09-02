@@ -42,13 +42,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>378</x>
@@ -57,14 +50,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>165</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -78,13 +78,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_1">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>439</x>
@@ -93,14 +86,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>25</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -114,13 +114,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_2">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>384</x>
@@ -129,14 +122,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>170</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -150,13 +150,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_3">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>436</x>
@@ -165,14 +158,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>25</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -186,13 +186,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_4">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>14</x>
@@ -201,14 +194,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>30</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -222,13 +222,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_5">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>12</x>
@@ -237,14 +230,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>320</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>145</red>
+              <green>145</green>
+              <blue>145</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>145</red>
+              <green>145</green>
+              <blue>145</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -258,13 +258,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_6">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>714</x>
@@ -273,14 +266,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>270</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -294,13 +294,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_7">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>728</x>
@@ -309,14 +302,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>25</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -330,13 +330,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_8">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>716</x>
@@ -345,14 +338,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>220</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -366,13 +366,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_9">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>741</x>
@@ -381,14 +374,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>25</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -402,13 +402,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_10">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>139</x>
@@ -417,14 +410,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>25</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -438,13 +438,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_11">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>15</x>
@@ -453,14 +446,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>400</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>174</red>
+              <green>174</green>
+              <blue>174</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>174</red>
+              <green>174</green>
+              <blue>174</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -939,13 +939,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_21">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>100</x>
@@ -954,14 +947,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>30</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -4105,9 +4105,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Set_Outputs_82">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4129,7 +4126,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)SetOutputSeq_.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4181,7 +4178,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4221,7 +4218,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4261,7 +4258,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4301,7 +4298,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4327,9 +4324,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Start_87">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4351,7 +4345,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)DegaussSeq_.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4649,7 +4643,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4689,7 +4683,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4729,7 +4723,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4769,7 +4763,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4809,7 +4803,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4849,7 +4843,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -4889,7 +4883,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -6139,7 +6133,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -7057,12 +7051,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Start_Ramp_140">
-            <property name="press-value">
-              <string>1</string>
-            </property>
-            <property name="release-value">
-              <string>0</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -7084,7 +7072,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)StartRampC.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -7136,7 +7124,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -7401,9 +7389,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Load_SDDS_File_147">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -7425,7 +7410,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)ReadSDDSfile_.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -8357,13 +8342,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_165">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>788</x>
@@ -8372,14 +8350,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>230</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>133</red>
+              <green>133</green>
+              <blue>133</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -8393,13 +8378,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_166">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>798</x>
@@ -8408,14 +8386,21 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>25</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
+              <red>238</red>
+              <green>182</green>
+              <blue>43</blue>
             </color>
           </property>
           <property name="linestyle">
@@ -8908,9 +8893,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Polarity_Reset_177">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -8932,7 +8914,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)PolarityResetButton_.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -9022,9 +9004,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Readback_Scan_1_Seco_179">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -9046,7 +9025,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)ReadbackScan_.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -9084,9 +9063,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Readback_Passive_Sca_180">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -9108,7 +9084,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)ReadbackScanRst_.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -9728,13 +9704,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="oval_191">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>944</x>
@@ -9743,13 +9712,20 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>20</height>
             </rect>
           </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>216</green>
+              <blue>0</blue>
+            </color>
+          </property>
           <property name="lineSize">
             <number>2</number>
           </property>
           <property name="lineColor">
             <color alpha="255">
               <red>0</red>
-              <green>0</green>
+              <green>216</green>
               <blue>0</blue>
             </color>
           </property>
@@ -9797,7 +9773,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -9837,7 +9813,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -10032,7 +10008,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -10488,7 +10464,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </color>
           </property>
           <property name="stackingMode">
-            <enum>Column</enum>
+            <enum>Row</enum>
           </property>
           <property name="colorMode">
             <enum>caChoice::Static</enum>
@@ -10657,13 +10633,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
         </widget>
         <widget class="caGraphics" name="rectangle_210">
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
           <property name="geometry">
             <rect>
               <x>19</x>
@@ -10671,6 +10640,13 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <width>215</width>
               <height>48</height>
             </rect>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
           </property>
           <property name="lineSize">
             <number>2</number>
@@ -10712,9 +10688,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Local_Off_211">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -10736,7 +10709,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)OpenDeviceC.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -10774,9 +10747,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Local_On_212">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -10798,7 +10768,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>$(P)CloseDeviceC.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>

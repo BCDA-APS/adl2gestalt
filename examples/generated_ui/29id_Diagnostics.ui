@@ -171,9 +171,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_2">
-            <property name="press-value">
-              <string>-4</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -195,7 +192,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m1.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-4</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -233,9 +230,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="START_3">
-            <property name="press-value">
-              <string>-14</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -257,7 +251,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m1.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-14</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -418,9 +412,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_6">
-            <property name="press-value">
-              <string>-10</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -442,7 +433,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m2.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-10</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -480,9 +471,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="START_7">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -504,7 +492,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m2.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -607,9 +595,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_9">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -631,7 +616,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m1:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -669,9 +654,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_10">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -693,7 +675,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m2:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -789,9 +771,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_12">
-            <property name="press-value">
-              <string>-4</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -813,7 +792,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m3.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-4</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -851,9 +830,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Si-2800_13">
-            <property name="press-value">
-              <string>-14</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -875,7 +851,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m3.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-14</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1101,9 +1077,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_17">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1125,7 +1098,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m3:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1163,9 +1136,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_18">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1187,7 +1157,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m4:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1225,9 +1195,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="ML-400_19">
-            <property name="press-value">
-              <string>-22</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1249,7 +1216,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m3.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-22</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1287,9 +1254,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="ML-460_20">
-            <property name="press-value">
-              <string>-30</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1311,7 +1275,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m3.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-30</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1349,9 +1313,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_21">
-            <property name="press-value">
-              <string>-4</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1373,7 +1334,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m4.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-4</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1411,9 +1372,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Si-2800_22">
-            <property name="press-value">
-              <string>-14</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1435,7 +1393,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m4.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-14</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1473,9 +1431,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="ML-400_23">
-            <property name="press-value">
-              <string>-22</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1497,7 +1452,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m4.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-22</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1535,9 +1490,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="ML-460_24">
-            <property name="press-value">
-              <string>-30</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1559,7 +1511,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m4.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-30</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1720,9 +1672,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_27">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1744,7 +1693,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m5:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1782,9 +1731,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_28">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1806,7 +1752,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m5.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -1844,9 +1790,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="MESH_29">
-            <property name="press-value">
-              <string>-55</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -1868,7 +1811,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m5.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-55</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2029,9 +1972,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_32">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2053,7 +1993,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m6:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2091,9 +2031,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_33">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2115,7 +2052,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m6.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2153,9 +2090,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="MESH_34">
-            <property name="press-value">
-              <string>-46</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2177,7 +2111,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m6.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-46</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2215,9 +2149,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="YAG_35">
-            <property name="press-value">
-              <string>-64</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2239,7 +2170,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m6.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-64</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2277,9 +2208,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_36">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2301,7 +2229,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m7.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2339,9 +2267,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="YAG_37">
-            <property name="press-value">
-              <string>-49</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2363,7 +2288,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m7.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-49</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -2401,9 +2326,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_38">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -2425,7 +2347,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m7:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3106,9 +3028,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="YAG_47">
-            <property name="press-value">
-              <string>-81.5</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3130,7 +3049,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m17.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-81.5</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3168,9 +3087,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="MESH_48">
-            <property name="press-value">
-              <string>-56</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3192,7 +3108,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m17.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-56</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3230,9 +3146,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_49">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3254,7 +3167,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m17.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3415,9 +3328,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_52">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3439,7 +3349,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m17:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3535,9 +3445,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Diode2_54">
-            <property name="press-value">
-              <string>-67.74</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3559,7 +3466,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m20.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-67.74</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3597,9 +3504,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Diode-1_55">
-            <property name="press-value">
-              <string>-31</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3621,7 +3525,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m20.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-31</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3659,9 +3563,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_56">
-            <property name="press-value">
-              <string>-10</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3683,7 +3584,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m20.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-10</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3721,9 +3622,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_57">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3745,7 +3643,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m20:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3913,9 +3811,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_60">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3937,7 +3832,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m25.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -3975,9 +3870,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="MESH_61">
-            <property name="press-value">
-              <string>-53</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -3999,7 +3891,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m25.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-53</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4037,9 +3929,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="YAG_62">
-            <property name="press-value">
-              <string>-72</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4061,7 +3950,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m25.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-72</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4157,9 +4046,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_64">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4181,7 +4067,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m25:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4219,9 +4105,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Ld_65">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4243,7 +4126,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m28:scanParms.LOAD</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4404,9 +4287,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="OUT_68">
-            <property name="press-value">
-              <string>-20</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4428,7 +4308,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m28.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-20</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4466,9 +4346,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="MESH_69">
-            <property name="press-value">
-              <string>-53</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4490,7 +4367,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m28.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-53</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4528,9 +4405,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="YAG_70">
-            <property name="press-value">
-              <string>-72</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4552,7 +4426,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m28.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-72</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4590,9 +4464,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="Diode_71">
-            <property name="press-value">
-              <string>-86.75</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4614,7 +4485,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:m28.VAL</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>-86.75</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>
@@ -4652,9 +4523,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
 </string>
           </property>
           <widget class="caMessageButton" name="ALL_OUT_72">
-            <property name="press-value">
-              <string>1</string>
-            </property>
             <property name="foreground">
               <color alpha="255">
                 <red>0</red>
@@ -4676,7 +4544,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <string>29idb:userStringSeq3.PROC</string>
             </property>
             <property name="pressMessage">
-              <string></string>
+              <string>1</string>
             </property>
             <property name="colorMode">
               <enum>caMessageButton::Static</enum>

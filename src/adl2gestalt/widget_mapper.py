@@ -15,12 +15,12 @@ WIDGET_TYPE_MAP = {
     "rectangle": "Rectangle",
     "text": "Text",
     # Monitor Objects
-    "bar": "Scale",  # Bar Monitor -> Scale
+    "bar": "Scale",
     "byte": "ByteMonitor",
     "cartesian plot": None,  # No match in Gestalt
     "meter": None,  # No match in Gestalt
     "strip chart": None,  # No match in Gestalt
-    "text update": "TextMonitor",  # Text Monitor -> TextMonitor
+    "text update": "TextMonitor",
     "indicator": "Scale",  # indicator = Scale Monitor -> Scale
     # Controller Objects
     "choice button": "ChoiceButton",
@@ -33,7 +33,7 @@ WIDGET_TYPE_MAP = {
     "text entry": "TextEntry",
     "wheel switch": None,  # No match in Gestalt
     # Special Objects
-    "composite": "Group",  # Composite -> GroupNode or ConditionalNode
+    "composite": "Group",  # Composite -> GroupNode
     "embedded display": "Embed",
     # Display (main container) - maps to Form node
     "display": "Form",

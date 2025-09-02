@@ -95,7 +95,7 @@ OUT_2: !MessageButton
     background: *medm_color_60
     pv: "29idb:m1.VAL"
     text: "OUT"
-    press-value: "-4"
+    value: "-4"
 
 START_3: !MessageButton
     geometry: 68x80x35x15
@@ -103,7 +103,7 @@ START_3: !MessageButton
     background: *medm_color_32
     pv: "29idb:m1.VAL"
     text: "START"
-    press-value: "-14"
+    value: "-14"
 
 -H-wire_4: !RelatedDisplay
     geometry: 8x56x130x20
@@ -126,7 +126,7 @@ OUT_6: !MessageButton
     background: *medm_color_60
     pv: "29idb:m2.VAL"
     text: "OUT"
-    press-value: "-10"
+    value: "-10"
 
 START_7: !MessageButton
     geometry: 68x128x35x15
@@ -134,7 +134,7 @@ START_7: !MessageButton
     background: *medm_color_32
     pv: "29idb:m2.VAL"
     text: "START"
-    press-value: "-20"
+    value: "-20"
 
 -V-wire_8: !RelatedDisplay
     geometry: 8x104x130x20
@@ -150,7 +150,7 @@ Ld_9: !MessageButton
     background: *medm_color_50
     pv: "29idb:m1:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 Ld_10: !MessageButton
     geometry: 278x104x21x20
@@ -158,7 +158,7 @@ Ld_10: !MessageButton
     background: *medm_color_50
     pv: "29idb:m2:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 text_update_11: !TextMonitor
     geometry: 188x174x80x16
@@ -173,7 +173,7 @@ OUT_12: !MessageButton
     background: *medm_color_60
     pv: "29idb:m3.VAL"
     text: "OUT"
-    press-value: "-4"
+    value: "-4"
 
 Si-2800_13: !MessageButton
     geometry: 68x196x50x15
@@ -181,7 +181,7 @@ Si-2800_13: !MessageButton
     background: *medm_color_20
     pv: "29idb:m3.VAL"
     text: "Si-2800"
-    press-value: "-14"
+    value: "-14"
 
 -H-Diagon_14: !RelatedDisplay
     geometry: 8x172x130x20
@@ -212,7 +212,7 @@ Ld_17: !MessageButton
     background: *medm_color_50
     pv: "29idb:m3:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 Ld_18: !MessageButton
     geometry: 278x221x21x20
@@ -220,7 +220,7 @@ Ld_18: !MessageButton
     background: *medm_color_50
     pv: "29idb:m4:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 ML-400_19: !MessageButton
     geometry: 123x196x50x15
@@ -228,7 +228,7 @@ ML-400_19: !MessageButton
     background: *medm_color_20
     pv: "29idb:m3.VAL"
     text: "ML-400"
-    press-value: "-22"
+    value: "-22"
 
 ML-460_20: !MessageButton
     geometry: 179x196x50x15
@@ -236,7 +236,7 @@ ML-460_20: !MessageButton
     background: *medm_color_20
     pv: "29idb:m3.VAL"
     text: "ML-460"
-    press-value: "-30"
+    value: "-30"
 
 OUT_21: !MessageButton
     geometry: 28x245x35x15
@@ -244,7 +244,7 @@ OUT_21: !MessageButton
     background: *medm_color_60
     pv: "29idb:m4.VAL"
     text: "OUT"
-    press-value: "-4"
+    value: "-4"
 
 Si-2800_22: !MessageButton
     geometry: 68x245x50x15
@@ -252,7 +252,7 @@ Si-2800_22: !MessageButton
     background: *medm_color_20
     pv: "29idb:m4.VAL"
     text: "Si-2800"
-    press-value: "-14"
+    value: "-14"
 
 ML-400_23: !MessageButton
     geometry: 123x245x50x15
@@ -260,7 +260,7 @@ ML-400_23: !MessageButton
     background: *medm_color_20
     pv: "29idb:m4.VAL"
     text: "ML-400"
-    press-value: "-22"
+    value: "-22"
 
 ML-460_24: !MessageButton
     geometry: 179x245x50x15
@@ -268,7 +268,7 @@ ML-460_24: !MessageButton
     background: *medm_color_20
     pv: "29idb:m4.VAL"
     text: "ML-460"
-    press-value: "-30"
+    value: "-30"
 
 text_update_25: !TextMonitor
     geometry: 188x290x80x16
@@ -291,7 +291,7 @@ Ld_27: !MessageButton
     background: *medm_color_50
     pv: "29idb:m5:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 OUT_28: !MessageButton
     geometry: 28x312x35x15
@@ -299,7 +299,7 @@ OUT_28: !MessageButton
     background: *medm_color_60
     pv: "29idb:m5.VAL"
     text: "OUT"
-    press-value: "-20"
+    value: "-20"
 
 MESH_29: !MessageButton
     geometry: 68x312x35x15
@@ -307,7 +307,7 @@ MESH_29: !MessageButton
     background: *medm_color_32
     pv: "29idb:m5.VAL"
     text: "MESH"
-    press-value: "-55"
+    value: "-55"
 
 text_update_30: !TextMonitor
     geometry: 188x370x80x16
@@ -330,7 +330,7 @@ Ld_32: !MessageButton
     background: *medm_color_50
     pv: "29idb:m6:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 OUT_33: !MessageButton
     geometry: 28x392x35x15
@@ -338,7 +338,7 @@ OUT_33: !MessageButton
     background: *medm_color_60
     pv: "29idb:m6.VAL"
     text: "OUT"
-    press-value: "-20"
+    value: "-20"
 
 MESH_34: !MessageButton
     geometry: 68x392x35x15
@@ -346,7 +346,7 @@ MESH_34: !MessageButton
     background: *medm_color_32
     pv: "29idb:m6.VAL"
     text: "MESH"
-    press-value: "-46"
+    value: "-46"
 
 YAG_35: !MessageButton
     geometry: 108x392x35x15
@@ -354,7 +354,7 @@ YAG_35: !MessageButton
     background: *medm_color_20
     pv: "29idb:m6.VAL"
     text: "YAG"
-    press-value: "-64"
+    value: "-64"
 
 OUT_36: !MessageButton
     geometry: 28x445x35x15
@@ -362,7 +362,7 @@ OUT_36: !MessageButton
     background: *medm_color_60
     pv: "29idb:m7.VAL"
     text: "OUT"
-    press-value: "-20"
+    value: "-20"
 
 YAG_37: !MessageButton
     geometry: 68x445x35x15
@@ -370,7 +370,7 @@ YAG_37: !MessageButton
     background: *medm_color_20
     pv: "29idb:m7.VAL"
     text: "YAG"
-    press-value: "-49"
+    value: "-49"
 
 Ld_38: !MessageButton
     geometry: 278x420x21x20
@@ -378,7 +378,7 @@ Ld_38: !MessageButton
     background: *medm_color_50
     pv: "29idb:m7:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 text_update_39: !TextMonitor
     geometry: 188x422x80x16
@@ -459,7 +459,7 @@ YAG_47: !MessageButton
     background: *medm_color_20
     pv: "29idb:m17.VAL"
     text: "YAG"
-    press-value: "-81.5"
+    value: "-81.5"
 
 MESH_48: !MessageButton
     geometry: 68x524x35x15
@@ -467,7 +467,7 @@ MESH_48: !MessageButton
     background: *medm_color_32
     pv: "29idb:m17.VAL"
     text: "MESH"
-    press-value: "-56"
+    value: "-56"
 
 OUT_49: !MessageButton
     geometry: 28x524x35x15
@@ -475,7 +475,7 @@ OUT_49: !MessageButton
     background: *medm_color_60
     pv: "29idb:m17.VAL"
     text: "OUT"
-    press-value: "-20"
+    value: "-20"
 
 -D4C_(pre-Slit)_50: !RelatedDisplay
     geometry: 8x500x130x20
@@ -498,7 +498,7 @@ Ld_52: !MessageButton
     background: *medm_color_50
     pv: "29idb:m17:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 text_update_53: !TextMonitor
     geometry: 188x555x80x16
@@ -513,7 +513,7 @@ Diode2_54: !MessageButton
     background: *medm_color_20
     pv: "29idb:m20.VAL"
     text: "Diode2"
-    press-value: "-67.74"
+    value: "-67.74"
 
 Diode-1_55: !MessageButton
     geometry: 68x577x50x15
@@ -521,7 +521,7 @@ Diode-1_55: !MessageButton
     background: *medm_color_20
     pv: "29idb:m20.VAL"
     text: "Diode-1"
-    press-value: "-31"
+    value: "-31"
 
 OUT_56: !MessageButton
     geometry: 28x577x35x15
@@ -529,7 +529,7 @@ OUT_56: !MessageButton
     background: *medm_color_60
     pv: "29idb:m20.VAL"
     text: "OUT"
-    press-value: "-10"
+    value: "-10"
 
 Ld_57: !MessageButton
     geometry: 278x553x21x20
@@ -537,7 +537,7 @@ Ld_57: !MessageButton
     background: *medm_color_50
     pv: "29idb:m20:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 -gas-cell_58: !RelatedDisplay
     geometry: 8x553x130x20
@@ -561,7 +561,7 @@ OUT_60: !MessageButton
     background: *medm_color_60
     pv: "29idb:m25.VAL"
     text: "OUT"
-    press-value: "-20"
+    value: "-20"
 
 MESH_61: !MessageButton
     geometry: 68x655x35x15
@@ -569,7 +569,7 @@ MESH_61: !MessageButton
     background: *medm_color_32
     pv: "29idb:m25.VAL"
     text: "MESH"
-    press-value: "-53"
+    value: "-53"
 
 YAG_62: !MessageButton
     geometry: 108x655x35x15
@@ -577,7 +577,7 @@ YAG_62: !MessageButton
     background: *medm_color_20
     pv: "29idb:m25.VAL"
     text: "YAG"
-    press-value: "-72"
+    value: "-72"
 
 text_update_63: !TextMonitor
     geometry: 188x633x80x16
@@ -592,7 +592,7 @@ Ld_64: !MessageButton
     background: *medm_color_50
     pv: "29idb:m25:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 Ld_65: !MessageButton
     geometry: 278x684x21x20
@@ -600,7 +600,7 @@ Ld_65: !MessageButton
     background: *medm_color_50
     pv: "29idb:m28:scanParms.LOAD"
     text: "Ld"
-    press-value: "1"
+    value: "1"
 
 text_update_66: !TextMonitor
     geometry: 188x686x80x16
@@ -623,7 +623,7 @@ OUT_68: !MessageButton
     background: *medm_color_60
     pv: "29idb:m28.VAL"
     text: "OUT"
-    press-value: "-20"
+    value: "-20"
 
 MESH_69: !MessageButton
     geometry: 68x708x35x15
@@ -631,7 +631,7 @@ MESH_69: !MessageButton
     background: *medm_color_32
     pv: "29idb:m28.VAL"
     text: "MESH"
-    press-value: "-53"
+    value: "-53"
 
 YAG_70: !MessageButton
     geometry: 108x708x35x15
@@ -639,7 +639,7 @@ YAG_70: !MessageButton
     background: *medm_color_20
     pv: "29idb:m28.VAL"
     text: "YAG"
-    press-value: "-72"
+    value: "-72"
 
 Diode_71: !MessageButton
     geometry: 148x708x35x15
@@ -647,7 +647,7 @@ Diode_71: !MessageButton
     background: *medm_color_20
     pv: "29idb:m28.VAL"
     text: "Diode"
-    press-value: "-86.75"
+    value: "-86.75"
 
 ALL_OUT_72: !MessageButton
     geometry: 226x6x70x25
@@ -655,7 +655,7 @@ ALL_OUT_72: !MessageButton
     background: *medm_color_60
     pv: "29idb:userStringSeq3.PROC"
     text: "ALL OUT"
-    press-value: "1"
+    value: "1"
 
 m1_73: !Text
     geometry: 150x58x30x16

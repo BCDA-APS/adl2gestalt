@@ -79,51 +79,67 @@ Form: !Form
 
 rectangle_0: !Rectangle
     geometry: 378x40x320x165
-    foreground: *medm_color_8
+    background: *medm_color_8
+    border-color: *medm_color_8
+    border-width: 2
 
 rectangle_1: !Rectangle
     geometry: 439x45x200x25
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 rectangle_2: !Rectangle
     geometry: 384x244x300x170
-    foreground: *medm_color_8
+    background: *medm_color_8
+    border-color: *medm_color_8
+    border-width: 2
 
 rectangle_3: !Rectangle
     geometry: 436x250x210x25
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 rectangle_4: !Rectangle
     geometry: 14x446x480x30
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 rectangle_5: !Rectangle
     geometry: 12x509x500x320
-    foreground: *medm_color_7
+    background: *medm_color_7
+    border-color: *medm_color_7
 
 rectangle_6: !Rectangle
     geometry: 714x269x280x270
-    foreground: *medm_color_8
+    background: *medm_color_8
+    border-color: *medm_color_8
+    border-width: 2
 
 rectangle_7: !Rectangle
     geometry: 728x276x220x25
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 rectangle_8: !Rectangle
     geometry: 716x41x250x220
-    foreground: *medm_color_8
+    background: *medm_color_8
+    border-color: *medm_color_8
+    border-width: 2
 
 rectangle_9: !Rectangle
     geometry: 741x46x200x25
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 rectangle_10: !Rectangle
     geometry: 139x515x254x25
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 rectangle_11: !Rectangle
     geometry: 15x39x355x400
-    foreground: *medm_color_5
+    background: *medm_color_5
+    border-color: *medm_color_5
 
 text_update_12: !TextMonitor
     geometry: 100x120x80x25
@@ -181,7 +197,8 @@ text_update_20: !TextMonitor
 
 rectangle_21: !Rectangle
     geometry: 100x146x260x30
-    foreground: *medm_color_8
+    background: *medm_color_8
+    border-color: *medm_color_8
 
 text_update_22: !TextMonitor
     geometry: 98x71x100x14
@@ -208,6 +225,7 @@ choice_button_25: !ChoiceButton
     foreground: *medm_color_60
     background: *medm_color_64
     pv: "$(P)Main_on_offC.VAL"
+    horizontal: True
 
 menu_26: !Menu
     geometry: 241x353x120x25
@@ -533,31 +551,35 @@ Set_Outputs_82: !MessageButton
     background: *medm_color_57
     pv: "$(P)SetOutputSeq_.PROC"
     text: "Set Outputs"
-    press-value: "1"
+    value: "1"
 
 choice_button_83: !ChoiceButton
     geometry: 741x305x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskBx_"
+    horizontal: False
 
 choice_button_84: !ChoiceButton
     geometry: 741x339x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskBy_"
+    horizontal: False
 
 choice_button_85: !ChoiceButton
     geometry: 864x305x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskBxq_"
+    horizontal: False
 
 choice_button_86: !ChoiceButton
     geometry: 862x339x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)DegaussMaskByq_"
+    horizontal: False
 
 Start_87: !MessageButton
     geometry: 884x506x100x25
@@ -565,7 +587,7 @@ Start_87: !MessageButton
     background: *medm_color_57
     pv: "$(P)DegaussSeq_.PROC"
     text: "Start"
-    press-value: "1"
+    value: "1"
 
 Magnet_Conditioning_88: !Text
     geometry: 730x275x220x26
@@ -599,42 +621,49 @@ choice_button_93: !ChoiceButton
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ConditioingSelect_"
+    horizontal: False
 
 choice_button_94: !ChoiceButton
     geometry: 741x373x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)CorrDegauss_"
+    horizontal: False
 
 choice_button_95: !ChoiceButton
     geometry: 574x509x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)SetPSLocRem_"
+    horizontal: False
 
 choice_button_96: !ChoiceButton
     geometry: 518x647x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxOnOff_"
+    horizontal: False
 
 choice_button_97: !ChoiceButton
     geometry: 518x716x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByOnOff_"
+    horizontal: False
 
 choice_button_98: !ChoiceButton
     geometry: 518x681x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxqOnOff_"
+    horizontal: False
 
 choice_button_99: !ChoiceButton
     geometry: 518x750x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByqOnOff_"
+    horizontal: False
 
 Setpoint_100: !Text
     geometry: 825x74x80x20
@@ -773,6 +802,7 @@ choice_button_122: !ChoiceButton
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)CoilCoupling_"
+    horizontal: False
 
 text_update_123: !TextMonitor
     geometry: 436x211x200x25
@@ -881,14 +911,14 @@ Start_Ramp_140: !MessageButton
     background: *medm_color_55
     pv: "$(P)StartRampC.VAL"
     text: "Start Ramp"
-    press-value: "1"
-    release-value: "0"
+    value: "1"
 
 choice_button_141: !ChoiceButton
     geometry: 240x248x120x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BeamlineC"
+    horizontal: False
 
 text_entry_142: !TextEntry
     geometry: 160x253x65x23
@@ -924,7 +954,7 @@ Load_SDDS_File_147: !MessageButton
     background: *medm_color_57
     pv: "$(P)ReadSDDSfile_.PROC"
     text: "Load SDDS File"
-    press-value: "1"
+    value: "1"
 
 text_update_148: !TextMonitor
     geometry: 899x97x35x20
@@ -1029,17 +1059,21 @@ text_entry_164: !TextEntry
 
 rectangle_165: !Rectangle
     geometry: 788x560x220x230
-    foreground: *medm_color_8
+    background: *medm_color_8
+    border-color: *medm_color_8
+    border-width: 2
 
 rectangle_166: !Rectangle
     geometry: 798x571x200x25
-    foreground: *medm_color_32
+    background: *medm_color_32
+    border-color: *medm_color_32
 
 choice_button_167: !ChoiceButton
     geometry: 854x608x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)Main_on_offC"
+    horizontal: True
 
 Main_168: !Text
     geometry: 802x608x50x25
@@ -1051,24 +1085,28 @@ choice_button_169: !ChoiceButton
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxPolaritySet_"
+    horizontal: True
 
 choice_button_170: !ChoiceButton
     geometry: 854x662x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByPolaritySet_"
+    horizontal: True
 
 choice_button_171: !ChoiceButton
     geometry: 854x689x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)BxqPolaritySet_"
+    horizontal: True
 
 choice_button_172: !ChoiceButton
     geometry: 854x716x100x25
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)ByqPolaritySet_"
+    horizontal: True
 
 Bx_173: !Text
     geometry: 802x636x40x25
@@ -1096,7 +1134,7 @@ Polarity_Reset_177: !MessageButton
     background: *medm_color_56
     pv: "$(P)PolarityResetButton_.PROC"
     text: "Polarity Reset"
-    press-value: "1"
+    value: "1"
 
 Polarity_178: !Text
     geometry: 848x572x100x25
@@ -1109,7 +1147,7 @@ Readback_Scan_1_Seco_179: !MessageButton
     background: *medm_color_57
     pv: "$(P)ReadbackScan_.PROC"
     text: "Readback Scan 1 Second"
-    press-value: "1"
+    value: "1"
 
 Readback_Passive_Sca_180: !MessageButton
     geometry: 54x778x200x20
@@ -1117,7 +1155,7 @@ Readback_Passive_Sca_180: !MessageButton
     background: *medm_color_57
     pv: "$(P)ReadbackScanRst_.PROC"
     text: "Readback Passive Scan"
-    press-value: "1"
+    value: "1"
 
 ASYN_Readbacks_181: !RelatedDisplay
     geometry: 54x802x120x20
@@ -1221,19 +1259,22 @@ text_update_190: !TextMonitor
 
 oval_191: !Ellipse
     geometry: 944x760x19x20
-    foreground: *medm_color_15
+    background: *medm_color_15
+    border-color: *medm_color_15
 
 choice_button_192: !ChoiceButton
     geometry: 866x471x110x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)LinearCircular_"
+    horizontal: False
 
 choice_button_193: !ChoiceButton
     geometry: 899x815x125x30
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)SNLdebug_"
+    horizontal: False
 
 Pol._Wait_194: !Text
     geometry: 729x204x80x20
@@ -1258,6 +1299,7 @@ choice_button_197: !ChoiceButton
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)InitPScontrol_"
+    horizontal: False
 
 Pos_198: !Text
     geometry: 964x638x37x21
@@ -1304,6 +1346,7 @@ choice_button_206: !ChoiceButton
     foreground: $000000
     background: *medm_color_57
     pv: "$(P)UserAbortRamp_"
+    horizontal: False
 
 text_update_207: !TextMonitor
     geometry: 168x302x60x26
@@ -1324,7 +1367,7 @@ Actual_209: !Text
 
 rectangle_210: !Rectangle
     geometry: 19x283x215x48
-    foreground: $000000
+    border-color: $000000
 
 Local_Off_211: !MessageButton
     geometry: 184x10x100x25
@@ -1332,7 +1375,7 @@ Local_Off_211: !MessageButton
     background: *medm_color_57
     pv: "$(P)OpenDeviceC.VAL"
     text: "Local Off"
-    press-value: "1"
+    value: "1"
 
 Local_On_212: !MessageButton
     geometry: 290x10x100x25
@@ -1340,7 +1383,7 @@ Local_On_212: !MessageButton
     background: *medm_color_57
     pv: "$(P)CloseDeviceC.VAL"
     text: "Local On"
-    press-value: "1"
+    value: "1"
 
 SR_Energy_Adj._213: !Text
     geometry: 24x840x140x20

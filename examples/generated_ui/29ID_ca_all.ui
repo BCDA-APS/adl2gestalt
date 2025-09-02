@@ -2433,110 +2433,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="caLabel" name="A-Hutch_------------_0">
-          <property name="text">
-            <string>A-Hutch ------------------------------------------</string>
-          </property>
-          <property name="foreground">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="border-style">
-            <string>Solid</string>
-          </property>
-          <property name="font">
-            <font>
-              <family>Liberation Sans</family>
-              <pointsize>12</pointsize>
-            </font>
-          </property>
-          <property name="geometry">
-            <rect>
-              <x>-51</x>
-              <y>-111</y>
-              <width>301</width>
-              <height>12</height>
-            </rect>
-          </property>
-          <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="borderColor">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="borderWidth">
-            <number>0</number>
-          </property>
-          <property name="fontScaleMode">
-            <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="caLabel" name="--------------------_1">
-          <property name="text">
-            <string>------------------------------------------</string>
-          </property>
-          <property name="foreground">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="border-style">
-            <string>Solid</string>
-          </property>
-          <property name="font">
-            <font>
-              <family>Liberation Sans</family>
-              <pointsize>12</pointsize>
-            </font>
-          </property>
-          <property name="geometry">
-            <rect>
-              <x>-3</x>
-              <y>-109</y>
-              <width>301</width>
-              <height>10</height>
-            </rect>
-          </property>
-          <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="borderColor">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="borderWidth">
-            <number>0</number>
-          </property>
-          <property name="fontScaleMode">
-            <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
         <widget class="caLabel" name="B-Branch_-----------_0">
           <property name="text">
             <string>B-Branch ------------------------------------------</string>
@@ -2589,7 +2485,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="--------------------_12">
+        <widget class="caLabel" name="--------------------_1">
           <property name="text">
             <string>------------------------------------------</string>
           </property>
@@ -2693,7 +2589,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="--------------------_13">
+        <widget class="caLabel" name="--------------------_12">
           <property name="text">
             <string>-----------------------------------------</string>
           </property>
@@ -2797,7 +2693,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="--------------------_14">
+        <widget class="caLabel" name="--------------------_13">
           <property name="text">
             <string>-----------------------------------------</string>
           </property>
@@ -2849,7 +2745,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="A-Hutch_------------_02">
+        <widget class="caLabel" name="A-Hutch_------------_0">
           <property name="text">
             <string>A-Hutch ------------------------------------------</string>
           </property>
@@ -2901,7 +2797,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="--------------------_15">
+        <widget class="caLabel" name="--------------------_14">
           <property name="text">
             <string>------------------------------------------</string>
           </property>
