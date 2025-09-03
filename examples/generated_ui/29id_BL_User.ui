@@ -5548,7 +5548,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>2,268;699,268</string>
+            <string>2,1;699,1</string>
           </property>
         </widget>
         <widget class="caPolyLine" name="polyline_12">
@@ -5580,7 +5580,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caPolyLine::Outline</enum>
           </property>
           <property name="xyPairs">
-            <string>2,268;699,268</string>
+            <string>2,1;699,1</string>
           </property>
         </widget>
         <widget class="QFrame" name="QFrame16">

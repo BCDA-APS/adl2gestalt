@@ -688,37 +688,34 @@ V10D_90: !Text
     foreground: $000000
     text: "V10D"
 
-composite_91: !Group
+polygon_0: !Polygon
+    geometry: 109x304x14x18
+    points: [ 107x302, 121x302, 114x320, 107x302 ]
+    background: *medm_color_20
+    border-color: *medm_color_20
+    visibility: "29id:BLEPS:GV14:CLOSED:STS"
+polygon_1: !Polygon
+    geometry: 109x304x14x18
+    points: [ 107x302, 121x302, 114x320, 107x302 ]
+    background: *medm_color_61
+    border-color: *medm_color_61
+    visibility: "29id:BLEPS:GV14:OPENED:STS"
+polygon_2: !Polygon
+    geometry: 109x324x14x18
+    points: [ 107x320, 121x320, 114x302, 107x320 ]
+    background: *medm_color_20
+    border-color: *medm_color_20
+    visibility: "29id:BLEPS:GV14:CLOSED:STS"
+polygon_3: !Polygon
+    geometry: 109x324x14x18
+    points: [ 107x320, 121x320, 114x302, 107x320 ]
+    background: *medm_color_61
+    border-color: *medm_color_61
+    visibility: "29id:BLEPS:GV14:OPENED:STS"
+rectangle_4: !Rectangle
     geometry: 107x302x18x42
-    children:
-        polygon_0: !Polygon
-            geometry: 2x2x14x18
-            points: [ 107x302, 121x302, 114x320, 107x302 ]
-            background: *medm_color_20
-            border-color: *medm_color_20
-            visibility: "29id:BLEPS:GV14:CLOSED:STS"
-        polygon_1: !Polygon
-            geometry: 2x2x14x18
-            points: [ 107x302, 121x302, 114x320, 107x302 ]
-            background: *medm_color_61
-            border-color: *medm_color_61
-            visibility: "29id:BLEPS:GV14:OPENED:STS"
-        polygon_2: !Polygon
-            geometry: 2x22x14x18
-            points: [ 107x320, 121x320, 114x302, 107x320 ]
-            background: *medm_color_20
-            border-color: *medm_color_20
-            visibility: "29id:BLEPS:GV14:CLOSED:STS"
-        polygon_3: !Polygon
-            geometry: 2x22x14x18
-            points: [ 107x320, 121x320, 114x302, 107x320 ]
-            background: *medm_color_61
-            border-color: *medm_color_61
-            visibility: "29id:BLEPS:GV14:OPENED:STS"
-        rectangle_4: !Rectangle
-            geometry: 0x0x18x42
-            border-color: $000000
-            border-width: 2
+    border-color: $000000
+    border-width: 2
 
 M3R_92: !Text
     geometry: 296x491x25x15
@@ -797,13 +794,13 @@ composite_99: !Group
         polyline_0: !Polyline
             geometry: 0x4x699x2
             border-color: *medm_color_9
-            points: [ 2x268, 699x268 ]
+            points: [ 2x1, 699x1 ]
             border-color: *medm_color_9
             border-width: 2
         polyline_1: !Polyline
             geometry: 0x0x699x2
             border-color: *medm_color_9
-            points: [ 2x268, 699x268 ]
+            points: [ 2x1, 699x1 ]
             border-color: *medm_color_9
             border-width: 2
 
