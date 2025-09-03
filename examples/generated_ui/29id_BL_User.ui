@@ -496,7 +496,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string></string>
           </property>
           <property name="calc">
-            <string>(Anot=0)</string>
+            <string>(A#0)</string>
           </property>
           <property name="foreground">
             <color alpha="0">
@@ -1209,7 +1209,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>29id:BLEPS:GV14:OPENED:STS</string>
           </property>
           <property name="calc">
-            <string>(((A=0)||(B=0))&amp;&amp;((C=2)&amp;&amp;(Dnot=0)))</string>
+            <string>(((A=0)||(B=0))&amp;&amp;((C=2)&amp;&amp;(D#0)))</string>
           </property>
           <property name="foreground">
             <color alpha="0">
@@ -1296,7 +1296,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>29id:BLEPS:GV10:OPENED:STS</string>
           </property>
           <property name="calc">
-            <string>(((A=0)||(B=0))&amp;&amp;((C=2)&amp;&amp;(Dnot=0)))</string>
+            <string>(((A=0)||(B=0))&amp;&amp;((C=2)&amp;&amp;(D#0)))</string>
           </property>
           <property name="foreground">
             <color alpha="0">
@@ -8873,7 +8873,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string></string>
           </property>
           <property name="calc">
-            <string>(Anot=0)</string>
+            <string>(A#0)</string>
           </property>
           <property name="foreground">
             <color alpha="0">

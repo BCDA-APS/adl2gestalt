@@ -330,19 +330,18 @@ class MedmToGestaltConverter:
         # Initialize the Python expression with the MEDM expression
         python_expr = medm_expression
 
-        # Replace == (MEDM uses =) - do this FIRST
-        python_expr = python_expr.replace("=", "==")
-
-        # Replace boolean negation (MEDM ! becomes Python not) - do this SECOND
-        # But be careful - ! in MEDM can also mean "not equal" in some contexts
-        # Only replace ! when it's a standalone logical operator, not part of variable names
-        python_expr = python_expr.replace(" !", " not ")
-        python_expr = python_expr.replace("! ", "not ")
-        # PV names never contain !, so we can safely replace all standalone ! with not
-        python_expr = python_expr.replace("!", "not")
-
-        # Replace != (MEDM uses #) - do this LAST to avoid interference
+        # Replace != (MEDM uses #) - do this FIRST to avoid interference
         python_expr = python_expr.replace("#", "!=")
+        python_expr = python_expr.replace("!=", "___NE___")
+
+        # Now do all replacements safely (___NE___ contains no special chars)
+        python_expr = python_expr.replace("=", "==")
+        python_expr = python_expr.replace(" !", " not ")
+        python_expr = python_expr.replace("! ", " not ")
+        python_expr = python_expr.replace("!", " not ")
+
+        # Finally restore # as !=
+        python_expr = python_expr.replace("___NE___", "!=")
 
         # Replace logical operators
         python_expr = python_expr.replace("&&", " and ")

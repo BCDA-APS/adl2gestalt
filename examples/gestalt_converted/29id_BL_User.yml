@@ -143,7 +143,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -163,7 +163,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -182,7 +182,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -202,7 +202,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -220,7 +220,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -239,7 +239,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -260,7 +260,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -279,7 +279,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -295,7 +295,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
     children:
@@ -316,7 +316,7 @@ EnableCalc_2: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         text_entry_1: !TextEntry
@@ -334,7 +334,7 @@ EnableCalc_2: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         +_2: !MessageButton
@@ -354,7 +354,7 @@ EnableCalc_2: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
 
@@ -375,7 +375,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -395,7 +395,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -415,7 +415,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -432,7 +432,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -450,7 +450,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -468,7 +468,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -486,7 +486,7 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
@@ -505,13 +505,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -533,13 +533,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -548,7 +548,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -569,13 +569,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -584,7 +584,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -606,13 +606,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -621,7 +621,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -653,13 +653,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -668,7 +668,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -698,13 +698,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -713,7 +713,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -743,13 +743,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -758,7 +758,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -788,13 +788,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -803,7 +803,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -833,13 +833,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -848,7 +848,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -878,13 +878,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -893,7 +893,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -925,13 +925,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -940,7 +940,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -970,13 +970,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -985,7 +985,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1015,13 +1015,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1030,7 +1030,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1061,13 +1061,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1076,7 +1076,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1116,13 +1116,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1131,7 +1131,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1179,13 +1179,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1194,7 +1194,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1240,13 +1240,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1255,7 +1255,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1301,13 +1301,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1316,7 +1316,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1363,13 +1363,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1378,7 +1378,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1424,13 +1424,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1439,7 +1439,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1485,13 +1485,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1500,7 +1500,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1546,13 +1546,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1561,7 +1561,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1608,13 +1608,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1623,7 +1623,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1678,13 +1678,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1693,7 +1693,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1746,13 +1746,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1761,7 +1761,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1814,13 +1814,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1829,7 +1829,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1882,13 +1882,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1897,7 +1897,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1951,13 +1951,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -1966,7 +1966,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2027,13 +2027,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2042,7 +2042,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2110,13 +2110,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2125,7 +2125,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2202,13 +2202,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2217,7 +2217,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2301,13 +2301,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2316,7 +2316,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2408,13 +2408,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2423,7 +2423,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2523,13 +2523,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2538,7 +2538,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2638,13 +2638,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2653,7 +2653,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2755,13 +2755,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2770,7 +2770,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2872,13 +2872,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2887,7 +2887,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -2986,13 +2986,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3001,7 +3001,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3103,13 +3103,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3118,7 +3118,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3220,13 +3220,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3235,7 +3235,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3335,13 +3335,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3350,7 +3350,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3459,13 +3459,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3474,7 +3474,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3590,13 +3590,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3605,7 +3605,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3730,13 +3730,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3745,7 +3745,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3879,13 +3879,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -3894,7 +3894,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4028,13 +4028,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4043,7 +4043,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4177,13 +4177,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4192,7 +4192,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4326,13 +4326,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4341,7 +4341,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4472,13 +4472,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4487,7 +4487,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4617,13 +4617,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4632,7 +4632,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -4770,13 +4770,13 @@ EnableCalc_19: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -4785,7 +4785,7 @@ EnableCalc_19: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -4922,13 +4922,13 @@ EnableCalc_19: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -4937,7 +4937,7 @@ EnableCalc_19: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -5074,13 +5074,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5089,7 +5089,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5234,13 +5234,13 @@ EnableCalc_20: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -5249,7 +5249,7 @@ EnableCalc_20: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -5393,13 +5393,13 @@ EnableCalc_20: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -5408,7 +5408,7 @@ EnableCalc_20: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -5553,13 +5553,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5568,7 +5568,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5713,13 +5713,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5728,7 +5728,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5872,13 +5872,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -5887,7 +5887,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -6039,13 +6039,13 @@ EnableCalc_21: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6054,7 +6054,7 @@ EnableCalc_21: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6205,13 +6205,13 @@ EnableCalc_21: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6220,7 +6220,7 @@ EnableCalc_21: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6371,13 +6371,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -6386,7 +6386,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -6545,13 +6545,13 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6560,7 +6560,7 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6718,13 +6718,13 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6733,7 +6733,7 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -6895,13 +6895,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -6910,7 +6910,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7072,13 +7072,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7087,7 +7087,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7246,13 +7246,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7261,7 +7261,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7420,13 +7420,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7435,7 +7435,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7594,13 +7594,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7609,7 +7609,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7768,13 +7768,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7783,7 +7783,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7940,13 +7940,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -7955,7 +7955,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -8114,13 +8114,13 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8129,7 +8129,7 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8287,13 +8287,13 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8302,7 +8302,7 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8459,13 +8459,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -8474,7 +8474,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -8634,13 +8634,13 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8649,7 +8649,7 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8815,13 +8815,13 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -8830,7 +8830,7 @@ EnableCalc_22: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -9003,13 +9003,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9018,7 +9018,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9191,13 +9191,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9206,7 +9206,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9379,13 +9379,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9394,7 +9394,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9565,13 +9565,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9580,7 +9580,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -9753,13 +9753,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -9768,7 +9768,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -9940,13 +9940,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -9955,7 +9955,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -10128,13 +10128,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -10143,7 +10143,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -10314,13 +10314,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -10329,7 +10329,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -10504,13 +10504,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -10519,7 +10519,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -10693,13 +10693,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -10708,7 +10708,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -10882,13 +10882,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -10897,7 +10897,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -11071,13 +11071,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -11086,7 +11086,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -11258,13 +11258,13 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -11273,7 +11273,7 @@ EnableCalc_24: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -11446,13 +11446,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -11461,7 +11461,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -11637,13 +11637,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -11652,7 +11652,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -11832,13 +11832,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -11847,7 +11847,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -12030,13 +12030,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -12045,7 +12045,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -12232,13 +12232,13 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12247,7 +12247,7 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12433,13 +12433,13 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12448,7 +12448,7 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12634,13 +12634,13 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12649,7 +12649,7 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12835,13 +12835,13 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -12850,7 +12850,7 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -13034,13 +13034,13 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -13049,7 +13049,7 @@ EnableCalc_26: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -13235,13 +13235,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13250,7 +13250,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13442,13 +13442,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13457,7 +13457,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13657,13 +13657,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13672,7 +13672,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13873,13 +13873,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -13888,7 +13888,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -14093,13 +14093,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -14108,7 +14108,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -14312,13 +14312,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -14327,7 +14327,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -14533,13 +14533,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -14548,7 +14548,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -14749,13 +14749,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -14764,7 +14764,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -14967,13 +14967,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -14982,7 +14982,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15184,13 +15184,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15199,7 +15199,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15401,13 +15401,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15416,7 +15416,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15618,13 +15618,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15633,7 +15633,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15837,13 +15837,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -15852,7 +15852,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16054,13 +16054,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16069,7 +16069,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16271,13 +16271,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16286,7 +16286,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16490,13 +16490,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16505,7 +16505,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16707,13 +16707,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16722,7 +16722,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16924,13 +16924,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -16939,7 +16939,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17141,13 +17141,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17156,7 +17156,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17360,13 +17360,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17375,7 +17375,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17579,13 +17579,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17594,7 +17594,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17798,13 +17798,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -17813,7 +17813,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18014,13 +18014,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -18029,7 +18029,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -18232,13 +18232,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18247,7 +18247,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18449,13 +18449,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18464,7 +18464,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18668,13 +18668,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18683,7 +18683,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18885,13 +18885,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -18900,7 +18900,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19104,13 +19104,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19119,7 +19119,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19321,13 +19321,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19336,7 +19336,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19540,13 +19540,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19555,7 +19555,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19757,13 +19757,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19772,7 +19772,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19974,13 +19974,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -19989,7 +19989,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20193,13 +20193,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20208,7 +20208,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20410,13 +20410,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20425,7 +20425,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20627,13 +20627,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20642,7 +20642,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20844,13 +20844,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -20859,7 +20859,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -21063,13 +21063,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -21078,7 +21078,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -21281,13 +21281,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21296,7 +21296,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21501,13 +21501,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21516,7 +21516,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21720,13 +21720,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21735,7 +21735,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21936,13 +21936,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -21951,7 +21951,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -22157,13 +22157,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -22172,7 +22172,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -22375,13 +22375,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -22390,7 +22390,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -22595,13 +22595,13 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -22610,7 +22610,7 @@ EnableCalc_29: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -22813,13 +22813,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -22828,7 +22828,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23031,13 +23031,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23046,7 +23046,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23249,13 +23249,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23264,7 +23264,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23469,13 +23469,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23484,7 +23484,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23687,13 +23687,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23702,7 +23702,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23908,13 +23908,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -23923,7 +23923,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24129,13 +24129,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24144,7 +24144,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24350,13 +24350,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24365,7 +24365,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24571,13 +24571,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24586,7 +24586,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24789,13 +24789,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -24804,7 +24804,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25015,13 +25015,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25030,7 +25030,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25244,13 +25244,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25259,7 +25259,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25469,13 +25469,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25484,7 +25484,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25690,13 +25690,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25705,7 +25705,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25908,13 +25908,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -25923,7 +25923,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26126,13 +26126,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26141,7 +26141,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26344,13 +26344,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26359,7 +26359,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26567,13 +26567,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26582,7 +26582,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26785,13 +26785,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -26800,7 +26800,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27005,13 +27005,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27020,7 +27020,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27223,13 +27223,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27238,7 +27238,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27444,13 +27444,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27459,7 +27459,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27665,13 +27665,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27680,7 +27680,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27884,13 +27884,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -27899,7 +27899,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28102,13 +28102,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28117,7 +28117,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28321,13 +28321,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28336,7 +28336,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28547,13 +28547,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28562,7 +28562,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28772,13 +28772,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -28787,7 +28787,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29003,13 +29003,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29018,7 +29018,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29239,13 +29239,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29254,7 +29254,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29476,13 +29476,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29491,7 +29491,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29719,13 +29719,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29734,7 +29734,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29967,13 +29967,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -29982,7 +29982,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30218,13 +30218,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30233,7 +30233,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30467,13 +30467,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30482,7 +30482,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30715,13 +30715,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30730,7 +30730,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30964,13 +30964,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -30979,7 +30979,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -31219,13 +31219,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -31234,7 +31234,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -31482,13 +31482,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -31497,7 +31497,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -31740,13 +31740,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -31755,7 +31755,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -32001,13 +32001,13 @@ EnableCalc_36: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -32016,7 +32016,7 @@ EnableCalc_36: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -32261,13 +32261,13 @@ EnableCalc_36: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -32276,7 +32276,7 @@ EnableCalc_36: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -32521,13 +32521,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -32536,7 +32536,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -32781,13 +32781,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -32796,7 +32796,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33044,13 +33044,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33059,7 +33059,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33304,13 +33304,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33319,7 +33319,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33565,13 +33565,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33580,7 +33580,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33835,13 +33835,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -33850,7 +33850,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34114,13 +34114,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34129,7 +34129,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34401,13 +34401,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34416,7 +34416,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34687,13 +34687,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34702,7 +34702,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34975,13 +34975,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -34990,7 +34990,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -35259,13 +35259,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -35274,7 +35274,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -35547,13 +35547,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -35562,7 +35562,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -35833,13 +35833,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -35848,7 +35848,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36118,13 +36118,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36133,7 +36133,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36403,13 +36403,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36418,7 +36418,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36688,13 +36688,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36703,7 +36703,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36974,13 +36974,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -36989,7 +36989,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -37262,13 +37262,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -37277,7 +37277,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -37550,13 +37550,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -37565,7 +37565,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -37838,13 +37838,13 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -37853,7 +37853,7 @@ EnableCalc_39: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -38125,13 +38125,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -38140,7 +38140,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -38399,7 +38399,7 @@ EnableCalc_39: !Calc
 
 # Calc node for visibility: EnableCalc_40
 EnableCalc_40: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
     pv: "EnableCalc_40.CALC"
 
@@ -38420,13 +38420,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -38435,7 +38435,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -38694,7 +38694,7 @@ EnableCalc_39: !Calc
 
 # Calc node for visibility: EnableCalc_40
 EnableCalc_40: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
     pv: "EnableCalc_40.CALC"
 
@@ -38715,13 +38715,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -38730,7 +38730,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -38989,7 +38989,7 @@ EnableCalc_39: !Calc
 
 # Calc node for visibility: EnableCalc_40
 EnableCalc_40: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
     pv: "EnableCalc_40.CALC"
 
@@ -39005,13 +39005,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -39020,7 +39020,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -39279,7 +39279,7 @@ EnableCalc_39: !Calc
 
 # Calc node for visibility: EnableCalc_40
 EnableCalc_40: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
     pv: "EnableCalc_40.CALC"
     children:
@@ -39300,13 +39300,13 @@ EnableCalc_40: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -39315,7 +39315,7 @@ EnableCalc_40: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -39574,7 +39574,7 @@ EnableCalc_40: !Calc
         
         # Calc node for visibility: EnableCalc_40
         EnableCalc_40: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:AccessSecurity.VAL"
             pv: "EnableCalc_40.CALC"
         text_update_1: !TextMonitor
@@ -39594,13 +39594,13 @@ EnableCalc_40: !Calc
         
         # Calc node for visibility: EnableCalc_2
         EnableCalc_2: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:Main_on_off.VAL"
             pv: "EnableCalc_2.CALC"
         
         # Calc node for visibility: EnableCalc_3
         EnableCalc_3: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -39609,7 +39609,7 @@ EnableCalc_40: !Calc
         
         # Calc node for visibility: EnableCalc_4
         EnableCalc_4: !Calc
-            calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+            calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
             A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
             B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
             C: "EPS:29:ID:SS1:POSITION"
@@ -39868,7 +39868,7 @@ EnableCalc_40: !Calc
         
         # Calc node for visibility: EnableCalc_40
         EnableCalc_40: !Calc
-            calc: "(Anot==0)"
+            calc: "(A!=0)"
             A: "ID29:AccessSecurity.VAL"
             pv: "EnableCalc_40.CALC"
 
@@ -39887,13 +39887,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -39902,7 +39902,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -40161,7 +40161,7 @@ EnableCalc_39: !Calc
 
 # Calc node for visibility: EnableCalc_40
 EnableCalc_40: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
     pv: "EnableCalc_40.CALC"
 
@@ -40187,13 +40187,13 @@ EnableCalc_1: !Calc
 
 # Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:Main_on_off.VAL"
     pv: "EnableCalc_2.CALC"
 
 # Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -40202,7 +40202,7 @@ EnableCalc_3: !Calc
 
 # Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
-    calc: "((A==0) or (B==0)) and (C==2 and Dnot==0)"
+    calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
@@ -40461,7 +40461,7 @@ EnableCalc_39: !Calc
 
 # Calc node for visibility: EnableCalc_40
 EnableCalc_40: !Calc
-    calc: "(Anot==0)"
+    calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
     pv: "EnableCalc_40.CALC"
 
