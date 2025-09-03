@@ -216,13 +216,13 @@ test_if_zero_20: !Text
     text: "test if zero"
     visibility: !Not "fr:m1.RBV"
 
-test_if_rbv_is_2_21: !Text
+test_if_RBV_<_VAL_21: !Text
     geometry: 304x775x251x40
     foreground: $000000
-    text: "test if rbv is 2"
+    text: "test if RBV < VAL"
     visibility: "EnableCalc_1.CALC"
 
-# Calc node for visibility: EnableCalc_1
+
 EnableCalc_1: !Calc
     calc: "A<B"
     A: "fr:m1.RBV"

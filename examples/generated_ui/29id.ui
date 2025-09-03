@@ -2400,51 +2400,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caGraphics::Filled</enum>
           </property>
         </widget>
-        <widget class="caCalc" name="EnableCalc_1">
-          <property name="geometry">
-            <rect>
-              <x>5</x>
-              <y>255</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_1.CALC</string>
-          </property>
-          <property name="channel">
-            <string>EPS:29:ID:SS1:POSITION</string>
-          </property>
-          <property name="channelB">
-            <string>EPS:29:ID:PS2:POSITION</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=2)&amp;&amp;(B=2))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
         <widget class="caGraphics" name="oval_1">
           <property name="geometry">
             <rect>
@@ -2487,51 +2442,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caGraphics::Filled</enum>
           </property>
         </widget>
-        <widget class="caCalc" name="EnableCalc_2">
-          <property name="geometry">
-            <rect>
-              <x>5</x>
-              <y>255</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_2.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
         <widget class="caGraphics" name="oval_2">
           <property name="geometry">
             <rect>
@@ -2572,51 +2482,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="fillstyle">
             <enum>caGraphics::Filled</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_3">
-          <property name="geometry">
-            <rect>
-              <x>5</x>
-              <y>255</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_3.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
           </property>
         </widget>
         <widget class="caLabel" name="A_3">
@@ -2675,51 +2540,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="fontScaleMode">
             <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_4">
-          <property name="geometry">
-            <rect>
-              <x>5</x>
-              <y>255</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_4.CALC</string>
-          </property>
-          <property name="channel">
-            <string>EPS:29:ID:SS1:POSITION</string>
-          </property>
-          <property name="channelB">
-            <string>EPS:29:ID:PS2:POSITION</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=2)&amp;&amp;(B=2))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
           </property>
         </widget>
         <widget class="caLabel" name="text_4">
@@ -2832,51 +2652,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caCalc" name="EnableCalc_5">
-          <property name="geometry">
-            <rect>
-              <x>5</x>
-              <y>255</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_5.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
         <widget class="caLabel" name="D_6">
           <property name="text">
             <string>D</string>
@@ -2933,51 +2708,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="fontScaleMode">
             <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_6">
-          <property name="geometry">
-            <rect>
-              <x>5</x>
-              <y>255</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_6.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
           </property>
         </widget>
         <widget class="caLabel" name="Shutters_7">
@@ -3147,276 +2877,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="fontScaleMode">
             <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_12">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_1.CALC</string>
-          </property>
-          <property name="channel">
-            <string>EPS:29:ID:SS1:POSITION</string>
-          </property>
-          <property name="channelB">
-            <string>EPS:29:ID:PS2:POSITION</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=2)&amp;&amp;(B=2))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_22">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_2.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_32">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_3.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_42">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_4.CALC</string>
-          </property>
-          <property name="channel">
-            <string>EPS:29:ID:SS1:POSITION</string>
-          </property>
-          <property name="channelB">
-            <string>EPS:29:ID:PS2:POSITION</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=2)&amp;&amp;(B=2))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_52">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_5.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SCS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_62">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_6.CALC</string>
-          </property>
-          <property name="channel">
-            <string>PA:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelB">
-            <string>PB:29ID:SDS_BLOCKING_BEAM.VAL</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>((A=0)&amp;&amp;(B=0))</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
           </property>
         </widget>
         <widget class="QFrame" name="QFrame23">
@@ -5179,6 +4639,276 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               </rect>
             </property>
           </widget>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_1">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_1.CALC</string>
+          </property>
+          <property name="channel">
+            <string>EPS:29:ID:SS1:POSITION</string>
+          </property>
+          <property name="channelB">
+            <string>EPS:29:ID:PS2:POSITION</string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>((A=2)&amp;&amp;(B=2))</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_2">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_2.CALC</string>
+          </property>
+          <property name="channel">
+            <string>PA:29ID:SCS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelB">
+            <string>PB:29ID:SCS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>((A=0)&amp;&amp;(B=0))</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_3">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_3.CALC</string>
+          </property>
+          <property name="channel">
+            <string>PA:29ID:SDS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelB">
+            <string>PB:29ID:SDS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>((A=0)&amp;&amp;(B=0))</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_4">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_4.CALC</string>
+          </property>
+          <property name="channel">
+            <string>EPS:29:ID:SS1:POSITION</string>
+          </property>
+          <property name="channelB">
+            <string>EPS:29:ID:PS2:POSITION</string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>((A=2)&amp;&amp;(B=2))</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_5">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_5.CALC</string>
+          </property>
+          <property name="channel">
+            <string>PA:29ID:SCS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelB">
+            <string>PB:29ID:SCS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>((A=0)&amp;&amp;(B=0))</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_6">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_6.CALC</string>
+          </property>
+          <property name="channel">
+            <string>PA:29ID:SDS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelB">
+            <string>PB:29ID:SDS_BLOCKING_BEAM.VAL</string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>((A=0)&amp;&amp;(B=0))</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
         </widget>
       </widget>
     </widget>

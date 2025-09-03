@@ -885,9 +885,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_rbv_is_2_21">
+        <widget class="caLabel" name="test_if_RBV_&lt;_VAL_21">
           <property name="text">
-            <string>test if rbv is 2</string>
+            <string>test if RBV &lt; VAL</string>
           </property>
           <property name="foreground">
             <color alpha="255">

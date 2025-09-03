@@ -420,5 +420,5 @@ text {
 		chan="fr:m1.RBV"
 		chanB="fr:m1.VAL"
 	}
-	textix="test if rbv is 2"
+	textix="test if RBV < VAL"
 }

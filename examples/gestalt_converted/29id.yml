@@ -474,256 +474,39 @@ composite_42: !Group
             background: *medm_color_15
             border-color: *medm_color_15
             visibility: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
         oval_1: !Ellipse
             geometry: 110x2x10x10
             background: *medm_color_15
             border-color: *medm_color_15
             visibility: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
         oval_2: !Ellipse
             geometry: 136x2x10x10
             background: *medm_color_15
             border-color: *medm_color_15
             visibility: "EnableCalc_3.CALC"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_3
-        EnableCalc_3: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_3.CALC"
         A_3: !Text
             geometry: 75x0x10x14
             foreground: *medm_color_19
             text: "A"
             visibility: "EnableCalc_4.CALC"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_3
-        EnableCalc_3: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_3.CALC"
-        
-        # Calc node for visibility: EnableCalc_4
-        EnableCalc_4: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_4.CALC"
         text_4: !Text
             geometry: 107x5x5x5
             foreground: *medm_color_19
             text: "None"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_3
-        EnableCalc_3: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_3.CALC"
-        
-        # Calc node for visibility: EnableCalc_4
-        EnableCalc_4: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_4.CALC"
         C_5: !Text
             geometry: 101x0x10x14
             foreground: *medm_color_19
             text: "C"
             visibility: "EnableCalc_5.CALC"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_3
-        EnableCalc_3: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_3.CALC"
-        
-        # Calc node for visibility: EnableCalc_4
-        EnableCalc_4: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_4.CALC"
-        
-        # Calc node for visibility: EnableCalc_5
-        EnableCalc_5: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_5.CALC"
         D_6: !Text
             geometry: 127x0x10x14
             foreground: *medm_color_19
             text: "D"
             visibility: "EnableCalc_6.CALC"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_3
-        EnableCalc_3: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_3.CALC"
-        
-        # Calc node for visibility: EnableCalc_4
-        EnableCalc_4: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_4.CALC"
-        
-        # Calc node for visibility: EnableCalc_5
-        EnableCalc_5: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_5.CALC"
-        
-        # Calc node for visibility: EnableCalc_6
-        EnableCalc_6: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_6.CALC"
         Shutters_7: !Text
             geometry: 0x0x65x14
             foreground: *medm_color_64
             text: "Shutters:"
-        
-        # Calc node for visibility: EnableCalc_1
-        EnableCalc_1: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_1.CALC"
-        
-        # Calc node for visibility: EnableCalc_2
-        EnableCalc_2: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_2.CALC"
-        
-        # Calc node for visibility: EnableCalc_3
-        EnableCalc_3: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_3.CALC"
-        
-        # Calc node for visibility: EnableCalc_4
-        EnableCalc_4: !Calc
-            calc: "(A==2) and (B==2)"
-            A: "EPS:29:ID:SS1:POSITION"
-            B: "EPS:29:ID:PS2:POSITION"
-            pv: "EnableCalc_4.CALC"
-        
-        # Calc node for visibility: EnableCalc_5
-        EnableCalc_5: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_5.CALC"
-        
-        # Calc node for visibility: EnableCalc_6
-        EnableCalc_6: !Calc
-            calc: "(A==0) and (B==0)"
-            A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-            B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-            pv: "EnableCalc_6.CALC"
 
 related_display_43: !RelatedDisplay
     geometry: 5x143x20x20
@@ -734,48 +517,6 @@ Televac_44: !Text
     geometry: 30x146x50x14
     foreground: *medm_color_64
     text: "Televac"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 -D_45: !RelatedDisplay
     geometry: 45x99x20x20
@@ -790,143 +531,17 @@ EnableCalc_6: !Calc
         - { label: "IP10D1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10D1" }
         - { label: "IP10D2", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10D2" }
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 Moving_46: !Text
     geometry: 25x35x95x30
     foreground: *medm_color_50
     text: "Moving"
     visibility: !Not "29idb:alldone.VAL"
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 Moving_47: !Text
     geometry: 27x37x95x30
     foreground: *medm_color_54
     text: "Moving"
     visibility: "29idb:alldoneBlink.VAL"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 -B_48: !RelatedDisplay
     geometry: 155x110x20x20
@@ -947,94 +562,10 @@ EnableCalc_6: !Calc
         - { label: "Amp 15", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca15" }
         - { label: "Amp 16", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca16" }
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 CA_49: !Text
     geometry: 219x113x50x14
     foreground: *medm_color_64
     text: "CA"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 related_display_50: !RelatedDisplay
     geometry: 155x130x20x20
@@ -1046,48 +577,6 @@ Slits_51: !Text
     foreground: *medm_color_64
     text: "Slits"
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 related_display_52: !RelatedDisplay
     geometry: 155x150x20x20
     foreground: $000000
@@ -1098,48 +587,6 @@ Newport_Hxp_53: !Text
     foreground: *medm_color_64
     text: "Newport Hxp"
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 -C_54: !RelatedDisplay
     geometry: 175x110x20x20
     foreground: $000000
@@ -1148,48 +595,6 @@ EnableCalc_6: !Calc
     links:
         - { label: "29idc CA1/PS", file: "Keithley6487small.adl", macros: "P=29idc:,CA=ca1" }
         - { label: "29idc CA2", file: "Keithley6485small.adl", macros: "P=29idc:,CA=ca2" }
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 -D_55: !RelatedDisplay
     geometry: 195x110x20x20
@@ -1201,48 +606,6 @@ EnableCalc_6: !Calc
         - { label: "29idd CA2", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
         - { label: "29idd CA3", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca3" }
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 -ARPES_56: !RelatedDisplay
     geometry: 97x99x42x20
     foreground: $000000
@@ -1251,48 +614,6 @@ EnableCalc_6: !Calc
     links:
         - { label: "29ID-C ARPES graphic", file: "29idc_graphic.adl", macros: "P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8" }
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 -RSXS_57: !RelatedDisplay
     geometry: 97x121x42x20
     foreground: $000000
@@ -1300,48 +621,6 @@ EnableCalc_6: !Calc
     text: "RSXS"
     links:
         - { label: "29ID-D 2C graphic", file: "29idd_graphic.adl", macros: "P=29idd:,M1=m1,M2=m2,M3=m3,M4=m7,M5=m6" }
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 -_SES_58: !RelatedDisplay
     geometry: 97x165x42x20
@@ -1354,48 +633,6 @@ EnableCalc_6: !Calc
         - { label: "SES Control", file: "electronAnalyser.adl", macros: "P=29idcEA:, R=det1:" }
         - { label: "SES Scans", file: "29idc_SESall.adl", macros: "P=29idcEA:, R=det1:" }
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 STOP_59: !MessageButton
     geometry: 97x6x42x20
     foreground: *medm_color_30
@@ -1403,48 +640,6 @@ STOP_59: !MessageButton
     pv: "29idb:allstop.VAL"
     text: "STOP"
     value: "1"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 -C_60: !RelatedDisplay
     geometry: 25x121x20x20
@@ -1459,48 +654,6 @@ EnableCalc_6: !Calc
         - { label: "VS11C", file: "VacSen.adl", macros: "P=29idc:,GAUGE=VS11C" }
         - { label: "VSCUBE", file: "VacSen.adl", macros: "P=29idc:,GAUGE=VSCUBE" }
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 -D_61: !RelatedDisplay
     geometry: 45x121x20x20
     foreground: $000000
@@ -1512,48 +665,6 @@ EnableCalc_6: !Calc
         - { label: "VS10D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS10D" }
         - { label: "VS11D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS11D" }
         - { label: "VS12D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS12D" }
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 related_display_62: !RelatedDisplay
     geometry: 157x49x20x20
@@ -1570,94 +681,10 @@ Beam_Info_64: !Text
     foreground: *medm_color_64
     text: "Beam Info"
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 Undulator_65: !Text
     geometry: 182x52x80x14
     foreground: *medm_color_64
     text: "Undulator"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 related_display_66: !RelatedDisplay
     geometry: 157x5x20x20
@@ -1674,94 +701,10 @@ PSS_EPS_68: !Text
     foreground: *medm_color_64
     text: "PSS/EPS"
 
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
-
 BL_Overview_69: !Text
     geometry: 182x74x80x14
     foreground: *medm_color_64
     text: "BL Overview"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 related_display_70: !RelatedDisplay
     geometry: 155x170x20x20
@@ -1772,48 +715,6 @@ Lakeshore_71: !Text
     geometry: 180x173x80x14
     foreground: *medm_color_64
     text: "Lakeshore"
-
-# Calc node for visibility: EnableCalc_1
-EnableCalc_1: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_1.CALC"
-
-# Calc node for visibility: EnableCalc_2
-EnableCalc_2: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_2.CALC"
-
-# Calc node for visibility: EnableCalc_3
-EnableCalc_3: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_3.CALC"
-
-# Calc node for visibility: EnableCalc_4
-EnableCalc_4: !Calc
-    calc: "(A==2) and (B==2)"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_4.CALC"
-
-# Calc node for visibility: EnableCalc_5
-EnableCalc_5: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_5.CALC"
-
-# Calc node for visibility: EnableCalc_6
-EnableCalc_6: !Calc
-    calc: "(A==0) and (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
-    pv: "EnableCalc_6.CALC"
 
 -BL_Calcs_72: !RelatedDisplay
     geometry: 185x240x70x20
@@ -1826,49 +727,44 @@ EnableCalc_6: !Calc
         - { label: "29ID-D StringSeqs", file: "BL_StrSeqs10.adl", macros: "P=29idd:" }
         - { label: "Current Branch", file: "userCalcOut.adl", macros: "P=29id:,C=CurrentBranch" }
 
-# Calc node for visibility: EnableCalc_1
+related_display_73: !RelatedDisplay
+    geometry: 10x215x20x20
+    foreground: $000000
+    background: *medm_color_51
+
+
 EnableCalc_1: !Calc
     calc: "(A==2) and (B==2)"
     A: "EPS:29:ID:SS1:POSITION"
     B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_1.CALC"
 
-# Calc node for visibility: EnableCalc_2
 EnableCalc_2: !Calc
     calc: "(A==0) and (B==0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_2.CALC"
 
-# Calc node for visibility: EnableCalc_3
 EnableCalc_3: !Calc
     calc: "(A==0) and (B==0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_3.CALC"
 
-# Calc node for visibility: EnableCalc_4
 EnableCalc_4: !Calc
     calc: "(A==2) and (B==2)"
     A: "EPS:29:ID:SS1:POSITION"
     B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_4.CALC"
 
-# Calc node for visibility: EnableCalc_5
 EnableCalc_5: !Calc
     calc: "(A==0) and (B==0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_5.CALC"
 
-# Calc node for visibility: EnableCalc_6
 EnableCalc_6: !Calc
     calc: "(A==0) and (B==0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_6.CALC"
-
-related_display_73: !RelatedDisplay
-    geometry: 10x215x20x20
-    foreground: $000000
-    background: *medm_color_51
