@@ -515,15 +515,19 @@ class MedmToGestaltConverter:
         # Polyline/Polygon points
         if widget_type in ["Polyline", "Polygon"] and hasattr(widget, "points"):
             if widget.points:
+                # Use original absolute geometry for points calculation if available
+                # (this preserves correct point coordinates when widget is in composite groups)
+                points_geometry = getattr(widget, "_original_geometry", widget.geometry)
+
                 # Calculate relative coordinates based on widget geometry
                 widget_x = (
-                    widget.geometry.x
-                    if hasattr(widget, "geometry") and widget.geometry
+                    points_geometry.x
+                    if hasattr(points_geometry, "x") and points_geometry
                     else 0
                 )
                 widget_y = (
-                    widget.geometry.y
-                    if hasattr(widget, "geometry") and widget.geometry
+                    points_geometry.y
+                    if hasattr(points_geometry, "y") and points_geometry
                     else 0
                 )
 
@@ -709,16 +713,23 @@ class MedmToGestaltConverter:
                             child.geometry.height,
                         )
 
-                        # Temporarily replace the child's geometry with relative coordinates
+                        # Store original geometry for points calculation
                         original_geometry = child.geometry
+
+                        # Set original geometry attribute for points calculation
+                        child._original_geometry = original_geometry
+
+                        # Temporarily replace the child's geometry with relative coordinates
                         child.geometry = relative_geometry
 
                         child_lines = self.convert_widget_to_lines(
                             child, i, color_table
                         )
 
-                        # Restore original geometry
+                        # Restore original geometry and clean up temporary attributes
                         child.geometry = original_geometry
+                        if hasattr(child, "_original_geometry"):
+                            delattr(child, "_original_geometry")
                     else:
                         child_lines = self.convert_widget_to_lines(
                             child, i, color_table
