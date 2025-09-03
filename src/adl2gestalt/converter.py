@@ -22,6 +22,8 @@ class MedmToGestaltConverter:
         self.color_map = {}
         self.color_aliases = {}
         self.converted_widgets = []
+        self.calc_node_counter = 0
+        print(f"DEBUG: Initialized calc_node_counter to {self.calc_node_counter}")
 
     def convert_file(self, adl_path: Path, output_path: Optional[Path] = None) -> Path:
         """
@@ -152,6 +154,27 @@ class MedmToGestaltConverter:
             if widget_lines:
                 lines.extend(widget_lines)
                 lines.append("")
+
+        # Generate Calc nodes for complex visibility (only once, after all widgets)
+        if hasattr(self, "calc_nodes") and self.calc_nodes:
+            print(f"DEBUG: Total calc nodes to generate: {len(self.calc_nodes)}")
+            for i, calc_info in enumerate(self.calc_nodes):
+                print(
+                    f"DEBUG: Node {i}: name='{calc_info['name']}', expression='{calc_info['expression']}'"
+                )
+                lines.append(f"")
+                lines.append(f"{calc_info['name']}: !Calc")
+                # Convert MEDM expression to Python syntax
+                python_expression = self.convert_medm_to_python(calc_info["expression"])
+                lines.append(f'    calc: "{python_expression}"')
+                lines.append(f"    A: \"{calc_info['channel_a']}\"")
+                if calc_info["channel_b"]:
+                    lines.append(f"    B: \"{calc_info['channel_b']}\"")
+                if calc_info["channel_c"]:
+                    lines.append(f"    C: \"{calc_info['channel_c']}\"")
+                if calc_info["channel_d"]:
+                    lines.append(f"    D: \"{calc_info['channel_d']}\"")
+                lines.append(f"    pv: \"{calc_info['name']}.CALC\"")
 
         return "\n".join(lines)
 
@@ -596,10 +619,11 @@ class MedmToGestaltConverter:
 
                     if calc_expression and chan_a:
                         # Create a Calc node for complex visibility
-                        if not hasattr(self, "calc_node_counter"):
-                            self.calc_node_counter = 0
                         self.calc_node_counter += 1
                         calc_name = f"EnableCalc_{self.calc_node_counter}"
+                        # print(
+                        #     f"DEBUG: Creating calc node {calc_name} (counter: {self.calc_node_counter})"
+                        # )
 
                         # Set visibility to reference the Calc node's output PV
                         lines.append(f'    visibility: "{calc_name}.CALC"')
@@ -662,23 +686,7 @@ class MedmToGestaltConverter:
                 span = int(float(contents["pathAngle"]))
                 lines.append(f"    span: {span}")
 
-        # Generate Calc nodes for complex visibility
-        if hasattr(self, "calc_nodes") and self.calc_nodes:
-            for calc_info in self.calc_nodes:
-                lines.append(f"")
-                lines.append(f"# Calc node for visibility: {calc_info['name']}")
-                lines.append(f"{calc_info['name']}: !Calc")
-                # Convert MEDM expression to Python syntax
-                python_expression = self.convert_medm_to_python(calc_info["expression"])
-                lines.append(f'    calc: "{python_expression}"')
-                lines.append(f"    A: \"{calc_info['channel_a']}\"")
-                if calc_info["channel_b"]:
-                    lines.append(f"    B: \"{calc_info['channel_b']}\"")
-                if calc_info["channel_c"]:
-                    lines.append(f"    C: \"{calc_info['channel_c']}\"")
-                if calc_info["channel_d"]:
-                    lines.append(f"    D: \"{calc_info['channel_d']}\"")
-                lines.append(f"    pv: \"{calc_info['name']}.CALC\"")
+        # Note: Calc nodes are generated separately in convert_display to avoid duplication
 
         # Composite/Group properties
         if widget_type == "Group" and hasattr(widget, "widgets"):
