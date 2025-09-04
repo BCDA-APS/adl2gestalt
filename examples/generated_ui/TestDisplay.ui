@@ -38,7 +38,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <x>10</x>
             <y>0</y>
             <width>551</width>
-            <height>740</height>
+            <height>836</height>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
@@ -393,7 +393,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <number>0</number>
           </property>
           <property name="formatType">
-            <enum>caLineEdit::decimal</enum>
+            <enum>caLineEdit::string</enum>
           </property>
           <property name="colorMode">
             <enum>caLineEdit::Static</enum>
@@ -438,7 +438,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>fr:m1.VAL</string>
           </property>
           <property name="formatType">
-            <enum>caLineEdit::decimal</enum>
+            <enum>caLineEdit::string</enum>
           </property>
           <property name="colorMode">
             <enum>caLineEdit::Static</enum>
@@ -885,9 +885,9 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="RBV_&lt;_VAL_21">
+        <widget class="caLabel" name="m1_&lt;_m2_21">
           <property name="text">
-            <string>RBV &lt; VAL</string>
+            <string>m1 &lt; m2</string>
           </property>
           <property name="foreground">
             <color alpha="255">
@@ -1008,6 +1008,22 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
+        <widget class="caInclude" name="composite_23">
+          <property name="geometry">
+            <rect>
+              <x>270</x>
+              <y>750</y>
+              <width>145</width>
+              <height>86</height>
+            </rect>
+          </property>
+          <property name="filename">
+            <string>TestDisplay3.ui</string>
+          </property>
+          <property name="macro">
+            <string></string>
+          </property>
+        </widget>
         <widget class="caCalc" name="EnableCalc_1">
           <property name="geometry">
             <rect>
@@ -1024,7 +1040,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <string>fr:m1.RBV</string>
           </property>
           <property name="channelB">
-            <string>fr:m1.VAL</string>
+            <string>fr:m2.RBV</string>
           </property>
           <property name="channelC">
             <string></string>

@@ -216,10 +216,10 @@ test_if_zero_20: !Text
     text: "test if zero"
     visibility: !Not "fr:m1.RBV"
 
-RBV_<_VAL_21: !Text
+m1_<_m2_21: !Text
     geometry: 50x700x251x40
     foreground: $000000
-    text: "RBV < VAL"
+    text: "m1 < m2"
     visibility: "EnableCalc_1.CALC"
 
 Motors_22: !RelatedDisplay
@@ -231,9 +231,13 @@ Motors_22: !RelatedDisplay
         - { label: "M2", file: "TestDisplay2.adl", macros: "P=fr:m2" }
         - { label: "M3", file: "TestDisplay2.adl", macros: "P=fr:m3" }
 
+composite_23: !Include
+    geometry: 270x750x145x86
+    file: "TestDisplay3"
+
 
 EnableCalc_1: !Calc
     calc: "A<B"
     A: "fr:m1.RBV"
-    B: "fr:m1.VAL"
+    B: "fr:m2.RBV"
     pv: "EnableCalc_1.CALC"

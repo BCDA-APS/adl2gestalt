@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1633
-		y=128
+		x=1337
+		y=99
 		width=562
 		height=900
 	}
@@ -418,9 +418,9 @@ text {
 		vis="calc"
 		calc="A<B"
 		chan="fr:m1.RBV"
-		chanB="fr:m1.VAL"
+		chanB="fr:m2.RBV"
 	}
-	textix="RBV < VAL"
+	textix="m1 < m2"
 }
 "related display" {
 	object {
@@ -442,4 +442,14 @@ text {
 	clr=14
 	bclr=4
 	label="Motors"
+}
+composite {
+	object {
+		x=270
+		y=750
+		width=145
+		height=86
+	}
+	"composite name"=""
+	"composite file"="TestDisplay3.adl"
 }
