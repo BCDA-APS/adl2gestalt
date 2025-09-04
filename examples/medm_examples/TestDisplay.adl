@@ -443,3 +443,69 @@ text {
 	bclr=4
 	label="Motors"
 }
+composite {
+	object {
+		x=276
+		y=734
+		width=188
+		height=136
+	}
+	"composite name"=""
+	children {
+		oval {
+			object {
+				x=276
+				y=734
+				width=86
+				height=76
+			}
+			"basic attribute" {
+				clr=14
+				width=4
+			}
+		}
+		polygon {
+			object {
+				x=301
+				y=793
+				width=103
+				height=77
+			}
+			"basic attribute" {
+				clr=14
+				width=4
+			}
+			points {
+				(348,869)
+				(404,868)
+				(380,801)
+				(379,807)
+				(381,793)
+				(352,836)
+				(361,849)
+				(301,853)
+				(325,863)
+				(321,870)
+				(348,869)
+			}
+		}
+		rectangle {
+			object {
+				x=404
+				y=745
+				width=60
+				height=61
+			}
+			"basic attribute" {
+				clr=14
+				width=4
+			}
+		}
+	}
+	"dynamic attribute" {
+		vis="calc"
+		calc="A=B"
+		chan="fr:m1.RBV"
+		chanB="fr:m2.RBV"
+	}
+}

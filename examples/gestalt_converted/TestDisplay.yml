@@ -231,9 +231,36 @@ Motors_22: !RelatedDisplay
         - { label: "M2", file: "TestDisplay2.adl", macros: "P=fr:m2" }
         - { label: "M3", file: "TestDisplay2.adl", macros: "P=fr:m3" }
 
+composite_23: !Group
+    geometry: 276x734x188x136
+    visibility: "EnableCalc_2.CALC"
+    children:
+        oval_0: !Ellipse
+            geometry: 0x0x86x76
+            background: $000000
+            border-color: $000000
+            border-width: 4
+        polygon_1: !Polygon
+            geometry: 25x59x103x77
+            points: [ 47x76, 103x75, 79x8, 78x14, 80x0, 51x43, 60x56, 0x60, 24x70, 20x77, 47x76 ]
+            background: $000000
+            border-color: $000000
+            border-width: 4
+        rectangle_2: !Rectangle
+            geometry: 128x11x60x61
+            background: $000000
+            border-color: $000000
+            border-width: 4
+
 
 EnableCalc_1: !Calc
     calc: "A<B"
     A: "fr:m1.RBV"
     B: "fr:m1.VAL"
     pv: "EnableCalc_1.CALC"
+
+EnableCalc_2: !Calc
+    calc: "A==B"
+    A: "fr:m1.RBV"
+    B: "fr:m2.RBV"
+    pv: "EnableCalc_2.CALC"

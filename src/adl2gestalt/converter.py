@@ -23,6 +23,7 @@ class MedmToGestaltConverter:
         self.color_aliases = {}
         self.converted_widgets = []
         self.calc_node_counter = 0
+        self.calc_nodes = []
 
     def convert_file(self, adl_path: Path, output_path: Optional[Path] = None) -> Path:
         """
@@ -395,6 +396,50 @@ class MedmToGestaltConverter:
 
         return python_expr
 
+    def _add_visibility_properties(self, widget, contents, lines):
+        """Add visibility properties for any widget (individual or composite)."""
+        if "dynamic attribute" not in contents:
+            return
+
+        dynamic_attrs = contents["dynamic attribute"]
+
+        if "vis" not in dynamic_attrs or "chan" not in dynamic_attrs:
+            return
+
+        visibility_mode = dynamic_attrs["vis"]
+        chan_a = dynamic_attrs["chan"]
+
+        if visibility_mode == "if not zero":
+            lines.append(f'    visibility: "{chan_a}"')
+        elif visibility_mode == "if zero":
+            lines.append(f'    visibility: !Not "{chan_a}"')
+        elif visibility_mode == "calc":
+            # Complex calculation-based visibility
+            calc_expression = dynamic_attrs.get("calc", "")
+            chan_b = dynamic_attrs.get("chanB", "")
+            chan_c = dynamic_attrs.get("chanC", "")
+            chan_d = dynamic_attrs.get("chanD", "")
+
+            if calc_expression and chan_a:
+                # Create a Calc node
+                self.calc_node_counter += 1
+                calc_name = f"EnableCalc_{self.calc_node_counter}"
+
+                # Set visibility to reference the Calc node's output PV
+                lines.append(f'    visibility: "{calc_name}.CALC"')
+
+                # Store calc info for later processing
+                self.calc_nodes.append(
+                    {
+                        "name": calc_name,
+                        "expression": calc_expression,
+                        "channel_a": chan_a,
+                        "channel_b": chan_b,
+                        "channel_c": chan_c,
+                        "channel_d": chan_d,
+                    }
+                )
+
     def add_widget_properties_lines(
         self, widget: Any, lines: List[str], widget_type: str, color_table: List
     ) -> None:
@@ -593,52 +638,7 @@ class MedmToGestaltConverter:
                 lines.append(f'    file: "{contents["image name"]}"')
 
         # Visibility properties (common to all widgets)
-        if "dynamic attribute" in contents and isinstance(
-            contents["dynamic attribute"], dict
-        ):
-            dynamic_attrs = contents["dynamic attribute"]
-
-            # Check for visibility mode and channel
-            if "vis" in dynamic_attrs and "chan" in dynamic_attrs:
-                visibility_mode = dynamic_attrs["vis"]
-                chan_a = dynamic_attrs["chan"]
-
-                if visibility_mode == "if not zero":
-                    # Widget visible when PV ≠ 0, hidden when PV = 0
-                    lines.append(f'    visibility: "{chan_a}"')
-                elif visibility_mode == "if zero":
-                    # Widget visible when PV = 0, hidden when PV ≠ 0 (use !Not tag)
-                    lines.append(f'    visibility: !Not "{chan_a}"')
-                elif visibility_mode == "calc":
-                    # Complex calculation-based visibility - use Calc node
-                    calc_expression = dynamic_attrs.get("calc", "")
-                    chan_b = dynamic_attrs.get("chanB", "")
-                    chan_c = dynamic_attrs.get("chanC", "")
-                    chan_d = dynamic_attrs.get("chanD", "")
-
-                    if calc_expression and chan_a:
-                        # Create a Calc node for complex visibility
-                        self.calc_node_counter += 1
-                        calc_name = f"EnableCalc_{self.calc_node_counter}"
-
-                        # Set visibility to reference the Calc node's output PV
-                        lines.append(f'    visibility: "{calc_name}.CALC"')
-
-                        # Store calc info for later processing
-                        if not hasattr(self, "calc_nodes"):
-                            self.calc_nodes = []
-
-                        self.calc_nodes.append(
-                            {
-                                "name": calc_name,
-                                "expression": calc_expression,
-                                "channel_a": chan_a,
-                                "channel_b": chan_b,
-                                "channel_c": chan_c,
-                                "channel_d": chan_d,
-                            }
-                        )
-                # Note: "static" visibility doesn't need a visibility property
+        self._add_visibility_properties(widget, contents, lines)
 
         # ByteMonitor properties
         if widget_type == "ByteMonitor":
