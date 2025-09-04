@@ -292,6 +292,18 @@ class MedmToGestaltConverter:
 
         lines = []
 
+        # Special handling for composite widgets with embedded files
+        if (
+            widget.symbol == "composite"
+            and hasattr(widget, "contents")
+            and widget.contents
+        ):
+            if (
+                "composite file" in widget.contents
+                and widget.contents["composite file"]
+            ):
+                widget_type = "Include"  # Override Group mapping for composite files
+
         # Generate widget name
         widget_name = f"{widget.symbol.replace(' ', '_')}_{index}"
         if hasattr(widget, "title") and widget.title:
@@ -677,6 +689,18 @@ class MedmToGestaltConverter:
                 # Convert to integer to avoid float issues
                 span = int(float(contents["pathAngle"]))
                 lines.append(f"    span: {span}")
+
+        # Include properties (for composite widgets with embedded files)
+        if widget_type == "Include" and hasattr(widget, "contents") and widget.contents:
+            if (
+                "composite file" in widget.contents
+                and widget.contents["composite file"]
+            ):
+                # Remove .adl extension if present, as IncludeNode will add the correct extension
+                composite_file = widget.contents["composite file"]
+                if composite_file.endswith(".adl"):
+                    composite_file = composite_file[:-4]  # Remove .adl extension
+                lines.append(f'    file: "{composite_file}"')
 
         # Composite/Group properties
         if widget_type == "Group" and hasattr(widget, "widgets"):

@@ -231,6 +231,10 @@ Motors_22: !RelatedDisplay
         - { label: "M2", file: "TestDisplay2.adl", macros: "P=fr:m2" }
         - { label: "M3", file: "TestDisplay2.adl", macros: "P=fr:m3" }
 
+composite_23: !Include
+    geometry: 50x750x145x86
+    visibility: "EnableCalc_2.CALC"
+    file: "TestDisplay3"
 
 
 EnableCalc_1: !Calc

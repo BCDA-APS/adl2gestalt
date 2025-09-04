@@ -232,15 +232,8 @@ Motors_22: !RelatedDisplay
         - { label: "M3", file: "TestDisplay2.adl", macros: "P=fr:m3" }
 
 
-
 EnableCalc_1: !Calc
     calc: "A<B"
     A: "fr:m1.RBV"
     B: "fr:m1.VAL"
     pv: "EnableCalc_1.CALC"
-
-EnableCalc_2: !Calc
-    calc: "A==B"
-    A: "fr:m1.RBV"
-    B: "fr:m2.RBV"
-    pv: "EnableCalc_2.CALC"

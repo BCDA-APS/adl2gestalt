@@ -1,0 +1,40 @@
+<ui version="4.0">
+  <class>Form</class>
+  <widget class="QMainWindow" name="Form">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>20</width>
+        <height>10</height>
+      </rect>
+    </property>
+    <property name="styleSheet">
+      <string>QWidget#centralwidget {background: rgba(187,187,187,255);}
+QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
+    </property>
+    <property name="windowTitle">
+      <string></string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>0</width>
+          <height>0</height>
+        </rect>
+      </property>
+      <widget class="caFrame" name="content">
+        <property name="geometry">
+          <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>0</width>
+            <height>0</height>
+          </rect>
+        </property>
+      </widget>
+    </widget>
+  </widget>
+</ui>

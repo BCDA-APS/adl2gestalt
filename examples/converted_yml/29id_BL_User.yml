@@ -119,13 +119,13 @@ oval_6: !Ellipse
     geometry: 216x226x15x15
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_1.CALC"
+    visibility: "EnableCalc_7.CALC"
 
 oval_7: !Ellipse
     geometry: 216x226x15x15
     background: $000000
     border-color: $000000
-    visibility: "EnableCalc_2.CALC"
+    visibility: "EnableCalc_8.CALC"
 
 text_update_8: !TextMonitor
     geometry: 79x196x100x20
@@ -240,13 +240,13 @@ rectangle_23: !Rectangle
     geometry: 40x321x77x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_3.CALC"
+    visibility: "EnableCalc_9.CALC"
 
 rectangle_24: !Rectangle
     geometry: 40x467x77x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_4.CALC"
+    visibility: "EnableCalc_10.CALC"
 
 oval_25: !Ellipse
     geometry: 7x290x65x65
@@ -257,7 +257,7 @@ rectangle_26: !Rectangle
     geometry: 117x321x112x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_5.CALC"
+    visibility: "EnableCalc_11.CALC"
 
 text_update_27: !TextMonitor
     geometry: 8x369x65x15
@@ -312,13 +312,13 @@ rectangle_36: !Rectangle
     geometry: 117x467x112x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_6.CALC"
+    visibility: "EnableCalc_12.CALC"
 
 rectangle_37: !Rectangle
     geometry: 273x467x138x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_7.CALC"
+    visibility: "EnableCalc_13.CALC"
 
 text_update_38: !TextMonitor
     geometry: 8x515x65x15
@@ -362,7 +362,7 @@ rectangle_45: !Rectangle
     geometry: 455x467x25x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_8.CALC"
+    visibility: "EnableCalc_14.CALC"
 
 text_update_46: !TextMonitor
     geometry: 146x515x65x15
@@ -390,37 +390,37 @@ rectangle_50: !Rectangle
     geometry: 308x322x5x150
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_9.CALC"
+    visibility: "EnableCalc_15.CALC"
 
 rectangle_51: !Rectangle
     geometry: 273x321x40x5
     background: *medm_color_60
     border-color: *medm_color_60
-    visibility: "EnableCalc_10.CALC"
+    visibility: "EnableCalc_16.CALC"
 
 rectangle_52: !Rectangle
     geometry: 273x467x138x5
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_11.CALC"
+    visibility: "EnableCalc_17.CALC"
 
 rectangle_53: !Rectangle
     geometry: 273x467x138x5
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_12.CALC"
+    visibility: "EnableCalc_18.CALC"
 
 rectangle_54: !Rectangle
     geometry: 116x467x113x5
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_13.CALC"
+    visibility: "EnableCalc_19.CALC"
 
 rectangle_55: !Rectangle
     geometry: 116x321x113x5
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_14.CALC"
+    visibility: "EnableCalc_20.CALC"
 
 rectangle_56: !Rectangle
     geometry: 40x321x77x5
@@ -475,25 +475,25 @@ rectangle_63: !Rectangle
     geometry: 273x321x40x5
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_15.CALC"
+    visibility: "EnableCalc_21.CALC"
 
 rectangle_64: !Rectangle
     geometry: 273x321x40x5
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_16.CALC"
+    visibility: "EnableCalc_22.CALC"
 
 rectangle_65: !Rectangle
     geometry: 308x322x5x150
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_17.CALC"
+    visibility: "EnableCalc_23.CALC"
 
 rectangle_66: !Rectangle
     geometry: 308x322x5x150
     background: *medm_color_32
     border-color: *medm_color_32
-    visibility: "EnableCalc_18.CALC"
+    visibility: "EnableCalc_24.CALC"
 
 DS_OPEN_67: !MessageButton
     geometry: 221x356x60x20
@@ -534,7 +534,7 @@ C_Shutter_71: !Text
 
 composite_72: !Group
     geometry: 231x461x40x16
-    visibility: "EnableCalc_19.CALC"
+    visibility: "EnableCalc_25.CALC"
     children:
         rectangle_0: !Rectangle
             geometry: 0x0x40x16
@@ -547,7 +547,7 @@ composite_72: !Group
 
 composite_73: !Group
     geometry: 231x461x40x16
-    visibility: "EnableCalc_20.CALC"
+    visibility: "EnableCalc_26.CALC"
     children:
         rectangle_0: !Rectangle
             geometry: 0x0x40x16
@@ -570,7 +570,7 @@ rectangle_75: !Rectangle
 
 composite_76: !Group
     geometry: 231x315x40x16
-    visibility: "EnableCalc_21.CALC"
+    visibility: "EnableCalc_27.CALC"
     children:
         rectangle_0: !Rectangle
             geometry: 0x0x40x16
@@ -583,7 +583,7 @@ composite_76: !Group
 
 composite_77: !Group
     geometry: 231x315x40x16
-    visibility: "EnableCalc_22.CALC"
+    visibility: "EnableCalc_28.CALC"
     children:
         rectangle_0: !Rectangle
             geometry: 0x0x40x16
@@ -649,12 +649,12 @@ composite_85: !Group
             geometry: 0x0x40x16
             background: *medm_color_61
             border-color: *medm_color_61
-            visibility: "EnableCalc_23.CALC"
+            visibility: "EnableCalc_29.CALC"
         OPEN_1: !Text
             geometry: 5x3x30x11
             foreground: $000000
             text: "OPEN"
-            visibility: "EnableCalc_24.CALC"
+            visibility: "EnableCalc_30.CALC"
 
 rectangle_86: !Rectangle
     geometry: 344x452x7x15
@@ -731,13 +731,13 @@ polyline_93: !Polyline
     points: [ 2x2, 48x2 ]
     border-color: *medm_color_54
     border-width: 5
-    visibility: "EnableCalc_25.CALC"
+    visibility: "EnableCalc_31.CALC"
 
 rectangle_94: !Rectangle
     geometry: 273x467x32x5
     background: *medm_color_55
     border-color: *medm_color_55
-    visibility: "EnableCalc_26.CALC"
+    visibility: "EnableCalc_32.CALC"
 
 composite_95: !Group
     geometry: 107x448x18x42
@@ -775,13 +775,13 @@ rectangle_96: !Rectangle
     geometry: 273x321x40x5
     background: *medm_color_55
     border-color: *medm_color_55
-    visibility: "EnableCalc_27.CALC"
+    visibility: "EnableCalc_33.CALC"
 
 rectangle_97: !Rectangle
     geometry: 308x322x5x145
     background: *medm_color_55
     border-color: *medm_color_55
-    visibility: "EnableCalc_28.CALC"
+    visibility: "EnableCalc_34.CALC"
 
 polyline_98: !Polyline
     geometry: 289x452x38x38
@@ -789,7 +789,7 @@ polyline_98: !Polyline
     points: [ 2x2, 35x35 ]
     border-color: *medm_color_54
     border-width: 5
-    visibility: "EnableCalc_29.CALC"
+    visibility: "EnableCalc_35.CALC"
 
 composite_99: !Group
     geometry: 1x267x699x6
@@ -1182,7 +1182,7 @@ Silicon_132: !Text
     geometry: 348x106x80x18
     foreground: *medm_color_15
     text: "Silicon"
-    visibility: "EnableCalc_30.CALC"
+    visibility: "EnableCalc_36.CALC"
 
 text_update_133: !TextMonitor
     geometry: 348x190x80x20
@@ -1195,13 +1195,13 @@ Carbon_134: !Text
     geometry: 348x106x80x18
     foreground: *medm_color_15
     text: "Carbon"
-    visibility: "EnableCalc_31.CALC"
+    visibility: "EnableCalc_37.CALC"
 
 Au_135: !Text
     geometry: 348x105x80x20
     foreground: *medm_color_15
     text: "Au"
-    visibility: "EnableCalc_32.CALC"
+    visibility: "EnableCalc_38.CALC"
 
 rectangle_136: !Rectangle
     geometry: 348x225x80x20
@@ -1212,13 +1212,13 @@ OFF_(100%)_137: !Text
     geometry: 350x227x80x18
     foreground: *medm_color_15
     text: "OFF (100%)"
-    visibility: "EnableCalc_33.CALC"
+    visibility: "EnableCalc_39.CALC"
 
 ON_(85%)_138: !Text
     geometry: 350x227x80x18
     foreground: *medm_color_15
     text: "ON (85%)"
-    visibility: "EnableCalc_34.CALC"
+    visibility: "EnableCalc_40.CALC"
 
 Grating_139: !Text
     geometry: 272x140x70x20
@@ -1248,13 +1248,13 @@ HEG_143: !Text
     geometry: 373x140x30x20
     foreground: *medm_color_15
     text: "HEG"
-    visibility: "EnableCalc_35.CALC"
+    visibility: "EnableCalc_41.CALC"
 
 MEG_144: !Text
     geometry: 373x140x30x20
     foreground: *medm_color_15
     text: "MEG"
-    visibility: "EnableCalc_36.CALC"
+    visibility: "EnableCalc_42.CALC"
 
 -More_145: !RelatedDisplay
     geometry: 638x5x55x20
@@ -1305,19 +1305,19 @@ oval_151: !Ellipse
     geometry: 445x321x15x15
     background: *medm_color_20
     border-color: *medm_color_20
-    visibility: "EnableCalc_37.CALC"
+    visibility: "EnableCalc_43.CALC"
 
 oval_152: !Ellipse
     geometry: 445x321x15x15
     background: *medm_color_20
     border-color: *medm_color_20
-    visibility: "EnableCalc_38.CALC"
+    visibility: "EnableCalc_44.CALC"
 
 oval_153: !Ellipse
     geometry: 445x321x15x15
     background: *medm_color_20
     border-color: *medm_color_20
-    visibility: "EnableCalc_39.CALC"
+    visibility: "EnableCalc_45.CALC"
 
 text_entry_154: !TextEntry
     geometry: 78x56x100x25
@@ -1394,7 +1394,7 @@ oval_158: !Ellipse
     geometry: 216x226x15x15
     background: *medm_color_20
     border-color: *medm_color_20
-    visibility: "EnableCalc_40.CALC"
+    visibility: "EnableCalc_46.CALC"
 
 text_update_159: !TextMonitor
     geometry: 395x373x110x16
@@ -1434,122 +1434,116 @@ rectangle_162: !Rectangle
     geometry: 393x347x112x21
     border-color: *medm_color_25
     border-width: 2
-    visibility: "EnableCalc_41.CALC"
+    visibility: "EnableCalc_47.CALC"
 
 rectangle_163: !Rectangle
     geometry: 393x370x112x21
     border-color: *medm_color_25
     border-width: 2
-    visibility: "EnableCalc_42.CALC"
+    visibility: "EnableCalc_48.CALC"
 
 
 EnableCalc_1: !Calc
-    calc: "(A==1) or (B==0)"
-    A: "ID29:BusyRecord"
-    B: "29idb:userStringCalc1.VAL"
+    calc: "(A==2) and (B==2)"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_1.CALC"
 
 EnableCalc_2: !Calc
-    calc: "(A!=0)"
-    A: "ID29:Main_on_off.VAL"
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_2.CALC"
 
 EnableCalc_3: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_3.CALC"
+
+EnableCalc_4: !Calc
+    calc: "(A==2) and (B==2)"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
+    pv: "EnableCalc_4.CALC"
+
+EnableCalc_5: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_5.CALC"
+
+EnableCalc_6: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_6.CALC"
+
+EnableCalc_7: !Calc
+    calc: "(A==1) or (B==0)"
+    A: "ID29:BusyRecord"
+    B: "29idb:userStringCalc1.VAL"
+    pv: "EnableCalc_7.CALC"
+
+EnableCalc_8: !Calc
+    calc: "(A!=0)"
+    A: "ID29:Main_on_off.VAL"
+    pv: "EnableCalc_8.CALC"
+
+EnableCalc_9: !Calc
     calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
     D: "29id:BLEPS:GV14:OPENED:STS"
-    pv: "EnableCalc_3.CALC"
+    pv: "EnableCalc_9.CALC"
 
-EnableCalc_4: !Calc
+EnableCalc_10: !Calc
     calc: "((A==0) or (B==0)) and (C==2 and D!=0)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
     D: "29id:BLEPS:GV10:OPENED:STS"
-    pv: "EnableCalc_4.CALC"
+    pv: "EnableCalc_10.CALC"
 
-EnableCalc_5: !Calc
+EnableCalc_11: !Calc
     calc: "((A==0) or (B==0)) and (C==2 and D==2)"
     A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
     D: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_5.CALC"
+    pv: "EnableCalc_11.CALC"
 
-EnableCalc_6: !Calc
+EnableCalc_12: !Calc
     calc: "((A==0) or (B==0)) and (C==2 and D==2)"
     A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
     B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     C: "EPS:29:ID:SS1:POSITION"
     D: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_6.CALC"
-
-EnableCalc_7: !Calc
-    calc: "A==2 and B==2"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_7.CALC"
-
-EnableCalc_8: !Calc
-    calc: "A==2 and B==2"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_8.CALC"
-
-EnableCalc_9: !Calc
-    calc: "A==2 and B==2"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_9.CALC"
-
-EnableCalc_10: !Calc
-    calc: "A==2 and B==2"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
-    pv: "EnableCalc_10.CALC"
-
-EnableCalc_11: !Calc
-    calc: "A==0 or B==0 or C==0 or D==0"
-    A: "29id:BLEPS:GV01:OPENED:STS"
-    B: "29id:BLEPS:GV02:OPENED:STS"
-    C: "29id:BLEPS:GV03:OPENED:STS"
-    D: "29id:BLEPS:GV04:OPENED:STS"
-    pv: "EnableCalc_11.CALC"
-
-EnableCalc_12: !Calc
-    calc: "A==0 or B==0"
-    A: "29id:BLEPS:GV05:OPENED:STS"
-    B: "29id:BLEPS:GV15:OPENED:STS"
     pv: "EnableCalc_12.CALC"
 
 EnableCalc_13: !Calc
-    calc: "A==0 or B==0 or C==0"
-    A: "29id:BLEPS:GV06:OPENED:STS"
-    B: "29id:BLEPS:GV08:OPENED:STS"
-    C: "29id:BLEPS:GV09:OPENED:STS"
+    calc: "A==2 and B==2"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_13.CALC"
 
 EnableCalc_14: !Calc
-    calc: "A==0 or B==0 or C==0"
-    A: "29id:BLEPS:GV11:OPENED:STS"
-    B: "29id:BLEPS:GV12:OPENED:STS"
-    C: "29id:BLEPS:GV13:OPENED:STS"
+    calc: "A==2 and B==2"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_14.CALC"
 
 EnableCalc_15: !Calc
-    calc: "A==0 or B==0 or C==0 or D==0"
-    A: "29id:BLEPS:GV01:OPENED:STS"
-    B: "29id:BLEPS:GV02:OPENED:STS"
-    C: "29id:BLEPS:GV03:OPENED:STS"
-    D: "29id:BLEPS:GV04:OPENED:STS"
+    calc: "A==2 and B==2"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_15.CALC"
 
 EnableCalc_16: !Calc
-    calc: "A==0 or B==0"
-    A: "29id:BLEPS:GV05:OPENED:STS"
-    B: "29id:BLEPS:GV15:OPENED:STS"
+    calc: "A==2 and B==2"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_16.CALC"
 
 EnableCalc_17: !Calc
@@ -1567,137 +1561,179 @@ EnableCalc_18: !Calc
     pv: "EnableCalc_18.CALC"
 
 EnableCalc_19: !Calc
-    calc: "(B==1) and (A==1)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
+    calc: "A==0 or B==0 or C==0"
+    A: "29id:BLEPS:GV06:OPENED:STS"
+    B: "29id:BLEPS:GV08:OPENED:STS"
+    C: "29id:BLEPS:GV09:OPENED:STS"
     pv: "EnableCalc_19.CALC"
 
 EnableCalc_20: !Calc
-    calc: "(A==0) or (B==0)"
-    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
+    calc: "A==0 or B==0 or C==0"
+    A: "29id:BLEPS:GV11:OPENED:STS"
+    B: "29id:BLEPS:GV12:OPENED:STS"
+    C: "29id:BLEPS:GV13:OPENED:STS"
     pv: "EnableCalc_20.CALC"
 
 EnableCalc_21: !Calc
-    calc: "(B==1) and (A==1)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
+    calc: "A==0 or B==0 or C==0 or D==0"
+    A: "29id:BLEPS:GV01:OPENED:STS"
+    B: "29id:BLEPS:GV02:OPENED:STS"
+    C: "29id:BLEPS:GV03:OPENED:STS"
+    D: "29id:BLEPS:GV04:OPENED:STS"
     pv: "EnableCalc_21.CALC"
 
 EnableCalc_22: !Calc
-    calc: "(A==0) or (B==0)"
-    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
-    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
+    calc: "A==0 or B==0"
+    A: "29id:BLEPS:GV05:OPENED:STS"
+    B: "29id:BLEPS:GV15:OPENED:STS"
     pv: "EnableCalc_22.CALC"
 
 EnableCalc_23: !Calc
-    calc: "A==2 and B==2"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
+    calc: "A==0 or B==0 or C==0 or D==0"
+    A: "29id:BLEPS:GV01:OPENED:STS"
+    B: "29id:BLEPS:GV02:OPENED:STS"
+    C: "29id:BLEPS:GV03:OPENED:STS"
+    D: "29id:BLEPS:GV04:OPENED:STS"
     pv: "EnableCalc_23.CALC"
 
 EnableCalc_24: !Calc
-    calc: "A==2 and B==2"
-    A: "EPS:29:ID:SS1:POSITION"
-    B: "EPS:29:ID:PS2:POSITION"
+    calc: "A==0 or B==0"
+    A: "29id:BLEPS:GV05:OPENED:STS"
+    B: "29id:BLEPS:GV15:OPENED:STS"
     pv: "EnableCalc_24.CALC"
 
 EnableCalc_25: !Calc
-    calc: "A > 9"
-    A: "29id_m3r:TX_MON"
+    calc: "(B==1) and (A==1)"
+    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_25.CALC"
 
 EnableCalc_26: !Calc
-    calc: "A<9"
-    A: "29id_m3r:TX_MON"
+    calc: "(A==0) or (B==0)"
+    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_26.CALC"
 
 EnableCalc_27: !Calc
-    calc: "A>9"
-    A: "29id_m3r:TX_MON"
+    calc: "(B==1) and (A==1)"
+    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_27.CALC"
 
 EnableCalc_28: !Calc
-    calc: "A>9"
-    A: "29id_m3r:TX_MON"
+    calc: "(A==0) or (B==0)"
+    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
     pv: "EnableCalc_28.CALC"
 
 EnableCalc_29: !Calc
-    calc: "A < 9"
-    A: "29id_m3r:TX_MON"
+    calc: "A==2 and B==2"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_29.CALC"
 
 EnableCalc_30: !Calc
-    calc: "A==2"
-    A: "29idmonoMIR_TYPE_MON"
+    calc: "A==2 and B==2"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
     pv: "EnableCalc_30.CALC"
 
 EnableCalc_31: !Calc
-    calc: "A==3"
-    A: "29idmonoMIR_TYPE_MON"
+    calc: "A > 9"
+    A: "29id_m3r:TX_MON"
     pv: "EnableCalc_31.CALC"
 
 EnableCalc_32: !Calc
-    calc: "A==1"
-    A: "29idmonoMIR_TYPE_MON"
+    calc: "A<9"
+    A: "29id_m3r:TX_MON"
     pv: "EnableCalc_32.CALC"
 
 EnableCalc_33: !Calc
-    calc: "A==100"
-    A: "ID29:QuasiRatio.RVAL"
+    calc: "A>9"
+    A: "29id_m3r:TX_MON"
     pv: "EnableCalc_33.CALC"
 
 EnableCalc_34: !Calc
-    calc: "A==85.0000"
-    A: "ID29:QuasiRatio.RVAL"
+    calc: "A>9"
+    A: "29id_m3r:TX_MON"
     pv: "EnableCalc_34.CALC"
 
 EnableCalc_35: !Calc
-    calc: "A==2"
-    A: "29idmonoGRT_TYPE_MON"
+    calc: "A < 9"
+    A: "29id_m3r:TX_MON"
     pv: "EnableCalc_35.CALC"
 
 EnableCalc_36: !Calc
-    calc: "A==1"
-    A: "29idmonoGRT_TYPE_MON"
+    calc: "A==2"
+    A: "29idmonoMIR_TYPE_MON"
     pv: "EnableCalc_36.CALC"
 
 EnableCalc_37: !Calc
+    calc: "A==3"
+    A: "29idmonoMIR_TYPE_MON"
+    pv: "EnableCalc_37.CALC"
+
+EnableCalc_38: !Calc
+    calc: "A==1"
+    A: "29idmonoMIR_TYPE_MON"
+    pv: "EnableCalc_38.CALC"
+
+EnableCalc_39: !Calc
+    calc: "A==100"
+    A: "ID29:QuasiRatio.RVAL"
+    pv: "EnableCalc_39.CALC"
+
+EnableCalc_40: !Calc
+    calc: "A==85.0000"
+    A: "ID29:QuasiRatio.RVAL"
+    pv: "EnableCalc_40.CALC"
+
+EnableCalc_41: !Calc
+    calc: "A==2"
+    A: "29idmonoGRT_TYPE_MON"
+    pv: "EnableCalc_41.CALC"
+
+EnableCalc_42: !Calc
+    calc: "A==1"
+    A: "29idmonoGRT_TYPE_MON"
+    pv: "EnableCalc_42.CALC"
+
+EnableCalc_43: !Calc
     calc: "A < -21  or  B < -11  or  C < -21  or  D <-21"
     A: "29idb:m17.RBV"
     B: "29idb:m20.RBV"
     C: "29idb:m25.RBV"
     D: "29idb:m28.RBV"
-    pv: "EnableCalc_37.CALC"
+    pv: "EnableCalc_43.CALC"
 
-EnableCalc_38: !Calc
+EnableCalc_44: !Calc
     calc: "A < -5  or  B < -11  or  C < -5  or  D < -5"
     A: "29idb:m1.RBV"
     B: "29idb:m2.RBV"
     C: "29idb:m3.RBV"
     D: "29idb:m4.RBV"
-    pv: "EnableCalc_38.CALC"
+    pv: "EnableCalc_44.CALC"
 
-EnableCalc_39: !Calc
+EnableCalc_45: !Calc
     calc: "A < -21  or  B < -21  or  C < -21"
     A: "29idb:m5.RBV"
     B: "29idb:m6.RBV"
     C: "29idb:m7.RBV"
-    pv: "EnableCalc_39.CALC"
+    pv: "EnableCalc_45.CALC"
 
-EnableCalc_40: !Calc
+EnableCalc_46: !Calc
     calc: "(A!=0)"
     A: "ID29:AccessSecurity.VAL"
-    pv: "EnableCalc_40.CALC"
+    pv: "EnableCalc_46.CALC"
 
-EnableCalc_41: !Calc
+EnableCalc_47: !Calc
     calc: "A>1  and  B==1"
     A: "29idb:ca14:digitalFilterCount"
     B: "29idb:ca14:digitalFilter"
-    pv: "EnableCalc_41.CALC"
+    pv: "EnableCalc_47.CALC"
 
-EnableCalc_42: !Calc
+EnableCalc_48: !Calc
     calc: "A>1  and  B==1"
     A: "29idb:ca15:digitalFilterCount"
     B: "29idb:ca15:digitalFilter"
-    pv: "EnableCalc_42.CALC"
+    pv: "EnableCalc_48.CALC"

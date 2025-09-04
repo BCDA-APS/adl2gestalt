@@ -38,7 +38,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <x>10</x>
             <y>0</y>
             <width>551</width>
-            <height>870</height>
+            <height>740</height>
           </rect>
         </property>
         <widget class="caGraphics" name="rectangle_0">
@@ -1008,149 +1008,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </property>
           </widget>
         </widget>
-        <widget class="caFrame" name="composite_23">
-          <property name="geometry">
-            <rect>
-              <x>276</x>
-              <y>734</y>
-              <width>188</width>
-              <height>136</height>
-            </rect>
-          </property>
-          <property name="channel">
-            <string>EnableCalc_2.CALC</string>
-          </property>
-          <property name="visibility">
-            <enum>caFrame::IfNotZero</enum>
-          </property>
-          <property name="frameShape">
-            <enum>QFrame::NoFrame</enum>
-          </property>
-          <property name="backgroundMode">
-            <enum>caFrame::Filled</enum>
-          </property>
-          <property name="visibilityMode">
-            <enum>caFrame::All</enum>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <widget class="caGraphics" name="oval_0">
-            <property name="geometry">
-              <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>86</width>
-                <height>76</height>
-              </rect>
-            </property>
-            <property name="foreground">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="lineSize">
-              <number>4</number>
-            </property>
-            <property name="lineColor">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="linestyle">
-              <enum>caGraphics::Solid</enum>
-            </property>
-            <property name="form">
-              <enum>caGraphics::Circle</enum>
-            </property>
-            <property name="fillstyle">
-              <enum>caGraphics::Filled</enum>
-            </property>
-          </widget>
-          <widget class="caPolyLine" name="polygon_1">
-            <property name="geometry">
-              <rect>
-                <x>25</x>
-                <y>59</y>
-                <width>103</width>
-                <height>77</height>
-              </rect>
-            </property>
-            <property name="foreground">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="lineSize">
-              <number>4</number>
-            </property>
-            <property name="lineColor">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="linestyle">
-              <enum>caPolyLine::Solid</enum>
-            </property>
-            <property name="polystyle">
-              <enum>caPolyLine::Polygon</enum>
-            </property>
-            <property name="fillstyle">
-              <enum>caPolyLine::Filled</enum>
-            </property>
-            <property name="xyPairs">
-              <string>47,76;103,75;79,8;78,14;80,0;51,43;60,56;0,96;24,70;20,77;47,76</string>
-            </property>
-          </widget>
-          <widget class="caGraphics" name="rectangle_2">
-            <property name="geometry">
-              <rect>
-                <x>128</x>
-                <y>11</y>
-                <width>60</width>
-                <height>61</height>
-              </rect>
-            </property>
-            <property name="foreground">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="lineSize">
-              <number>4</number>
-            </property>
-            <property name="lineColor">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="linestyle">
-              <enum>caGraphics::Solid</enum>
-            </property>
-            <property name="form">
-              <enum>caGraphics::Rectangle</enum>
-            </property>
-            <property name="fillstyle">
-              <enum>caGraphics::Filled</enum>
-            </property>
-          </widget>
-        </widget>
         <widget class="caCalc" name="EnableCalc_1">
           <property name="geometry">
             <rect>
@@ -1177,51 +1034,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="calc">
             <string>(A&lt;B)</string>
-          </property>
-          <property name="foreground">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="eventSignal">
-            <enum>caCalc::onAnyChange</enum>
-          </property>
-        </widget>
-        <widget class="caCalc" name="EnableCalc_2">
-          <property name="geometry">
-            <rect>
-              <x>0</x>
-              <y>0</y>
-              <width>0</width>
-              <height>0</height>
-            </rect>
-          </property>
-          <property name="variable">
-            <string>EnableCalc_2.CALC</string>
-          </property>
-          <property name="channel">
-            <string>fr:m1.RBV</string>
-          </property>
-          <property name="channelB">
-            <string>fr:m2.RBV</string>
-          </property>
-          <property name="channelC">
-            <string></string>
-          </property>
-          <property name="channelD">
-            <string></string>
-          </property>
-          <property name="calc">
-            <string>(A=B)</string>
           </property>
           <property name="foreground">
             <color alpha="0">

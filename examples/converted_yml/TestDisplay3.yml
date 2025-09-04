@@ -2,7 +2,7 @@
 #include widgets.yml
 
 # Gestalt display file generated from MEDM ADL
-# Source: TestDisplay2.adl
+# Source: TestDisplay3.adl
 # Generator: adl2gestalt
 
 
@@ -72,29 +72,22 @@ _medm_color_63: &medm_color_63 $289315
 _medm_color_64: &medm_color_64 $1a7309
 
 Form: !Form
-    geometry: 309x124
+    geometry: 270x129
     margins: 10x0x10x10
     foreground: $000000
     background: *medm_color_4
 
 text_update_0: !TextMonitor
-    geometry: 20x23x149x39
-    foreground: $000000
+    geometry: 59x20x143x33
+    foreground: *medm_color_54
     background: *medm_color_2
-    pv: "$(P).RBV"
+    pv: "fr:m2.RBV"
 
 text_entry_1: !TextEntry
-    geometry: 18x68x152x39
+    geometry: 65x69x139x37
     foreground: $000000
     background: *medm_color_51
-    pv: "$(P).VAL"
-
-choice_button_2: !ChoiceButton
-    geometry: 211x39x65x67
-    foreground: $000000
-    background: *medm_color_26
-    pv: "$(P).SET"
-    horizontal: True
+    pv: "fr:m2.VAL"
 
 
 EnableCalc_1: !Calc

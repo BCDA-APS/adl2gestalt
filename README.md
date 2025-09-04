@@ -53,37 +53,15 @@ Generates Gestalt YAML files:
 #include colors.yml
 #include widgets.yml
 
-display_name: !Form
-    geometry: 437x274 x 2917x77
-    title: "Display Title"
+Form: !Form
+    geometry: 562x900
+    margins: 10x0x10x10
+    foreground: $000000
+    background: *medm_color_4
     
-widget_name: !TextMonitor
-    geometry: 50x14 x 30x8
+text_update_8: !TextMonitor
+    geometry: 41x183x188x38
+    foreground: $000000
+    background: *medm_color_2
     pv: "IOC:PV:NAME"
-    text: "Label"
 ```
-
-Main widget mappings:
-- `text update` → `!TextMonitor`
-- `text entry` → `!TextEntry` 
-- `choice button` → `!ChoiceButton`
-- `message button` → `!MessageButton`
-- `related display` → `!RelatedDisplay`
-
-## Development
-
-```bash
-# Setup
-pip install -e ".[dev]"
-
-# Test
-pytest
-
-# Format
-black src/ tests/
-ruff check src/ tests/ --fix
-```
-
-## License
-
-MIT License
