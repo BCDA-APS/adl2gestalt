@@ -1,0 +1,190 @@
+<ui version="4.0">
+  <class>Form</class>
+  <widget class="QMainWindow" name="Form">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>309</width>
+        <height>124</height>
+      </rect>
+    </property>
+    <property name="foreground">
+      <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+      </color>
+    </property>
+    <property name="styleSheet">
+      <string>QWidget#centralwidget {background: rgba(187,187,187,255);}
+QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
+    </property>
+    <property name="windowTitle">
+      <string></string>
+    </property>
+    <widget class="QWidget" name="centralwidget">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>0</width>
+          <height>0</height>
+        </rect>
+      </property>
+      <widget class="caFrame" name="content">
+        <property name="geometry">
+          <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>276</width>
+            <height>107</height>
+          </rect>
+        </property>
+        <widget class="caLineEdit" name="text_update_0">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>218</red>
+              <green>218</green>
+              <blue>218</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>20</x>
+              <y>23</y>
+              <width>149</width>
+              <height>39</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>$(P).RBV</string>
+          </property>
+          <property name="frameColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="frameLineWidth">
+            <number>0</number>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="caTextEntry" name="text_entry_1">
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>115</red>
+              <green>223</green>
+              <blue>255</blue>
+            </color>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>18</x>
+              <y>68</y>
+              <width>152</width>
+              <height>39</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>$(P).VAL</string>
+          </property>
+          <property name="formatType">
+            <enum>caLineEdit::decimal</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caLineEdit::Static</enum>
+          </property>
+          <property name="fontScaleMode">
+            <enum>caLineEdit::Height</enum>
+          </property>
+        </widget>
+        <widget class="caChoice" name="choice_button_2">
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="255">
+              <red>89</red>
+              <green>126</green>
+              <blue>225</blue>
+            </color>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>211</x>
+              <y>39</y>
+              <width>65</width>
+              <height>67</height>
+            </rect>
+          </property>
+          <property name="channel">
+            <string>$(P).SET</string>
+          </property>
+          <property name="bordercolor">
+            <color alpha="255">
+              <red>89</red>
+              <green>126</green>
+              <blue>225</blue>
+            </color>
+          </property>
+          <property name="stackingMode">
+            <enum>Column</enum>
+          </property>
+          <property name="colorMode">
+            <enum>caChoice::Static</enum>
+          </property>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</ui>
