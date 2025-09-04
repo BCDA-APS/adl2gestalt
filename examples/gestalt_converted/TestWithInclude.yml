@@ -233,7 +233,6 @@ Motors_22: !RelatedDisplay
 
 composite_23: !Include
     geometry: 50x750x145x86
-    visibility: "EnableCalc_2.CALC"
     file: "TestDisplay3"
 
 

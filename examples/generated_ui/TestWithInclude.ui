@@ -1017,12 +1017,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <height>86</height>
             </rect>
           </property>
-          <property name="channel">
-            <string>EnableCalc_2.CALC</string>
-          </property>
-          <property name="visibility">
-            <enum>caInclude::IfNotZero</enum>
-          </property>
           <property name="filename">
             <string>TestDisplay3.ui</string>
           </property>
