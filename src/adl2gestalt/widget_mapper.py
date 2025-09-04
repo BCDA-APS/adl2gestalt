@@ -34,7 +34,6 @@ WIDGET_TYPE_MAP = {
     "wheel switch": None,  # No match in Gestalt
     # Special Objects
     "composite": "Group",  # Composite -> GroupNode
-    "embedded display": "Embed",
     # Display (main container) - maps to Form node
     "display": "Form",
 }
