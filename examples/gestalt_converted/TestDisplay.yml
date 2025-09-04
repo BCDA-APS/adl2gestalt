@@ -205,22 +205,31 @@ oval_18: !Ellipse
     border-style: Dashed
 
 test_if_not_zero_19: !Text
-    geometry: 96x739x251x20
+    geometry: 50x600x251x20
     foreground: $000000
     text: "test if not zero"
     visibility: "fr:m1.RBV"
 
 test_if_zero_20: !Text
-    geometry: 91x802x251x30
+    geometry: 50x650x251x30
     foreground: $000000
     text: "test if zero"
     visibility: !Not "fr:m1.RBV"
 
-test_if_RBV_<_VAL_21: !Text
-    geometry: 304x775x251x40
+RBV_<_VAL_21: !Text
+    geometry: 50x700x251x40
     foreground: $000000
-    text: "test if RBV < VAL"
+    text: "RBV < VAL"
     visibility: "EnableCalc_1.CALC"
+
+Motors_22: !RelatedDisplay
+    geometry: 290x606x209x46
+    foreground: $000000
+    background: *medm_color_4
+    text: "Motors"
+    links:
+        - { label: "M2", file: "TestDisplay2.adl", macros: "P=fr:m2" }
+        - { label: "M3", file: "TestDisplay2.adl", macros: "P=fr:m3" }
 
 
 EnableCalc_1: !Calc
