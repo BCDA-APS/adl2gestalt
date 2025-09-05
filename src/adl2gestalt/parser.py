@@ -1,4 +1,6 @@
 """
+Author: Pete Jemian
+
 Read MEDM .adl files into Python data structures.
 
 Parse the file by blocks.
@@ -47,6 +49,7 @@ Geometry = namedtuple("Geometry", "x y width height")
 
 """MEDM's points item: points = [Point]"""
 Point = namedtuple("Point", "x y")
+
 
 def deg_to_adl(deg: float) -> int:
     """
@@ -117,7 +120,6 @@ class MedmBaseWidget(object):
             "cartesian plot": MedmCartesianPlotWidget,
             "choice button": MedmChoiceButtonWidget,
             "composite": MedmCompositeWidget,
-            "embedded display": MedmEmbeddedDisplayWidget,
             "image": MedmImageWidget,
             "indicator": MedmIndicatorWidget,
             "menu": MedmMenuWidget,
@@ -502,29 +504,6 @@ class MedmCompositeWidget(MedmBaseWidget):
             # aa = self.locateAssignments(buf[block.start+1:block.end])
             bb = self.locateBlocks(buf[block.start + 1 : block.end])
             self.parseChildren(self.main, bb, buf[block.start + 1 : block.end])
-
-
-class MedmEmbeddedDisplayWidget(MedmGenericWidget):
-    debug = True  # TODO: need example in .adl file!
-
-    def __init__(self, line, main, symbol):
-        # MedmGenericWidget.__init__(self, line, main, symbol)
-        emsg = """Need this example!
-            Support for MEDM's 'embedded display' widget not implemented yet.
-
-            file: %s
-            line: %d
-
-            Please submit this file to the GitHub issue tracker
-            (https://github.com/BCDA-APS/adl2pydm/issues/new)
-            or email it to the author: <jemian@anl.gov>.
-
-            see: https://github.com/BCDA-APS/adl2pydm/issues/13#issuecomment-546609321
-        """ % (
-            main.given_filename,
-            line,
-        )
-        raise NotImplementedError(emsg)
 
 
 class MedmImageWidget(MedmGenericWidget):

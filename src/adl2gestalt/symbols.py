@@ -8,7 +8,6 @@ adl_widgets = {
     "cartesian plot",
     "choice button",
     "composite",
-    "embedded display",
     "image",
     "indicator",
     "menu",
