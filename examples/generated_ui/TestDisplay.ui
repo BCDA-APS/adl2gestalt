@@ -769,9 +769,94 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caGraphics::Filled</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_not_zero_19">
-          <property name="text">
-            <string>test if not zero</string>
+        <widget class="QFrame" name="QFrame2">
+          <property name="geometry">
+            <rect>
+              <x>290</x>
+              <y>606</y>
+              <width>209</width>
+              <height>46</height>
+            </rect>
+          </property>
+          <property name="styleSheet">
+            <string>QPushButton
+{
+    font-family: Liberation Sans;
+    font: ;
+	
+    text-align: center;
+}
+</string>
+          </property>
+          <widget class="caRelatedDisplay" name="Motors_19">
+            <property name="foreground">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="255">
+                <red>187</red>
+                <green>187</green>
+                <blue>187</blue>
+              </color>
+            </property>
+            <property name="labels">
+              <string>M2;M3</string>
+            </property>
+            <property name="files">
+              <string>TestDisplay2.ui;TestDisplay2.ui</string>
+            </property>
+            <property name="args">
+              <string>P=fr:m2;P=fr:m3</string>
+            </property>
+            <property name="removeParent">
+              <string>false;false</string>
+            </property>
+            <property name="stackingMode">
+              <enum>Menu</enum>
+            </property>
+            <property name="fontScaleMode">
+              <enum>EPushButton::WidthAndHeight</enum>
+            </property>
+            <property name="label">
+              <string>-Motors</string>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>209</width>
+                <height>46</height>
+              </rect>
+            </property>
+          </widget>
+        </widget>
+        <widget class="caInclude" name="composite_20">
+          <property name="geometry">
+            <rect>
+              <x>270</x>
+              <y>750</y>
+              <width>145</width>
+              <height>86</height>
+            </rect>
+          </property>
+          <property name="filename">
+            <string>TestDisplay3.ui</string>
+          </property>
+          <property name="macro">
+            <string></string>
+          </property>
+        </widget>
+        <widget class="caMenu" name="menu_21">
+          <property name="background">
+            <color alpha="255">
+              <red>187</red>
+              <green>187</green>
+              <blue>187</blue>
+            </color>
           </property>
           <property name="foreground">
             <color alpha="255">
@@ -780,54 +865,25 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <blue>0</blue>
             </color>
           </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="border-style">
-            <string>Solid</string>
-          </property>
-          <property name="font">
-            <font>
-              <family>Liberation Sans</family>
-              <pointsize>12</pointsize>
-            </font>
-          </property>
           <property name="geometry">
             <rect>
-              <x>50</x>
-              <y>600</y>
-              <width>251</width>
-              <height>20</height>
+              <x>56</x>
+              <y>774</y>
+              <width>140</width>
+              <height>27</height>
             </rect>
           </property>
-          <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
           <property name="channel">
-            <string>fr:m1.RBV</string>
+            <string>fr:m1.SET</string>
           </property>
-          <property name="visibility">
-            <enum>caLabel::IfNotZero</enum>
+          <property name="colorMode">
+            <enum>caMenu::Static</enum>
           </property>
-          <property name="borderColor">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="borderWidth">
-            <number>0</number>
-          </property>
-          <property name="fontScaleMode">
-            <enum>ESimpleLabel::Height</enum>
+          <property name="elevation">
+            <enum>caMenu::as_is</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_zero_20">
+        <widget class="caLabel" name="test_if_zero_0">
           <property name="text">
             <string>test if zero</string>
           </property>
@@ -885,7 +941,65 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>ESimpleLabel::Height</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="m1_&lt;_m2_21">
+        <widget class="caLabel" name="test_if_not_zero_1">
+          <property name="text">
+            <string>test if not zero</string>
+          </property>
+          <property name="foreground">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="border-style">
+            <string>Solid</string>
+          </property>
+          <property name="font">
+            <font>
+              <family>Liberation Sans</family>
+              <pointsize>12</pointsize>
+            </font>
+          </property>
+          <property name="geometry">
+            <rect>
+              <x>50</x>
+              <y>600</y>
+              <width>251</width>
+              <height>20</height>
+            </rect>
+          </property>
+          <property name="alignment">
+            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="channel">
+            <string>fr:m1.RBV</string>
+          </property>
+          <property name="visibility">
+            <enum>caLabel::IfNotZero</enum>
+          </property>
+          <property name="borderColor">
+            <color alpha="255">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="borderWidth">
+            <number>0</number>
+          </property>
+          <property name="fontScaleMode">
+            <enum>ESimpleLabel::Height</enum>
+          </property>
+        </widget>
+        <widget class="caLabel" name="m1_&lt;_m2_2">
           <property name="text">
             <string>m1 &lt; m2</string>
           </property>
@@ -941,87 +1055,6 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="fontScaleMode">
             <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="QFrame" name="QFrame2">
-          <property name="geometry">
-            <rect>
-              <x>290</x>
-              <y>606</y>
-              <width>209</width>
-              <height>46</height>
-            </rect>
-          </property>
-          <property name="styleSheet">
-            <string>QPushButton
-{
-    font-family: Liberation Sans;
-    font: ;
-	
-    text-align: center;
-}
-</string>
-          </property>
-          <widget class="caRelatedDisplay" name="Motors_22">
-            <property name="foreground">
-              <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-              </color>
-            </property>
-            <property name="background">
-              <color alpha="255">
-                <red>187</red>
-                <green>187</green>
-                <blue>187</blue>
-              </color>
-            </property>
-            <property name="labels">
-              <string>M2;M3</string>
-            </property>
-            <property name="files">
-              <string>TestDisplay2.ui;TestDisplay2.ui</string>
-            </property>
-            <property name="args">
-              <string>P=fr:m2;P=fr:m3</string>
-            </property>
-            <property name="removeParent">
-              <string>false;false</string>
-            </property>
-            <property name="stackingMode">
-              <enum>Menu</enum>
-            </property>
-            <property name="fontScaleMode">
-              <enum>EPushButton::WidthAndHeight</enum>
-            </property>
-            <property name="label">
-              <string>-Motors</string>
-            </property>
-            <property name="geometry">
-              <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>209</width>
-                <height>46</height>
-              </rect>
-            </property>
-          </widget>
-        </widget>
-        <widget class="caInclude" name="composite_23">
-          <property name="geometry">
-            <rect>
-              <x>270</x>
-              <y>750</y>
-              <width>145</width>
-              <height>86</height>
-            </rect>
-          </property>
-          <property name="filename">
-            <string>TestDisplay3.ui</string>
-          </property>
-          <property name="macro">
-            <string></string>
           </property>
         </widget>
         <widget class="caCalc" name="EnableCalc_1">

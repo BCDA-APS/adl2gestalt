@@ -155,7 +155,7 @@ class MedmToGestaltConverter:
                 lines.extend(widget_lines)
                 lines.append("")
 
-        # Generate Calc nodes for visibility calc
+        # Generate Calc nodes for visibility calc at the end of the file
         if hasattr(self, "calc_nodes") and self.calc_nodes:
             for i, calc_info in enumerate(self.calc_nodes):
                 lines.append(f"")

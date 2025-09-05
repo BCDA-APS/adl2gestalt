@@ -5,8 +5,8 @@ file {
 }
 display {
 	object {
-		x=1337
-		y=99
+		x=1327
+		y=91
 		width=562
 		height=900
 	}
@@ -372,56 +372,6 @@ oval {
 		width=4
 	}
 }
-text {
-	object {
-		x=50
-		y=600
-		width=251
-		height=20
-	}
-	"basic attribute" {
-		clr=14
-	}
-	"dynamic attribute" {
-		vis="if not zero"
-		chan="fr:m1.RBV"
-	}
-	textix="test if not zero"
-}
-text {
-	object {
-		x=50
-		y=650
-		width=251
-		height=30
-	}
-	"basic attribute" {
-		clr=14
-	}
-	"dynamic attribute" {
-		vis="if zero"
-		chan="fr:m1.RBV"
-	}
-	textix="test if zero"
-}
-text {
-	object {
-		x=50
-		y=700
-		width=251
-		height=40
-	}
-	"basic attribute" {
-		clr=14
-	}
-	"dynamic attribute" {
-		vis="calc"
-		calc="A<B"
-		chan="fr:m1.RBV"
-		chanB="fr:m2.RBV"
-	}
-	textix="m1 < m2"
-}
 "related display" {
 	object {
 		x=290
@@ -452,4 +402,78 @@ composite {
 	}
 	"composite name"=""
 	"composite file"="TestDisplay3.adl"
+}
+menu {
+	object {
+		x=56
+		y=774
+		width=140
+		height=27
+	}
+	control {
+		chan="fr:m1.SET"
+		clr=14
+		bclr=4
+	}
+}
+composite {
+	object {
+		x=50
+		y=600
+		width=251
+		height=140
+	}
+	"composite name"=""
+	children {
+		text {
+			object {
+				x=50
+				y=650
+				width=251
+				height=30
+			}
+			"basic attribute" {
+				clr=14
+			}
+			"dynamic attribute" {
+				vis="if zero"
+				chan="fr:m1.RBV"
+			}
+			textix="test if zero"
+		}
+		text {
+			object {
+				x=50
+				y=600
+				width=251
+				height=20
+			}
+			"basic attribute" {
+				clr=14
+			}
+			"dynamic attribute" {
+				vis="if not zero"
+				chan="fr:m1.RBV"
+			}
+			textix="test if not zero"
+		}
+		text {
+			object {
+				x=50
+				y=700
+				width=251
+				height=40
+			}
+			"basic attribute" {
+				clr=14
+			}
+			"dynamic attribute" {
+				vis="calc"
+				calc="A<B"
+				chan="fr:m1.RBV"
+				chanB="fr:m2.RBV"
+			}
+			textix="m1 < m2"
+		}
+	}
 }

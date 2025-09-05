@@ -204,25 +204,7 @@ oval_18: !Ellipse
     border-width: 4
     border-style: Dashed
 
-test_if_not_zero_19: !Text
-    geometry: 50x600x251x20
-    foreground: $000000
-    text: "test if not zero"
-    visibility: "fr:m1.RBV"
-
-test_if_zero_20: !Text
-    geometry: 50x650x251x30
-    foreground: $000000
-    text: "test if zero"
-    visibility: !Not "fr:m1.RBV"
-
-m1_<_m2_21: !Text
-    geometry: 50x700x251x40
-    foreground: $000000
-    text: "m1 < m2"
-    visibility: "EnableCalc_1.CALC"
-
-Motors_22: !RelatedDisplay
+Motors_19: !RelatedDisplay
     geometry: 290x606x209x46
     foreground: $000000
     background: *medm_color_4
@@ -231,9 +213,34 @@ Motors_22: !RelatedDisplay
         - { label: "M2", file: "TestDisplay2.adl", macros: "P=fr:m2" }
         - { label: "M3", file: "TestDisplay2.adl", macros: "P=fr:m3" }
 
-composite_23: !Include
+composite_20: !Include
     geometry: 270x750x145x86
     file: "TestDisplay3"
+
+menu_21: !Menu
+    geometry: 56x774x140x27
+    foreground: $000000
+    background: *medm_color_4
+    pv: "fr:m1.SET"
+
+composite_22: !Group
+    geometry: 50x600x251x140
+    children:
+        test_if_zero_0: !Text
+            geometry: 0x50x251x30
+            foreground: $000000
+            text: "test if zero"
+            visibility: !Not "fr:m1.RBV"
+        test_if_not_zero_1: !Text
+            geometry: 0x0x251x20
+            foreground: $000000
+            text: "test if not zero"
+            visibility: "fr:m1.RBV"
+        m1_<_m2_2: !Text
+            geometry: 0x100x251x40
+            foreground: $000000
+            text: "m1 < m2"
+            visibility: "EnableCalc_1.CALC"
 
 
 EnableCalc_1: !Calc
