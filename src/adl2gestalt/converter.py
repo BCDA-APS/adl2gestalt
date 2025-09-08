@@ -499,7 +499,7 @@ class MedmToGestaltConverter:
                 alignment = align_map.get(contents["align"], "Left")
                 lines.append(f"    alignment: {alignment}")
 
-        # Text entry/update properties
+        # Text entry/monitor format properties
         if widget_type in ["TextEntry", "TextMonitor"]:
             if "format" in contents:
                 format_map = {
@@ -513,15 +513,6 @@ class MedmToGestaltConverter:
                 }
                 fmt = format_map.get(contents["format"], "Decimal")
                 lines.append(f"    format: {fmt}")
-
-            if "align" in contents:
-                align_map = {
-                    "horiz. left": "Left",
-                    "horiz. centered": "Center",
-                    "horiz. right": "Right",
-                }
-                alignment = align_map.get(contents["align"], "Left")
-                lines.append(f"    alignment: {alignment}")
 
         # Bar/Slider properties
         if widget_type in ["Scale", "Slider"]:
