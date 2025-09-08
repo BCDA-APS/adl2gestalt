@@ -7,6 +7,7 @@
 
 
 # Custom colors from MEDM color table
+_medm_color_0: &medm_color_0 $ffffff
 _medm_color_1: &medm_color_1 $ececec
 _medm_color_2: &medm_color_2 $dadada
 _medm_color_3: &medm_color_3 $c8c8c8
@@ -20,6 +21,7 @@ _medm_color_10: &medm_color_10 $696969
 _medm_color_11: &medm_color_11 $5a5a5a
 _medm_color_12: &medm_color_12 $464646
 _medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_14: &medm_color_14 $000000
 _medm_color_15: &medm_color_15 $00d800
 _medm_color_16: &medm_color_16 $1ebb00
 _medm_color_17: &medm_color_17 $339900
@@ -74,7 +76,7 @@ _medm_color_64: &medm_color_64 $1a7309
 Form: !Form
     geometry: 562x900
     margins: 10x0x10x10
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_4
 
 rectangle_0: !Rectangle
@@ -132,26 +134,26 @@ bar_7: !Scale
 
 text_update_8: !TextMonitor
     geometry: 41x183x188x38
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_2
     pv: "fr:m1.RBV"
 
 text_entry_9: !TextEntry
     geometry: 42x233x186x39
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_51
     pv: "fr:m1.VAL"
 
 choice_button_10: !ChoiceButton
     geometry: 51x322x46x57
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_52
     pv: "fr:m1.SET"
     horizontal: False
 
 Move_11: !MessageButton
     geometry: 116x327x142x44
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_55
     pv: "fr:m1.TWF"
     text: "Move"
@@ -177,12 +179,12 @@ image_14: !Image
 
 byte_15: !ByteMonitor
     geometry: 316x439x228x85
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_36
     pv: "fr:m1.VAL"
     bits: 11
     start-bit: 0
-    on-color: $000000
+    on-color: *medm_color_14
     off-color: *medm_color_36
 
 bar_16: !Scale
@@ -201,13 +203,13 @@ valuator_17: !Slider
 
 oval_18: !Ellipse
     geometry: 137x501x56x58
-    border-color: $000000
+    border-color: *medm_color_14
     border-width: 4
     border-style: Dashed
 
 Motors_19: !RelatedDisplay
     geometry: 290x606x209x46
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_4
     text: "Motors"
     links:
@@ -220,7 +222,7 @@ composite_20: !Include
 
 menu_21: !Menu
     geometry: 56x774x140x27
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_4
     pv: "fr:m1.SET"
 

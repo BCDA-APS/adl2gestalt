@@ -1,8 +1,7 @@
 """Main conversion logic from MEDM to Gestalt."""
 
-import yaml
 from pathlib import Path
-from typing import Dict, Any, List, Optional
+from typing import Any, List, Optional
 import logging
 
 from .parser import MedmMainWidget
@@ -186,34 +185,13 @@ class MedmToGestaltConverter:
         self.color_map = {}
         self.color_aliases = {}
 
-        # Standard color names that might be in Gestalt's colors.yml
-        standard_colors = {
-            (255, 255, 255): "white",
-            (0, 0, 0): "black",
-            (255, 0, 0): "red",
-            (0, 255, 0): "green",
-            (0, 0, 255): "blue",
-            (255, 255, 0): "yellow",
-            (0, 255, 255): "cyan",
-            (255, 0, 255): "magenta",
-            (128, 128, 128): "gray",
-            (192, 192, 192): "silver",
-        }
-
         for i, color in enumerate(color_table):
             color_hex = f"${color.r:02x}{color.g:02x}{color.b:02x}"
-            self.color_map[i] = color_hex
 
-            # Check if this is a standard color
-            rgb_tuple = (color.r, color.g, color.b)
-            if rgb_tuple in standard_colors:
-                # Use direct hex for standard colors instead of aliases
-                self.color_map[i] = color_hex
-            else:
-                # Create a custom color alias
-                alias_name = f"medm_color_{i}"
-                self.color_aliases[f"_{alias_name}"] = color_hex
-                self.color_map[i] = f"*{alias_name}"
+            # Create a custom color alias for all colors
+            alias_name = f"medm_color_{i}"
+            self.color_aliases[f"_{alias_name}"] = color_hex
+            self.color_map[i] = f"*{alias_name}"
 
     def get_color_reference(self, color, color_table: List) -> str:
         """
@@ -410,14 +388,11 @@ class MedmToGestaltConverter:
 
     def _add_visibility_properties(self, widget, contents, lines):
         """Add visibility properties for any widget (individual or composite)."""
-        print(f"DEBUG: _add_visibility_properties called with contents: {contents}")
 
         if "dynamic attribute" not in contents:
-            print("DEBUG: No dynamic attribute found")
             return
 
         dynamic_attrs = contents["dynamic attribute"]
-        print(f"DEBUG: dynamic_attrs: {dynamic_attrs}")
 
         # Check if we have the required fields for visibility
         has_vis = "vis" in dynamic_attrs
@@ -426,24 +401,19 @@ class MedmToGestaltConverter:
 
         # If we have calc but no vis, assume it's a calc-based visibility
         if has_calc and not has_vis:
-            print("DEBUG: Found calc without vis, assuming calc-based visibility")
             dynamic_attrs["vis"] = "calc"
             has_vis = True
 
         if not has_vis or not has_chan:
-            print("DEBUG: Missing vis or chan in dynamic_attrs")
             return
 
         visibility_mode = dynamic_attrs["vis"]
         chan_a = dynamic_attrs["chan"]
-        print(f"DEBUG: visibility_mode: {visibility_mode}, chan_a: {chan_a}")
 
         if visibility_mode == "if not zero":
             lines.append(f'    visibility: "{chan_a}"')
-            print(f"DEBUG: Added if not zero visibility: {chan_a}")
         elif visibility_mode == "if zero":
             lines.append(f'    visibility: !Not "{chan_a}"')
-            print(f"DEBUG: Added if zero visibility: {chan_a}")
         elif visibility_mode == "calc":
             # Complex calculation-based visibility
             calc_expression = dynamic_attrs.get("calc", "")
@@ -451,19 +421,13 @@ class MedmToGestaltConverter:
             chan_c = dynamic_attrs.get("chanC", "")
             chan_d = dynamic_attrs.get("chanD", "")
 
-            print(f"DEBUG: calc_expression: {calc_expression}, chan_a: {chan_a}")
-
             if calc_expression and chan_a:
                 # Create a Calc node
                 self.calc_node_counter += 1
                 calc_name = f"EnableCalc_{self.calc_node_counter}"
-                print(f"DEBUG: Creating calc node: {calc_name}")
 
                 # Set visibility to reference the Calc node's output PV
                 lines.append(f'    visibility: "{calc_name}.CALC"')
-                print(
-                    f'DEBUG: Added calc visibility line: visibility: "{calc_name}.CALC"'
-                )
 
                 # Store calc info for later processing
                 self.calc_nodes.append(
@@ -476,7 +440,6 @@ class MedmToGestaltConverter:
                         "channel_d": chan_d,
                     }
                 )
-                print(f"DEBUG: Stored calc info: {self.calc_nodes[-1]}")
 
     def add_widget_properties_lines(
         self, widget: Any, lines: List[str], widget_type: str, color_table: List
