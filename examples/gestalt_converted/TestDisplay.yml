@@ -226,6 +226,7 @@ menu_21: !Menu
 
 composite_22: !Group
     geometry: 50x600x251x140
+    visibility: "EnableCalc_1.CALC"
     children:
         test_if_zero_0: !Text
             geometry: 0x50x251x30
@@ -241,11 +242,16 @@ composite_22: !Group
             geometry: 0x100x251x40
             foreground: *medm_color_54
             text: "m1 < m2"
-            visibility: "EnableCalc_1.CALC"
+            visibility: "EnableCalc_2.CALC"
 
 
 EnableCalc_1: !Calc
+    calc: "A==0"
+    A: "fr:m1.SET"
+    pv: "EnableCalc_1.CALC"
+
+EnableCalc_2: !Calc
     calc: "A<B"
     A: "fr:m1.RBV"
     B: "fr:m2.RBV"
-    pv: "EnableCalc_1.CALC"
+    pv: "EnableCalc_2.CALC"

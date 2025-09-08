@@ -883,132 +883,29 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             <enum>caMenu::as_is</enum>
           </property>
         </widget>
-        <widget class="caLabel" name="test_if_zero_0">
-          <property name="text">
-            <string>test if zero</string>
-          </property>
-          <property name="foreground">
-            <color alpha="255">
-              <red>10</red>
-              <green>0</green>
-              <blue>184</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="border-style">
-            <string>Solid</string>
-          </property>
-          <property name="font">
-            <font>
-              <family>Liberation Sans</family>
-              <pointsize>12</pointsize>
-            </font>
-          </property>
-          <property name="geometry">
-            <rect>
-              <x>50</x>
-              <y>650</y>
-              <width>251</width>
-              <height>30</height>
-            </rect>
-          </property>
-          <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="channel">
-            <string>fr:m1.RBV</string>
-          </property>
-          <property name="visibility">
-            <enum>caLabel::IfZero</enum>
-          </property>
-          <property name="borderColor">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="borderWidth">
-            <number>0</number>
-          </property>
-          <property name="fontScaleMode">
-            <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="caLabel" name="test_if_not_zero_1">
-          <property name="text">
-            <string>test if not zero</string>
-          </property>
-          <property name="foreground">
-            <color alpha="255">
-              <red>10</red>
-              <green>0</green>
-              <blue>184</blue>
-            </color>
-          </property>
-          <property name="background">
-            <color alpha="0">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="border-style">
-            <string>Solid</string>
-          </property>
-          <property name="font">
-            <font>
-              <family>Liberation Sans</family>
-              <pointsize>12</pointsize>
-            </font>
-          </property>
+        <widget class="caFrame" name="composite_22">
           <property name="geometry">
             <rect>
               <x>50</x>
               <y>600</y>
               <width>251</width>
-              <height>20</height>
+              <height>140</height>
             </rect>
           </property>
-          <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
           <property name="channel">
-            <string>fr:m1.RBV</string>
+            <string>EnableCalc_1.CALC</string>
           </property>
           <property name="visibility">
-            <enum>caLabel::IfNotZero</enum>
+            <enum>caFrame::IfNotZero</enum>
           </property>
-          <property name="borderColor">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
+          <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
           </property>
-          <property name="borderWidth">
-            <number>0</number>
+          <property name="backgroundMode">
+            <enum>caFrame::Filled</enum>
           </property>
-          <property name="fontScaleMode">
-            <enum>ESimpleLabel::Height</enum>
-          </property>
-        </widget>
-        <widget class="caLabel" name="m1_&lt;_m2_2">
-          <property name="text">
-            <string>m1 &lt; m2</string>
-          </property>
-          <property name="foreground">
-            <color alpha="255">
-              <red>10</red>
-              <green>0</green>
-              <blue>184</blue>
-            </color>
+          <property name="visibilityMode">
+            <enum>caFrame::All</enum>
           </property>
           <property name="background">
             <color alpha="0">
@@ -1017,45 +914,180 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <blue>0</blue>
             </color>
           </property>
-          <property name="border-style">
-            <string>Solid</string>
-          </property>
-          <property name="font">
-            <font>
-              <family>Liberation Sans</family>
-              <pointsize>12</pointsize>
-            </font>
-          </property>
-          <property name="geometry">
-            <rect>
-              <x>50</x>
-              <y>700</y>
-              <width>251</width>
-              <height>40</height>
-            </rect>
-          </property>
-          <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
-          </property>
-          <property name="channel">
-            <string>EnableCalc_1.CALC</string>
-          </property>
-          <property name="visibility">
-            <enum>caLabel::IfNotZero</enum>
-          </property>
-          <property name="borderColor">
-            <color alpha="255">
-              <red>0</red>
-              <green>0</green>
-              <blue>0</blue>
-            </color>
-          </property>
-          <property name="borderWidth">
-            <number>0</number>
-          </property>
-          <property name="fontScaleMode">
-            <enum>ESimpleLabel::Height</enum>
-          </property>
+          <widget class="caLabel" name="test_if_zero_0">
+            <property name="text">
+              <string>test if zero</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>10</red>
+                <green>0</green>
+                <blue>184</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="border-style">
+              <string>Solid</string>
+            </property>
+            <property name="font">
+              <font>
+                <family>Liberation Sans</family>
+                <pointsize>12</pointsize>
+              </font>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>50</y>
+                <width>251</width>
+                <height>30</height>
+              </rect>
+            </property>
+            <property name="alignment">
+              <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="channel">
+              <string>fr:m1.RBV</string>
+            </property>
+            <property name="visibility">
+              <enum>caLabel::IfZero</enum>
+            </property>
+            <property name="borderColor">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="borderWidth">
+              <number>0</number>
+            </property>
+            <property name="fontScaleMode">
+              <enum>ESimpleLabel::Height</enum>
+            </property>
+          </widget>
+          <widget class="caLabel" name="test_if_not_zero_1">
+            <property name="text">
+              <string>test if not zero</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>10</red>
+                <green>0</green>
+                <blue>184</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="border-style">
+              <string>Solid</string>
+            </property>
+            <property name="font">
+              <font>
+                <family>Liberation Sans</family>
+                <pointsize>12</pointsize>
+              </font>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>251</width>
+                <height>20</height>
+              </rect>
+            </property>
+            <property name="alignment">
+              <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="channel">
+              <string>fr:m1.RBV</string>
+            </property>
+            <property name="visibility">
+              <enum>caLabel::IfNotZero</enum>
+            </property>
+            <property name="borderColor">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="borderWidth">
+              <number>0</number>
+            </property>
+            <property name="fontScaleMode">
+              <enum>ESimpleLabel::Height</enum>
+            </property>
+          </widget>
+          <widget class="caLabel" name="m1_&lt;_m2_2">
+            <property name="text">
+              <string>m1 &lt; m2</string>
+            </property>
+            <property name="foreground">
+              <color alpha="255">
+                <red>10</red>
+                <green>0</green>
+                <blue>184</blue>
+              </color>
+            </property>
+            <property name="background">
+              <color alpha="0">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="border-style">
+              <string>Solid</string>
+            </property>
+            <property name="font">
+              <font>
+                <family>Liberation Sans</family>
+                <pointsize>12</pointsize>
+              </font>
+            </property>
+            <property name="geometry">
+              <rect>
+                <x>0</x>
+                <y>100</y>
+                <width>251</width>
+                <height>40</height>
+              </rect>
+            </property>
+            <property name="alignment">
+              <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="channel">
+              <string>EnableCalc_2.CALC</string>
+            </property>
+            <property name="visibility">
+              <enum>caLabel::IfNotZero</enum>
+            </property>
+            <property name="borderColor">
+              <color alpha="255">
+                <red>0</red>
+                <green>0</green>
+                <blue>0</blue>
+              </color>
+            </property>
+            <property name="borderWidth">
+              <number>0</number>
+            </property>
+            <property name="fontScaleMode">
+              <enum>ESimpleLabel::Height</enum>
+            </property>
+          </widget>
         </widget>
         <widget class="caCalc" name="EnableCalc_1">
           <property name="geometry">
@@ -1068,6 +1100,51 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
           </property>
           <property name="variable">
             <string>EnableCalc_1.CALC</string>
+          </property>
+          <property name="channel">
+            <string>fr:m1.SET</string>
+          </property>
+          <property name="channelB">
+            <string></string>
+          </property>
+          <property name="channelC">
+            <string></string>
+          </property>
+          <property name="channelD">
+            <string></string>
+          </property>
+          <property name="calc">
+            <string>(A=0)</string>
+          </property>
+          <property name="foreground">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="background">
+            <color alpha="0">
+              <red>0</red>
+              <green>0</green>
+              <blue>0</blue>
+            </color>
+          </property>
+          <property name="eventSignal">
+            <enum>caCalc::onAnyChange</enum>
+          </property>
+        </widget>
+        <widget class="caCalc" name="EnableCalc_2">
+          <property name="geometry">
+            <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>0</width>
+              <height>0</height>
+            </rect>
+          </property>
+          <property name="variable">
+            <string>EnableCalc_2.CALC</string>
           </property>
           <property name="channel">
             <string>fr:m1.RBV</string>

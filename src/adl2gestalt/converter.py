@@ -410,21 +410,40 @@ class MedmToGestaltConverter:
 
     def _add_visibility_properties(self, widget, contents, lines):
         """Add visibility properties for any widget (individual or composite)."""
+        print(f"DEBUG: _add_visibility_properties called with contents: {contents}")
+
         if "dynamic attribute" not in contents:
+            print("DEBUG: No dynamic attribute found")
             return
 
         dynamic_attrs = contents["dynamic attribute"]
+        print(f"DEBUG: dynamic_attrs: {dynamic_attrs}")
 
-        if "vis" not in dynamic_attrs or "chan" not in dynamic_attrs:
+        # Check if we have the required fields for visibility
+        has_vis = "vis" in dynamic_attrs
+        has_chan = "chan" in dynamic_attrs
+        has_calc = "calc" in dynamic_attrs
+
+        # If we have calc but no vis, assume it's a calc-based visibility
+        if has_calc and not has_vis:
+            print("DEBUG: Found calc without vis, assuming calc-based visibility")
+            dynamic_attrs["vis"] = "calc"
+            has_vis = True
+
+        if not has_vis or not has_chan:
+            print("DEBUG: Missing vis or chan in dynamic_attrs")
             return
 
         visibility_mode = dynamic_attrs["vis"]
         chan_a = dynamic_attrs["chan"]
+        print(f"DEBUG: visibility_mode: {visibility_mode}, chan_a: {chan_a}")
 
         if visibility_mode == "if not zero":
             lines.append(f'    visibility: "{chan_a}"')
+            print(f"DEBUG: Added if not zero visibility: {chan_a}")
         elif visibility_mode == "if zero":
             lines.append(f'    visibility: !Not "{chan_a}"')
+            print(f"DEBUG: Added if zero visibility: {chan_a}")
         elif visibility_mode == "calc":
             # Complex calculation-based visibility
             calc_expression = dynamic_attrs.get("calc", "")
@@ -432,13 +451,19 @@ class MedmToGestaltConverter:
             chan_c = dynamic_attrs.get("chanC", "")
             chan_d = dynamic_attrs.get("chanD", "")
 
+            print(f"DEBUG: calc_expression: {calc_expression}, chan_a: {chan_a}")
+
             if calc_expression and chan_a:
                 # Create a Calc node
                 self.calc_node_counter += 1
                 calc_name = f"EnableCalc_{self.calc_node_counter}"
+                print(f"DEBUG: Creating calc node: {calc_name}")
 
                 # Set visibility to reference the Calc node's output PV
                 lines.append(f'    visibility: "{calc_name}.CALC"')
+                print(
+                    f'DEBUG: Added calc visibility line: visibility: "{calc_name}.CALC"'
+                )
 
                 # Store calc info for later processing
                 self.calc_nodes.append(
@@ -451,6 +476,7 @@ class MedmToGestaltConverter:
                         "channel_d": chan_d,
                     }
                 )
+                print(f"DEBUG: Stored calc info: {self.calc_nodes[-1]}")
 
     def add_widget_properties_lines(
         self, widget: Any, lines: List[str], widget_type: str, color_table: List
@@ -706,6 +732,7 @@ class MedmToGestaltConverter:
 
         # Composite/Group properties
         if widget_type == "Group" and hasattr(widget, "widgets"):
+
             # Recursively convert child widgets
             if widget.widgets:
                 lines.append("    children:")
