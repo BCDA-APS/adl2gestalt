@@ -488,6 +488,17 @@ class MedmToGestaltConverter:
         if widget_type == "Text" and hasattr(widget, "title"):
             lines.append(f'    text: "{widget.title}"')
 
+        # Alignment properties
+        if widget_type in ["Text", "TextEntry"]:
+            if "align" in contents:
+                align_map = {
+                    "horiz. left": "Left",
+                    "horiz. centered": "Center",
+                    "horiz. right": "Right",
+                }
+                alignment = align_map.get(contents["align"], "Left")
+                lines.append(f"    alignment: {alignment}")
+
         # Text entry/update properties
         if widget_type in ["TextEntry", "TextMonitor"]:
             if "format" in contents:

@@ -258,11 +258,11 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
               <x>36</x>
               <y>117</y>
               <width>202</width>
-              <height>53</height>
+              <height>30</height>
             </rect>
           </property>
           <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+            <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
           </property>
           <property name="borderColor">
             <color alpha="255">
@@ -377,7 +377,7 @@ QPushButton::menu-indicator {image: url(none.png); width: 0}</string>
             </rect>
           </property>
           <property name="alignment">
-            <set>Qt::AlignLeft|Qt::AlignVCenter</set>
+            <set>Qt::AlignRight|Qt::AlignVCenter</set>
           </property>
           <property name="channel">
             <string>fr:m1.RBV</string>

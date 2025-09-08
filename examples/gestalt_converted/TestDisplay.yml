@@ -111,9 +111,10 @@ oval_4: !Ellipse
     border-width: 4
 
 Hello_World!_5: !Text
-    geometry: 36x117x202x53
+    geometry: 36x117x202x30
     foreground: *medm_color_54
     text: "Hello World!"
+    alignment: Center
 
 indicator_6: !Scale
     geometry: 285x110x165x47
@@ -134,6 +135,8 @@ text_update_8: !TextMonitor
     foreground: $000000
     background: *medm_color_2
     pv: "fr:m1.RBV"
+    alignment: Right
+    alignment: Right
 
 text_entry_9: !TextEntry
     geometry: 42x233x186x39
