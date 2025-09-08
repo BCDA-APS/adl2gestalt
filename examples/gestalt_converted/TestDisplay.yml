@@ -135,8 +135,6 @@ text_update_8: !TextMonitor
     foreground: $000000
     background: *medm_color_2
     pv: "fr:m1.RBV"
-    alignment: Right
-    alignment: Right
 
 text_entry_9: !TextEntry
     geometry: 42x233x186x39
@@ -231,17 +229,17 @@ composite_22: !Group
     children:
         test_if_zero_0: !Text
             geometry: 0x50x251x30
-            foreground: $000000
+            foreground: *medm_color_54
             text: "test if zero"
             visibility: !Not "fr:m1.RBV"
         test_if_not_zero_1: !Text
             geometry: 0x0x251x20
-            foreground: $000000
+            foreground: *medm_color_54
             text: "test if not zero"
             visibility: "fr:m1.RBV"
         m1_<_m2_2: !Text
             geometry: 0x100x251x40
-            foreground: $000000
+            foreground: *medm_color_54
             text: "m1 < m2"
             visibility: "EnableCalc_1.CALC"
 

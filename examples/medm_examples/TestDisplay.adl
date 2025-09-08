@@ -436,7 +436,7 @@ composite {
 				height=30
 			}
 			"basic attribute" {
-				clr=14
+				clr=54
 			}
 			"dynamic attribute" {
 				vis="if zero"
@@ -452,7 +452,7 @@ composite {
 				height=20
 			}
 			"basic attribute" {
-				clr=14
+				clr=54
 			}
 			"dynamic attribute" {
 				vis="if not zero"
@@ -468,7 +468,7 @@ composite {
 				height=40
 			}
 			"basic attribute" {
-				clr=14
+				clr=54
 			}
 			"dynamic attribute" {
 				vis="calc"
@@ -478,5 +478,9 @@ composite {
 			}
 			textix="m1 < m2"
 		}
+	}
+	"dynamic attribute" {
+		calc="A=0"
+		chan="fr:m1.SET"
 	}
 }
