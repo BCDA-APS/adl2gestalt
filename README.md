@@ -15,10 +15,10 @@ Convert MEDM ADL files to [Gestalt](https://github.com/BCDA-APS/gestalt) YAML fo
 git clone https://github.com/BCDA-APS/adl2gestalt.git
 cd adl2gestalt
 git clone https://github.com/BCDA-APS/gestalt.git src/gestalt
-pip install -e .
+pip install .
 ```
 
-Optional for development:
+For development (editable install with dev tools):
 ```bash
 pip install -e ".[dev]"
 ```
@@ -29,20 +29,21 @@ pip install -e ".[dev]"
 
 ```bash
 # Convert single file
-adl2gestalt convert file.adl -o file.yml
+adl2gestalt convert path/to/file.adl -o path/to/file.yml
 
 # Convert directory
-adl2gestalt convert medm_files/ --batch -o gestalt_files/
+adl2gestalt convert path/to/medm_folder/ --batch -o path/to/gestalt_folder/
 
 # Complete workflow (convert + test)
-adl2gestalt workflow medm_files/ gestalt_files/
-
-# Generate UI files
-adl2gestalt generate $(pwd)/file.yml --format qt -o $(pwd)/file.ui
-gestalt $(pwd)/file.yml -t qt -o file.ui
+adl2gestalt workflow path/to/medm_folder/ path/to/gestalt_folder/
 
 # Check status
-adl2gestalt status medm_files/ gestalt_files/
+adl2gestalt status path/to/medm_folder/ path/to/gestalt_folder/
+
+# Generate UI files
+adl2gestalt generate path/to/file.yml --format qt -o path/to/file.ui
+# Or using gestalt directly
+gestalt path/to/file.yml -t qt -o path/to/file.ui
 ```
 
 ## Output Format

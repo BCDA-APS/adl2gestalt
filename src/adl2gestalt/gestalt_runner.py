@@ -85,9 +85,7 @@ def run_gestalt_file(
         cmd.append(str(gestalt_file.resolve()))  # Convert to absolute path
 
         # Run the command
-        result = subprocess.run(
-            cmd, capture_output=True, text=True
-        )
+        result = subprocess.run(cmd, capture_output=True, text=True)
 
         if result.returncode == 0:
             output_msg = f"Successfully generated {output_format} output"
