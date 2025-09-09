@@ -152,30 +152,6 @@ def test_gestalt_conversion(gestalt_file: Path) -> Dict[str, Any]:
     return results
 
 
-def batch_validate_gestalt_files(gestalt_dir: Path) -> List[Dict[str, Any]]:
-    """
-    Validate all Gestalt files in a directory.
-
-    Args:
-        gestalt_dir: Directory containing Gestalt YAML files
-
-    Returns:
-        List of validation results
-    """
-    results = []
-
-    if not gestalt_dir.exists():
-        return results
-
-    gestalt_files = list(gestalt_dir.glob("*.yml")) + list(gestalt_dir.glob("*.yaml"))
-
-    for gestalt_file in gestalt_files:
-        result = test_gestalt_conversion(gestalt_file)
-        results.append(result)
-
-    return results
-
-
 def create_gestalt_workflow(
     medm_file: Path, output_dir: Path, test_conversion: bool = True
 ) -> Dict[str, Any]:
