@@ -1,12 +1,12 @@
 # ADL to Gestalt Converter
 
-Convert MEDM ADL files to Gestalt YAML format for modern EPICS displays.
+Convert MEDM ADL files to [Gestalt](https://github.com/BCDA-APS/gestalt) YAML format for modern EPICS displays.
 
 ## Features
 
 - Convert single files or entire directories
 - Validate and test converted files
-- Generate Qt, CSS-Phoebus, and PyDM displays
+- Generate Qt, CSS-Phoebus, and PyDM displays using [Gestalt](https://github.com/BCDA-APS/gestalt)
 - Command-line tools
 
 ## Installation

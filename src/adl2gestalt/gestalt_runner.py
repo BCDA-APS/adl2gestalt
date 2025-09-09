@@ -86,7 +86,7 @@ def run_gestalt_file(
 
         # Run the command
         result = subprocess.run(
-            cmd, capture_output=True, text=True, cwd=gestalt_file.parent
+            cmd, capture_output=True, text=True
         )
 
         if result.returncode == 0:
