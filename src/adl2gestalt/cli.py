@@ -387,23 +387,16 @@ def validate_command(gestalt_file: Path, verbose: bool):
 @click.option(
     "--output", "-o", type=click.Path(path_type=Path), help="Output file path"
 )
-@click.option(
-    "--data",
-    "-d",
-    type=click.Path(exists=True, path_type=Path),
-    help="Data file for macro substitution",
-)
 @click.option("--verbose", "-v", is_flag=True, help="Verbose output")
 def generate_command(
     gestalt_file: Path,
     format: str,
     output: Optional[Path],
-    data: Optional[Path],
     verbose: bool,
 ):
     """Generate UI file from Gestalt YAML using gestalt engine."""
     try:
-        success, message = run_gestalt_file(gestalt_file, format, output, data)
+        success, message = run_gestalt_file(gestalt_file, format, output)
 
         if success:
             click.echo(f"✅ {message}")

@@ -56,7 +56,6 @@ def run_gestalt_file(
     gestalt_file: Path,
     output_format: str = "qt",
     output_file: Optional[Path] = None,
-    data_file: Optional[Path] = None,
 ) -> Tuple[bool, str]:
     """
     Run a Gestalt file through the gestalt converter.
@@ -65,7 +64,6 @@ def run_gestalt_file(
         gestalt_file: Path to the Gestalt YAML file
         output_format: Output format (qt, bob, dm)
         output_file: Optional output file path
-        data_file: Optional data file for macros
 
     Returns:
         Tuple of (success, message)
@@ -83,9 +81,6 @@ def run_gestalt_file(
 
         if output_file:
             cmd.extend(["-o", str(output_file)])
-
-        if data_file:
-            cmd.extend(["-i", str(data_file)])
 
         cmd.append(str(gestalt_file.resolve()))  # Convert to absolute path
 
@@ -140,7 +135,7 @@ def test_gestalt_conversion(gestalt_file: Path) -> Dict[str, Any]:
         for fmt in formats_to_test:
             output_file = temp_path / f"test_output.{fmt}"
 
-            success, message = run_gestalt_file(gestalt_file, fmt, output_file, None)
+            success, message = run_gestalt_file(gestalt_file, fmt, output_file)
 
             results["conversions"][fmt] = {
                 "success": success,
