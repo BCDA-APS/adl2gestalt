@@ -332,29 +332,6 @@ def convert_command(
 @click.command()
 @click.argument("gestalt-file", type=click.Path(exists=True, path_type=Path))
 @click.option(
-    "--verbose", "-v", is_flag=True, help="Show detailed validation information"
-)
-def validate_command(gestalt_file: Path, verbose: bool):
-    """Validate a Gestalt YAML file."""
-    try:
-        is_valid, error_msg = validate_gestalt_file(gestalt_file)
-
-        if is_valid:
-            click.echo(f"✅ {gestalt_file} is valid")
-            if verbose and error_msg:
-                click.echo(f"ℹ️  Note: {error_msg}")
-        else:
-            click.echo(f"❌ {gestalt_file} is invalid: {error_msg}", err=True)
-            sys.exit(1)
-
-    except Exception as e:
-        click.echo(f"Error validating {gestalt_file}: {e}", err=True)
-        sys.exit(1)
-
-
-@click.command()
-@click.argument("gestalt-file", type=click.Path(exists=True, path_type=Path))
-@click.option(
     "--format",
     "-f",
     type=click.Choice(["qt", "bob", "dm"]),
@@ -369,7 +346,6 @@ def generate_command(
     gestalt_file: Path,
     format: str,
     output: Optional[Path],
-    verbose: bool,
 ):
     """Generate UI file from Gestalt YAML using gestalt engine."""
     try:
@@ -589,7 +565,6 @@ main.add_command(list_medm_command, name="list-medm")
 main.add_command(list_gestalt_command, name="list-gestalt")
 main.add_command(status_command, name="status")
 main.add_command(convert_command, name="convert")
-main.add_command(validate_command, name="validate")
 main.add_command(generate_command, name="generate")
 main.add_command(test_gestalt_command, name="test-gestalt")
 main.add_command(workflow_command, name="workflow")
