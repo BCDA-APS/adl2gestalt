@@ -76,3 +76,6 @@ venv.bak/
 # Generated files
 examples/gestalt/*.yml
 examples/gestalt/*.yaml
+
+# External dependencies
+src/gestalt/
