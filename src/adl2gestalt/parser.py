@@ -31,13 +31,12 @@ Other blocks are used to provide configuration for their
 parent GUI widget.
 """
 
-from collections import namedtuple, OrderedDict
 import logging
 import pathlib
-from typing import List, Optional, Dict, Any
+from collections import OrderedDict, namedtuple
+from typing import Any
 
 from . import symbols
-
 
 logger = logging.getLogger(__name__)
 
@@ -91,7 +90,7 @@ def adl_to_deg(deg: Any) -> float:
     return float(deg) / symbols.MEDM_DEGREE_UNITS
 
 
-class Block(object):
+class Block:
     """ADL file block structure"""
 
     def __init__(self, start, end, level, symbol):
@@ -105,7 +104,7 @@ class Block(object):
         return fmt % (self.level, self.start, self.end, str(self.symbol))
 
 
-class MedmBaseWidget(object):
+class MedmBaseWidget:
     def __init__(self):
         self.background_color = None
         self.color = None
@@ -214,7 +213,7 @@ class MedmBaseWidget(object):
                     break
             del blocks[i]
 
-        reservedLabels = "channel limits outline none".split()
+        reservedLabels = ["channel", "limits", "outline", "none"]
         reservedLabels.append("no decorations")
         label = assignments.get("label")
         if label is not None and label not in reservedLabels:
@@ -246,7 +245,7 @@ class MedmBaseWidget(object):
                 aa = self.parseColorAssignments(aa)
                 self.contents[symbol] = aa
 
-        for angle_name in "begin path".split():
+        for angle_name in ["begin", "path"]:
             if angle_name in self.contents:
                 angle = self.contents.pop(angle_name)
                 self.contents[angle_name + "Angle"] = adl_to_deg(angle)
@@ -307,7 +306,7 @@ class MedmBaseWidget(object):
             )
             # fmt: on
             aa = self.locateAssignments(buf[block.start + 1 : block.end])
-            for symbol in "clr bclr".split():
+            for symbol in ["clr", "bclr"]:
                 if symbol in aa:
                     del aa[symbol]
             for k, v in aa.items():
@@ -336,7 +335,7 @@ class MedmMainWidget(MedmBaseWidget):
             raise ValueError(msg)
         self.given_filename = fname
         # brutal: simply discard any non-utf8 characters
-        buf = open(fname, "r", encoding="utf8", errors="ignore").readlines()
+        buf = open(fname, encoding="utf8", errors="ignore").readlines()
         return buf
 
     def parseAdlBuffer(self, buf):  # lgtm [py/similar-function]

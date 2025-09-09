@@ -1,9 +1,8 @@
 """File scanning and conversion status utilities."""
 
-import os
-from pathlib import Path
-from typing import List, Dict, Tuple, Optional, Any
 from datetime import datetime
+from pathlib import Path
+from typing import Any, Dict, List
 
 
 def list_medm_files(folder: Path, recursive: bool = True) -> List[Path]:

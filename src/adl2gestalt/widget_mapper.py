@@ -1,6 +1,5 @@
 """Widget mapping definitions from MEDM to Gestalt."""
 
-from typing import Dict, Any
 
 # MEDM widget to Gestalt widget type mapping
 # Based on official mapping from Gestalt author

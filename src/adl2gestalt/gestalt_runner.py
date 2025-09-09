@@ -4,11 +4,12 @@ Gestalt runner module for executing and validating Gestalt YAML files.
 Integrates with the local gestalt package for validation and execution.
 """
 
-import sys
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
-from typing import Dict, Any, Optional, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
+
 import yaml
 
 
@@ -38,7 +39,7 @@ def validate_gestalt_file(gestalt_file: Path) -> Tuple[bool, Optional[str]]:
 
         except ImportError as e:
             # Fall back to basic YAML validation if gestalt import fails
-            with open(gestalt_file, "r") as f:
+            with open(gestalt_file) as f:
                 yaml_content = yaml.safe_load(f)
 
             if not yaml_content:

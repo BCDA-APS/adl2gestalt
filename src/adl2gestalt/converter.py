@@ -1,8 +1,8 @@
 """Main conversion logic from MEDM to Gestalt."""
 
+import logging
 from pathlib import Path
 from typing import Any, List, Optional
-import logging
 
 from .parser import MedmMainWidget
 from .widget_mapper import (
@@ -157,7 +157,7 @@ class MedmToGestaltConverter:
         # Generate Calc nodes for visibility calc at the end of the file
         if hasattr(self, "calc_nodes") and self.calc_nodes:
             for i, calc_info in enumerate(self.calc_nodes):
-                lines.append(f"")
+                lines.append("")
                 lines.append(f"{calc_info['name']}: !Calc")
                 # Convert MEDM expression to Python syntax
                 python_expression = self.convert_medm_to_python(calc_info["expression"])
@@ -277,8 +277,7 @@ class MedmToGestaltConverter:
             and widget.contents
         ):
             if (
-                "composite file" in widget.contents
-                and widget.contents["composite file"]
+                widget.contents.get("composite file")
             ):
                 widget_type = "Include"  # Override Group mapping for composite files
 
@@ -684,8 +683,7 @@ class MedmToGestaltConverter:
         # Include properties (for composite widgets with embedded files)
         if widget_type == "Include" and hasattr(widget, "contents") and widget.contents:
             if (
-                "composite file" in widget.contents
-                and widget.contents["composite file"]
+                widget.contents.get("composite file")
             ):
                 # Remove .adl extension if present, as IncludeNode will add the correct extension
                 composite_file = widget.contents["composite file"]

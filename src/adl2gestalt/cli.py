@@ -1,26 +1,25 @@
 """Command-line interface for adl2gestalt."""
 
-import click
+import logging
 import sys
 from pathlib import Path
 from typing import Optional
-import logging
+
+import click
 
 from . import __version__
-from .scanner import (
-    list_medm_files,
-    list_gestalt_files,
-    get_conversion_summary,
-)
 from .converter import MedmToGestaltConverter
 from .gestalt_runner import (
-    validate_gestalt_file,
+    create_gestalt_workflow,
     run_gestalt_file,
     test_gestalt_conversion,
-    batch_validate_gestalt_files,
-    create_gestalt_workflow,
+    validate_gestalt_file,
 )
-
+from .scanner import (
+    get_conversion_summary,
+    list_gestalt_files,
+    list_medm_files,
+)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
@@ -138,8 +137,8 @@ def status_command(
         summary = get_conversion_summary(medm_folder, gestalt_folder, recursive)
 
         # Display summary
-        click.echo(f"Conversion Status Summary")
-        click.echo(f"=" * 40)
+        click.echo("Conversion Status Summary")
+        click.echo("=" * 40)
         click.echo(f"MEDM folder:     {medm_folder}")
         click.echo(f"Gestalt folder:  {gestalt_folder}")
         click.echo(f"Total MEDM files: {summary['total_medm']}")
@@ -149,7 +148,7 @@ def status_command(
 
         if verbose:
             if summary["up_to_date"]:
-                click.echo(f"\n✅ Up to date files:")
+                click.echo("\n✅ Up to date files:")
                 for file in summary["up_to_date"]:
                     try:
                         display_path = file.relative_to(medm_folder)
@@ -158,7 +157,7 @@ def status_command(
                     click.echo(f"  {display_path}")
 
             if summary["outdated"]:
-                click.echo(f"\n⚠️  Outdated files (MEDM newer than Gestalt):")
+                click.echo("\n⚠️  Outdated files (MEDM newer than Gestalt):")
                 for file in summary["outdated"]:
                     try:
                         display_path = file.relative_to(medm_folder)
@@ -167,7 +166,7 @@ def status_command(
                     click.echo(f"  {display_path}")
 
             if summary["needs_conversion"]:
-                click.echo(f"\n🔄 Needs conversion:")
+                click.echo("\n🔄 Needs conversion:")
                 for file in summary["needs_conversion"]:
                     try:
                         display_path = file.relative_to(medm_folder)
@@ -224,7 +223,7 @@ def convert_command(
         if input.is_file():
             # Single file conversion
             if not input.suffix == ".adl":
-                click.echo(f"Error: Input file must have .adl extension", err=True)
+                click.echo("Error: Input file must have .adl extension", err=True)
                 sys.exit(1)
 
             # Determine output path
@@ -296,7 +295,7 @@ def convert_command(
                         converter.convert_file(medm_file, output_path)
                         converted_count += 1
 
-                    except Exception as e:
+                    except Exception:
                         error_count += 1
             else:
                 with click.progressbar(
@@ -333,7 +332,7 @@ def convert_command(
 
             # Summary
             if not quiet:
-                click.echo(f"\nConversion Summary:")
+                click.echo("\nConversion Summary:")
                 click.echo(f"  ✅ Successfully converted: {converted_count}")
                 if error_count > 0:
                     click.echo(f"  ❌ Failed: {error_count}")
@@ -429,7 +428,7 @@ def test_gestalt_command(gestalt_file: Path, verbose: bool):
 
         # Display results
         click.echo(f"\nTesting {gestalt_file}")
-        click.echo(f"=" * 50)
+        click.echo("=" * 50)
 
         # Validation results
         if results["validation"]["valid"]:
@@ -614,7 +613,7 @@ def workflow_command(
 
         # Summary
         if not quiet:
-            click.echo(f"\nWorkflow Summary:")
+            click.echo("\nWorkflow Summary:")
             click.echo(f"  ✅ Successfully processed: {success_count}")
             if error_count > 0:
                 click.echo(f"  ❌ Failed: {error_count}")
