@@ -4,14 +4,12 @@ Gestalt runner module for executing and validating Gestalt YAML files.
 Integrates with the local gestalt package for validation and execution.
 """
 
-import os
 import sys
 import subprocess
 import tempfile
 from pathlib import Path
 from typing import Dict, Any, Optional, List, Tuple
 import yaml
-import traceback
 
 
 def validate_gestalt_file(gestalt_file: Path) -> Tuple[bool, Optional[str]]:
@@ -28,7 +26,7 @@ def validate_gestalt_file(gestalt_file: Path) -> Tuple[bool, Optional[str]]:
         # Try to import and use gestalt validation first
         try:
             sys.path.insert(0, str(Path(__file__).parent.parent / "gestalt"))
-            from gestalt import Stylesheet, Datasheet
+            from gestalt import Stylesheet
 
             # Parse the stylesheet using Gestalt's parser
             # Add the gestalt widgets directory to the include path
@@ -88,7 +86,7 @@ def run_gestalt_file(
         if data_file:
             cmd.extend(["-i", str(data_file)])
 
-        cmd.append(str(gestalt_file))
+        cmd.append(str(gestalt_file.resolve()))  # Convert to absolute path
 
         # Run the command
         result = subprocess.run(
@@ -107,15 +105,12 @@ def run_gestalt_file(
         return False, f"Error running gestalt: {e}"
 
 
-def test_gestalt_conversion(
-    gestalt_file: Path, test_data: Optional[Dict[str, Any]] = None
-) -> Dict[str, Any]:
+def test_gestalt_conversion(gestalt_file: Path) -> Dict[str, Any]:
     """
     Test a Gestalt file conversion to multiple formats.
 
     Args:
         gestalt_file: Path to the Gestalt YAML file
-        test_data: Optional test data for macro substitution
 
     Returns:
         Dictionary with test results
@@ -136,23 +131,15 @@ def test_gestalt_conversion(
 
     # Test conversions to different formats
     formats_to_test = ["qt", "bob", "dm"]
+    # formats_to_test = ["qt"]
 
     with tempfile.TemporaryDirectory() as temp_dir:
         temp_path = Path(temp_dir)
 
-        # Create test data file if provided
-        data_file = None
-        if test_data:
-            data_file = temp_path / "test_data.yml"
-            with open(data_file, "w") as f:
-                yaml.dump(test_data, f)
-
         for fmt in formats_to_test:
             output_file = temp_path / f"test_output.{fmt}"
 
-            success, message = run_gestalt_file(
-                gestalt_file, fmt, output_file, data_file
-            )
+            success, message = run_gestalt_file(gestalt_file, fmt, output_file, None)
 
             results["conversions"][fmt] = {
                 "success": success,
@@ -193,63 +180,6 @@ def batch_validate_gestalt_files(gestalt_dir: Path) -> List[Dict[str, Any]]:
         results.append(result)
 
     return results
-
-
-def generate_test_data_for_gestalt(gestalt_file: Path) -> Dict[str, Any]:
-    """
-    Generate sample test data for a Gestalt file by analyzing its content.
-
-    Args:
-        gestalt_file: Path to the Gestalt YAML file
-
-    Returns:
-        Dictionary of sample test data
-    """
-    try:
-        with open(gestalt_file, "r") as f:
-            content = f.read()
-
-        test_data = {}
-
-        # Look for common macro patterns in the content
-        import re
-
-        # Find patterns like {MACRO} or ${MACRO}
-        macro_patterns = re.findall(r"\{([A-Za-z_][A-Za-z0-9_]*)\}", content)
-        for macro in macro_patterns:
-            if macro not in test_data:
-                # Provide reasonable defaults based on common EPICS naming
-                if "PREFIX" in macro.upper():
-                    test_data[macro] = "TEST:"
-                elif "PV" in macro.upper():
-                    test_data[macro] = "TEST:DEVICE:VALUE"
-                elif "COLOR" in macro.upper():
-                    test_data[macro] = "#FF0000"
-                elif macro.upper() in ["N", "INDEX", "NUM"]:
-                    test_data[macro] = "1"
-                else:
-                    test_data[macro] = f"test_{macro.lower()}"
-
-        # Add some common test data
-        common_test_data = {
-            "PREFIX": "TEST:",
-            "DEVICE": "DEVICE01",
-            "Inputs": ["INPUT1", "INPUT2", "INPUT3"],
-            "LEDs": ["LED1", "LED2", "LED3", "LED4"],
-            "Enable_Shapes": True,
-            "Tank_Color": "#4169E1",
-        }
-
-        # Merge common test data (don't override specific ones found)
-        for key, value in common_test_data.items():
-            if key not in test_data:
-                test_data[key] = value
-
-        return test_data
-
-    except Exception as e:
-        # Return minimal test data if analysis fails
-        return {"PREFIX": "TEST:", "DEVICE": "DEVICE01"}
 
 
 def create_gestalt_workflow(
@@ -299,8 +229,7 @@ def create_gestalt_workflow(
 
         if test_conversion:
             # Step 2: Validate and test the Gestalt file
-            test_data = generate_test_data_for_gestalt(gestalt_file)
-            test_results = test_gestalt_conversion(gestalt_file, test_data)
+            test_results = test_gestalt_conversion(gestalt_file)
 
             results["validation"] = test_results["validation"]
             results["testing"] = test_results["conversions"]
