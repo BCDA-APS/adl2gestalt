@@ -193,7 +193,6 @@ def create_gestalt_workflow(
         Dictionary with workflow results
     """
     from .converter import MedmToGestaltConverter
-    from .parser import MedmMainWidget
 
     results = {
         "medm_file": str(medm_file),
@@ -205,17 +204,9 @@ def create_gestalt_workflow(
 
     try:
         # Step 1: Convert MEDM to Gestalt
-        medm_widget = MedmMainWidget(str(medm_file))
-        medm_widget.parseAdlBuffer(medm_widget.getAdlLines())
-        converter = MedmToGestaltConverter()
-        gestalt_yaml = converter.convert_display(medm_widget)
-
-        # Save Gestalt file
         gestalt_file = output_dir / f"{medm_file.stem}.yml"
-        output_dir.mkdir(parents=True, exist_ok=True)
-
-        with open(gestalt_file, "w") as f:
-            f.write(gestalt_yaml)
+        converter = MedmToGestaltConverter()
+        gestalt_file = converter.convert_file(medm_file, gestalt_file)
 
         results["conversion"] = {
             "success": True,
