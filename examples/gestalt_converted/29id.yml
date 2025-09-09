@@ -1,0 +1,772 @@
+#include colors.yml
+#include widgets.yml
+
+# Gestalt display file generated from MEDM ADL
+# Source: 29id.adl
+# Generator: adl2gestalt
+
+
+# Custom colors from MEDM color table
+_medm_color_0: &medm_color_0 $ffffff
+_medm_color_1: &medm_color_1 $ececec
+_medm_color_2: &medm_color_2 $dadada
+_medm_color_3: &medm_color_3 $c8c8c8
+_medm_color_4: &medm_color_4 $bbbbbb
+_medm_color_5: &medm_color_5 $aeaeae
+_medm_color_6: &medm_color_6 $9e9e9e
+_medm_color_7: &medm_color_7 $919191
+_medm_color_8: &medm_color_8 $858585
+_medm_color_9: &medm_color_9 $787878
+_medm_color_10: &medm_color_10 $696969
+_medm_color_11: &medm_color_11 $5a5a5a
+_medm_color_12: &medm_color_12 $464646
+_medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_14: &medm_color_14 $000000
+_medm_color_15: &medm_color_15 $00d800
+_medm_color_16: &medm_color_16 $1ebb00
+_medm_color_17: &medm_color_17 $339900
+_medm_color_18: &medm_color_18 $2d7f00
+_medm_color_19: &medm_color_19 $216c00
+_medm_color_20: &medm_color_20 $fd0000
+_medm_color_21: &medm_color_21 $de1309
+_medm_color_22: &medm_color_22 $be190b
+_medm_color_23: &medm_color_23 $a01207
+_medm_color_24: &medm_color_24 $820400
+_medm_color_25: &medm_color_25 $5893ff
+_medm_color_26: &medm_color_26 $597ee1
+_medm_color_27: &medm_color_27 $4b6ec7
+_medm_color_28: &medm_color_28 $3a5eab
+_medm_color_29: &medm_color_29 $27548d
+_medm_color_30: &medm_color_30 $fbf34a
+_medm_color_31: &medm_color_31 $f9da3c
+_medm_color_32: &medm_color_32 $eeb62b
+_medm_color_33: &medm_color_33 $e19015
+_medm_color_34: &medm_color_34 $cd6100
+_medm_color_35: &medm_color_35 $ffb0ff
+_medm_color_36: &medm_color_36 $d67fe2
+_medm_color_37: &medm_color_37 $ae4ebc
+_medm_color_38: &medm_color_38 $8b1a96
+_medm_color_39: &medm_color_39 $610a75
+_medm_color_40: &medm_color_40 $a4aaff
+_medm_color_41: &medm_color_41 $8793e2
+_medm_color_42: &medm_color_42 $6a73c1
+_medm_color_43: &medm_color_43 $4d52a4
+_medm_color_44: &medm_color_44 $343386
+_medm_color_45: &medm_color_45 $c7bb6d
+_medm_color_46: &medm_color_46 $b79d5c
+_medm_color_47: &medm_color_47 $a47e3c
+_medm_color_48: &medm_color_48 $7d5627
+_medm_color_49: &medm_color_49 $58340f
+_medm_color_50: &medm_color_50 $99ffff
+_medm_color_51: &medm_color_51 $73dfff
+_medm_color_52: &medm_color_52 $4ea5f9
+_medm_color_53: &medm_color_53 $2a63e4
+_medm_color_54: &medm_color_54 $0a00b8
+_medm_color_55: &medm_color_55 $ebf1b5
+_medm_color_56: &medm_color_56 $d4db9d
+_medm_color_57: &medm_color_57 $bbc187
+_medm_color_58: &medm_color_58 $a6a462
+_medm_color_59: &medm_color_59 $8b8239
+_medm_color_60: &medm_color_60 $73ff6b
+_medm_color_61: &medm_color_61 $52da3b
+_medm_color_62: &medm_color_62 $3cb420
+_medm_color_63: &medm_color_63 $289315
+_medm_color_64: &medm_color_64 $1a7309
+
+Form: !Form
+    geometry: 437x274
+    margins: 10x0x10x10
+    foreground: *medm_color_19
+    background: *medm_color_3
+
+Motors_0: !Text
+    geometry: 30x8x50x14
+    foreground: *medm_color_64
+    text: "Motors"
+
+polyline_1: !Polyline
+    geometry: 146x0x2x188
+    border-color: *medm_color_14
+    points: [ 1x1, 1x187 ]
+    border-color: *medm_color_14
+    border-width: 2
+
+polyline_3: !Polyline
+    geometry: 284x0x2x188
+    border-color: *medm_color_14
+    points: [ 1x1, 1x187 ]
+    border-color: *medm_color_14
+    border-width: 2
+
+polyline_4: !Polyline
+    geometry: 0x194x434x4
+    border-color: *medm_color_64
+    points: [ 2x2, 432x2 ]
+    border-color: *medm_color_64
+    border-width: 4
+
+related_display_5: !RelatedDisplay
+    geometry: 5x5x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+-B_6: !RelatedDisplay
+    geometry: 294x27x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "B"
+    links:
+        - { label: "29ID-B asyn 1", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_1" }
+        - { label: "29ID-B asyn 2 ", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_2" }
+        - { label: "29ID-B asyn 3 ", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_3" }
+        - { label: "29ID-B asyn 4 ", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_4" }
+        - { label: "29ID-B asyn 5", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_5" }
+        - { label: "29ID-B asyn 6", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_6" }
+        - { label: "29ID-B asyn 7 ", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_7" }
+        - { label: "29ID-B asyn 8 ", file: "asynOctet.adl", macros: "P=29idb:,R=asyn_8" }
+        - { label: "29ID-B deviceCmdReply 1", file: "deviceCmdReply.adl", macros: "P=29idb:,N=1" }
+        - { label: "29ID-B deviceCmdReply 2", file: "deviceCmdReply.adl", macros: "P=29idb:,N=2" }
+        - { label: "29ID-B deviceCmdReply 3", file: "deviceCmdReply.adl", macros: "P=29idb:,N=3" }
+        - { label: "29ID-B deviceCmdReply 4 ", file: "deviceCmdReply.adl", macros: "P=29idb:,N=4" }
+        - { label: "29ID-B deviceCmdReply 5", file: "deviceCmdReply.adl", macros: "P=29idb:,N=5" }
+        - { label: "29ID-B deviceCmdReply 6", file: "deviceCmdReply.adl", macros: "P=29idb:,N=6" }
+        - { label: "29ID-B deviceCmdReply 7", file: "deviceCmdReply.adl", macros: "P=29idb:,N=7" }
+        - { label: "29ID-B deviceCmdReply 8", file: "deviceCmdReply.adl", macros: "P=29idb:,N=8" }
+
+Serial_7: !Text
+    geometry: 360x30x35x14
+    foreground: *medm_color_64
+    text: "Serial"
+
+Digital_I_O_8: !Text
+    geometry: 320x8x75x14
+    foreground: *medm_color_64
+    text: "Digital I/O"
+
+polyline_9: !Polyline
+    geometry: 0x84x149x2
+    border-color: *medm_color_14
+    points: [ 148x1, 1x1 ]
+    border-color: *medm_color_14
+    border-width: 2
+
+polyline_10: !Polyline
+    geometry: 146x97x141x2
+    border-color: *medm_color_14
+    points: [ 140x1, 1x1 ]
+    border-color: *medm_color_14
+    border-width: 2
+
+related_display_11: !RelatedDisplay
+    geometry: 294x5x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+-B_12: !RelatedDisplay
+    geometry: 5x99x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "B"
+    links:
+        - { label: "IP1A", file: "Pump.adl", macros: "P=29idb:,PUMP=IP1A" }
+        - { label: "IP2A", file: "Pump.adl", macros: "P=29idb:,PUMP=IP2A" }
+        - { label: "IP3A", file: "Pump.adl", macros: "P=29idb:,PUMP=IP3A" }
+        - { label: "IP3B", file: "Pump.adl", macros: "P=29idb:,PUMP=IP3B" }
+        - { label: "IP4B", file: "Pump.adl", macros: "P=29idb:,PUMP=IP4B" }
+        - { label: "IP5B", file: "Pump.adl", macros: "P=29idb:,PUMP=IP5B" }
+        - { label: "IP6B", file: "Pump.adl", macros: "P=29idb:,PUMP=IP6B" }
+        - { label: "IP7B", file: "Pump.adl", macros: "P=29idb:,PUMP=IP7B" }
+
+IP_13: !Text
+    geometry: 71x102x20x14
+    foreground: *medm_color_64
+    text: "IP"
+
+-B_14: !RelatedDisplay
+    geometry: 5x121x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "B"
+    links:
+        - { label: "VS1A", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS1A" }
+        - { label: "VS2A", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS2A" }
+        - { label: "VS3AB", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS3AB" }
+        - { label: "VS4B", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS4B" }
+        - { label: "VS5B", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS5B" }
+        - { label: "VS6B", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS6B" }
+        - { label: "VS7B", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS7B" }
+
+IG_15: !Text
+    geometry: 71x125x20x14
+    foreground: *medm_color_64
+    text: "IG"
+
+-C_16: !RelatedDisplay
+    geometry: 25x99x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "C"
+    links:
+        - { label: "IP7C", file: "Pump.adl", macros: "P=29idb:,PUMP=IP7C" }
+        - { label: "IP8C1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP8C1" }
+        - { label: "IP8C2", file: "Pump.adl", macros: "P=29idb:,PUMP=IP8C2" }
+        - { label: "IP9C", file: "Pump.adl", macros: "P=29idb:,PUMP=IP9C" }
+        - { label: "IP10C1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10C1" }
+        - { label: "IP10C2", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10C2" }
+        - { label: "IP11C1", file: "Pump.adl", macros: "P=29idc:,PUMP=IP11C1" }
+        - { label: "IP11C2", file: "Pump.adl", macros: "P=29idc:,PUMP=IP11C2" }
+        - { label: "IPCUBE", file: "Pump.adl", macros: "P=29idc:,PUMP=IPCUBE" }
+
+related_display_17: !RelatedDisplay
+    geometry: 294x56x20x20
+    foreground: *medm_color_0
+    background: *medm_color_64
+
+MW100_18: !Text
+    geometry: 319x59x50x14
+    foreground: *medm_color_64
+    text: "MW100"
+
+-D_19: !RelatedDisplay
+    geometry: 334x27x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "D"
+    links:
+        - { label: "29ID-D asyn 1", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_1" }
+        - { label: "29ID-D asyn 2 ", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_2" }
+        - { label: "29ID-D asyn 3 ", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_3" }
+        - { label: "29ID-D asyn 4 ", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_4" }
+        - { label: "29ID-D asyn 5", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_5" }
+        - { label: "29ID-D asyn 6", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_6" }
+        - { label: "29ID-D asyn 7 ", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_7" }
+        - { label: "29ID-D asyn 8 ", file: "asynOctet.adl", macros: "P=29idd:,R=asyn_8" }
+        - { label: "29ID-D deviceCmdReply 1", file: "deviceCmdReply.adl", macros: "P=29idd:,N=1" }
+        - { label: "29ID-D deviceCmdReply 2", file: "deviceCmdReply.adl", macros: "P=29idd:,N=2" }
+        - { label: "29ID-D deviceCmdReply 3", file: "deviceCmdReply.adl", macros: "P=29idd:,N=3" }
+        - { label: "29ID-D deviceCmdReply 4 ", file: "deviceCmdReply.adl", macros: "P=29idd:,N=4" }
+        - { label: "29ID-D deviceCmdReply 5", file: "deviceCmdReply.adl", macros: "P=29idd:,N=5" }
+        - { label: "29ID-D deviceCmdReply 6", file: "deviceCmdReply.adl", macros: "P=29idd:,N=6" }
+        - { label: "29ID-D deviceCmdReply 7", file: "deviceCmdReply.adl", macros: "P=29idd:,N=7" }
+        - { label: "29ID-D deviceCmdReply 8", file: "deviceCmdReply.adl", macros: "P=29idd:,N=8" }
+
+related_display_20: !RelatedDisplay
+    geometry: 5x165x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+Cameras_21: !Text
+    geometry: 30x168x50x14
+    foreground: *medm_color_64
+    text: "Cameras"
+
+related_display_22: !RelatedDisplay
+    geometry: 294x78x20x20
+    foreground: *medm_color_0
+    background: *medm_color_64
+
+SoftGlue_23: !Text
+    geometry: 319x81x60x14
+    foreground: *medm_color_64
+    text: "SoftGlue"
+
+-C_24: !RelatedDisplay
+    geometry: 314x27x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "C"
+    links:
+        - { label: "29ID-C asyn 1", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_1" }
+        - { label: "29ID-C asyn 2 ", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_2" }
+        - { label: "29ID-C asyn 3 ", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_3" }
+        - { label: "29ID-C asyn 4 ", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_4" }
+        - { label: "29ID-C asyn 5", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_5" }
+        - { label: "29ID-C asyn 6", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_6" }
+        - { label: "29ID-C asyn 7 ", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_7" }
+        - { label: "29ID-C asyn 8 ", file: "asynOctet.adl", macros: "P=29idc:,R=asyn_8" }
+        - { label: "29ID-C deviceCmdReply 1", file: "deviceCmdReply.adl", macros: "P=29idc:,N=1" }
+        - { label: "29ID-C deviceCmdReply 2", file: "deviceCmdReply.adl", macros: "P=29idc:,N=2" }
+        - { label: "29ID-C deviceCmdReply 3", file: "deviceCmdReply.adl", macros: "P=29idc:,N=3" }
+        - { label: "29ID-C deviceCmdReply 4 ", file: "deviceCmdReply.adl", macros: "P=29idc:,N=4" }
+        - { label: "29ID-C deviceCmdReply 5", file: "deviceCmdReply.adl", macros: "P=29idc:,N=5" }
+        - { label: "29ID-C deviceCmdReply 6", file: "deviceCmdReply.adl", macros: "P=29idc:,N=6" }
+        - { label: "29ID-C deviceCmdReply 7", file: "deviceCmdReply.adl", macros: "P=29idc:,N=7" }
+        - { label: "29ID-C deviceCmdReply 8", file: "deviceCmdReply.adl", macros: "P=29idc:,N=8" }
+
+-_CA__25: !RelatedDisplay
+    geometry: 395x56x35x20
+    foreground: *medm_color_14
+    background: *medm_color_25
+    text: " CA "
+    links:
+        - { label: "29ID Keithleys", file: "29ID_ca_all.adl", macros: "" }
+
+-Diag_26: !RelatedDisplay
+    geometry: 395x78x35x20
+    foreground: *medm_color_14
+    background: *medm_color_25
+    text: "Diag"
+    links:
+        - { label: "29ID Diagnostics", file: "29id_Diagnostics.adl", macros: "" }
+
+text_update_27: !TextMonitor
+    geometry: 169x217x125x14
+    foreground: *medm_color_14
+    background: *medm_color_2
+    pv: "S:IOC:timeOfDayForm2SI"
+
+Ring_I_28: !Text
+    geometry: 310x217x50x14
+    foreground: *medm_color_14
+    text: "Ring I"
+    alignment: Right
+
+text_update_29: !TextMonitor
+    geometry: 370x217x40x14
+    foreground: *medm_color_14
+    background: *medm_color_2
+    pv: "S:SRcurrentAI.VAL"
+
+mA_30: !Text
+    geometry: 415x217x20x14
+    foreground: *medm_color_14
+    text: "mA"
+
+Undulator_31: !Text
+    geometry: 263x255x80x14
+    foreground: *medm_color_14
+    text: "Undulator"
+    alignment: Right
+
+text_update_32: !TextMonitor
+    geometry: 348x255x50x14
+    foreground: *medm_color_14
+    background: *medm_color_2
+    pv: "ID29:Energy.VAL"
+
+text_update_33: !TextMonitor
+    geometry: 403x255x25x14
+    foreground: *medm_color_14
+    background: *medm_color_2
+    pv: "ID29:Energy.EGU"
+
+-User_Calc_34: !RelatedDisplay
+    geometry: 294x115x70x20
+    foreground: *medm_color_0
+    background: *medm_color_34
+    text: "User Calc"
+    links:
+        - { label: "User Calcs 1-10", file: "userCalcs10.adl", macros: "P=29idb:" }
+        - { label: "User CalcOuts 1-10", file: "userCalcOuts10.adl", macros: "P=29idb:" }
+        - { label: "User Transforms 1-10", file: "userTransforms10.adl", macros: "P=29idb:" }
+        - { label: "User StringSeqs 1-10", file: "userStringSeqs10.adl", macros: "P=29idb:" }
+        - { label: "User StringCalcs 1-10", file: "userStringCalcs10.adl", macros: "P=29idb:" }
+        - { label: "User Average 1-10", file: "userAve10.adl", macros: "P=29idb:" }
+        - { label: "User ArrayCalcs 1-10", file: "userArrayCalcs10.adl", macros: "P=29idb:" }
+        - { label: "CaputRecorder", file: "caputRecorder.adl", macros: "P=29idb:,L=29idb:" }
+        - { label: "User StringSeqs 1-10", file: "userStringSeqs10.adl", macros: "P=29idd:" }
+        - { label: "Beamline Energy Transform", file: "userTransform_full.adl", macros: "P=29id:,T=BeamlineEnergyTransform" }
+        - { label: "Beamline Energy SSeq", file: "userStringSeq_full.adl", macros: "P=29id:,S=BeamlineEnergySSeq" }
+
+EDM_35: !ShellCommand
+    geometry: 360x165x46x20
+    foreground: *medm_color_14
+    background: *medm_color_55
+    text: "EDM"
+    commands:
+        - { label: "M0 Mirror", command: "/net/s29dserv/xorApps/adl/start_opi_M0.sh" }
+        - { label: "M1 mirror", command: "/net/s29dserv/xorApps/adl/start_opi_M1.sh" }
+        - { label: "M3R mirror", command: "/net/s29dserv/xorApps/adl/start_opi_M3.sh" }
+        - { label: "Mono", command: "/net/s29dserv/xorApps/adl/start_mono" }
+
+Tools_36: !ShellCommand
+    geometry: 294x165x62x20
+    foreground: *medm_color_14
+    background: *medm_color_55
+    text: "Tools"
+    commands:
+        - { label: "dview", command: "/APSshare/bin/dview /net/s29data/export/data_29id/2016_3/mda& " }
+        - { label: "sview", command: "/APSshare/bin/sview -m 800000 29idb:scan1&" }
+        - { label: "StripTool", command: "StripTool&" }
+        - { label: "Probe", command: "probe&" }
+        - { label: "Beeper", command: "/home/beams/29ID/bin/Beep_gui.py&" }
+        - { label: "ipython local", command: "gnome-terminal -e ipython&" }
+        - { label: "ipython", command: "gnome-terminal -e /home/beams/29ID/bin/start_ipython.sh&" }
+        - { label: "ImageJ", command: "ImageJ&" }
+
+-_Status_37: !RelatedDisplay
+    geometry: 368x115x62x20
+    foreground: *medm_color_0
+    background: *medm_color_54
+    text: " Status"
+    links:
+        - { label: "29idb IOC stats", file: "ioc_stats_vxworks.adl", macros: "ioc=29idb" }
+        - { label: "29idb save_restore Status", file: "save_restoreStatus.adl", macros: "P=29idb:" }
+        - { label: "29idb alive", file: "aliveRecord.adl", macros: "P=29idb:" }
+        - { label: "29idc IOC stats", file: "ioc_stats_vxworks.adl", macros: "ioc=29idc" }
+        - { label: "29idc save_restore Status", file: "save_restoreStatus.adl", macros: "P=29idc:" }
+        - { label: "29idc alive", file: "aliveRecord.adl", macros: "P=29idc:" }
+        - { label: "29idd IOC stats", file: "ioc_stats_vxworks.adl", macros: "ioc=29idd" }
+        - { label: "29idd save_restore Status", file: "save_restoreStatus.adl", macros: "P=29idd:" }
+        - { label: "29idd alive", file: "aliveRecord.adl", macros: "P=29idd:" }
+
+-Scan_Ctrl_38: !RelatedDisplay
+    geometry: 294x140x70x20
+    foreground: *medm_color_0
+    background: *medm_color_34
+    text: "Scan Ctrl"
+    links:
+        - { label: "Scan1 (for all scans)", file: "scan.adl", macros: "P=29idb:,N=1,S=scan1,DW=Dwait1,PW=Pwait1" }
+        - { label: "Scan2 (for 2D & higher scans)", file: "scan.adl", macros: "P=29idb:,N=2,S=scan2,DW=Dwait2,PW=Pwait2" }
+        - { label: "Scan3 (for 3D & higher scans)", file: "scan.adl", macros: "P=29idb:,N=3,S=scan3,DW=Dwait3,PW=Pwait3" }
+        - { label: "Scan4 (for 4D scans)", file: "scan.adl", macros: "P=29idb:,N=4,S=scan4,DW=Dwait4,PW=Pwait4" }
+        - { label: "ScanH (for MCA's)", file: "scan.adl", macros: "P=29idbt:,N=H,S=scanH" }
+        - { label: "SaveData Controls", file: "scan_saveData.adl", macros: "P=29idb:" }
+        - { label: "ScanProgress", file: "ProgressBar.adl", macros: "P=29idb:,B=29idb:scanProgress:" }
+        - { label: "Scan1Menu", file: "configMenu.adl", macros: "P=29idb:,CONFIG=scan1" }
+
+-!!_39: !RelatedDisplay
+    geometry: 410x165x20x20
+    foreground: *medm_color_0
+    background: *medm_color_20
+    text: "!!"
+    links:
+        - { label: "M0 Scan1", file: "scan.adl", macros: "P=29id_m0:,N=1,S=SCAN,DW=Dwait1,PW=Pwait1" }
+        - { label: "M0 Scan2", file: "scan.adl", macros: "P=29id_m0:,N=2,S=SCAN_LOOP,DW=Dwait2,PW=Pwait2" }
+        - { label: "M0 SaveData Controls", file: "scan_saveData.adl", macros: "P=29id_m0:SCAN" }
+        - { label: "M1 Scan1", file: "scan.adl", macros: "P=29id_m1:,N=1,S=SCAN,DW=Dwait1,PW=Pwait1" }
+        - { label: "M1 Scan2", file: "scan.adl", macros: "P=29id_m1:,N=2,S=SCAN_LOOP,DW=Dwait2,PW=Pwait2" }
+        - { label: "M1 SaveData Controls", file: "scan_saveData.adl", macros: "P=29id_m1:SCAN" }
+
+-_C_40: !RelatedDisplay
+    geometry: 368x140x30x20
+    foreground: *medm_color_0
+    background: *medm_color_34
+    text: " C"
+    links:
+        - { label: "Scan1 (for all scans)", file: "scan.adl", macros: "P=29idc:,N=1,S=scan1,DW=Dwait1,PW=Pwait1" }
+        - { label: "Scan2 (for 2D & higher scans)", file: "scan.adl", macros: "P=29idc:,N=2,S=scan2,DW=Dwait2,PW=Pwait2" }
+        - { label: "Scan3 (for 3D & higher scans)", file: "scan.adl", macros: "P=29idc:,N=3,S=scan3,DW=Dwait3,PW=Pwait3" }
+        - { label: "Scan4 (for 4D scans)", file: "scan.adl", macros: "P=29idc:,N=4,S=scan4,DW=Dwait4,PW=Pwait4" }
+        - { label: "ScanH (for MCA's)", file: "scan.adl", macros: "P=29idct:,N=H,S=scanH" }
+        - { label: "SaveData Controls", file: "scan_saveData.adl", macros: "P=29idc:" }
+        - { label: "ScanProgress", file: "ProgressBar.adl", macros: "P=29idc:,B=29idc:scanProgress:" }
+
+-_D_41: !RelatedDisplay
+    geometry: 400x140x30x20
+    foreground: *medm_color_0
+    background: *medm_color_34
+    text: " D"
+    links:
+        - { label: "Scan1 (for all scans)", file: "scan.adl", macros: "P=29idd:,N=1,S=scan1,DW=Dwait1,PW=Pwait1" }
+        - { label: "Scan2 (for 2D & higher scans)", file: "scan.adl", macros: "P=29idd:,N=2,S=scan2,DW=Dwait2,PW=Pwait2" }
+        - { label: "Scan3 (for 3D & higher scans)", file: "scan.adl", macros: "P=29idd:,N=3,S=scan3,DW=Dwait3,PW=Pwait3" }
+        - { label: "Scan4 (for 4D scans)", file: "scan.adl", macros: "P=29idd:,N=4,S=scan4,DW=Dwait4,PW=Pwait4" }
+        - { label: "ScanH (for MCA's)", file: "scan.adl", macros: "P=29iddt:,N=H,S=scanH" }
+        - { label: "SaveData Controls", file: "scan_saveData.adl", macros: "P=29idd:" }
+        - { label: "ScanProgress", file: "ProgressBar.adl", macros: "P=29idd:,B=29idd:scanProgress:" }
+
+composite_42: !Group
+    geometry: 5x255x146x14
+    children:
+        oval_0: !Ellipse
+            geometry: 84x2x10x10
+            background: *medm_color_15
+            border-color: *medm_color_15
+            visibility: "EnableCalc_1.CALC"
+        oval_1: !Ellipse
+            geometry: 110x2x10x10
+            background: *medm_color_15
+            border-color: *medm_color_15
+            visibility: "EnableCalc_2.CALC"
+        oval_2: !Ellipse
+            geometry: 136x2x10x10
+            background: *medm_color_15
+            border-color: *medm_color_15
+            visibility: "EnableCalc_3.CALC"
+        A_3: !Text
+            geometry: 75x0x10x14
+            foreground: *medm_color_19
+            text: "A"
+            visibility: "EnableCalc_4.CALC"
+        text_4: !Text
+            geometry: 107x5x5x5
+            foreground: *medm_color_19
+            text: "None"
+        C_5: !Text
+            geometry: 101x0x10x14
+            foreground: *medm_color_19
+            text: "C"
+            visibility: "EnableCalc_5.CALC"
+        D_6: !Text
+            geometry: 127x0x10x14
+            foreground: *medm_color_19
+            text: "D"
+            visibility: "EnableCalc_6.CALC"
+        Shutters_7: !Text
+            geometry: 0x0x65x14
+            foreground: *medm_color_64
+            text: "Shutters:"
+
+related_display_43: !RelatedDisplay
+    geometry: 5x143x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+Televac_44: !Text
+    geometry: 30x146x50x14
+    foreground: *medm_color_64
+    text: "Televac"
+
+-D_45: !RelatedDisplay
+    geometry: 45x99x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "D"
+    links:
+        - { label: "IP7D", file: "Pump.adl", macros: "P=29idb:,PUMP=IP7D" }
+        - { label: "IP8D1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP8D1" }
+        - { label: "IP8D2", file: "Pump.adl", macros: "P=29idb:,PUMP=IP8D2" }
+        - { label: "IP9D", file: "Pump.adl", macros: "P=29idb:,PUMP=IP9D" }
+        - { label: "IP10D1", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10D1" }
+        - { label: "IP10D2", file: "Pump.adl", macros: "P=29idb:,PUMP=IP10D2" }
+
+Moving_46: !Text
+    geometry: 25x35x95x30
+    foreground: *medm_color_50
+    text: "Moving"
+    alignment: Center
+    visibility: !Not "29idb:alldone.VAL"
+
+Moving_47: !Text
+    geometry: 27x37x95x30
+    foreground: *medm_color_54
+    text: "Moving"
+    alignment: Center
+    visibility: "29idb:alldoneBlink.VAL"
+
+-B_48: !RelatedDisplay
+    geometry: 155x110x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "B"
+    links:
+        - { label: "Amp 1", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca1" }
+        - { label: "Amp 2", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca2" }
+        - { label: "Amp 3", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca3" }
+        - { label: "Amp 4", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca4" }
+        - { label: "Amp 5", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca5" }
+        - { label: "Amp 9", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca9" }
+        - { label: "Amp 10", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca10" }
+        - { label: "Amp 12", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca12" }
+        - { label: "Amp 13", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca13" }
+        - { label: "Amp 14", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca14" }
+        - { label: "Amp 15", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca15" }
+        - { label: "Amp 16", file: "Keithley6485small.adl", macros: "P=29idb:,CA=ca16" }
+
+CA_49: !Text
+    geometry: 219x113x50x14
+    foreground: *medm_color_64
+    text: "CA"
+
+related_display_50: !RelatedDisplay
+    geometry: 155x130x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+Slits_51: !Text
+    geometry: 180x133x90x14
+    foreground: *medm_color_64
+    text: "Slits"
+
+related_display_52: !RelatedDisplay
+    geometry: 155x150x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+Newport_Hxp_53: !Text
+    geometry: 180x153x80x14
+    foreground: *medm_color_64
+    text: "Newport Hxp"
+
+-C_54: !RelatedDisplay
+    geometry: 175x110x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "C"
+    links:
+        - { label: "29idc CA1/PS", file: "Keithley6487small.adl", macros: "P=29idc:,CA=ca1" }
+        - { label: "29idc CA2", file: "Keithley6485small.adl", macros: "P=29idc:,CA=ca2" }
+
+-D_55: !RelatedDisplay
+    geometry: 195x110x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "D"
+    links:
+        - { label: "29idd CA1/PS", file: "Keithley6487small.adl", macros: "P=29idd:,CA=ca1" }
+        - { label: "29idd CA2", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca2" }
+        - { label: "29idd CA3", file: "Keithley6485small.adl", macros: "P=29idd:,CA=ca3" }
+
+-ARPES_56: !RelatedDisplay
+    geometry: 97x99x42x20
+    foreground: *medm_color_14
+    background: *medm_color_55
+    text: "ARPES"
+    links:
+        - { label: "29ID-C ARPES graphic", file: "29idc_graphic.adl", macros: "P=29idc:,M1=m1,M2=m2,M3=m3,M4=m4,M5=m5,M6=m6,M7=m7,M8=m8" }
+
+-RSXS_57: !RelatedDisplay
+    geometry: 97x121x42x20
+    foreground: *medm_color_14
+    background: *medm_color_55
+    text: "RSXS"
+    links:
+        - { label: "29ID-D 2C graphic", file: "29idd_graphic.adl", macros: "P=29idd:,M1=m1,M2=m2,M3=m3,M4=m7,M5=m6" }
+
+-_SES_58: !RelatedDisplay
+    geometry: 97x165x42x20
+    foreground: *medm_color_14
+    background: *medm_color_55
+    text: " SES"
+    links:
+        - { label: "SES Area Det", file: "ADBase.adl", macros: "P=29idcEA:, R=det1:" }
+        - { label: "EAV Area Det", file: "ADBase.adl", macros: "P=29idcEAV:, R=cam1:" }
+        - { label: "SES Control", file: "electronAnalyser.adl", macros: "P=29idcEA:, R=det1:" }
+        - { label: "SES Scans", file: "29idc_SESall.adl", macros: "P=29idcEA:, R=det1:" }
+
+STOP_59: !MessageButton
+    geometry: 97x6x42x20
+    foreground: *medm_color_30
+    background: *medm_color_20
+    pv: "29idb:allstop.VAL"
+    text: "STOP"
+    value: "1"
+
+-C_60: !RelatedDisplay
+    geometry: 25x121x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "C"
+    links:
+        - { label: "VS8C", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS8C" }
+        - { label: "VS8CSP", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS8CSP" }
+        - { label: "VS9C", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS9C" }
+        - { label: "VS10C", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS10C" }
+        - { label: "VS11C", file: "VacSen.adl", macros: "P=29idc:,GAUGE=VS11C" }
+        - { label: "VSCUBE", file: "VacSen.adl", macros: "P=29idc:,GAUGE=VSCUBE" }
+
+-D_61: !RelatedDisplay
+    geometry: 45x121x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+    text: "D"
+    links:
+        - { label: "VS8D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS8D" }
+        - { label: "VS9D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS9D" }
+        - { label: "VS10D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS10D" }
+        - { label: "VS11D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS11D" }
+        - { label: "VS12D", file: "VacSen.adl", macros: "P=29idb:,GAUGE=VS12D" }
+
+related_display_62: !RelatedDisplay
+    geometry: 157x49x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+related_display_63: !RelatedDisplay
+    geometry: 157x71x20x20
+    foreground: *medm_color_14
+    background: *medm_color_40
+
+Beam_Info_64: !Text
+    geometry: 182x8x80x14
+    foreground: *medm_color_64
+    text: "Beam Info"
+
+Undulator_65: !Text
+    geometry: 182x52x80x14
+    foreground: *medm_color_64
+    text: "Undulator"
+
+related_display_66: !RelatedDisplay
+    geometry: 157x5x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+related_display_67: !RelatedDisplay
+    geometry: 157x27x20x20
+    foreground: *medm_color_14
+    background: *medm_color_60
+
+PSS_EPS_68: !Text
+    geometry: 182x30x80x14
+    foreground: *medm_color_64
+    text: "PSS/EPS"
+
+BL_Overview_69: !Text
+    geometry: 182x74x80x14
+    foreground: *medm_color_64
+    text: "BL Overview"
+
+related_display_70: !RelatedDisplay
+    geometry: 155x170x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+Lakeshore_71: !Text
+    geometry: 180x173x80x14
+    foreground: *medm_color_64
+    text: "Lakeshore"
+
+-BL_Calcs_72: !RelatedDisplay
+    geometry: 185x240x70x20
+    foreground: *medm_color_0
+    background: *medm_color_34
+    text: "BL Calcs"
+    links:
+        - { label: "29ID-B StringSeqs", file: "BL_StrSeqs10.adl", macros: "P=29idb:" }
+        - { label: "29ID-C StringSeqs", file: "BL_StrSeqs10.adl", macros: "P=29idc:" }
+        - { label: "29ID-D StringSeqs", file: "BL_StrSeqs10.adl", macros: "P=29idd:" }
+        - { label: "Current Branch", file: "userCalcOut.adl", macros: "P=29id:,C=CurrentBranch" }
+
+related_display_73: !RelatedDisplay
+    geometry: 10x215x20x20
+    foreground: *medm_color_14
+    background: *medm_color_51
+
+
+EnableCalc_1: !Calc
+    calc: "(A==2) and (B==2)"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
+    pv: "EnableCalc_1.CALC"
+
+EnableCalc_2: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_2.CALC"
+
+EnableCalc_3: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_3.CALC"
+
+EnableCalc_4: !Calc
+    calc: "(A==2) and (B==2)"
+    A: "EPS:29:ID:SS1:POSITION"
+    B: "EPS:29:ID:PS2:POSITION"
+    pv: "EnableCalc_4.CALC"
+
+EnableCalc_5: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SCS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SCS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_5.CALC"
+
+EnableCalc_6: !Calc
+    calc: "(A==0) and (B==0)"
+    A: "PA:29ID:SDS_BLOCKING_BEAM.VAL"
+    B: "PB:29ID:SDS_BLOCKING_BEAM.VAL"
+    pv: "EnableCalc_6.CALC"

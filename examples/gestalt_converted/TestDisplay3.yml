@@ -7,6 +7,7 @@
 
 
 # Custom colors from MEDM color table
+_medm_color_0: &medm_color_0 $ffffff
 _medm_color_1: &medm_color_1 $ececec
 _medm_color_2: &medm_color_2 $dadada
 _medm_color_3: &medm_color_3 $c8c8c8
@@ -20,6 +21,7 @@ _medm_color_10: &medm_color_10 $696969
 _medm_color_11: &medm_color_11 $5a5a5a
 _medm_color_12: &medm_color_12 $464646
 _medm_color_13: &medm_color_13 $2d2d2d
+_medm_color_14: &medm_color_14 $000000
 _medm_color_15: &medm_color_15 $00d800
 _medm_color_16: &medm_color_16 $1ebb00
 _medm_color_17: &medm_color_17 $339900
@@ -74,7 +76,7 @@ _medm_color_64: &medm_color_64 $1a7309
 Form: !Form
     geometry: 270x129
     margins: 10x0x10x10
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_4
 
 text_update_0: !TextMonitor
@@ -85,6 +87,6 @@ text_update_0: !TextMonitor
 
 text_entry_1: !TextEntry
     geometry: 65x69x139x37
-    foreground: $000000
+    foreground: *medm_color_14
     background: *medm_color_51
     pv: "fr:m2.VAL"
