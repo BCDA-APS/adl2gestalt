@@ -86,17 +86,17 @@ def list_medm_command(folder: Path, recursive: bool, count: bool):
 )
 @click.option("--count", "-c", is_flag=True, help="Show only count of files")
 def list_gestalt_command(folder: Path, recursive: bool, count: bool):
-    """List all Gestalt files in a folder."""
+    """List all YAML files in a folder."""
     try:
         files = list_gestalt_files(folder, recursive)
 
         if count:
-            click.echo(f"Found {len(files)} Gestalt files")
+            click.echo(f"Found {len(files)} YAML files")
         else:
             if not files:
-                click.echo("No Gestalt files found")
+                click.echo("No YAML files found")
             else:
-                click.echo(f"Gestalt files in {folder}:")
+                click.echo(f"YAML files in {folder}:")
                 for file in files:
                     try:
                         display_path = file.relative_to(folder)
@@ -131,9 +131,6 @@ def status_command(
 ):
     """Show conversion status for MEDM files."""
     try:
-        # Ensure gestalt folder exists for checking
-        gestalt_folder.mkdir(parents=True, exist_ok=True)
-
         summary = get_conversion_summary(medm_folder, gestalt_folder, recursive)
 
         # Display summary
@@ -142,13 +139,13 @@ def status_command(
         click.echo(f"MEDM folder:     {medm_folder}")
         click.echo(f"Gestalt folder:  {gestalt_folder}")
         click.echo(f"Total MEDM files: {summary['total_medm']}")
-        click.echo(f"  ✅ Up to date:  {len(summary['up_to_date'])}")
-        click.echo(f"  ⚠️ Outdated:    {summary['total_outdated']}")
+        click.echo(f"  ✅ Converted and up to date:  {len(summary['up_to_date'])}")
+        click.echo(f"  ⚠️  Converted but outdated:    {summary['total_outdated']}")
         click.echo(f"  🔄 Needs conversion: {summary['total_needs_conversion']}")
 
         if verbose:
             if summary["up_to_date"]:
-                click.echo("\n✅ Up to date files:")
+                click.echo("\n✅ Converted and up to date files:")
                 for file in summary["up_to_date"]:
                     try:
                         display_path = file.relative_to(medm_folder)
@@ -157,7 +154,9 @@ def status_command(
                     click.echo(f"  {display_path}")
 
             if summary["outdated"]:
-                click.echo("\n⚠️  Outdated files (MEDM newer than Gestalt):")
+                click.echo(
+                    "\n⚠️  Converted but outdated files (MEDM newer than Gestalt):"
+                )
                 for file in summary["outdated"]:
                     try:
                         display_path = file.relative_to(medm_folder)

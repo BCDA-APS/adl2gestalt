@@ -63,40 +63,6 @@ def list_gestalt_files(folder: Path, recursive: bool = True) -> List[Path]:
     return sorted(files)
 
 
-def get_gestalt_path_for_medm(
-    medm_file: Path, medm_folder: Path, gestalt_folder: Path
-) -> Path:
-    """
-    Calculate the expected Gestalt file path for a given MEDM file.
-
-    Parameters
-    ----------
-    medm_file : Path
-        Path to the MEDM file
-    medm_folder : Path
-        Root folder containing MEDM files
-    gestalt_folder : Path
-        Root folder for Gestalt files
-
-    Returns
-    -------
-    Path
-        Expected path for the corresponding Gestalt file
-    """
-    # Get relative path from medm_folder to medm_file
-    try:
-        relative_path = medm_file.relative_to(medm_folder)
-    except ValueError:
-        # If medm_file is not under medm_folder, use just the filename
-        relative_path = medm_file.name
-
-    # Change extension to .yml
-    gestalt_relative = relative_path.with_suffix(".yml")
-
-    # Construct full path in gestalt folder
-    return gestalt_folder / gestalt_relative
-
-
 def get_conversion_status(medm_file: Path, gestalt_folder: Path) -> Dict[str, Any]:
     """
     Check if MEDM file has been converted and if it's up to date.
@@ -183,10 +149,7 @@ def get_conversion_summary(
     }
 
     for medm_file in medm_files:
-        expected_gestalt = get_gestalt_path_for_medm(
-            medm_file, medm_folder, gestalt_folder
-        )
-        status = get_conversion_status(medm_file, expected_gestalt.parent)
+        status = get_conversion_status(medm_file, gestalt_folder)
 
         if status["status"] == "converted":
             summary["converted"].append(medm_file)
