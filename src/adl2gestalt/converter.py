@@ -276,9 +276,7 @@ class MedmToGestaltConverter:
             and hasattr(widget, "contents")
             and widget.contents
         ):
-            if (
-                widget.contents.get("composite file")
-            ):
+            if widget.contents.get("composite file"):
                 widget_type = "Include"  # Override Group mapping for composite files
 
         # Generate widget name
@@ -682,9 +680,7 @@ class MedmToGestaltConverter:
 
         # Include properties (for composite widgets with embedded files)
         if widget_type == "Include" and hasattr(widget, "contents") and widget.contents:
-            if (
-                widget.contents.get("composite file")
-            ):
+            if widget.contents.get("composite file"):
                 # Remove .adl extension if present, as IncludeNode will add the correct extension
                 composite_file = widget.contents["composite file"]
                 if composite_file.endswith(".adl"):
