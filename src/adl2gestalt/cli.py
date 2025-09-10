@@ -341,7 +341,6 @@ def convert_command(
 @click.option(
     "--output", "-o", type=click.Path(path_type=Path), help="Output file path"
 )
-@click.option("--verbose", "-v", is_flag=True, help="Verbose output")
 def generate_command(
     gestalt_file: Path,
     format: str,
