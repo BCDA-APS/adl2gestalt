@@ -9,6 +9,12 @@ Convert MEDM ADL files to [Gestalt](https://github.com/BCDA-APS/gestalt) YAML fo
 - Generate Qt, CSS-Phoebus, and PyDM displays using [Gestalt](https://github.com/BCDA-APS/gestalt)
 - Command-line tools
 
+## Documentation
+
+- [Conversion Guide](docs/CONVERSION.md) - Current state of MEDM to Gestalt conversion and supported features
+- [MEDM Reference Manual](https://epics.anl.gov/EpicsDocumentation/ExtensionsManuals/MEDM/MEDM.html) - Official MEDM documentation
+- [Gestalt Documentation](https://bcda-aps.github.io/gestalt/) - Official Gestalt documentation and node reference
+
 ## Installation
 
 We recommend creating a dedicated environment:
