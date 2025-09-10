@@ -42,8 +42,8 @@ def main():
     "--recursive",
     "-r",
     is_flag=True,
-    default=True,
-    help="Search recursively (default: True)",
+    default=False,
+    help="Search recursively (default: False)",
 )
 @click.option("--count", "-c", is_flag=True, help="Show only count of files")
 def list_medm_command(folder: Path, recursive: bool, count: bool):
@@ -81,8 +81,8 @@ def list_medm_command(folder: Path, recursive: bool, count: bool):
     "--recursive",
     "-r",
     is_flag=True,
-    default=True,
-    help="Search recursively (default: True)",
+    default=False,
+    help="Search recursively (default: False)",
 )
 @click.option("--count", "-c", is_flag=True, help="Show only count of files")
 def list_gestalt_command(folder: Path, recursive: bool, count: bool):
@@ -123,8 +123,8 @@ def list_gestalt_command(folder: Path, recursive: bool, count: bool):
     "--recursive",
     "-r",
     is_flag=True,
-    default=True,
-    help="Search recursively (default: True)",
+    default=False,
+    help="Search recursively (default: False)",
 )
 def status_command(
     medm_folder: Path, gestalt_folder: Path, verbose: bool, recursive: bool
@@ -193,8 +193,8 @@ def status_command(
     "--recursive",
     "-r",
     is_flag=True,
-    default=True,
-    help="Search recursively in batch mode (default: True)",
+    default=False,
+    help="Search recursively in batch mode (default: False)",
 )
 @click.option("--verbose", "-v", is_flag=True, help="Verbose output")
 def convert_command(
@@ -348,8 +348,8 @@ def convert_command(
     "--recursive",
     "-r",
     is_flag=True,
-    default=True,
-    help="Search recursively in batch mode (default: True)",
+    default=False,
+    help="Search recursively in batch mode (default: False)",
 )
 def generate_command(
     input: Path,
@@ -369,7 +369,12 @@ def generate_command(
                 sys.exit(1)
 
         elif input.is_dir() and batch:
+            print(f"DEBUG: recursive parameter: {recursive}")  # Add this line
+            print(f"DEBUG: Input path: {input}")
+            print(f"DEBUG: Input absolute path: {input.resolve()}")
+            print(f"DEBUG: About to call list_gestalt_files")  # Add this line
             yml_files = list_gestalt_files(input, recursive)
+            print(f"DEBUG: Found {len(yml_files)} files")
             with click.progressbar(
                 yml_files,
                 label="Converting files",
@@ -462,8 +467,8 @@ def test_gestalt_command(gestalt_file: Path, verbose: bool):
     "--recursive",
     "-r",
     is_flag=True,
-    default=True,
-    help="Process recursively (default: True)",
+    default=False,
+    help="Process recursively (default: False)",
 )
 @click.option("--verbose", "-v", is_flag=True, help="Verbose output")
 def workflow_command(
