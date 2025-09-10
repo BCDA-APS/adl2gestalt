@@ -47,10 +47,13 @@ adl2gestalt workflow path/to/medm_folder/ path/to/gestalt_folder/
 # Check status
 adl2gestalt status path/to/medm_folder/ path/to/gestalt_folder/
 
-# Generate UI files
+# Generate single UI file
 adl2gestalt generate path/to/file.yml --format qt -o path/to/file.ui
 # Or using gestalt directly
 gestalt path/to/file.yml -t qt -o path/to/file.ui
+
+# Genrate batch UI files
+adl2gestalt generate path/to/yml_folder/ --batch -format qt -o path/to/ui_folder/
 ```
 
 ## Output Format

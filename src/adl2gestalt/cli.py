@@ -13,7 +13,7 @@ from .gestalt_runner import (
     create_gestalt_workflow,
     run_gestalt_file,
     test_gestalt_conversion,
-    validate_gestalt_file,
+    calculate_output_path,
 )
 from .scanner import (
     get_conversion_summary,
@@ -217,7 +217,7 @@ def convert_command(
 
         if input.is_file():
             # Single file conversion
-            if not input.suffix == ".adl":
+            if not input.suffix.lower() == ".adl":
                 click.echo("Error: Input file must have .adl extension", err=True)
                 sys.exit(1)
 
@@ -330,7 +330,7 @@ def convert_command(
 
 
 @click.command()
-@click.argument("gestalt-file", type=click.Path(exists=True, path_type=Path))
+@click.argument("input", type=click.Path(exists=True, path_type=Path))
 @click.option(
     "--format",
     "-f",
@@ -341,23 +341,59 @@ def convert_command(
 @click.option(
     "--output", "-o", type=click.Path(path_type=Path), help="Output file path"
 )
+@click.option(
+    "--batch", "-b", is_flag=True, help="Generate UI files for entire directory"
+)
+@click.option(
+    "--recursive",
+    "-r",
+    is_flag=True,
+    default=True,
+    help="Search recursively in batch mode (default: True)",
+)
 def generate_command(
-    gestalt_file: Path,
+    input: Path,
     format: str,
     output: Optional[Path],
+    batch: bool,
+    recursive: bool,
 ):
     """Generate UI file from Gestalt YAML using gestalt engine."""
     try:
-        success, message = run_gestalt_file(gestalt_file, format, output)
+        if input.is_file():
+            success, message = run_gestalt_file(input, format, output)
+            if success:
+                click.echo(f"\n✅ {message}")
+            else:
+                click.echo(f"\n❌ {message}", err=True)
+                sys.exit(1)
 
-        if success:
-            click.echo(f"✅ {message}")
+        elif input.is_dir() and batch:
+            yml_files = list_gestalt_files(input, recursive)
+            with click.progressbar(
+                yml_files,
+                label="Converting files",
+                show_pos=True,
+                show_percent=True,
+            ) as files:
+                for yml_file in files:
+                    output_path = calculate_output_path(yml_file, input, output, format)
+                    # Create subdirectories if needed
+                    output_path.parent.mkdir(parents=True, exist_ok=True)
+                    success, message = run_gestalt_file(yml_file, format, output_path)
+                    if success:
+                        click.echo(f"\n✅ {message}")
+                    else:
+                        click.echo(f"\n❌ {message}", err=True)
+                        sys.exit(1)
         else:
-            click.echo(f"❌ {message}", err=True)
+            click.echo(
+                f"Error: Input path is neither file nor directory: {input}", err=True
+            )
             sys.exit(1)
 
     except Exception as e:
-        click.echo(f"Error generating from {gestalt_file}: {e}", err=True)
+        click.echo(f"Error generating from {input}: {e}", err=True)
         sys.exit(1)
 
 

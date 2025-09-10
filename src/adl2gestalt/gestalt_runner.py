@@ -73,6 +73,8 @@ def run_gestalt_file(
 
         if not gestalt_script.exists():
             return False, f"Gestalt script not found at {gestalt_script}"
+        if gestalt_file.suffix.lower() not in [".yml", ".yaml"]:
+            return False, "Error: Input file must have .yml or .yaml extension"
 
         cmd = [sys.executable, str(gestalt_script)]
 
@@ -203,3 +205,35 @@ def create_gestalt_workflow(
         results["conversion"] = {"success": False, "message": f"Conversion failed: {e}"}
 
     return results
+
+
+def calculate_output_path(
+    yaml_file: Path, input_dir: Path, output_dir: Path, format: str
+) -> Path:
+    """
+    Calculate output path for a YAML file, maintaining directory structure.
+
+    Args:
+        yaml_file: The YAML file being processed
+        input_dir: The input directory (root)
+        output_dir: The output directory (root)
+        format: Output format (qt, bob, dm)
+
+    Returns:
+        Path for the output file
+    """
+    # Get relative path from input directory
+    rel_path = yaml_file.relative_to(input_dir)
+
+    # Change extension based on format
+    if format == "qt":
+        ext = ".ui"
+    elif format == "bob":
+        ext = ".bob"
+    elif format == "dm":
+        ext = ".dm"
+
+    # Create output path maintaining directory structure
+    output_path = output_dir / rel_path.with_suffix(ext)
+
+    return output_path
