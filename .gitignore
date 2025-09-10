@@ -78,4 +78,4 @@ examples/gestalt/*.yml
 examples/gestalt/*.yaml
 
 # External dependencies
-src/gestalt/
+# src/gestalt/ - Now managed as git submodule

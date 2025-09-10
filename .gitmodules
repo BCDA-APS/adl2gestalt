@@ -1,0 +1,3 @@
+[submodule "src/gestalt"]
+	path = src/gestalt
+	url = https://github.com/BCDA-APS/gestalt.git

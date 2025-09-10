@@ -11,10 +11,17 @@ Convert MEDM ADL files to [Gestalt](https://github.com/BCDA-APS/gestalt) YAML fo
 
 ## Installation
 
+We recommend creating a dedicated environment:
+
 ```bash
-git clone https://github.com/BCDA-APS/adl2gestalt.git
+# Create a simple conda environment
+conda create -n adl2yml python=3.12
+conda activate adl2yml
+```
+
+```bash
+git clone --recursive https://github.com/BCDA-APS/adl2gestalt.git
 cd adl2gestalt
-git clone https://github.com/BCDA-APS/gestalt.git src/gestalt
 pip install .
 ```
 
