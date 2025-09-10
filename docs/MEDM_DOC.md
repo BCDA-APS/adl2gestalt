@@ -1,34 +1,4 @@
 
-# Widget Type Mapping
-
-| MEDM (ADL) | Python Class | Gestalt (YML) |
-|-------------|--------------|---------------|
-| arc | MedmArcWidget | !Arc |
-| bar | MedmBarWidget | !Scale |
-| byte | MedmByteWidget | !ByteMonitor |
-| cartesian plot | MedmCartesianPlotWidget | None |
-| choice button | MedmChoiceButtonWidget | !ChoiceButton |
-| composite | MedmCompositeWidget | !Group |
-| embedded display | MedmEmbeddedDisplayWidget | !Embed |
-| image | MedmImageWidget | !Image |
-| indicator | MedmIndicatorWidget | !Scale |
-| menu | MedmMenuWidget | !Menu |
-| message button | MedmMessageButtonWidget | !MessageButton |
-| meter | MedmMeterWidget | None |
-| oval | MedmOvalWidget | !Ellipse |
-| polygon | MedmPolygonWidget | !Polygon |
-| polyline | MedmPolylineWidget | !Polyline |
-| rectangle | MedmRectangleWidget | !Rectangle |
-| related display | MedmRelatedDisplayWidget | !RelatedDisplay |
-| shell command | MedmShellCommandWidget | !ShellCommand |
-| strip chart | MedmStripChartWidget | None |
-| text | MedmTextWidget | !Text |
-| text entry | MedmTextEntryWidget | !TextEntry |
-| text update | MedmTextUpdateWidget | !TextMonitor |
-| valuator | MedmValuatorWidget | !Slider |
-| wheel switch | MedmWheelSwitchWidget | None |
-| display | MedmMainWidget | !Form |
-
 
 # MEDM Objects and Attributes Reference
 
